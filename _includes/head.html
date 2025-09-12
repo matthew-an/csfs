@@ -2,6 +2,10 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Browser Compatibility -->
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
   {%- seo -%}
   <!-- Preconnect to external domains for better performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,6 +53,36 @@
   </style>
   
   {%- feed_meta -%}
+  
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "InsuranceAgency",
+    "name": "Cornerstone Insurance",
+    "description": "Comprehensive insurance solutions including life, health, trauma, income protection, and mortgage protection.",
+    "url": "{{ site.url }}{{ site.baseurl }}",
+    "logo": "{{ site.url }}{{ site.baseurl }}/assets/img/logo.svg",
+    "telephone": "+64211280727",
+    "email": "amy.tao@cornerstonefs.co.nz",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "NZ"
+    },
+    "sameAs": [
+      "{{ site.url }}{{ site.baseurl }}"
+    ],
+    "serviceType": [
+      "Life Insurance",
+      "Health Insurance", 
+      "Trauma Insurance",
+      "Income Protection",
+      "Mortgage Protection"
+    ],
+    "areaServed": "New Zealand"
+  }
+  </script>
+  
   {%- include custom-head.html -%}
 
 </head>

@@ -36,6 +36,18 @@ soopr:
 twitter:
   card: summary_large_image
 
+# SEO and Social Media
+author: "Cornerstone Insurance"
+logo: "/assets/img/logo.svg"
+social:
+  name: "Cornerstone Insurance"
+  links:
+    - "https://matthew-an.github.io/csfs"
+
+# Additional SEO settings
+lang: en_NZ
+timezone: Pacific/Auckland
+
 exclude:
   - Gemfile
   - Gemfile.lock
