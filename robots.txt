@@ -1,0 +1,32 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://matthew-an.github.io/csfs/sitemap.xml
+
+# Block access to admin and development files
+Disallow: /bin/
+Disallow: /node_modules/
+Disallow: /_site/
+Disallow: /Gemfile
+Disallow: /Gemfile.lock
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /.git/
+Disallow: /.gitignore
+Disallow: /README.md
+Disallow: /tailwind.config.js
+Disallow: /postcss.config.js
+
+# Allow important pages
+Allow: /assets/
+Allow: /en/
+Allow: /services
+Allow: /team
+Allow: /contact-us
+Allow: /about
+Allow: /disclosure
+Allow: /blog
+
+# Crawl delay (optional - be respectful to search engines)
+Crawl-delay: 1

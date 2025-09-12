@@ -22,6 +22,19 @@
   <meta property="twitter:title" content="{% if page.title_key %}{% include translate.html key=page.title_key %} - {% elsif page.title %}{{ page.title | escape }} - {% endif %}{% include translate.html key='site.title' %}">
   <meta property="twitter:description" content="{% if page.description_key %}{% include translate.html key=page.description_key %}{% elsif page.description %}{{ page.description | escape }}{% else %}{% include translate.html key='site.description' %}{% endif %}">
   <meta property="twitter:image" content="{{ site.url }}{{ site.baseurl }}/assets/img/logo.svg">
+  
+  <!-- Hreflang tags for bilingual SEO -->
+  {% assign current_lang = page.lang | default: site.default_lang | default: "zh" %}
+  {% if current_lang == "zh" %}
+    <link rel="alternate" hreflang="zh-CN" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
+    <link rel="alternate" hreflang="en" href="{{ site.url }}{{ site.baseurl }}/en{{ page.url }}" />
+    <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
+  {% else %}
+    <link rel="alternate" hreflang="zh-CN" href="{{ site.url }}{{ site.baseurl }}{{ page.url | replace: '/en', '' }}" />
+    <link rel="alternate" hreflang="en" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
+    <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ site.baseurl }}{{ page.url | replace: '/en', '' }}" />
+  {% endif %}
+  
   <!-- Preconnect to external domains for better performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,9 +42,11 @@
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <link rel="preconnect" href="https://unpkg.com">
   
-  <!-- Optimized font loading with font-display: swap -->
-  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Optimized font loading with font-display: swap and preload -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap"></noscript>
+  <link rel="preload" href="https://rsms.me/inter/inter.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://rsms.me/inter/inter.css"></noscript>
   
   <!-- Deferred JavaScript loading -->
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
@@ -113,20 +128,48 @@
   
   {%- feed_meta -%}
   
-  <!-- Structured Data for SEO -->
+  <!-- Enhanced Structured Data for SEO -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "InsuranceAgency",
     "name": "{% include translate.html key='site.company_name' %}",
+    "alternateName": "Cornerstone Insurance Limited",
     "description": "{% include translate.html key='site.description' %}",
     "url": "{{ site.url }}{{ site.baseurl }}",
-    "logo": "{{ site.url }}{{ site.baseurl }}/assets/img/logo.svg",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}{{ site.baseurl }}/assets/img/logo.svg",
+      "width": "200",
+      "height": "200"
+    },
+    "image": "{{ site.url }}{{ site.baseurl }}/assets/img/logo.svg",
     "telephone": "+64211280727",
     "email": "amy.tao@cornerstonefs.co.nz",
     "address": {
       "@type": "PostalAddress",
+      "streetAddress": "80B Forrest Hill Road",
+      "addressLocality": "Forrest Hill",
+      "addressRegion": "Auckland",
+      "postalCode": "0620",
       "addressCountry": "NZ"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "-36.7595",
+      "longitude": "174.7633"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday", 
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "09:00",
+      "closes": "17:00"
     },
     "sameAs": [
       "{{ site.url }}{{ site.baseurl }}"
@@ -136,9 +179,53 @@
       "Health Insurance", 
       "Trauma Insurance",
       "Income Protection",
-      "Mortgage Protection"
+      "Mortgage Protection",
+      "Total Permanent Disability Insurance"
     ],
-    "areaServed": "New Zealand"
+    "areaServed": {
+      "@type": "Country",
+      "name": "New Zealand"
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Min Tao (Amy)",
+      "jobTitle": "Principal Insurance Advisor",
+      "email": "amy.tao@cornerstonefs.co.nz",
+      "telephone": "+64211280727"
+    },
+    "priceRange": "$$",
+    "currenciesAccepted": "NZD",
+    "paymentAccepted": "Cash, Credit Card, Bank Transfer",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Insurance Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Life Insurance",
+            "description": "Comprehensive life insurance coverage to protect your family's financial future"
+          }
+        },
+        {
+          "@type": "Offer", 
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Health Insurance",
+            "description": "Private health insurance for faster access to medical treatment"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service", 
+            "name": "Income Protection",
+            "description": "Financial security when you're unable to work due to illness or injury"
+          }
+        }
+      ]
+    }
   }
   </script>
   
