@@ -1,7 +1,7 @@
 ---
 layout: page
 title_key: nav.blog
-lang: zh
+lang: en
 ---
 
 # {% include translate.html key='nav.blog' %}

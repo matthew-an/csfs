@@ -2,6 +2,49 @@
 layout: default
 ---
 
+<!-- Custom language switcher for blog posts -->
+<style>
+  .language-switcher { display: none !important; }
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Find the language switcher and replace it with blog-specific behavior
+  const languageSwitcher = document.querySelector('.language-switcher');
+  if (languageSwitcher) {
+    const currentUrl = window.location.pathname;
+    const isEnglishSite = currentUrl.startsWith('/en/');
+    
+    languageSwitcher.innerHTML = `
+      <div class="language-switcher flex items-center space-x-2">
+        ${isEnglishSite ? `
+          <a href="/blog" 
+             class="text-gray-300 hover:text-white text-sm font-medium px-2 py-1 rounded transition duration-200"
+             title="切换到中文">
+            中文
+          </a>
+          <span class="text-gray-400">|</span>
+          <span class="text-white text-sm font-medium px-2 py-1 rounded bg-primary-600">
+            English
+          </span>
+        ` : `
+          <span class="text-white text-sm font-medium px-2 py-1 rounded bg-primary-600">
+            中文
+          </span>
+          <span class="text-gray-400">|</span>
+          <a href="${currentUrl}" 
+             class="text-gray-300 hover:text-white text-sm font-medium px-2 py-1 rounded transition duration-200"
+             title="Switch to English">
+            English
+          </a>
+        `}
+      </div>
+    `;
+    languageSwitcher.style.display = 'flex';
+  }
+});
+</script>
+
 {%- include breadcrumbs.html -%}
 
 <article class="font-sans relative py-24 md:py-28 bg-white overflow-hidden" itemscope itemtype="http://schema.org/BlogPosting">
