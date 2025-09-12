@@ -1,0 +1,17 @@
+---
+layout: default
+---
+{%- include breadcrumbs.html -%}
+<div class="relative py-24 md:py-28 bg-white overflow-hidden font-sans">
+  <div class="relative px-4 sm:px-6 lg:px-8">
+    <div class="text-lg max-w-4xl mx-auto mb-8">
+      <h1
+        class="font-misc mt-2 mb-4 text-4xl text-center leading-8 font-extrabold text-gray-800 md:text-4xl sm:leading-10">
+        {% if page.title_key %}{% include translate.html key=page.title_key %}{% else %}{{ page.title | escape }}{% endif %}</h1>
+        <div class="max-w-prose mx-auto mt-4 mb-6 soopr-btn soopr-btn-def" style="min-height: 36px;"></div>
+    </div>
+    <div class="max-w-4xl mx-auto">
+      {{ content }}
+    </div>
+  </div>
+</div>
