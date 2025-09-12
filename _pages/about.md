@@ -1,58 +1,45 @@
 ---
 layout: page
-title: About Cookie
+title: About Cornerstone Insurance
 ---
 
-Cookie is a landing page site using [Tailwind CSS](https://www.tailwindcss.com/). You can learn more about customizing the site in `README.md` file in root directory of the project. You can learn more about Jekyll  at [jekyllrb.com](https://jekyllrb.com/)
+## Your Trusted Insurance Partner
 
-You can find the source code for cookie at GitHub:
-[abhinavs](https://github.com/abhinavs) /
-[cookie](https://github.com/abhinavs/cookie)
+At Cornerstone Insurance, we understand that life is filled with uncertainties, and having the right insurance coverage is essential for peace of mind and financial stability. For over a decade, we have been dedicated to providing comprehensive insurance solutions that protect what matters most to you and your family.
 
-Cookie is a Jekyll based static website for your next project. It uses Tailwind CSS and comes with
-1. Landing Page
-2. Blog
-3. Auxilarly Pages like Terms, Privacy Policy, Contact and About us.
+## Our Mission
 
-All pages are responsive and mobile friendly.
+Our mission is simple: to provide reliable, affordable, and comprehensive insurance coverage that gives our clients the confidence to live their lives to the fullest. We believe that everyone deserves access to quality insurance protection, and we work tirelessly to make that a reality.
 
-## Why Jekyll?
-Jekyll is a static website generator - what it means is that in production, your site will be extremely fast because it has been 'compliled' into HTML pages while deployment. Separating your landing website from your app website is also useful because it takes away the load which otherwise your app website would have handled - it keeps your app website free.
+## What Sets Us Apart
 
-Cookie uses Tailwind 2.0 which is a good improvement over Tailwind 1.0.
+### Unmatched Expertise
+With years of experience in the insurance industry, our team of knowledgeable agents possesses the expertise to guide you through the insurance process. We stay updated with the latest trends and regulations to ensure that you receive accurate and reliable advice.
 
-## Soopr
-[Soopr][soopr-website] is the easiest way to for you add share reaction buttons to your blog and website, integrate an URL shortener and analytics service. Soopr lets you manage all of these using a powerful dashboard.
+### Personalized Service
+We understand that every individual and family has unique requirements when it comes to insurance. Our experienced insurance agents take the time to understand your situation and recommend personalized coverage options that provide the right level of protection.
 
-Cookie uses Soopr for share and like buttons and is already integrated. By default, Cookie shows `circular` Twitter, Facebook and Copy buttons in `base` size. To add `like` button, please signup for free on [Soopr][soopr-website]
+### Comprehensive Coverage
+We offer a wide range of insurance products designed to safeguard your present and secure your future:
+- **Life Insurance** - Protect your loved ones' financial well-being
+- **Health Insurance** - Comprehensive medical coverage for you and your family
+- **Trauma Insurance** - Financial support during critical illness or injury
+- **Income Protection** - Safeguard your income against unforeseen circumstances
+- **Permanent Disability Insurance** - Coverage for permanent disability situations
+- **Mortgage Protection** - Protect your most significant investment
 
-Check out the [Soopr Website][soopr-website] for more info on how to get the most out of Soopr. 
+## Our Commitment to You
 
+At Cornerstone Insurance, we prioritize your financial well-being and aim to offer policies that protect you against unforeseen events. Our insurance products provide the necessary financial support to help you and your family navigate challenging circumstances.
 
-## Installation
-1. Fork this repository.
-2. `cd cookie`
-3. `bin/bootstrap`
+We pride ourselves on delivering exceptional customer service. From the moment you reach out to us, our team is dedicated to providing prompt, friendly, and professional assistance. We prioritize clear communication, transparency, and responsiveness, making your insurance journey hassle-free.
 
-## Starting Server
-`bin/start`
+## Claims Support
 
-## Customizing
-1. You can customized landing page by modifying index.html in root directory.
-2. You can add analytics, URL shortner and share buttons using Soopr, sign up on [Soopr][soopr-website], get a publish token for your website and add it in `_config.yml` file 
-3. You can customnize other website pages by modifying files present in `_pages` directory. You can add more pages too - you will be able to directly link to them using filename. Don't forget to customize Terms & Privacy Policy.
-4. You can write blog posts in `_posts` directory. Tailwind Typography for better blog formating and code syntax highlighting is already included.
-5. You should also checkout `_config.yml` in root directory, and add relevant details. Many of them are used for SEO purposes.
-6. You should also add favicons in `custom-head.html` present in `_includes` directory.
-7. You can customize image assets in `assets/img` directory.
-8. You will have to hook the 'Work with Us' form present on main page with a real backend.
-9. [Font Awesome](https://fontawesome.com/) is also integrated, to add any icon in your HTML files, you can refer to the website
+In the unfortunate event that you need to make a claim, we are here to support you. Our team will guide you through the claims process, ensuring that you receive the assistance you need during difficult times. We strive to make the claims experience as smooth and stress-free as possible.
 
-## Deploy Instructions
-TODO
+## Contact Us
 
-## Credits
-Landing page is based on [Tailwind Starter Kit](https://www.creative-tim.com/learning-lab/tailwind-starter-kit/presentation) and components from [Tailblocks](https://tailblocks.cc/) - thanks for providing an amazing landing page and components under MIT License.
+Ready to secure your future with Cornerstone Insurance? Contact us today to explore our range of insurance products and discover the peace of mind that comes with knowing you're protected.
 
-
-[soopr-website]: https://www.soopr.co
+**Don't leave your future to chance. Secure your today and tomorrow with Cornerstone Insurance - your trusted insurance partner.**
