@@ -43,7 +43,12 @@ lang: en
     <div class="text-center">
       <i class="fab fa-weixin text-green-600 text-xl mb-2 block"></i>
       <strong>{% include translate.html key='pages.team.wechat' %}</strong><br>
-      <span class="text-gray-700">Amytaoingrace</span>
+      <div class="flex items-center justify-center gap-2">
+        <span class="text-gray-700">Amytaoingrace</span>
+        <a href="/en/wechat_qr.jpg" class="wechat-qr-trigger inline-block hover:opacity-80 transition-opacity" title="Click to view WeChat QR Code">
+          <img src="/en/wechat_qr_small.jpg" alt="WeChat QR Code" class="w-6 h-6 rounded border border-gray-300" loading="lazy" />
+        </a>
+      </div>
     </div>
   </div>
 </div>
