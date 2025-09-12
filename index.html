@@ -3,337 +3,370 @@ layout: home
 ---
 
 <main id="main-content">
-<section class="text-tertiary-700 mt-32">
-  <div class="container flex flex-col px-5 py-8 mx-auto md:items-center">
-    <div class="flex flex-col w-full mb-8 text-left lg:text-center">
+
+<!-- Hero Section -->
+<!-- 
+Professional Insurance Background Image Options:
+1. Current: Happy family (protection theme): https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1926&q=80
+2. Business handshake: https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&auto=format&fit=crop&w=1926&q=80
+3. Family protection: https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-4.0.3&auto=format&fit=crop&w=1926&q=80
+4. Professional consultation: https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1926&q=80
+5. Modern office: https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1926&q=80
+-->
+<section class="relative text-white overflow-hidden hero-section">
+  <div class="absolute inset-0 bg-primary-600 opacity-80"></div>
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
+    <div class="text-center">
       <!-- Company Logo -->
       <div class="mx-auto mb-8">
-        <img class="w-16 h-16 mx-auto" src="/assets/img/logo.svg" alt="Cornerstone Insurance Logo" loading="eager" />
+        <img class="w-20 h-20 mx-auto" src="/assets/img/logo.svg" alt="Cornerstone Insurance Logo" loading="eager" />
       </div>
-      <h1 class="font-heading mx-auto mb-6 text-6xl text-center font-semibold leading-none tracking-tighter text-black lg:max-w-2xl title-font">Secure Your Future, Protect Your Life</h1>
-      <p class="mx-auto text-lg font-regular leading-relaxed text-tertiary-600 md:max-w-xl">
-        We have a comprehensive range of insurance products designed to safeguard your present and secure your future. At Cornerstone Insurance, we understand that life is filled with uncertainties, and having the right insurance coverage is essential for peace of mind and financial stability.
+      
+      <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
+        Insurance<br>
+        <span class="text-primary-200">for the better</span><br>
+        <span class="text-primary-200">life by Cornerstone.</span>
+      </h1>
+      
+      <p class="text-xl md:text-2xl text-primary-100 mb-4 font-light">
+        GET READY TO THE FUTURE.
       </p>
-      <a href="/services",
-        class="flex text-center w-full mt-6 md:mx-auto md:justify-center md:w-48 items-center px-6 py-2 font-semibold text-white transition duration-500 ease-in-out transform bg-primary-500 rounded-lg hover:bg-primary-700 focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2" >
-        Get Free Quote
-        <i class="ml-2 text-lg ph-caret-double-right-bold"></i>
-      </a>
-      <!-- <p class="mt-6 text-base text-tertiary-600 md:mx-auto md:max-w-md lg:max-w-md">We only get paid when you get paid. Start using our software for free for first six months. </p> -->
+      
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
+        <a href="/contact-us" class="bg-white text-primary-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition duration-300 shadow-lg">
+          Let's Get Started
+        </a>
+        <a href="tel:+64211280727" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-primary-600 transition duration-300">
+          +64 211 280 727
+        </a>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- Company Information Section -->
-<section class="bg-gray-50 py-16">
+<!-- Company Introduction -->
+<section class="py-16 bg-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="lg:text-center mb-12">
-      <h2 class="font-heading mb-4 bg-blue-100 text-blue-800 px-4 py-2 rounded-lg md:w-48 md:mx-auto text-xs font-semibold tracking-widest uppercase title-font">
-        Company Information
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-gray-900 mb-4">
+        CORNERSTONE INSURANCE - Insurance for the better life
       </h2>
-      <p class="font-heading mt-2 text-3xl leading-8 font-semibold tracking-tight text-gray-900 sm:text-4xl">
-        Licensed & Trusted Insurance Provider
-      </p>
     </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <!-- Contact Information -->
-      <div class="bg-white rounded-lg shadow-md p-6">
-        <div class="flex items-center mb-4">
-          <div class="flex-shrink-0">
-            <i class="ph-phone text-2xl text-primary-500"></i>
-          </div>
-          <div class="ml-3">
-            <h3 class="text-lg font-semibold text-gray-900">Contact Us</h3>
-          </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Your Advice & Quote -->
+      <div class="text-center">
+        <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+          <i class="ph-chat-circle text-2xl text-primary-600"></i>
         </div>
-        <div class="space-y-2 text-gray-600">
-          <p><i class="ph-phone mr-2 text-primary-500"></i><strong>Phone:</strong> +64 211280727</p>
-          <p><i class="ph-envelope mr-2 text-primary-500"></i><strong>Email:</strong> amy.tao@cornerstonefs.co.nz</p>
-          <p><i class="fab fa-weixin mr-2 text-green-500"></i><strong>WeChat:</strong> Amytaoingrace</p>
-          <p><i class="ph-clock mr-2 text-primary-500"></i><strong>Hours:</strong> Mon-Fri 8AM-6PM</p>
-        </div>
-      </div>
-
-
-      <!-- Licensing & Credentials -->
-      <div class="bg-white rounded-lg shadow-md p-6">
-        <div class="flex items-center mb-4">
-          <div class="flex-shrink-0">
-            <i class="ph-certificate text-2xl text-primary-500"></i>
-          </div>
-          <div class="ml-3">
-            <h3 class="text-lg font-semibold text-gray-900">Licensed & Certified</h3>
-          </div>
-        </div>
-        <div class="space-y-2 text-gray-600">
-          <p><strong>License #:</strong> INS-2024-001234</p>
-          <p><strong>Established:</strong> 2010</p>
-          <p><strong>A+ Rating</strong> with Better Business Bureau</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Additional Trust Signals -->
-    <div class="mt-12 bg-white rounded-lg shadow-md p-8">
-      <div class="text-center mb-8">
-        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Why Choose Cornerstone Insurance?</h3>
-        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-          With over a decade of experience serving families and businesses, we're committed to providing reliable, affordable insurance solutions backed by exceptional customer service.
+        <h3 class="text-xl font-semibold mb-3">Your Advice & Quote</h3>
+        <p class="text-gray-600">
+          Cornerstone Insurance will give advice based on your personal needs. To help you take the right policy.
         </p>
       </div>
       
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
-        <div>
-          <div class="text-3xl font-bold text-primary-500 mb-2">10,000+</div>
-          <div class="text-gray-600">Satisfied Customers</div>
+      <!-- Supreme Policy Management -->
+      <div class="text-center">
+        <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+          <i class="ph-shield-check text-2xl text-primary-600"></i>
         </div>
-        <div>
-          <div class="text-3xl font-bold text-primary-500 mb-2">15+</div>
-          <div class="text-gray-600">Years Experience</div>
-        </div>
-        <div>
-          <div class="text-3xl font-bold text-primary-500 mb-2">98%</div>
-          <div class="text-gray-600">Customer Satisfaction</div>
-        </div>
-        <div>
-          <div class="text-3xl font-bold text-primary-500 mb-2">24/7</div>
-          <div class="text-gray-600">Claims Support</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="">
-    <!-- This example requires Tailwind CSS v2.0+ -->
-<div class="py-12 bg-white">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="lg:text-center">
-      <h2 class="font-heading mb-4 bg-yellow-100 text-yellow-800 px-4 py-2 rounded-lg md:w-64 md:mx-auto text-xs font-semibold tracking-widest text-black uppercase title-font">
-        Why choose us?
-      </h2>
-      <p class="font-heading mt-2 text-3xl leading-8 font-semibold tracking-tight text-gray-900 sm:text-4xl">
-        Your Trusted Insurance Partner
-      </p>
-      <!-- <p class="mt-4 max-w-2xl text-lg text-gray-500 lg:mx-auto">
-        Here are some compelling reasons why you should choose us for your insurance needs:
-      </p> -->
-    </div>
-
-    <div class="mt-10">
-      <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
-        <div class="relative">
-          <dt>
-            <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-primary-500 text-white">
-              <i class="ph-code text-3xl"></i>
-            </div>
-            <p class="font-heading ml-16 text-lg leading-6 font-bold text-gray-700">Unmatched Insurance Expertise</p>
-          </dt>
-          <dd class="mt-2 ml-16 text-base text-gray-500">
-            With years of experience in the insurance industry, our team of knowledgeable agents possesses the expertise to guide you through the insurance process. We stay updated with the latest trends and regulations to ensure that you receive accurate and reliable advice.
-          </dd>
-        </div>
-
-        <div class="relative">
-          <dt>
-            <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-primary-500 text-white">
-                <i class="ph-file-js text-3xl"></i>
-            </div>
-            <p class="font-heading ml-16 text-lg leading-6 font-bold text-gray-700">Tailored Coverage Options</p>
-          </dt>
-          <dd class="mt-2 ml-16 text-base text-gray-500">
-            We understand that every individual and family has unique requirements when it comes to insurance. Our experienced insurance agents take the time to understand your situation and recommend personalized coverage options that provide the right level of protection for you and your loved ones.
-          </dd>
-        </div>
-
-        <div class="relative">
-          <dt>
-            <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-primary-500 text-white">
-              <i class="ph-money text-3xl"></i>
-            </div>
-            <p class="font-heading ml-16 text-lg leading-6 font-bold text-gray-700">Unwavering Commitment to Your Financial Security</p>
-          </dt>
-          <dd class="mt-2 ml-16 text-base text-gray-500">
-            Insurance is all about providing financial security. At Cornerstone Insurance, we prioritize your financial well-being and aim to offer policies that protect you against unforeseen events. Our insurance products provide the necessary financial support to help you and your family navigate challenging circumstances.
-          </dd>
-        </div>
-
-        <div class="relative">
-          <dt>
-            <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-primary-500 text-white">
-              <i class="ph-shield-check text-3xl"></i>
-            </div>
-            <p class="font-heading ml-16 text-lg leading-6 font-bold text-gray-700">Superior Customer Service</p>
-          </dt>
-          <dd class="mt-2 ml-16 text-base text-gray-500">
-            We pride ourselves on delivering exceptional customer service. From the moment you reach out to us, our team is dedicated to providing prompt, friendly, and professional assistance. We prioritize clear communication, transparency, and responsiveness, making your insurance journey hassle-free.
-          </dd>
-        </div>
-
-        <div class="relative">
-          <dt>
-            <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-primary-500 text-white">
-              <i class="ph-shield-check text-3xl"></i>
-            </div>
-            <p class="font-heading ml-16 text-lg leading-6 font-bold text-gray-700">Claims Assistance</p>
-          </dt>
-          <dd class="mt-2 ml-16 text-base text-gray-500">
-            In the unfortunate event that you need to make a claim, we are here to support you. Our team will guide you through the claims process, ensuring that you receive the assistance you need during difficult times. We strive to make the claims experience as smooth and stress-free as possible.
-          </dd>
-        </div>
-
-        <div class="relative">
-          <dt>
-            <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-primary-500 text-white">
-              <i class="ph-shield-check text-3xl"></i>
-            </div>
-            <p class="font-heading ml-16 text-lg leading-6 font-bold text-gray-700">Strong Industry Partnerships</p>
-          </dt>
-          <dd class="mt-2 ml-16 text-base text-gray-500">
-            We have established partnerships with reputable insurance providers, enabling us to offer a wide selection of policies from trusted companies. Our collaborations ensure that you have access to top-rated insurance products backed by financially stable and reliable institutions.
-          </dd>
-        </div>
-
-      </dl>
-    </div>
-  </div>
-</div>
-</section>
-
-
-
-
-<section class="text-gray-600 body-font">
-  <div class="container px-5 py-24 mx-auto">
-    <div class="lg:text-center">
-      <h2 class="font-heading mb-4 bg-secondary-100 text-secondary-800 px-4 py-2 rounded-lg md:w-40 md:mx-auto text-xs font-semibold tracking-widest uppercase title-font">Testimonials</h2>
-    </div>
-    <h1 class="text-3xl font-medium title-font text-gray-900 mb-12 text-center">A few words from our customers</h1>
-    <div class="flex flex-wrap -m-4">
-      <div class="p-4 md:w-1/2 w-full">
-        <div class="h-full bg-tertiary-100 rounded-lg border border-tertiary-300 p-8">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
-            <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
-          </svg>
-          <p class="leading-relaxed mb-6">"Cornerstone Insurance provided exceptional service when I needed life insurance coverage for my growing family. Their agents took the time to understand my needs and found the perfect policy at an affordable rate. I highly recommend their personalized approach."</p>
-          <a class="inline-flex items-center">
-            <img alt="testimonial" src="/assets/img/team-1-800x800.jpg" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center" loading="lazy">
-            <span class="flex-grow flex flex-col pl-4">
-              <span class="title-font font-medium text-gray-900">Sarah Johnson</span>
-              <span class="text-gray-500 text-sm">Business Owner</span>
-            </span>
-          </a>
-        </div>
-      </div>
-      <div class="p-4 md:w-1/2 w-full">
-        <div class="h-full p-8 bg-tertiary-100 rounded-lg border border-tertiary-300 ">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
-            <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
-          </svg>
-          <p class="leading-relaxed mb-6">"After a serious accident, Cornerstone Insurance's trauma coverage was a lifesaver. The claims process was smooth and the support team was incredibly compassionate during a difficult time. Their comprehensive coverage gave me peace of mind when I needed it most."</p>
-          <a class="inline-flex items-center">
-            <img alt="testimonial" src="/assets/img/team-2-800x800.jpg" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center" loading="lazy">
-            <span class="flex-grow flex flex-col pl-4">
-              <span class="title-font font-medium text-gray-900">Michael Chen</span>
-              <span class="text-gray-500 text-sm">Engineer</span>
-            </span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="px-4 py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:px-8">
-  <div class="max-w-screen-xl mx-auto p-8">
-    <div class="lg:text-center">
-      <h2 class="font-heading mb-4 bg-yellow-100 text-yellow-800 px-4 py-2 rounded-lg md:w-36 md:mx-auto text-xs font-semibold tracking-widest uppercase title-font">FAQs</h2>
-
-      <h3 class="text-3xl font-extrabold leading-9  text-gray-900 mb-12">
-        Frequently Asked Questions
-      </h3>
-    </div>
-    <div class="flex items-start flex-wrap mx-auto">
-        <div class="p-4 md:w-1/2 w-full">
-            <p class="text-lg font-medium leading-6 text-gray-900">
-                What types of insurance do you offer?
-            </p>
-            <p class="mt-2">
-                <p class="text-base leading-6 text-gray-500">
-                    We offer comprehensive insurance solutions including Life Insurance, Health Insurance, Trauma Insurance, Income Protection, Permanent Disability Insurance, and Mortgage Protection. Each policy is tailored to meet your specific needs and circumstances.
-                </p>
-            </p>
-          </div>
-        <div class="p-4 md:w-1/2 w-full">
-            <p class="text-lg font-medium leading-6 text-gray-900">
-                How do I get a quote for insurance coverage?
-            </p>
-            <p class="mt-2">
-                <p class="text-base leading-6 text-gray-500">
-                    Getting a quote is easy! Simply contact our experienced agents who will assess your needs and provide personalized recommendations. We offer free consultations to help you understand your options and find the right coverage at the best value.
-                </p>
-            </p>
-          </div>
-        <div class="p-4 md:w-1/2 w-full">
-            <p class="text-lg font-medium leading-6 text-gray-900">
-                How quickly can claims be processed?
-            </p>
-            <p class="mt-2">
-                <p class="text-base leading-6 text-gray-500">
-                    We pride ourselves on efficient claims processing. Our dedicated team works to process claims as quickly as possible, typically within 5-10 business days for standard claims. We'll guide you through every step of the process to ensure a smooth experience.
-                </p>
-            </p>
-          </div>
-        <div class="p-4 md:w-1/2 w-full">
-            <p class="text-lg font-medium leading-6 text-gray-900">
-                Do you offer coverage for pre-existing conditions?
-            </p>
-            <p class="mt-2">
-                <p class="text-base leading-6 text-gray-500">
-                    Coverage for pre-existing conditions varies by policy type and individual circumstances. Our experienced agents will work with you to find the best available options and ensure you understand exactly what is covered under your policy.
-                </p>
-            </p>
-        </div>
-
-    </div>
-</div>
-
-
-</section>
-
-<!-- Call to Action Section -->
-<section class="bg-primary-600 py-16">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center">
-      <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
-        Ready to Protect Your Future?
-      </h2>
-      <p class="mt-4 text-lg text-primary-100 max-w-2xl mx-auto">
-        Get a personalized insurance quote today and discover how Cornerstone Insurance can provide the coverage you need at a price you can afford.
-      </p>
-      <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="/contact-us" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-primary-600 bg-white hover:bg-gray-50 transition duration-300">
-          <i class="ph-envelope mr-2"></i>
-          Get Free Quote
-        </a>
-        <a href="tel:+64211280727" class="inline-flex items-center justify-center px-8 py-3 border-2 border-white text-base font-medium rounded-md text-white hover:bg-white hover:text-primary-600 transition duration-300">
-          <i class="ph-phone mr-2"></i>
-          Call: +64 211280727
-        </a>
-      </div>
-      <div class="mt-4">
-        <p class="text-primary-100 text-center">
-          <i class="fab fa-weixin mr-2 text-green-300"></i>
-          <strong>Amytaoingrace</strong>
+        <h3 class="text-xl font-semibold mb-3">Supreme Policy Management</h3>
+        <p class="text-gray-600">
+          Policy management & review is also important for each insured person.
         </p>
       </div>
-      <p class="mt-4 text-sm text-primary-200">
-        <i class="ph-shield-check mr-1"></i>
-        Licensed & Insured • A+ BBB Rating • 24/7 Claims Support
-      </p>
+      
+      <!-- Prime Claim Service -->
+      <div class="text-center">
+        <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+          <i class="ph-handshake text-2xl text-primary-600"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Prime Claim Service</h3>
+        <p class="text-gray-600">
+          Our claim team will work for you. We aim at providing an excellent claim experience for you.
+        </p>
+      </div>
     </div>
   </div>
 </section>
+
+<!-- Experience Section -->
+<section class="py-16 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col lg:flex-row items-center">
+      <div class="lg:w-1/2 mb-8 lg:mb-0">
+        <div class="text-center lg:text-left">
+          <div class="text-6xl font-bold text-primary-600 mb-4">5+</div>
+          <div class="text-2xl font-semibold text-gray-900 mb-4">
+            Years of<br>Experience
+          </div>
+          <p class="text-sm text-gray-500 uppercase tracking-wider mb-6">ABOUT COMPANY</p>
+        </div>
+      </div>
+      
+      <div class="lg:w-1/2">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">
+          Help you choose the right policy
+        </h2>
+        <p class="text-xl text-primary-600 font-semibold mb-4">
+          Get ready to the future!
+        </p>
+        <p class="text-gray-600 mb-8">
+          Cornerstone insurance is committed to providing one-stop service, including insurance consultation, application, management and claim service.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="/contact-us" class="bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition duration-300">
+            Contact Us
+          </a>
+          <a href="tel:+64211280727" class="border-2 border-primary-600 text-primary-600 px-6 py-3 rounded-lg font-semibold hover:bg-primary-50 transition duration-300">
+            +64 211 280 727
+          </a>
+        </div>
+        
+        <p class="text-sm text-gray-500 mt-4">Contact us now!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <p class="text-sm text-gray-500 uppercase tracking-wider mb-4">WHY CHOOSE</p>
+      <h2 class="text-3xl font-bold text-gray-900 mb-8">
+        Few reasons for people choosing Cornerstone Insurance
+      </h2>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="text-center">
+        <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+          <i class="ph-lightning text-2xl text-primary-600"></i>
+        </div>
+        <h3 class="text-lg font-semibold mb-2">Fast Quote</h3>
+        <p class="text-gray-600 text-sm">Quick and efficient quote process</p>
+      </div>
+      
+      <div class="text-center">
+        <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+          <i class="ph-check-circle text-2xl text-primary-600"></i>
+        </div>
+        <h3 class="text-lg font-semibold mb-2">Fast & Easy Process</h3>
+        <p class="text-gray-600 text-sm">Streamlined application process</p>
+      </div>
+      
+      <div class="text-center">
+        <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+          <i class="ph-gear text-2xl text-primary-600"></i>
+        </div>
+        <h3 class="text-lg font-semibold mb-2">Control Over Policy</h3>
+        <p class="text-gray-600 text-sm">Full transparency and control</p>
+      </div>
+      
+      <div class="text-center">
+        <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+          <i class="ph-piggy-bank text-2xl text-primary-600"></i>
+        </div>
+        <h3 class="text-lg font-semibold mb-2">Save Your Money</h3>
+        <p class="text-gray-600 text-sm">Competitive rates and savings</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services Overview -->
+<section class="py-16 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <p class="text-sm text-gray-500 uppercase tracking-wider mb-4">OUR SERVICES</p>
+      <h2 class="text-3xl font-bold text-gray-900 mb-8">
+        Your one-stop insurance service
+      </h2>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Health Insurance -->
+      <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+        <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+          <i class="ph-heart text-xl text-primary-600"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Health Insurance</h3>
+        <p class="text-gray-600 mb-4">
+          Health Insurance provides peace of mind that you and your family can get faster access to medical treatment when you need it most.
+        </p>
+        <a href="/services" class="text-primary-600 font-semibold hover:text-primary-700">Learn More →</a>
+      </div>
+      
+      <!-- Life Insurance -->
+      <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+        <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+          <i class="ph-shield text-xl text-primary-600"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Life Insurance</h3>
+        <p class="text-gray-600 mb-4">
+          Safeguard your loved ones with the assurance of life insurance. This form of insurance shields those dearest to you.
+        </p>
+        <a href="/services" class="text-primary-600 font-semibold hover:text-primary-700">Learn More →</a>
+      </div>
+      
+      <!-- Trauma Insurance -->
+      <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+        <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+          <i class="ph-first-aid text-xl text-primary-600"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Trauma Insurance</h3>
+        <p class="text-gray-600 mb-4">
+          Trauma cover ensures a lump sum payout upon the diagnosis of a critical illness or injury, enabling you to focus on recovery.
+        </p>
+        <a href="/services" class="text-primary-600 font-semibold hover:text-primary-700">Learn More →</a>
+      </div>
+      
+      <!-- Income Protection -->
+      <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+        <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+          <i class="ph-wallet text-xl text-primary-600"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Income Protection</h3>
+        <p class="text-gray-600 mb-4">
+          Income Protection ensures financial security in the event that you are unable to work due to illness or injury.
+        </p>
+        <a href="/services" class="text-primary-600 font-semibold hover:text-primary-700">Learn More →</a>
+      </div>
+      
+      <!-- Mortgage Protection -->
+      <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+        <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+          <i class="ph-house text-xl text-primary-600"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Mortgage Protection</h3>
+        <p class="text-gray-600 mb-4">
+          Protect your home and family's financial security with comprehensive mortgage protection coverage.
+        </p>
+        <a href="/services" class="text-primary-600 font-semibold hover:text-primary-700">Learn More →</a>
+      </div>
+      
+      <!-- TPD Cover -->
+      <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+        <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+          <i class="ph-wheelchair text-xl text-primary-600"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-3">TPD Cover</h3>
+        <p class="text-gray-600 mb-4">
+          Totally Permanent Disability Cover provides a lump-sum payout if you're unable to return to work due to illness or injury.
+        </p>
+        <a href="/services" class="text-primary-600 font-semibold hover:text-primary-700">Learn More →</a>
+      </div>
+    </div>
+    
+    <div class="text-center mt-12">
+      <a href="/services" class="bg-primary-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-700 transition duration-300">
+        View All Services
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
+      <div class="flex items-center justify-center mb-4">
+        <div class="flex text-yellow-400">
+          <i class="ph-star-fill text-xl"></i>
+          <i class="ph-star-fill text-xl"></i>
+          <i class="ph-star-fill text-xl"></i>
+          <i class="ph-star-fill text-xl"></i>
+          <i class="ph-star-fill text-xl"></i>
+        </div>
+        <span class="ml-2 text-lg font-semibold">EXCELLENT</span>
+      </div>
+      <p class="text-gray-600">Based on <strong>50+ reviews</strong></p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="bg-gray-50 rounded-lg p-6">
+        <div class="flex text-yellow-400 mb-4">
+          <i class="ph-star-fill"></i>
+          <i class="ph-star-fill"></i>
+          <i class="ph-star-fill"></i>
+          <i class="ph-star-fill"></i>
+          <i class="ph-star-fill"></i>
+        </div>
+        <p class="text-gray-700 mb-4">
+          "Cornerstone Insurance provided exceptional service when I needed life insurance coverage for my growing family. Their agents took the time to understand my needs and found the perfect policy at an affordable rate."
+        </p>
+        <div class="flex items-center">
+          <img alt="testimonial" src="/assets/img/team-1-800x800.jpg" class="w-12 h-12 rounded-full object-cover mr-4" loading="lazy">
+          <div>
+            <div class="font-semibold text-gray-900">Sarah Johnson</div>
+            <div class="text-gray-500 text-sm">Business Owner</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="bg-gray-50 rounded-lg p-6">
+        <div class="flex text-yellow-400 mb-4">
+          <i class="ph-star-fill"></i>
+          <i class="ph-star-fill"></i>
+          <i class="ph-star-fill"></i>
+          <i class="ph-star-fill"></i>
+          <i class="ph-star-fill"></i>
+        </div>
+        <p class="text-gray-700 mb-4">
+          "After a serious accident, Cornerstone Insurance's trauma coverage was a lifesaver. The claims process was smooth and the support team was incredibly compassionate during a difficult time."
+        </p>
+        <div class="flex items-center">
+          <img alt="testimonial" src="/assets/img/team-2-800x800.jpg" class="w-12 h-12 rounded-full object-cover mr-4" loading="lazy">
+          <div>
+            <div class="font-semibold text-gray-900">Michael Chen</div>
+            <div class="text-gray-500 text-sm">Engineer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact CTA -->
+<section class="py-16 bg-gradient-to-r from-primary-600 to-primary-700 text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-3xl font-bold mb-4">Get Ready To The Future</h2>
+    <p class="text-xl mb-8">Help you choose the right policy</p>
+    
+    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+      <a href="/contact-us" class="bg-white text-primary-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">
+        <i class="ph-envelope mr-2"></i>
+        Get a Quote
+      </a>
+      <a href="tel:+64211280727" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary-600 transition duration-300">
+        <i class="ph-phone mr-2"></i>
+        Call Now
+      </a>
+    </div>
+    
+    <div class="mt-8 text-center">
+      <p class="text-primary-100 mb-2">
+        <i class="ph-phone mr-2"></i>
+        <strong>+64 211 280 727</strong>
+      </p>
+      <p class="text-primary-100 mb-2">
+        <i class="ph-envelope mr-2"></i>
+        <strong>amy.tao@cornerstonefs.co.nz</strong>
+      </p>
+      <p class="text-primary-100">
+        <i class="fab fa-weixin mr-2 text-green-300"></i>
+        <strong>Amytaoingrace</strong>
+      </p>
+    </div>
+    
+    <p class="mt-4 text-sm text-primary-200">
+      <i class="ph-shield-check mr-1"></i>
+      Licensed & Insured • Professional Service • 24/7 Support
+    </p>
+  </div>
+</section>
+
 </main>
