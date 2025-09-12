@@ -1,5 +1,9 @@
+<!-- Skip Navigation Link for Accessibility -->
+<a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 bg-primary-600 text-white px-4 py-2 z-50">Skip to main content</a>
+
 <nav
-  class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-gray-800">
+  class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-gray-800"
+  role="navigation" aria-label="Main navigation">
   <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
     <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
       <a class="flex items-center text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap text-white"
@@ -9,8 +13,8 @@
       </a>
       <button
         class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
-        type="button" onclick="toggleNavbar('example-collapse-navbar')">
-        <i class="text-white fas fa-bars"></i>
+        type="button" id="mobile-menu-button" aria-label="Toggle mobile menu">
+        <i class="text-white fas fa-bars" id="menu-icon"></i>
       </button>
     </div>
     <div class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden"
@@ -77,3 +81,34 @@
     </div>
   </div>
 </nav>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('example-collapse-navbar');
+  const menuIcon = document.getElementById('menu-icon');
+  
+  if (mobileMenuButton && mobileMenu) {
+    mobileMenuButton.addEventListener('click', function() {
+      // Toggle the hidden class
+      mobileMenu.classList.toggle('hidden');
+      
+      // Toggle the menu icon between bars and times
+      if (mobileMenu.classList.contains('hidden')) {
+        menuIcon.className = 'text-white fas fa-bars';
+      } else {
+        menuIcon.className = 'text-white fas fa-times';
+      }
+    });
+    
+    // Close menu when clicking on a link (for better UX)
+    const menuLinks = mobileMenu.querySelectorAll('a');
+    menuLinks.forEach(function(link) {
+      link.addEventListener('click', function() {
+        mobileMenu.classList.add('hidden');
+        menuIcon.className = 'text-white fas fa-bars';
+      });
+    });
+  }
+});
+</script>
