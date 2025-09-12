@@ -41,9 +41,22 @@ social:
   links:
     - "https://matthew-an.github.io/csfs"
 
-# Additional SEO settings
-lang: en_NZ
+# Additional SEO settings and i18n
+lang: zh_CN
+default_lang: zh
+languages: ["zh", "en"]
 timezone: Pacific/Auckland
+
+# i18n settings
+t:
+  zh:
+    site:
+      title: "基石保险"
+      description: "基石保险提供全面的保险解决方案，包括人寿保险、健康保险、重大疾病保险、收入保障保险和房贷保护保险。通过我们值得信赖的保险专业知识和个性化保障选择，为您的未来保驾护航。"
+  en:
+    site:
+      title: "Cornerstone Insurance"
+      description: "Cornerstone Insurance provides comprehensive insurance solutions including life, health, trauma, income protection, and mortgage protection. Secure your future with our trusted insurance expertise and personalized coverage options."
 
 exclude:
   - Gemfile

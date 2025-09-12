@@ -1,6 +1,7 @@
 ---
 layout: page
 title_key: pages.services.title
+lang: en
 ---
 
 {% include translate.html key='pages.services.intro' %}

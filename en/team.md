@@ -2,6 +2,7 @@
 layout: page
 title_key: pages.team.title
 description_key: pages.team.description
+lang: en
 ---
 
 # {% include translate.html key='pages.team.meet_team' %}
@@ -57,4 +58,4 @@ description_key: pages.team.description
 
 ---
 
-*{% include translate.html key='pages.team.ready_to_discuss' %} [{% include translate.html key='pages.team.contact_today' %}](/contact-us) {% include translate.html key='pages.team.schedule_consultation' %}*
+*{% include translate.html key='pages.team.ready_to_discuss' %} [{% include translate.html key='pages.team.contact_today' %}](/en/contact-us) {% include translate.html key='pages.team.schedule_consultation' %}*

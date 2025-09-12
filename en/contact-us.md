@@ -2,6 +2,7 @@
 layout: page
 title_key: pages.contact.title
 description_key: pages.contact.intro
+lang: en
 ---
 
 # {% include translate.html key='pages.contact.get_in_touch' %}

@@ -1,6 +1,7 @@
 ---
 layout: page
 title_key: pages.disclosure.title
+lang: en
 ---
 
 ### {% include translate.html key='pages.disclosure.details_title' %}
@@ -87,8 +88,10 @@ title_key: pages.disclosure.title
 {% include translate.html key='pages.disclosure.ombudsman_details' %}  
 {% include translate.html key='pages.disclosure.ombudsman_address' %}  
 {% include translate.html key='pages.disclosure.complaints_scheme' %}
+
 ### {% include translate.html key='pages.disclosure.duties_title' %}  
 {% include translate.html key='pages.disclosure.duties_info' %}
+
 ### {% include translate.html key='pages.disclosure.declaration_title' %}  
 {% include translate.html key='pages.disclosure.declaration_info' %}
 

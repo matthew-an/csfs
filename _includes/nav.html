@@ -6,10 +6,17 @@
   role="navigation" aria-label="Main navigation">
   <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
     <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+      {% assign current_lang = page.lang | default: site.default_lang | default: "zh" %}
+      {% if current_lang == "en" %}
+        {% assign home_url = "/en/" %}
+      {% else %}
+        {% assign home_url = "/" %}
+      {% endif %}
+      
       <a class="flex items-center text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap text-white"
-        href="/">
-        <img class="w-8 h-8 mr-2" src="/assets/img/logo.svg" alt="Cornerstone Insurance" />
-        <span class="hidden sm:inline">Cornerstone Insurance</span>
+        href="{{ home_url }}">
+        <img class="w-8 h-8 mr-2" src="/assets/img/logo.svg" alt="{% include translate.html key='site.company_name' %}" />
+        <span class="hidden sm:inline">{% include translate.html key='site.company_name' %}</span>
       </a>
       <button
         class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
@@ -19,38 +26,50 @@
     </div>
     <div class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden"
       id="example-collapse-navbar">
+      {% assign current_lang = page.lang | default: site.default_lang | default: "zh" %}
+      {% if current_lang == "en" %}
+        {% assign lang_prefix = "/en" %}
+      {% else %}
+        {% assign lang_prefix = "" %}
+      {% endif %}
+      
       <ul class="flex flex-col lg:flex-row list-none mr-auto">
         <li class="flex items-center">
           <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-            href="/"><i class="lg:text-gray-300 text-gray-500 far fa-file-alt text-lg leading-lg mr-2"></i>
-            Home</a>
+            href="{{ lang_prefix }}/"><i class="lg:text-gray-300 text-gray-500 far fa-file-alt text-lg leading-lg mr-2"></i>
+            {% include translate.html key='nav.home' %}</a>
         </li>
         <li class="flex items-center">
           <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-            href="/services"><i class="lg:text-gray-300 text-gray-500 far fa-file-alt text-lg leading-lg mr-2"></i>
-            Services</a>
+            href="{{ lang_prefix }}/services"><i class="lg:text-gray-300 text-gray-500 far fa-file-alt text-lg leading-lg mr-2"></i>
+            {% include translate.html key='nav.services' %}</a>
         </li>
         <li class="flex items-center">
           <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-            href="/team"><i class="lg:text-gray-300 text-gray-500 far fa-file-alt text-lg leading-lg mr-2"></i>
-            Team</a>
+            href="{{ lang_prefix }}/team"><i class="lg:text-gray-300 text-gray-500 far fa-file-alt text-lg leading-lg mr-2"></i>
+            {% include translate.html key='nav.team' %}</a>
         </li>
         <!-- <li class="flex items-center">
           <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-            href="/blog"><i class="lg:text-gray-300 text-gray-500 far fa-file-alt text-lg leading-lg mr-2"></i>
-            Blog</a>
+            href="{{ lang_prefix }}/blog"><i class="lg:text-gray-300 text-gray-500 far fa-file-alt text-lg leading-lg mr-2"></i>
+            {% include translate.html key='nav.blog' %}</a>
         </li> -->
         <li class="flex items-center">
           <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-            href="/disclosure"><i class="lg:text-gray-300 text-gray-500 far fa-file-alt text-lg leading-lg mr-2"></i>
-            Disclosure</a>
+            href="{{ lang_prefix }}/disclosure"><i class="lg:text-gray-300 text-gray-500 far fa-file-alt text-lg leading-lg mr-2"></i>
+            {% include translate.html key='nav.disclosure' %}</a>
         </li>
         <li class="flex items-center">
           <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-            href="/contact-us"><i class="lg:text-gray-300 text-gray-500 far fa-file-alt text-lg leading-lg mr-2"></i>
-            Contact</a>
+            href="{{ lang_prefix }}/contact-us"><i class="lg:text-gray-300 text-gray-500 far fa-file-alt text-lg leading-lg mr-2"></i>
+            {% include translate.html key='nav.contact' %}</a>
         </li>
       </ul>
+      
+      <!-- Language Switcher -->
+      <div class="hidden lg:flex items-center ml-4">
+        {% include language-switcher.html %}
+      </div>
     </div>
   </div>
 </nav>

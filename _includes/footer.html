@@ -4,77 +4,84 @@
       class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
       <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
         <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
-          <img class="w-12 h-12" src="/assets/img/logo.svg" alt="Cornerstone Insurance" />
-          <span class="ml-3 text-xl">Cornerstone Insurance</span>
+          <img class="w-12 h-12" src="/assets/img/logo.svg" alt="{% include translate.html key='site.company_name' %}" />
+          <span class="ml-3 text-xl">{% include translate.html key='site.company_name' %}</span>
         </a>
-        <p class="mt-2 text-sm text-gray-500">Your trusted insurance partner providing comprehensive coverage solutions</p>
+        <p class="mt-2 text-sm text-gray-500">{% include translate.html key='footer.tagline' %}</p>
       </div>
       <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">INSURANCE SERVICES</h2>
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">{% include translate.html key='footer.insurance_services' %}</h2>
+          {% assign current_lang = page.lang | default: site.default_lang | default: "zh" %}
+          {% if current_lang == "en" %}
+            {% assign lang_prefix = "/en" %}
+          {% else %}
+            {% assign lang_prefix = "" %}
+          {% endif %}
+          
           <nav class="list-none mb-10">
             <li>
-              <a class="text-gray-400 hover:text-white" href="/services">Life Insurance</a>
+              <a class="text-gray-400 hover:text-white" href="{{ lang_prefix }}/services">{% include translate.html key='footer.life_insurance' %}</a>
             </li>
             <li>
-              <a class="text-gray-400 hover:text-white" href="/services">Health Insurance</a>
+              <a class="text-gray-400 hover:text-white" href="{{ lang_prefix }}/services">{% include translate.html key='footer.health_insurance' %}</a>
             </li>
             <li>
-              <a class="text-gray-400 hover:text-white" href="/services">Trauma Insurance</a>
+              <a class="text-gray-400 hover:text-white" href="{{ lang_prefix }}/services">{% include translate.html key='footer.trauma_insurance' %}</a>
             </li>
             <li>
-              <a class="text-gray-400 hover:text-white" href="/services">Income Protection</a>
+              <a class="text-gray-400 hover:text-white" href="{{ lang_prefix }}/services">{% include translate.html key='footer.income_protection' %}</a>
             </li>
           </nav>
         </div>
         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">COMPANY</h2>
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">{% include translate.html key='footer.company' %}</h2>
           <nav class="list-none mb-10">
             <li>
-              <a class="text-gray-400 hover:text-white" href="/about">About Us</a>
+              <a class="text-gray-400 hover:text-white" href="{{ lang_prefix }}/about">{% include translate.html key='footer.about_us' %}</a>
             </li>
             <li>
-              <a class="text-gray-400 hover:text-white" href="/team">Our Team</a>
+              <a class="text-gray-400 hover:text-white" href="{{ lang_prefix }}/team">{% include translate.html key='footer.our_team' %}</a>
             </li>
             <li>
-              <a class="text-gray-400 hover:text-white" href="/contact-us">Contact Us</a>
+              <a class="text-gray-400 hover:text-white" href="{{ lang_prefix }}/contact-us">{% include translate.html key='footer.contact_us' %}</a>
             </li>
             <li>
-              <a class="text-gray-400 hover:text-white" href="/disclosure">Disclosure</a>
+              <a class="text-gray-400 hover:text-white" href="{{ lang_prefix }}/disclosure">{% include translate.html key='footer.disclosure' %}</a>
             </li>
           </nav>
         </div>
         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">LEGAL</h2>
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">{% include translate.html key='footer.legal' %}</h2>
           <nav class="list-none mb-10">
             <li>
-              <a class="text-gray-400 hover:text-white" href="/terms">Terms & Conditions</a>
+              <a class="text-gray-400 hover:text-white" href="{{ lang_prefix }}/terms">{% include translate.html key='footer.terms_conditions' %}</a>
             </li>
             <li>
-              <a class="text-gray-400 hover:text-white" href="/privacy-policy">Privacy Policy</a>
+              <a class="text-gray-400 hover:text-white" href="{{ lang_prefix }}/privacy-policy">{% include translate.html key='footer.privacy_policy' %}</a>
             </li>
             <li>
-              <a class="text-gray-400 hover:text-white" href="/disclosure">Financial Disclosure</a>
+              <a class="text-gray-400 hover:text-white" href="{{ lang_prefix }}/disclosure">{% include translate.html key='footer.financial_disclosure' %}</a>
             </li>
             <li>
-              <a class="text-gray-400 hover:text-white" href="/contact-us">File a Claim</a>
+              <a class="text-gray-400 hover:text-white" href="{{ lang_prefix }}/contact-us">{% include translate.html key='footer.file_claim' %}</a>
             </li>
           </nav>
         </div>
         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CONTACT INFO</h2>
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">{% include translate.html key='footer.contact_info' %}</h2>
           <nav class="list-none mb-10">
             <li class="text-gray-400 mb-2">
-              <i class="ph-phone mr-2"></i>+64 211280727
+              <i class="ph-phone mr-2"></i>{% include translate.html key='site.phone' %}
             </li>
             <li class="text-gray-400 mb-2">
-              <i class="ph-envelope mr-2"></i>amy.tao@cornerstonefs.co.nz
+              <i class="ph-envelope mr-2"></i>{% include translate.html key='site.email' %}
             </li>
             <li class="text-gray-400 mb-2">
-              <i class="fab fa-weixin mr-2 text-green-400"></i>Amytaoingrace
+              <i class="fab fa-weixin mr-2 text-green-400"></i>{% include translate.html key='site.wechat' %}
             </li>
             <li class="text-gray-400 mb-2">
-              <i class="ph-clock mr-2"></i>Mon-Fri 8AM-6PM
+              <i class="ph-clock mr-2"></i>{% include translate.html key='footer.hours' %}
             </li>
           </nav>
         </div>

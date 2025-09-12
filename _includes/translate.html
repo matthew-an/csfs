@@ -1,0 +1,16 @@
+{% comment %}
+Translation helper include
+Usage: {% include translate.html key="nav.home" %}
+{% endcomment %}
+
+{% assign current_lang = page.lang | default: site.default_lang | default: "zh" %}
+{% assign translation_data = site.data[current_lang] %}
+
+{% assign key_parts = include.key | split: "." %}
+{% assign translated_value = translation_data %}
+
+{% for part in key_parts %}
+  {% assign translated_value = translated_value[part] %}
+{% endfor %}
+
+{{ translated_value }}

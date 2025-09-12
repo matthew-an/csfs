@@ -6,21 +6,21 @@
   <!-- Browser Compatibility -->
   <meta name="format-detection" content="telephone=no">
   <meta name="msapplication-tap-highlight" content="no">
-  <title>{% if page.title %}{{ page.title | escape }} - {% endif %}{{ site.title | escape }}</title>
-  <meta name="description" content="{% if page.description %}{{ page.description | escape }}{% else %}{{ site.description | escape }}{% endif %}">
+  <title>{% if page.title_key %}{% include translate.html key=page.title_key %} - {% elsif page.title %}{{ page.title | escape }} - {% endif %}{% include translate.html key='site.title' %}</title>
+  <meta name="description" content="{% if page.description_key %}{% include translate.html key=page.description_key %}{% elsif page.description %}{{ page.description | escape }}{% else %}{% include translate.html key='site.description' %}{% endif %}">
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
-  <meta property="og:title" content="{% if page.title %}{{ page.title | escape }} - {% endif %}{{ site.title | escape }}">
-  <meta property="og:description" content="{% if page.description %}{{ page.description | escape }}{% else %}{{ site.description | escape }}{% endif %}">
+  <meta property="og:title" content="{% if page.title_key %}{% include translate.html key=page.title_key %} - {% elsif page.title %}{{ page.title | escape }} - {% endif %}{% include translate.html key='site.title' %}">
+  <meta property="og:description" content="{% if page.description_key %}{% include translate.html key=page.description_key %}{% elsif page.description %}{{ page.description | escape }}{% else %}{% include translate.html key='site.description' %}{% endif %}">
   <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/assets/img/logo.svg">
   
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
-  <meta property="twitter:title" content="{% if page.title %}{{ page.title | escape }} - {% endif %}{{ site.title | escape }}">
-  <meta property="twitter:description" content="{% if page.description %}{{ page.description | escape }}{% else %}{{ site.description | escape }}{% endif %}">
+  <meta property="twitter:title" content="{% if page.title_key %}{% include translate.html key=page.title_key %} - {% elsif page.title %}{{ page.title | escape }} - {% endif %}{% include translate.html key='site.title' %}">
+  <meta property="twitter:description" content="{% if page.description_key %}{% include translate.html key=page.description_key %}{% elsif page.description %}{{ page.description | escape }}{% else %}{% include translate.html key='site.description' %}{% endif %}">
   <meta property="twitter:image" content="{{ site.url }}{{ site.baseurl }}/assets/img/logo.svg">
   <!-- Preconnect to external domains for better performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -117,8 +117,8 @@
   {
     "@context": "https://schema.org",
     "@type": "InsuranceAgency",
-    "name": "Cornerstone Insurance",
-    "description": "Comprehensive insurance solutions including life, health, trauma, income protection, and mortgage protection.",
+    "name": "{% include translate.html key='site.company_name' %}",
+    "description": "{% include translate.html key='site.description' %}",
     "url": "{{ site.url }}{{ site.baseurl }}",
     "logo": "{{ site.url }}{{ site.baseurl }}/assets/img/logo.svg",
     "telephone": "+64211280727",
