@@ -2,6 +2,7 @@
 layout: page
 title_key: pages.team.title
 description_key: pages.team.description
+lang: zh
 ---
 
 # {% include translate.html key='pages.team.meet_team' %}

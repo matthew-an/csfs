@@ -1,6 +1,7 @@
 ---
 layout: page
 title_key: pages.disclosure.title
+lang: zh
 ---
 
 ### {% include translate.html key='pages.disclosure.details_title' %}

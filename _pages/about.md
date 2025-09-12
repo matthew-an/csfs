@@ -1,6 +1,7 @@
 ---
 layout: page
 title_key: pages.about.title
+lang: zh
 ---
 
 ## {% include translate.html key='pages.about.trusted_partner' %}

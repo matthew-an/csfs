@@ -1,16 +1,19 @@
-{% comment %}
-Translation helper include
-Usage: {% include translate.html key="nav.home" %}
-{% endcomment %}
-
-{% assign current_lang = page.lang | default: site.default_lang | default: "zh" %}
-{% assign translation_data = site.data[current_lang] %}
-
-{% assign key_parts = include.key | split: "." %}
-{% assign translated_value = translation_data %}
-
-{% for part in key_parts %}
-  {% assign translated_value = translated_value[part] %}
-{% endfor %}
-
-{{ translated_value }}
+{% assign current_lang = page.lang | default: site.default_lang | default: "zh" -%}
+{%- assign key_parts = include.key | split: "." -%}
+{%- assign translated_value = site.data[current_lang] -%}
+{%- for part in key_parts -%}
+  {%- if translated_value -%}
+    {%- assign translated_value = translated_value[part] -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- if translated_value -%}
+  {{- translated_value -}}
+{%- else -%}
+  {%- assign fallback_value = site.data.zh -%}
+  {%- for part in key_parts -%}
+    {%- if fallback_value -%}
+      {%- assign fallback_value = fallback_value[part] -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {{- fallback_value -}}
+{%- endif -%}
