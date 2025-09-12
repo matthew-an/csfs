@@ -313,6 +313,68 @@ language:
 pages:
   faq:
     title: "Frequently Asked Questions"
+  glossary:
+    title: "Insurance Glossary"
+    description: "Understand key insurance industry terms and concepts to help you better understand insurance products and services."
+    search_placeholder: "Search terms..."
+    terms:
+      acc:
+        term: "ACC (Accident Compensation Corporation)"
+        definition: "New Zealand's national accident insurance scheme that provides accident injury coverage for all New Zealand residents and visitors, including medical costs and income compensation."
+      beneficiary:
+        term: "Beneficiary"
+        definition: "The person entitled to receive insurance benefits when the policyholder dies or meets claim conditions."
+      claim:
+        term: "Claim"
+        definition: "A formal request to an insurance company for payment, typically made when an insured event occurs or policy conditions are met."
+      deductible:
+        term: "Deductible/Excess"
+        definition: "The amount the insured person must pay out of pocket before the insurance company begins to pay."
+      exclusion:
+        term: "Exclusion"
+        definition: "Risks, situations, or conditions specifically not covered by an insurance contract."
+      grace_period:
+        term: "Grace Period"
+        definition: "Additional time given by the insurance company for premium payment after the due date, during which the policy remains in effect."
+      health_insurance:
+        term: "Health Insurance"
+        definition: "Insurance that provides coverage for medical expenses, including hospitalization, surgery, and specialist treatments."
+      income_protection:
+        term: "Income Protection Insurance"
+        definition: "Insurance that provides regular income replacement when the insured person cannot work due to illness or accident."
+      life_insurance:
+        term: "Life Insurance"
+        definition: "Insurance that pays benefits to beneficiaries upon the death of the insured person, designed to protect family financial security."
+      loading:
+        term: "Premium Loading"
+        definition: "Additional charges added to standard premiums due to higher health or occupational risks of the insured person."
+      medical_examination:
+        term: "Medical Examination"
+        definition: "Health assessment required by the insurance company to evaluate underwriting risk and determine premiums."
+      no_claims_bonus:
+        term: "No Claims Bonus"
+        definition: "Premium discounts or other benefits given to policyholders who have not made claims during a specified period."
+      policy:
+        term: "Policy"
+        definition: "The formal insurance contract document that details terms, coverage, premiums, and claim procedures."
+      premium:
+        term: "Premium"
+        definition: "The amount paid by the policyholder to the insurance company for coverage, which can be paid monthly, quarterly, or annually."
+      pre_existing_condition:
+        term: "Pre-existing Condition"
+        definition: "Health problems or illnesses that existed before the insurance policy took effect, typically not covered by insurance."
+      sum_insured:
+        term: "Sum Insured"
+        definition: "The maximum amount payable under an insurance contract, representing the insurer's maximum liability."
+      trauma_insurance:
+        term: "Trauma Insurance"
+        definition: "Insurance that provides a lump sum payment when the insured person is diagnosed with a serious illness listed in the policy."
+      underwriting:
+        term: "Underwriting"
+        definition: "The process by which insurance companies assess applicant risk and decide whether to provide coverage and at what premium level."
+      waiting_period:
+        term: "Waiting Period"
+        definition: "The time interval between when insurance takes effect and when claims can be made, typically applicable to illness-related coverage."
   services:
     title: "Our Services"
     intro: "Cornerstone Insurance provides comprehensive insurance solutions to help you and your family get the protection you need. Our professional team is dedicated to finding the most suitable insurance products for you."

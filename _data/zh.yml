@@ -313,6 +313,68 @@ language:
 pages:
   faq:
     title: "常见问题"
+  glossary:
+    title: "保险术语表"
+    description: "了解保险行业的关键术语和概念，帮助您更好地理解保险产品和服务。"
+    search_placeholder: "搜索术语..."
+    terms:
+      acc:
+        term: "ACC (意外赔偿公司)"
+        definition: "新西兰的国家意外伤害保险计划，为所有新西兰居民和游客提供意外伤害保障，包括医疗费用和收入补偿。"
+      beneficiary:
+        term: "受益人"
+        definition: "在保单持有人死亡或符合理赔条件时，有权获得保险赔付的人员。"
+      claim:
+        term: "理赔"
+        definition: "向保险公司申请赔付的正式请求，通常在发生保险事故或满足保单条件时提出。"
+      deductible:
+        term: "免赔额"
+        definition: "在保险公司开始赔付之前，被保险人需要自己承担的费用金额。"
+      exclusion:
+        term: "除外责任"
+        definition: "保险合同中明确规定不予承保的风险、情况或条件。"
+      grace_period:
+        term: "宽限期"
+        definition: "保费到期后，保险公司给予投保人缴费的额外时间，在此期间保单仍然有效。"
+      health_insurance:
+        term: "健康保险"
+        definition: "为医疗费用提供保障的保险，包括住院、手术、专科治疗等费用。"
+      income_protection:
+        term: "收入保障保险"
+        definition: "在被保险人因疾病或意外无法工作时，提供定期收入替代的保险产品。"
+      life_insurance:
+        term: "人寿保险"
+        definition: "在被保险人死亡时向受益人支付保险金的保险产品，用于保障家庭财务安全。"
+      loading:
+        term: "保费加载"
+        definition: "由于被保险人的健康状况或职业风险较高，保险公司在标准保费基础上增加的额外费用。"
+      medical_examination:
+        term: "体检"
+        definition: "保险公司要求申请人进行的健康检查，用于评估承保风险和确定保费。"
+      no_claims_bonus:
+        term: "无理赔奖励"
+        definition: "对于在一定期间内没有提出理赔的投保人给予的保费折扣或其他优惠。"
+      policy:
+        term: "保单"
+        definition: "保险合同的正式文件，详细说明保险条款、保障范围、保费和理赔程序。"
+      premium:
+        term: "保费"
+        definition: "投保人为获得保险保障而向保险公司支付的费用，可以按月、季度或年度支付。"
+      pre_existing_condition:
+        term: "既往症"
+        definition: "在保险生效前已经存在的健康问题或疾病，通常不在保险保障范围内。"
+      sum_insured:
+        term: "保险金额"
+        definition: "保险合同中约定的最高赔付金额，也是保险公司承担的最大责任限额。"
+      trauma_insurance:
+        term: "重大疾病保险"
+        definition: "在被保险人被诊断患有保单列明的重大疾病时，提供一次性赔付的保险产品。"
+      underwriting:
+        term: "核保"
+        definition: "保险公司评估申请人风险并决定是否承保以及保费水平的过程。"
+      waiting_period:
+        term: "等待期"
+        definition: "保险生效后到可以申请理赔之间的时间间隔，通常适用于疾病相关的保障。"
   services:
     title: "我们的服务"
     intro: "基石保险提供全面的保险解决方案，帮助您和家人获得所需的保障。我们的专业团队致力于为您找到最适合的保险产品。"
