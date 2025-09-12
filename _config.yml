@@ -10,7 +10,6 @@ permalink: "/blog/:title/"
 
 plugins:
   - jekyll-feed
-  - jekyll-soopr-seo-tag
   - jekyll-sitemap
   - jekyll-minifier
 
@@ -30,8 +29,6 @@ jekyll-minifier:
   uglifier_args:
     harmony: true
 
-soopr:
-  publish_token: "" # sign up at https://www.soopr.co to get your publish token and personalize share and reaction options
 
 twitter:
   card: summary_large_image
