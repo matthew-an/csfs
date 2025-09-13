@@ -59,7 +59,7 @@ lang: zh
         </div>
       {% endif %}
     </div>
-    <a href="/contact-us" class="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-200">
+    <a href="/contact-us" class="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold transition duration-200">
       {% if current_lang == "zh" %}获取报价{% else %}Get Quote{% endif %}
       <i class="fas fa-arrow-right ml-2"></i>
     </a>
@@ -454,9 +454,10 @@ lang: zh
   <h2 class="text-2xl font-bold text-gray-900 mb-4">
     {% include translate.html key='pages.services.closing' %}
   </h2>
-  <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-    {% include translate.html key='pages.services.cta' %}
-  </p>
+  <div class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+    {% assign cta_text = site.data[current_lang].pages.services.cta %}
+    {{ cta_text | markdownify | remove: '<p>' | remove: '</p>' }}
+  </div>
   <div class="flex flex-col sm:flex-row gap-4 justify-center">
     <a href="/contact-us" class="inline-flex items-center justify-center px-8 py-4 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition duration-300">
       <i class="fas fa-phone mr-2"></i>

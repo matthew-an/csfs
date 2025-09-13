@@ -453,9 +453,10 @@ lang: en
   <h2 class="text-2xl font-bold text-gray-900 mb-4">
     {% include translate.html key='pages.services.closing' %}
   </h2>
-  <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-    {% include translate.html key='pages.services.cta' %}
-  </p>
+  <div class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+    {% assign cta_text = site.data[current_lang].pages.services.cta %}
+    {{ cta_text | markdownify | remove: '<p>' | remove: '</p>' }}
+  </div>
   <div class="flex flex-col sm:flex-row gap-4 justify-center">
     <a href="/en/contact-us" class="inline-flex items-center justify-center px-8 py-4 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition duration-300">
       <i class="fas fa-phone mr-2"></i>
