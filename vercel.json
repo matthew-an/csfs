@@ -3,18 +3,61 @@
   "outputDirectory": "_site",
   "installCommand": "npm install && bundle install",
   "framework": null,
-  "routes": [
+  "redirects": [
     {
-      "src": "/assets/(.*)",
-      "dest": "/assets/$1"
+      "source": "/faq/",
+      "destination": "/faq",
+      "permanent": true
     },
     {
-      "src": "/(.*)",
-      "dest": "/$1.html"
+      "source": "/services/",
+      "destination": "/services",
+      "permanent": true
     },
     {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/team/",
+      "destination": "/team",
+      "permanent": true
+    },
+    {
+      "source": "/blog/",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/contact-us/",
+      "destination": "/contact-us",
+      "permanent": true
+    },
+    {
+      "source": "/about/",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/glossary/",
+      "destination": "/glossary",
+      "permanent": true
+    },
+    {
+      "source": "/calculators/",
+      "destination": "/calculators",
+      "permanent": true
+    },
+    {
+      "source": "/disclosure/",
+      "destination": "/disclosure",
+      "permanent": true
+    },
+    {
+      "source": "/privacy-policy/",
+      "destination": "/privacy-policy",
+      "permanent": true
+    },
+    {
+      "source": "/terms/",
+      "destination": "/terms",
+      "permanent": true
     }
   ]
 }

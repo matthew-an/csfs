@@ -1,0 +1,12 @@
+# Redirect Chinese pages with trailing slash to without trailing slash
+/faq/                /faq                301
+/services/           /services           301
+/team/               /team               301
+/blog/               /blog               301
+/contact-us/         /contact-us         301
+/about/              /about              301
+/glossary/           /glossary           301
+/calculators/        /calculators        301
+/disclosure/         /disclosure         301
+/privacy-policy/     /privacy-policy     301
+/terms/              /terms              301

@@ -58,6 +58,9 @@ t:
       title: "Cornerstone Insurance"
       description: "Cornerstone Insurance provides comprehensive insurance solutions including life, health, trauma, income protection, and mortgage protection. Secure your future with our trusted insurance expertise and personalized coverage options."
 
+include:
+  - _redirects
+
 exclude:
   - Gemfile
   - Gemfile.lock
