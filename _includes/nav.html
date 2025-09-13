@@ -2,7 +2,8 @@
 <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 bg-primary-600 text-white px-4 py-2 z-50">Skip to main content</a>
 
 <nav
-  class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-gray-800"
+  class="fixed top-0 z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-gray-800 transition-all duration-300 ease-in-out"
+  id="main-navbar"
   role="navigation" aria-label="Main navigation">
   <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
     <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
@@ -54,11 +55,11 @@
             href="{{ lang_prefix }}/blog"><i class="lg:text-gray-300 text-gray-500 far fa-file-alt text-lg leading-lg mr-2"></i>
             {% include translate.html key='nav.blog' %}</a>
         </li>
-        <li class="flex items-center">
+        <!-- <li class="flex items-center">
           <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
             href="{{ lang_prefix }}/calculators"><i class="lg:text-gray-300 text-gray-500 fas fa-calculator text-lg leading-lg mr-2"></i>
             {% if current_lang == "zh" %}计算器{% else %}Calculators{% endif %}</a>
-        </li>
+        </li> -->
         <li class="flex items-center">
           <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
             href="{{ lang_prefix }}/faq"><i class="lg:text-gray-300 text-gray-500 fas fa-question-circle text-lg leading-lg mr-2"></i>
@@ -108,7 +109,9 @@ document.addEventListener('DOMContentLoaded', function() {
   const mobileMenuButton = document.getElementById('mobile-menu-button');
   const mobileMenu = document.getElementById('example-collapse-navbar');
   const menuIcon = document.getElementById('menu-icon');
+  const navbar = document.getElementById('main-navbar');
   
+  // Mobile menu functionality
   if (mobileMenuButton && mobileMenu) {
     mobileMenuButton.addEventListener('click', function() {
       // Toggle the hidden class
@@ -131,5 +134,56 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   }
+  
+  // Scroll behavior functionality (like Pinnacle Life)
+  let lastScrollTop = 0;
+  let ticking = false;
+  
+  function updateNavbar() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+    // Add background opacity when scrolled
+    if (scrollTop > 50) {
+      navbar.style.backgroundColor = 'rgba(31, 41, 55, 0.95)'; // gray-800 with opacity
+      navbar.style.backdropFilter = 'blur(10px)';
+    } else {
+      navbar.style.backgroundColor = 'rgb(31, 41, 55)'; // solid gray-800
+      navbar.style.backdropFilter = 'none';
+    }
+    
+    // If at the top of the page, always show navbar
+    if (scrollTop <= 100) {
+      navbar.style.transform = 'translateY(0)';
+    }
+    // If scrolling down, hide navbar
+    else if (scrollTop > lastScrollTop && scrollTop > 100) {
+      navbar.style.transform = 'translateY(-100%)';
+    }
+    // If scrolling up, show navbar
+    else if (scrollTop < lastScrollTop) {
+      navbar.style.transform = 'translateY(0)';
+    }
+    
+    lastScrollTop = scrollTop;
+    ticking = false;
+  }
+  
+  function requestTick() {
+    if (!ticking) {
+      requestAnimationFrame(updateNavbar);
+      ticking = true;
+    }
+  }
+  
+  // Listen for scroll events
+  window.addEventListener('scroll', requestTick, { passive: true });
+  
+  // Also handle resize events to ensure proper behavior
+  window.addEventListener('resize', function() {
+    // Reset navbar position on resize
+    if (window.innerWidth >= 1024) { // lg breakpoint
+      navbar.style.transform = 'translateY(0)';
+    }
+  });
 });
 </script>

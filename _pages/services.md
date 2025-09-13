@@ -8,9 +8,15 @@ lang: zh
 
 <!-- Introduction Section -->
 <div class="mb-12 text-center">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Insurance Made Simple</h2>
   <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
     {% include translate.html key='pages.services.intro' %}
   </p>
+  <div class="mt-8 flex justify-center">
+    <a href="/contact-us" class="bg-primary-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-primary-700 transition duration-300">
+      Get Your Quote in 2 Minutes
+    </a>
+  </div>
 </div>
 
 <!-- Services Grid -->
@@ -25,6 +31,7 @@ lang: zh
       <h3 class="text-2xl font-bold text-gray-900 mb-3">
         {% include translate.html key='pages.services.life_title' %}
       </h3>
+      <div class="text-sm text-blue-600 font-semibold">From $15/month</div>
     </div>
     <p class="text-gray-600 mb-6 leading-relaxed">
       {% include translate.html key='pages.services.life_desc' %}
@@ -33,7 +40,7 @@ lang: zh
       {% if current_lang == "zh" %}
         <div class="flex items-center text-sm text-gray-700">
           <i class="fas fa-check text-green-500 mr-2"></i>
-          <span>保障家庭财务安全</span>
+          <span>保障金额：5万-200万纽币</span>
         </div>
         <div class="flex items-center text-sm text-gray-700">
           <i class="fas fa-check text-green-500 mr-2"></i>
@@ -46,11 +53,11 @@ lang: zh
       {% else %}
         <div class="flex items-center text-sm text-gray-700">
           <i class="fas fa-check text-green-500 mr-2"></i>
-          <span>Protect family financial security</span>
+          <span>Cover: $50,000 - $2 million</span>
         </div>
         <div class="flex items-center text-sm text-gray-700">
           <i class="fas fa-check text-green-500 mr-2"></i>
-          <span>Cover mortgage and debts</span>
+          <span>Pay off mortgage & debts</span>
         </div>
         <div class="flex items-center text-sm text-gray-700">
           <i class="fas fa-check text-green-500 mr-2"></i>
@@ -58,8 +65,8 @@ lang: zh
         </div>
       {% endif %}
     </div>
-    <a href="/contact-us" class="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold transition duration-200">
-      {% if current_lang == "zh" %}了解更多{% else %}Learn More{% endif %}
+    <a href="/contact-us" class="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-200">
+      {% if current_lang == "zh" %}获取报价{% else %}Get Quote{% endif %}
       <i class="fas fa-arrow-right ml-2"></i>
     </a>
   </div>
