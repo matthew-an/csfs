@@ -13,6 +13,11 @@
     "tailwindcss": "^3.0.15",
     "postcss-cli": "10.0.0"
   },
+  "scripts": {
+    "build": "bundle exec jekyll build",
+    "dev": "bundle exec jekyll serve --livereload",
+    "clean": "bundle exec jekyll clean"
+  },
   "author": "Abhinav Saxena",
   "license": "MIT",
   "dependencies": {}
