@@ -69,13 +69,20 @@
           <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">{% include translate.html key='footer.contact_info' %}</h2>
           <nav class="list-none mb-10">
             <li class="text-gray-400 mb-2">
-              <i class="ph-phone mr-2"></i>{% include translate.html key='site.phone' %}
+              <a href="tel:+64211280727" class="text-gray-400 hover:text-white transition-colors duration-200">
+                <i class="ph-phone mr-2"></i>{% include translate.html key='site.phone' %}
+              </a>
             </li>
             <li class="text-gray-400 mb-2">
-              <i class="ph-envelope mr-2"></i>{% include translate.html key='site.email' %}
+              <a href="mailto:amy.tao@cornerstonefs.co.nz" class="text-gray-400 hover:text-white transition-colors duration-200">
+                <i class="ph-envelope mr-2"></i>{% include translate.html key='site.email' %}
+              </a>
             </li>
             <li class="text-gray-400 mb-2">
-              <i class="fab fa-weixin mr-2 text-green-400"></i>{% include translate.html key='site.wechat' %}
+              <a href="/assets/img/wechat_qr.jpg" class="wechat-qr-trigger text-gray-400 hover:text-white transition-colors duration-200">
+                <i class="fab fa-weixin mr-2 text-green-400"></i>{% include translate.html key='site.wechat' %}
+                <i class="fas fa-qrcode ml-2 text-xs opacity-70" title="Click to view QR code"></i>
+              </a>
             </li>
             <li class="text-gray-400 mb-2">
               <i class="ph-clock mr-2"></i>{% include translate.html key='footer.hours' %}
