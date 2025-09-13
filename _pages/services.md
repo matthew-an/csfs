@@ -11,11 +11,6 @@ lang: zh
   <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
     {% include translate.html key='pages.services.intro' %}
   </p>
-  <div class="mt-8 flex justify-center">
-    <a href="/contact-us" class="bg-primary-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-primary-700 transition duration-300">
-      Get Your Quote in 2 Minutes
-    </a>
-  </div>
 </div>
 
 <!-- Services Grid -->
@@ -30,7 +25,7 @@ lang: zh
       <h3 class="text-2xl font-bold text-gray-900 mb-3">
         {% include translate.html key='pages.services.life_title' %}
       </h3>
-      <div class="text-sm text-blue-600 font-semibold">From $15/month</div>
+      
     </div>
     <p class="text-gray-600 mb-6 leading-relaxed">
       {% include translate.html key='pages.services.life_desc' %}
