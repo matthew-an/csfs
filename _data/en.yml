@@ -34,10 +34,10 @@ company_intro:
   claim_desc: "When you need us most, our experienced team guides you through every step of the claims process."
 
 experience:
-  years: "5+"
+  years: "7+"
   title: "Years of<br>Experience"
   subtitle: "TRUSTED BY KIWI FAMILIES"
-  heading: "We've helped 500+ New Zealand families"
+  heading: "We've helped 300+ New Zealand families"
   tagline: "Fast quotes, easy process, reliable support"
   description: "Cornerstone Insurance has processed over 95% of claims successfully, with an average quote time of under 2 minutes. We're committed to making insurance simple and accessible for all New Zealanders."
   cta_primary: "Get My Quote"
@@ -46,7 +46,7 @@ experience:
 
 why_choose:
   subtitle: "WHY CHOOSE CORNERSTONE"
-  title: "Trusted by New Zealand families since 2019"
+  title: "Trusted by New Zealand families since 2018"
   fast_quote: "2-Minute Quotes"
   fast_quote_desc: "Get instant quotes online or over the phone"
   easy_process: "Simple Application"
@@ -120,7 +120,7 @@ pages:
   about:
     title: "About Cornerstone Insurance"
     trusted_partner: "New Zealand's Trusted Insurance Specialists"
-    intro: "Since 2019, Cornerstone Insurance has been helping Kiwi families protect what matters most. We've successfully processed over 95% of claims and helped 500+ families secure their financial future with simple, affordable insurance solutions."
+    intro: "Since 2018, Cornerstone Insurance has been helping Kiwi families protect what matters most. We've successfully processed over 95% of claims and helped 300+ families secure their financial future with simple, affordable insurance solutions."
     mission_title: "Our Mission"
     mission_desc: "To make insurance simple, accessible, and affordable for every New Zealand family. We believe insurance shouldn't be complicated - it should give you peace of mind knowing your loved ones are protected."
     what_sets_us_apart: "Why Families Choose Us"
@@ -142,7 +142,7 @@ pages:
     claims_title: "Claims You Can Count On"
     claims_desc: "When life happens, we're here. Our 95%+ claims approval rate speaks for itself. We guide you through every step, handle the paperwork, and fight for your claim so you can focus on what matters most."
     contact_title: "Ready to Get Protected?"
-    contact_desc: "Join the 500+ New Zealand families who trust Cornerstone Insurance. Get your personalized quote in under 2 minutes or speak with Amy for expert advice tailored to your situation."
+    contact_desc: "Join the 300+ New Zealand families who trust Cornerstone Insurance. Get your personalized quote in under 2 minutes or speak with Amy for expert advice tailored to your situation."
     tagline: "Protecting New Zealand families, one policy at a time. Simple insurance, reliable support, peace of mind guaranteed."
 
   services:
