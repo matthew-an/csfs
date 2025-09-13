@@ -16,7 +16,7 @@
       
       <a class="flex items-center text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap text-white"
         href="{{ home_url }}">
-        <img class="w-8 h-8 mr-2" src="/assets/img/logo.svg" alt="{% include translate.html key='site.company_name' %}" />
+        <img class="w-8 h-8 mr-2" src="{{ '/assets/img/logo.svg' | relative_url }}" alt="{% include translate.html key='site.company_name' %}" />
         <span class="hidden sm:inline">{% include translate.html key='site.company_name' %}</span>
       </a>
       <button

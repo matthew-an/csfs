@@ -50,11 +50,11 @@
   
   <!-- Deferred JavaScript loading -->
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-  <script src="/assets/js/wechat-modal.js" defer></script>
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="{{ '/assets/js/wechat-modal.js' | relative_url }}" defer></script>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link
     rel="stylesheet"
-    href="/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"
+    href="{{ '/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css' | relative_url }}"
   />
   <script src="https://unpkg.com/phosphor-icons" defer></script>
   
@@ -85,7 +85,7 @@
     /* Hero Section Background - Simplified */
     .hero-section {
       background-color: #dc2626 !important;
-      background-image: url('/assets/img/hero-bg.jpg') !important;
+      background-image: url('{{ "/assets/img/hero-bg.jpg" | relative_url }}') !important;
       background-size: cover !important;
       background-position: center center !important;
       background-repeat: no-repeat !important;

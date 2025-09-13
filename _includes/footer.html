@@ -3,7 +3,7 @@
     class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
       <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
         <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
-          <img class="w-12 h-12" src="/assets/img/logo.svg" alt="{% include translate.html key='site.company_name' %}" />
+          <img class="w-12 h-12" src="{{ '/assets/img/logo.svg' | relative_url }}" alt="{% include translate.html key='site.company_name' %}" />
           <span class="ml-3 text-xl">{% include translate.html key='site.company_name' %}</span>
         </a>
         <p class="mt-2 text-sm text-gray-500">{% include translate.html key='footer.tagline' %}</p>
@@ -79,7 +79,7 @@
               </a>
             </li>
             <li class="text-gray-400 mb-2">
-              <a href="/assets/img/wechat_qr.jpg" class="wechat-qr-trigger text-gray-400 hover:text-white transition-colors duration-200">
+              <a href="{{ '/assets/img/wechat_qr.jpg' | relative_url }}" class="wechat-qr-trigger text-gray-400 hover:text-white transition-colors duration-200">
                 <i class="fab fa-weixin mr-2 text-green-400"></i>{% include translate.html key='site.wechat' %}
                 <i class="fas fa-qrcode ml-2 text-xs opacity-70" title="Click to view QR code"></i>
               </a>
