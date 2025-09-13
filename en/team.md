@@ -3,6 +3,7 @@ layout: page
 title_key: pages.team.title
 description_key: pages.team.description
 lang: en
+permalink: /en/team
 ---
 
 {% include translate.html key='pages.team.intro' %}
