@@ -3,7 +3,7 @@ description: > # this means to ignore newlines until "show_excerpts:"
   Cornerstone Insurance provides comprehensive insurance solutions including life, health, 
   trauma, income protection, and mortgage protection. Secure your future with our trusted 
   insurance expertise and personalized coverage options.
-url: '' # Will be set by Vercel automatically
+url: 'https://www.cornerstonefs.co.nz' # Your actual domain
 baseurl: ''
 
 permalink: "/blog/:title/"
@@ -39,7 +39,7 @@ logo: "/assets/img/logo.svg"
 social:
   name: "Cornerstone Insurance"
   links:
-    - "https://matthew-an.github.io/csfs"
+    - "https://www.cornerstonefs.co.nz"
 
 # Additional SEO settings and i18n
 lang: zh_CN

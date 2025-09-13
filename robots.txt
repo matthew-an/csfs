@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://matthew-an.github.io/csfs/sitemap.xml
+Sitemap: https://www.cornerstonefs.co.nz/sitemap.xml
 
 # Block access to admin and development files
 Disallow: /bin/
