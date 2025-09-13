@@ -74,7 +74,21 @@
             href="{{ lang_prefix }}/contact-us"><i class="lg:text-gray-300 text-gray-500 fas fa-envelope text-lg leading-lg mr-2"></i>
             {% include translate.html key='nav.contact' %}</a>
         </li>
+        <li class="flex items-center lg:hidden">
+          <button class="search-trigger text-gray-800 px-3 py-4 flex items-center text-xs uppercase font-bold hover:text-primary-600 transition duration-200">
+            <i class="text-gray-500 fas fa-search text-lg leading-lg mr-2"></i>
+            {% if current_lang == "zh" %}搜索{% else %}Search{% endif %}
+          </button>
+        </li>
       </ul>
+      
+      <!-- Search Button -->
+      <div class="hidden lg:flex items-center ml-4">
+        <button class="search-trigger text-white hover:text-gray-300 p-2 rounded-lg hover:bg-white hover:bg-opacity-10 transition duration-200" 
+                title="{% if current_lang == 'zh' %}搜索 (Ctrl+K){% else %}Search (Ctrl+K){% endif %}">
+          <i class="fas fa-search text-lg"></i>
+        </button>
+      </div>
       
       <!-- Language Switcher -->
       <div class="hidden lg:flex items-center ml-4">

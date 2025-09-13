@@ -1,0 +1,92 @@
+---
+layout: null
+---
+{
+  "pages": [
+    {% for page in site.pages %}
+      {% unless page.url contains '/assets/' or page.url contains '/404' %}
+        {
+          "title": "{% if page.title_key %}{% include translate.html key=page.title_key %}{% else %}{{ page.title | escape }}{% endif %}",
+          "url": "{{ page.url | relative_url }}",
+          "content": "{{ page.content | strip_html | strip_newlines | escape }}",
+          "type": "page",
+          "lang": "{{ page.lang | default: 'zh' }}"
+        }{% unless forloop.last %},{% endunless %}
+      {% endunless %}
+    {% endfor %}
+    {% if site.posts.size > 0 %},{% endif %}
+    {% for post in site.posts %}
+      {
+        "title": "{{ post.title | escape }}",
+        "url": "{{ post.url | relative_url }}",
+        "content": "{{ post.content | strip_html | strip_newlines | escape }}",
+        "excerpt": "{{ post.excerpt | strip_html | strip_newlines | escape }}",
+        "date": "{{ post.date | date: '%Y-%m-%d' }}",
+        "categories": {{ post.categories | jsonify }},
+        "tags": {{ post.tags | jsonify }},
+        "type": "post",
+        "lang": "{{ post.lang | default: 'zh' }}"
+      }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ],
+  "glossary": {
+    "zh": [
+      {% for term_data in site.data.zh.pages.glossary.terms %}
+        {% assign term_key = term_data[0] %}
+        {% assign term_info = term_data[1] %}
+        {
+          "term": "{{ term_info.term | escape }}",
+          "definition": "{{ term_info.definition | escape }}",
+          "key": "{{ term_key }}",
+          "url": "/glossary#{{ term_key }}",
+          "type": "glossary",
+          "lang": "zh"
+        }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ],
+    "en": [
+      {% for term_data in site.data.en.pages.glossary.terms %}
+        {% assign term_key = term_data[0] %}
+        {% assign term_info = term_data[1] %}
+        {
+          "term": "{{ term_info.term | escape }}",
+          "definition": "{{ term_info.definition | escape }}",
+          "key": "{{ term_key }}",
+          "url": "/en/glossary#{{ term_key }}",
+          "type": "glossary",
+          "lang": "en"
+        }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]
+  },
+  "faq": {
+    "zh": [
+      {% for term_data in site.data.zh.pages.faq.terms %}
+        {% assign term_key = term_data[0] %}
+        {% assign term_info = term_data[1] %}
+        {
+          "question": "{{ term_info.question | escape }}",
+          "answer": "{{ term_info.answer | escape }}",
+          "key": "{{ term_key }}",
+          "url": "/faq#{{ term_key }}",
+          "type": "faq",
+          "lang": "zh"
+        }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ],
+    "en": [
+      {% for term_data in site.data.en.pages.faq.terms %}
+        {% assign term_key = term_data[0] %}
+        {% assign term_info = term_data[1] %}
+        {
+          "question": "{{ term_info.question | escape }}",
+          "answer": "{{ term_info.answer | escape }}",
+          "key": "{{ term_key }}",
+          "url": "/en/faq#{{ term_key }}",
+          "type": "faq",
+          "lang": "en"
+        }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]
+  }
+}
