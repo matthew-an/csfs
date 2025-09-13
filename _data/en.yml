@@ -85,6 +85,16 @@ testimonials:
   michael_name: "Michael T."
   michael_title: "Wellington Professional"
 
+trust_indicators:
+  claims_rate: "95%+"
+  claims_approved: "Claims Approved"
+  families_count: "300+"
+  families_protected: "Families Protected"
+  quote_time: "2 min"
+  average_quote_time: "Average Quote Time"
+  license_code: "NZFSG"
+  licensed_provider: "Licensed Provider"
+
 contact_cta:
   title: "Ready to Protect Your Family?"
   subtitle: "Get your personalized quote in under 2 minutes"

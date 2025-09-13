@@ -85,6 +85,16 @@ testimonials:
   michael_name: "Michael T."
   michael_title: "惠灵顿专业人士"
 
+trust_indicators:
+  claims_rate: "95%+"
+  claims_approved: "理赔获批"
+  families_count: "300+"
+  families_protected: "家庭受保护"
+  quote_time: "2分钟"
+  average_quote_time: "平均报价时间"
+  license_code: "NZFSG"
+  licensed_provider: "持牌提供商"
+
 contact_cta:
   title: "准备好保护您的家人了吗？"
   subtitle: "2分钟内获得个性化报价"
