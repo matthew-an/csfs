@@ -2,6 +2,7 @@
 layout: page
 title_key: pages.disclosure.title
 lang: en
+permalink: /en/disclosure/
 ---
 
 {% include translate.html key='pages.disclosure.intro' %}

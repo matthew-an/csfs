@@ -2,6 +2,7 @@
 layout: faq
 title_key: pages.faq.title
 lang: en
+permalink: /en/faq/
 ---
 
 {% assign current_lang = page.lang | default: site.default_lang | default: "zh" %}

@@ -2,6 +2,7 @@
 layout: page
 title_key: pages.services.title
 lang: en
+permalink: /en/services/
 ---
 
 {% assign current_lang = page.lang | default: site.default_lang | default: "zh" %}

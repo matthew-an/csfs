@@ -2,6 +2,7 @@
 layout: page
 title_key: pages.calculators.title
 lang: zh
+permalink: /calculators/
 ---
 
 {% assign current_lang = page.lang | default: site.default_lang | default: "zh" %}

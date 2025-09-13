@@ -3,6 +3,7 @@ layout: page
 title_key: pages.contact.title
 description_key: pages.contact.intro
 lang: en
+permalink: /en/contact-us/
 ---
 
 {% include translate.html key='pages.contact.intro' %}

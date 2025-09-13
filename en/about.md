@@ -2,6 +2,7 @@
 layout: page
 title_key: nav.about
 lang: en
+permalink: /en/about/
 ---
 
 ## {% include translate.html key='about.trusted_partner' %}

@@ -2,6 +2,7 @@
 layout: page
 title_key: nav.blog
 lang: zh
+permalink: /blog/
 ---
 
 {% assign current_lang = page.lang | default: site.default_lang | default: "zh" %}

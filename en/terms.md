@@ -2,6 +2,7 @@
 layout: page
 title: Terms and Conditions
 lang: en
+permalink: /en/terms/
 ---
 
 ### 1. Acceptance of Terms

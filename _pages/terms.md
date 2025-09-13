@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Terms and Conditions
+permalink: /terms/
 ---
 
 ### 1. Acceptance of Terms

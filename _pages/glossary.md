@@ -2,6 +2,7 @@
 layout: page
 title_key: pages.glossary.title
 lang: zh
+permalink: /glossary/
 ---
 
 {% assign current_lang = page.lang | default: site.default_lang | default: "zh" %}

@@ -2,6 +2,7 @@
 layout: page
 title: Privacy Policy
 lang: en
+permalink: /en/privacy-policy/
 ---
 
 **Effective Date: September 13, 2025**

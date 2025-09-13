@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Privacy Policy
+permalink: /privacy-policy/
 ---
 
 **Effective Date: September 13, 2025**
