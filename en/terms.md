@@ -4,8 +4,6 @@ title: Terms and Conditions
 lang: en
 ---
 
-## Terms and Conditions
-
 ### 1. Acceptance of Terms
 
 By accessing and using this website, you accept and agree to be bound by the terms and provision of this agreement.
