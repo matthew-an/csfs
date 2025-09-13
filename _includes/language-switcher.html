@@ -16,7 +16,13 @@ Language switcher component
       English
     </a>
   {% else %}
-    <a href="{{ page.url | replace: '/en', '' }}" 
+    {% assign chinese_url = page.url | replace: '/en', '' %}
+    {% if chinese_url == '/' %}
+      {% assign chinese_url = '/' %}
+    {% elsif chinese_url contains '//' %}
+      {% assign chinese_url = chinese_url | replace: '//', '/' %}
+    {% endif %}
+    <a href="{{ chinese_url }}" 
        class="text-gray-300 hover:text-white text-sm font-medium px-2 py-1 rounded transition duration-200"
        title="切换到中文">
       中文
