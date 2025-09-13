@@ -4,8 +4,6 @@ title_key: nav.blog
 lang: zh
 ---
 
-# {% include translate.html key='nav.blog' %}
-
 {% assign current_lang = page.lang | default: site.default_lang | default: "zh" %}
 {% if current_lang == "zh" %}
   <p class="text-lg text-gray-600 mb-8">

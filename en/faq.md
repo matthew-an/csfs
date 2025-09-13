@@ -4,8 +4,6 @@ title_key: pages.faq.title
 lang: en
 ---
 
-# {% include translate.html key='pages.faq.title' %}
-
 {% assign current_lang = page.lang | default: site.default_lang | default: "zh" %}
 
 {% if current_lang == "zh" %}

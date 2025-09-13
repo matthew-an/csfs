@@ -5,8 +5,6 @@ description_key: pages.team.description
 lang: en
 ---
 
-# {% include translate.html key='pages.team.meet_team' %}
-
 {% include translate.html key='pages.team.intro' %}
 
 ## Amy Tao

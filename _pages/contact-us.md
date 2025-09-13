@@ -5,8 +5,6 @@ description_key: pages.contact.intro
 lang: zh
 ---
 
-# {% include translate.html key='pages.contact.get_in_touch' %}
-
 {% include translate.html key='pages.contact.intro' %}
 
 ## {% include translate.html key='pages.contact.contact_info' %}
