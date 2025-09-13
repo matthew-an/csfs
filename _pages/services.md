@@ -8,7 +8,6 @@ lang: zh
 
 <!-- Introduction Section -->
 <div class="mb-12 text-center">
-  <h2 class="text-3xl font-bold text-gray-900 mb-6">Insurance Made Simple</h2>
   <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
     {% include translate.html key='pages.services.intro' %}
   </p>
