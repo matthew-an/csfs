@@ -112,7 +112,7 @@
             </a>
           </li>
           <li>
-            <a href="{{ '/assets/img/wechat_qr.jpg' | relative_url }}" class="wechat-qr-trigger text-gray-400 hover:text-primary-300 transition-colors duration-200 group">
+            <button class="wechat-qr-trigger text-gray-400 hover:text-primary-300 transition-colors duration-200 group w-full text-left" data-wechat-qr="{{ '/assets/img/wechat_qr.jpg' | relative_url }}">
               <div class="flex items-center">
                 <div class="w-8 h-8 bg-green-600 rounded-lg flex items-center justify-center mr-3 group-hover:scale-110 transition-transform duration-200">
                   <i class="fab fa-weixin text-white text-sm"></i>
@@ -122,7 +122,7 @@
                   <div class="text-xs">{% include translate.html key='site.wechat' %}</div>
                 </div>
               </div>
-            </a>
+            </button>
           </li>
         </ul>
       </div>

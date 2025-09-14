@@ -45,14 +45,22 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Add click event listeners to all WeChat QR icons
   document.addEventListener('click', function(e) {
-    if (e.target.matches('.wechat-qr-trigger, .wechat-qr-trigger img')) {
+    if (e.target.matches('.wechat-qr-trigger, .wechat-qr-trigger img, .wechat-qr-trigger *')) {
       e.preventDefault();
       
       // Get the image source from the link href or data attribute
       let imageSrc;
-      const link = e.target.closest('a');
-      if (link) {
-        imageSrc = link.href;
+      const trigger = e.target.closest('.wechat-qr-trigger');
+      
+      if (trigger) {
+        // Check for data attribute first (for buttons)
+        if (trigger.dataset.wechatQr) {
+          imageSrc = trigger.dataset.wechatQr;
+        }
+        // Fallback to href for links
+        else if (trigger.href) {
+          imageSrc = trigger.href;
+        }
       }
       
       if (imageSrc) {
