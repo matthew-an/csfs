@@ -115,7 +115,7 @@
       
       <!-- Enhanced Search Button -->
       <div class="hidden lg:flex items-center ml-6">
-        <button class="search-trigger text-white hover:text-primary-200 p-3 rounded-xl hover:bg-white/10 transition-all duration-200 group border border-white/20 hover:border-primary-300" 
+        <button class="search-trigger text-white hover:text-primary-200 p-3 rounded-xl hover:bg-white/10 transition-all duration-200 group" 
                 title="{% if current_lang == 'zh' %}搜索 (Ctrl+K){% else %}Search (Ctrl+K){% endif %}">
           <i class="fas fa-search text-lg group-hover:scale-110 transition-transform duration-200"></i>
         </button>
@@ -123,7 +123,7 @@
       
       <!-- Enhanced Language Switcher -->
       <div class="hidden lg:flex items-center ml-4">
-        <div class="bg-white/10 rounded-xl p-1 border border-white/20">
+        <div class="bg-white/10 rounded-xl p-1">
           {% include language-switcher.html %}
         </div>
       </div>
