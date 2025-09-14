@@ -115,7 +115,6 @@
   
   .btn-primary {
     @apply bg-primary-600 text-white hover:bg-primary-700 focus:ring-primary-500 shadow-md hover:shadow-lg;
-    background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
     transform: translateY(0);
   }
   
@@ -202,10 +201,6 @@
     letter-spacing: -0.04em;
     color: var(--text-primary);
     margin-bottom: var(--space-xl);
-    background: linear-gradient(135deg, var(--text-primary), var(--text-accent));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
   }
   
   .heading-1 {
@@ -303,14 +298,11 @@
   }
   
   .gradient-bg {
-    background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
+    background: var(--bg-accent);
   }
   
   .text-gradient {
-    background: linear-gradient(135deg, var(--text-accent), #3b82f6);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--text-accent);
   }
   
   .body-small {
@@ -356,10 +348,6 @@
     line-height: 1;
     color: var(--text-accent);
     letter-spacing: -0.03em;
-    background: linear-gradient(135deg, var(--text-accent), #3b82f6);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
   }
   
   .stat-label {
