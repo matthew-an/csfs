@@ -1,94 +1,162 @@
-<footer class="text-gray-400 bg-gray-900 body-font w-full">
-  <div
-    class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-      <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-        <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
-          <img class="w-12 h-12" src="{{ '/assets/img/logo.svg' | relative_url }}" alt="{% include translate.html key='site.company_name' %}" />
-          <span class="ml-3 text-xl">{% include translate.html key='site.company_name' %}</span>
+<footer class="bg-gradient-to-br from-gray-900 to-gray-800 text-gray-300 relative overflow-hidden">
+  <!-- Background Pattern -->
+  <div class="absolute inset-0 opacity-5">
+    <div class="absolute top-0 left-0 w-full h-full" style="background-image: radial-gradient(circle at 25% 25%, white 1px, transparent 1px); background-size: 40px 40px;"></div>
+  </div>
+  
+  <div class="container-custom section-padding relative">
+    <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 mb-12">
+      <!-- Enhanced Company Info -->
+      <div class="lg:col-span-2">
+        <a class="flex items-center mb-6 group">
+          <img class="w-14 h-14 mr-4 transition-transform duration-200 group-hover:scale-105" src="{{ '/assets/img/logo.svg' | relative_url }}" alt="{% include translate.html key='site.company_name' %}" />
+          <span class="text-2xl font-bold text-white font-heading">{% include translate.html key='site.company_name' %}</span>
         </a>
-        <p class="mt-2 text-sm text-gray-500">{% include translate.html key='footer.tagline' %}</p>
+        <p class="text-gray-400 mb-6 leading-relaxed max-w-md">{% include translate.html key='footer.tagline' %}</p>
+        
+        <!-- Social Links -->
+        <div class="flex space-x-4">
+          <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary-600 transition-colors duration-200 group">
+            <i class="fab fa-weixin text-gray-400 group-hover:text-white"></i>
+          </a>
+          <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary-600 transition-colors duration-200 group">
+            <i class="fab fa-linkedin text-gray-400 group-hover:text-white"></i>
+          </a>
+          <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary-600 transition-colors duration-200 group">
+            <i class="fas fa-envelope text-gray-400 group-hover:text-white"></i>
+          </a>
+        </div>
       </div>
-      <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
-        <div class="lg:w-1/5 md:w-1/2 w-full px-4">
-          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">{% include translate.html key='footer.insurance_services' %}</h2>
-          {% assign current_lang = page.lang | default: site.default_lang | default: "zh" %}
-          {% if current_lang == "en" %}
-            {% assign lang_prefix = "/en" %}
-          {% else %}
-            {% assign lang_prefix = "" %}
-          {% endif %}
-          
-          <nav class="list-none mb-10">
-            <li>
-              <a class="text-gray-400 hover:text-white" href="{{ lang_prefix }}/services">{% include translate.html key='footer.life_insurance' %}</a>
-            </li>
-            <li>
-              <a class="text-gray-400 hover:text-white" href="{{ lang_prefix }}/services">{% include translate.html key='footer.health_insurance' %}</a>
-            </li>
-            <li>
-              <a class="text-gray-400 hover:text-white" href="{{ lang_prefix }}/services">{% include translate.html key='footer.trauma_insurance' %}</a>
-            </li>
-            <li>
-              <a class="text-gray-400 hover:text-white" href="{{ lang_prefix }}/services">{% include translate.html key='footer.income_protection' %}</a>
-            </li>
-            <li>
-              <a class="text-gray-400 hover:text-white" href="{{ lang_prefix }}/contact-us">{% include translate.html key='footer.file_claim' %}</a>
-            </li>
-          </nav>
+      <!-- Enhanced Footer Navigation -->
+      {% assign current_lang = page.lang | default: site.default_lang | default: "zh" %}
+      {% if current_lang == "en" %}
+        {% assign lang_prefix = "/en" %}
+      {% else %}
+        {% assign lang_prefix = "" %}
+      {% endif %}
+      
+      <!-- Services Column -->
+      <div>
+        <h3 class="text-white font-semibold mb-6 font-heading">{% include translate.html key='footer.insurance_services' %}</h3>
+        <ul class="space-y-3">
+          <li><a class="text-gray-400 hover:text-primary-300 transition-colors duration-200 flex items-center group" href="{{ lang_prefix }}/services">
+            <i class="fas fa-heart mr-2 text-xs group-hover:scale-110 transition-transform duration-200"></i>
+            {% include translate.html key='footer.life_insurance' %}
+          </a></li>
+          <li><a class="text-gray-400 hover:text-primary-300 transition-colors duration-200 flex items-center group" href="{{ lang_prefix }}/services">
+            <i class="fas fa-user-md mr-2 text-xs group-hover:scale-110 transition-transform duration-200"></i>
+            {% include translate.html key='footer.health_insurance' %}
+          </a></li>
+          <li><a class="text-gray-400 hover:text-primary-300 transition-colors duration-200 flex items-center group" href="{{ lang_prefix }}/services">
+            <i class="fas fa-shield-alt mr-2 text-xs group-hover:scale-110 transition-transform duration-200"></i>
+            {% include translate.html key='footer.trauma_insurance' %}
+          </a></li>
+          <li><a class="text-gray-400 hover:text-primary-300 transition-colors duration-200 flex items-center group" href="{{ lang_prefix }}/services">
+            <i class="fas fa-dollar-sign mr-2 text-xs group-hover:scale-110 transition-transform duration-200"></i>
+            {% include translate.html key='footer.income_protection' %}
+          </a></li>
+          <li><a class="text-gray-400 hover:text-primary-300 transition-colors duration-200 flex items-center group" href="{{ lang_prefix }}/contact-us">
+            <i class="fas fa-file-alt mr-2 text-xs group-hover:scale-110 transition-transform duration-200"></i>
+            {% include translate.html key='footer.file_claim' %}
+          </a></li>
+        </ul>
+      </div>
+      
+      <!-- Company Column -->
+      <div>
+        <h3 class="text-white font-semibold mb-6 font-heading">{% include translate.html key='footer.company' %}</h3>
+        <ul class="space-y-3">
+          <li><a class="text-gray-400 hover:text-primary-300 transition-colors duration-200 flex items-center group" href="{{ lang_prefix }}/about">
+            <i class="fas fa-info-circle mr-2 text-xs group-hover:scale-110 transition-transform duration-200"></i>
+            {% include translate.html key='footer.about_us' %}
+          </a></li>
+          <li><a class="text-gray-400 hover:text-primary-300 transition-colors duration-200 flex items-center group" href="{{ lang_prefix }}/team">
+            <i class="fas fa-users mr-2 text-xs group-hover:scale-110 transition-transform duration-200"></i>
+            {% include translate.html key='footer.our_team' %}
+          </a></li>
+          <li><a class="text-gray-400 hover:text-primary-300 transition-colors duration-200 flex items-center group" href="{{ lang_prefix }}/contact-us">
+            <i class="fas fa-envelope mr-2 text-xs group-hover:scale-110 transition-transform duration-200"></i>
+            {% include translate.html key='footer.contact_us' %}
+          </a></li>
+        </ul>
+      </div>
+      
+      <!-- Contact Column -->
+      <div>
+        <h3 class="text-white font-semibold mb-6 font-heading">{% include translate.html key='footer.contact_info' %}</h3>
+        <ul class="space-y-4">
+          <li>
+            <a href="tel:+64211280727" class="text-gray-400 hover:text-primary-300 transition-colors duration-200 group">
+              <div class="flex items-center">
+                <div class="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center mr-3 group-hover:scale-110 transition-transform duration-200">
+                  <i class="ph-phone text-white text-sm"></i>
+                </div>
+                <div>
+                  <div class="text-sm font-medium text-white">{% if current_lang == "en" %}Call Us{% else %}致电我们{% endif %}</div>
+                  <div class="text-xs">{% include translate.html key='site.phone' %}</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:amy.tao@cornerstonefs.co.nz" class="text-gray-400 hover:text-primary-300 transition-colors duration-200 group">
+              <div class="flex items-center">
+                <div class="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center mr-3 group-hover:scale-110 transition-transform duration-200">
+                  <i class="ph-envelope text-white text-sm"></i>
+                </div>
+                <div>
+                  <div class="text-sm font-medium text-white">{% if current_lang == "en" %}Email Us{% else %}邮件联系{% endif %}</div>
+                  <div class="text-xs">{% include translate.html key='site.email' %}</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="{{ '/assets/img/wechat_qr.jpg' | relative_url }}" class="wechat-qr-trigger text-gray-400 hover:text-primary-300 transition-colors duration-200 group">
+              <div class="flex items-center">
+                <div class="w-8 h-8 bg-green-600 rounded-lg flex items-center justify-center mr-3 group-hover:scale-110 transition-transform duration-200">
+                  <i class="fab fa-weixin text-white text-sm"></i>
+                </div>
+                <div>
+                  <div class="text-sm font-medium text-white">{% if current_lang == "en" %}WeChat{% else %}微信联系{% endif %}</div>
+                  <div class="text-xs">{% include translate.html key='site.wechat' %}</div>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Enhanced Footer Bottom -->
+    <div class="border-t border-gray-700 pt-8">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 mb-4 md:mb-0">
+          <p class="text-gray-400 text-sm">
+            © {{ 'now' | date: "%Y" }} {% include translate.html key='site.company_name' %}. 
+            {% if current_lang == "en" %}All rights reserved.{% else %}版权所有。{% endif %}
+          </p>
+          <div class="flex space-x-4 text-sm">
+            <a href="{{ lang_prefix }}/terms" class="text-gray-400 hover:text-primary-300 transition-colors duration-200">
+              {% include translate.html key='footer.terms_conditions' %}
+            </a>
+            <a href="{{ lang_prefix }}/privacy-policy" class="text-gray-400 hover:text-primary-300 transition-colors duration-200">
+              {% include translate.html key='footer.privacy_policy' %}
+            </a>
+            <a href="{{ lang_prefix }}/disclosure" class="text-gray-400 hover:text-primary-300 transition-colors duration-200">
+              {% include translate.html key='footer.disclosure' %}
+            </a>
+          </div>
         </div>
-        <div class="lg:w-1/5 md:w-1/2 w-full px-4">
-          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">{% include translate.html key='footer.company' %}</h2>
-          <nav class="list-none mb-10">
-            <li>
-              <a class="text-gray-400 hover:text-white" href="{{ lang_prefix }}/about">{% include translate.html key='footer.about_us' %}</a>
-            </li>
-            <li>
-              <a class="text-gray-400 hover:text-white" href="{{ lang_prefix }}/team">{% include translate.html key='footer.our_team' %}</a>
-            </li>
-            <li>
-              <a class="text-gray-400 hover:text-white" href="{{ lang_prefix }}/contact-us">{% include translate.html key='footer.contact_us' %}</a>
-            </li>
-
-          </nav>
-        </div>
-        <div class="lg:w-1/5 md:w-1/2 w-full px-4">
-          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">{% include translate.html key='footer.legal' %}</h2>
-          <nav class="list-none mb-10">
-            <li>
-              <a class="text-gray-400 hover:text-white" href="{{ lang_prefix }}/terms">{% include translate.html key='footer.terms_conditions' %}</a>
-            </li>
-            <li>
-              <a class="text-gray-400 hover:text-white" href="{{ lang_prefix }}/privacy-policy">{% include translate.html key='footer.privacy_policy' %}</a>
-            </li>
-            <li>
-              <a class="text-gray-400 hover:text-white" href="{{ lang_prefix }}/disclosure">{% include translate.html key='footer.disclosure' %}</a>
-            </li>
-          </nav>
-        </div>
-        <div class="lg:w-2/5 md:w-1/2 w-full px-4">
-          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">{% include translate.html key='footer.contact_info' %}</h2>
-          <nav class="list-none mb-10">
-            <li class="text-gray-400 mb-2">
-              <a href="tel:+64211280727" class="text-gray-400 hover:text-white transition-colors duration-200">
-                <i class="ph-phone mr-2"></i>{% include translate.html key='site.phone' %}
-              </a>
-            </li>
-            <li class="text-gray-400 mb-2">
-              <a href="mailto:amy.tao@cornerstonefs.co.nz" class="text-gray-400 hover:text-white transition-colors duration-200">
-                <i class="ph-envelope mr-2"></i>{% include translate.html key='site.email' %}
-              </a>
-            </li>
-            <li class="text-gray-400 mb-2">
-              <a href="{{ '/assets/img/wechat_qr.jpg' | relative_url }}" class="wechat-qr-trigger text-gray-400 hover:text-white transition-colors duration-200">
-                <i class="fab fa-weixin mr-2 text-green-400"></i>{% include translate.html key='site.wechat' %}
-                <i class="fas fa-qrcode ml-2 text-xs opacity-70" title="Click to view QR code"></i>
-              </a>
-            </li>
-            <li class="text-gray-400 mb-2">
-              <i class="ph-clock mr-2"></i>{% include translate.html key='footer.hours' %}
-            </li>
-          </nav>
+        
+        <!-- License Badge -->
+        <div class="flex items-center bg-gray-800 rounded-full px-4 py-2 border border-gray-700">
+          <i class="fas fa-shield-check text-green-400 mr-2"></i>
+          <span class="text-sm text-gray-300">
+            {% if current_lang == "en" %}Licensed & Regulated{% else %}持牌监管{% endif %}
+          </span>
         </div>
       </div>
     </div>
+  </div>
 </footer>
