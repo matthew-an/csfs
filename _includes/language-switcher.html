@@ -6,12 +6,12 @@ Language switcher component
 
 <div class="language-switcher flex items-center space-x-2">
   {% if current_lang == "zh" %}
-    <span class="text-primary-600 text-sm font-medium px-2 py-1 rounded bg-primary-50">
+    <span class="text-primary-300 text-sm font-medium px-2 py-1 rounded bg-primary-900">
       中文
     </span>
-    <span class="text-gray-400">|</span>
+    <span class="text-gray-500">|</span>
     <a href="/en{{ page.url }}" 
-       class="text-gray-600 hover:text-primary-600 text-sm font-medium px-2 py-1 rounded hover:bg-gray-100 transition duration-200"
+       class="text-gray-400 hover:text-primary-300 text-sm font-medium px-2 py-1 rounded hover:bg-gray-800 transition duration-200"
        title="Switch to English">
       English
     </a>
@@ -23,12 +23,12 @@ Language switcher component
       {% assign chinese_url = chinese_url | replace: '//', '/' %}
     {% endif %}
     <a href="{{ chinese_url }}" 
-       class="text-gray-600 hover:text-primary-600 text-sm font-medium px-2 py-1 rounded hover:bg-gray-100 transition duration-200"
+       class="text-gray-400 hover:text-primary-300 text-sm font-medium px-2 py-1 rounded hover:bg-gray-800 transition duration-200"
        title="切换到中文">
       中文
     </a>
-    <span class="text-gray-400">|</span>
-    <span class="text-primary-600 text-sm font-medium px-2 py-1 rounded bg-primary-50">
+    <span class="text-gray-500">|</span>
+    <span class="text-primary-300 text-sm font-medium px-2 py-1 rounded bg-primary-900">
       English
     </span>
   {% endif %}
