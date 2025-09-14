@@ -4,6 +4,225 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Typography System Variables */
+:root {
+  /* Font Families */
+  --font-heading: 'Inter', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  --font-body: 'Source Sans Pro', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  --font-accent: 'Playfair Display', serif;
+  
+  /* Text Colors */
+  --text-primary: #1a202c;
+  --text-secondary: #2d3748;
+  --text-muted: #4a5568;
+  --text-subtle: #718096;
+  --text-inverse: #ffffff;
+  
+  /* Font Weights */
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+  --font-black: 900;
+}
+
+/* Base Typography Improvements */
+@layer base {
+  html {
+    font-feature-settings: 'kern' 1, 'liga' 1, 'calt' 1, 'pnum' 1, 'tnum' 0, 'onum' 1, 'lnum' 0, 'dlig' 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  
+  body {
+    font-family: var(--font-body);
+    color: var(--text-muted);
+    line-height: 1.625;
+  }
+}
+
+/* Typography Component Classes */
+@layer components {
+  /* Heading Hierarchy */
+  .heading-hero {
+    font-family: var(--font-heading);
+    font-size: clamp(2.25rem, 5vw, 3.75rem);
+    font-weight: var(--font-bold);
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+  }
+  
+  .heading-1 {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 4vw, 2.25rem);
+    font-weight: var(--font-bold);
+    line-height: 1.25;
+    letter-spacing: -0.025em;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+    margin-top: 2.5rem;
+  }
+  
+  .heading-2 {
+    font-family: var(--font-heading);
+    font-size: clamp(1.5rem, 3vw, 1.875rem);
+    font-weight: var(--font-semibold);
+    line-height: 1.375;
+    letter-spacing: -0.02em;
+    color: var(--text-primary);
+    margin-bottom: 1.25rem;
+    margin-top: 2.5rem;
+  }
+  
+  .heading-3 {
+    font-family: var(--font-heading);
+    font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+    font-weight: var(--font-semibold);
+    line-height: 1.375;
+    letter-spacing: -0.015em;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .heading-4 {
+    font-family: var(--font-body);
+    font-size: 1.25rem;
+    font-weight: var(--font-semibold);
+    line-height: 1.375;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+    margin-top: 1.5rem;
+  }
+  
+  /* Body Text Styles */
+  .body-text {
+    font-family: var(--font-body);
+    font-size: 1.125rem;
+    font-weight: var(--font-normal);
+    line-height: 1.625;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+    max-width: 65ch;
+  }
+  
+  .body-large {
+    font-family: var(--font-body);
+    font-size: 1.25rem;
+    font-weight: var(--font-normal);
+    line-height: 1.625;
+    color: var(--text-secondary);
+    margin-bottom: 1.75rem;
+    max-width: 60ch;
+  }
+  
+  .body-small {
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    font-weight: var(--font-normal);
+    line-height: 1.5;
+    color: var(--text-subtle);
+    margin-bottom: 1rem;
+  }
+  
+  .lead {
+    font-family: var(--font-body);
+    font-size: 1.25rem;
+    font-weight: var(--font-medium);
+    line-height: 1.625;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    max-width: 60ch;
+  }
+  
+  /* Special Typography Components */
+  .testimonial-quote {
+    font-family: var(--font-accent);
+    font-size: 1.25rem;
+    font-weight: var(--font-normal);
+    line-height: 1.625;
+    font-style: italic;
+    color: var(--text-secondary);
+    position: relative;
+    padding-left: 2rem;
+  }
+  
+  .testimonial-quote::before {
+    content: '"';
+    font-size: 4rem;
+    color: #e2e8f0;
+    position: absolute;
+    top: -1rem;
+    left: -1rem;
+    font-family: var(--font-accent);
+  }
+  
+  .stat-number {
+    font-family: var(--font-heading);
+    font-size: clamp(2.25rem, 5vw, 3rem);
+    font-weight: var(--font-extrabold);
+    line-height: 1.1;
+    color: #1C459D;
+    letter-spacing: -0.02em;
+  }
+  
+  .stat-label {
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    font-weight: var(--font-medium);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-subtle);
+  }
+  
+  /* Chinese Typography Optimizations */
+  .text-zh {
+    font-family: 'PingFang SC', 'Hiragino Sans GB', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Microsoft YaHei', sans-serif;
+    letter-spacing: 0.02em;
+  }
+  
+  .heading-zh {
+    font-family: 'PingFang SC', 'Hiragino Sans GB', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Microsoft YaHei', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    line-height: 1.4;
+  }
+  
+  .body-zh {
+    font-family: 'PingFang SC', 'Hiragino Sans GB', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Microsoft YaHei', sans-serif;
+    font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: 0.01em;
+  }
+  
+  /* UI Component Typography */
+  .btn-typography {
+    font-family: var(--font-heading);
+    font-weight: var(--font-semibold);
+    letter-spacing: 0.025em;
+  }
+  
+  .nav-typography {
+    font-family: var(--font-heading);
+    font-size: 0.875rem;
+    font-weight: var(--font-medium);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  
+  .form-label-typography {
+    font-family: var(--font-heading);
+    font-size: 0.875rem;
+    font-weight: var(--font-semibold);
+    color: var(--text-secondary);
+  }
+}
+
 /* Search Overlay Styles */
 .search-overlay {
   backdrop-filter: blur(4px);

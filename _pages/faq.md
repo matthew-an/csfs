@@ -28,7 +28,7 @@ permalink: /faq/
     
     <details class="group">
       <summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-gray-50 transition duration-200">
-        <h3 class="text-lg font-semibold text-gray-900">
+        <h3 class="heading-4 text-gray-900">
           {% if current_lang == "zh" %}
             我需要多少人寿保险？
           {% else %}
@@ -38,7 +38,7 @@ permalink: /faq/
         <i class="ph-plus text-gray-400 group-open:rotate-45 transition-transform duration-200"></i>
       </summary>
       <div class="px-6 pb-6">
-        <p class="text-gray-600">
+        <p class="body-text">
           {% if current_lang == "zh" %}
             一般建议是年收入的10-12倍，但更准确的方法是计算您的具体需求：房贷余额、子女教育费用、生活开支、债务等。例如，如果您的房贷还有$60万，子女教育需要$15万，10年生活费$70万，那么您可能需要$145万的保险。
           {% else %}

@@ -9,7 +9,7 @@ permalink: /services/
 
 <!-- Introduction Section -->
 <div class="mb-12 text-center">
-  <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+  <p class="lead max-w-3xl mx-auto">
     {% include translate.html key='pages.services.intro' %}
   </p>
 </div>
@@ -23,12 +23,12 @@ permalink: /services/
       <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
         <i class="fas fa-heart text-blue-600 text-2xl"></i>
       </div>
-      <h3 class="text-2xl font-bold text-gray-900 mb-3">
+      <h3 class="heading-3 text-center">
         {% include translate.html key='pages.services.life_title' %}
       </h3>
       
     </div>
-    <p class="text-gray-600 mb-6 leading-relaxed">
+    <p class="body-text mb-6">
       {% include translate.html key='pages.services.life_desc' %}
     </p>
     <div class="space-y-3 mb-6">

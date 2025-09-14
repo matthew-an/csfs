@@ -3,7 +3,8 @@
 
 {%- include head.html -%}
 
-<body class='h-full'>
+{% assign current_lang = page.lang | default: site.default_lang | default: "zh" %}
+<body class='h-full {% if current_lang == "zh" %}text-zh{% endif %}'>
 
   {%- include nav.html -%}
 
