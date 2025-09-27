@@ -55,9 +55,9 @@ hero:
 company_intro:
   title: "为什么选择Cornerstone Insurance？"
   advice_title: "快速简便的报价"
-  advice_desc: "几分钟内获得个性化保险报价，而非数小时等待。我们的简化流程让保护家人变得简单。"
-  management_title: "专业保单管理"
-  management_desc: "专业的持续支持，确保您的保障随着生活变化而调整。"
+  advice_desc: "几分钟内获得个性化保险报价，我们的简化流程让保护家人变得简单。"
+  management_title: "专业保单规划"
+  management_desc: "量身定制的保单规划，确保您的保障随着生活变化而调整。"
   claim_title: "专业理赔支持"
   claim_desc: "当您最需要我们时，我们经验丰富的团队将指导您完成理赔流程的每一步。"
 
