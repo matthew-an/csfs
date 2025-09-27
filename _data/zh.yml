@@ -1,8 +1,8 @@
 # Chinese translations (Default)
 site:
-  title: "基石保险"
-  description: "基石保险提供全面的保险解决方案，包括人寿保险、健康保险、重大疾病保险、收入保障保险和房贷保护保险。通过我们值得信赖的保险专业知识和个性化保障选择，为您的未来保驾护航。"
-  company_name: "基石保险"
+  title: "Cornerstone Insurance"
+  description: "Cornerstone Insurance提供全面的保险解决方案，包括人寿保险、健康保险、重大疾病保险、收入保障保险和房贷保护保险。通过我们值得信赖的保险专业知识和个性化保障选择，为您的未来保驾护航。"
+  company_name: "Cornerstone Insurance"
   phone: "+64 211 280 727"
   email: "amy.tao@cornerstonefs.co.nz"
   wechat: "Amytaoingrace"
@@ -17,9 +17,9 @@ nav:
   about: "关于我们"
 
 about:
-  title: "关于基石保险"
+  title: "关于Cornerstone Insurance"
   trusted_partner: "新西兰可信赖的保险专家"
-  intro: "自2018年以来，基石保险一直在帮助新西兰家庭保护最重要的东西。我们成功处理了95%以上的理赔，帮助300+家庭通过简单、实惠的保险解决方案保障财务未来。"
+  intro: "自2018年以来，Cornerstone Insurance一直在帮助新西兰家庭保护最重要的东西。我们成功处理了95%以上的理赔，帮助300+家庭通过简单、实惠的保险解决方案保障财务未来。"
   mission_title: "我们的使命"
   mission_desc: "为每个新西兰家庭提供简单、易懂、实惠的保险。我们相信保险不应该复杂 - 它应该让您安心，知道您的亲人得到了保护。"
   what_sets_us_apart: "为什么家庭选择我们"
@@ -41,19 +41,19 @@ about:
   claims_title: "可信赖的理赔"
   claims_desc: "当生活发生意外时，我们在这里。我们95%+的理赔批准率说明了一切。我们指导您完成每一步，处理文书工作，为您的理赔而战，让您专注于最重要的事情。"
   contact_title: "准备好获得保护了吗？"
-  contact_desc: "加入信赖基石保险的300+新西兰家庭。在2分钟内获得个性化报价，或与Amy交谈获取针对您情况的专家建议。"
+  contact_desc: "加入信赖Cornerstone Insurance的300+新西兰家庭。在2分钟内获得个性化报价，或与Amy交谈获取针对您情况的专家建议。"
   tagline: "保护新西兰家庭，一份保单一份关爱。简单保险，可靠支持，安心保障。"
 
 hero:
-  title_line1: "用专业守护您的财富"
-  title_line2: "用真诚保障您的家庭"
+  title_line1: "用专业守护财富"
+  title_line2: "用真诚保障家庭"
   title_line3: ""
   subtitle: "资深华人保险顾问为您服务，让保险更简单、更安心。"
   cta_primary: "立即获取报价"
   cta_secondary: "致电 +64 211 280 727"
 
 company_intro:
-  title: "为什么选择基石保险？"
+  title: "为什么选择Cornerstone Insurance？"
   advice_title: "快速简便的报价"
   advice_desc: "几分钟内获得个性化保险报价，而非数小时等待。我们的简化流程让保护家人变得简单。"
   management_title: "专业保单管理"
@@ -67,7 +67,7 @@ experience:
   subtitle: "深受新西兰家庭信赖"
   heading: "我们已帮助300+新西兰家庭"
   tagline: "快速报价，简单流程，可靠支持"
-  description: "基石保险成功处理了95%以上的理赔，平均报价时间不到2分钟。我们致力于为所有新西兰人提供简单易懂的保险服务。"
+  description: "Cornerstone Insurance成功处理了95%以上的理赔，平均报价时间不到2分钟。我们致力于为所有新西兰人提供简单易懂的保险服务。"
   cta_primary: "获取我的报价"
   cta_secondary: "致电 +64 211 280 727"
   contact_now: "2分钟内获得报价！"
@@ -109,7 +109,7 @@ testimonials:
   sarah_review: "Amy让购买人寿保险变得如此简单！整个过程不到一周，我以负担得起的价格为家人获得了所需的保障。强烈推荐！"
   sarah_name: "Sarah L."
   sarah_title: "奥克兰两孩母亲"
-  michael_review: "当我需要申请收入保障保险理赔时，基石保险全程陪伴。专业、贴心，完全兑现了他们的承诺。"
+  michael_review: "当我需要申请收入保障保险理赔时，Cornerstone Insurance全程陪伴。专业、贴心，完全兑现了他们的承诺。"
   michael_name: "Michael T."
   michael_title: "惠灵顿专业人士"
 
@@ -131,7 +131,7 @@ contact_cta:
   licensed: "FSP持牌 • 专业服务 • 理赔支持随时待命"
 
 footer:
-  copyright: "© 2024 基石保险。保留所有权利。"
+  copyright: "© 2024 Cornerstone Insurance。保留所有权利。"
   privacy: "隐私政策"
   terms: "服务条款"
   disclosure: "披露声明"
@@ -157,11 +157,11 @@ footer:
 pages:
   services:
     title: "服务"
-    intro: "我们拥有全面的保险产品系列，旨在保护您的现在并确保您的未来。在基石保险，我们了解生活充满不确定性，拥有合适的保险保障对于内心平静和财务稳定至关重要。"
+    intro: "我们拥有全面的保险产品系列，旨在保护您的现在并确保您的未来。在Cornerstone Insurance，我们了解生活充满不确定性，拥有合适的保险保障对于内心平静和财务稳定至关重要。"
     life_title: "人寿保险："
     life_desc: "在您不幸去世的情况下，保护您亲人的财务福祉。我们的人寿保险保单为您的受益人提供一次性付款，确保他们的财务安全并帮助他们维持生活水平。"
     health_title: "健康保险："
-    health_desc: "您的健康是您最宝贵的资产。我们的健康保险计划为医疗费用、住院、医生就诊、处方药等提供广泛的保障。有了基石保险，您和您的家人可以获得优质的医疗保健，而无需担心财务负担。"
+    health_desc: "您的健康是您最宝贵的资产。我们的健康保险计划为医疗费用、住院、医生就诊、处方药等提供广泛的保障。有了Cornerstone Insurance，您和您的家人可以获得优质的医疗保健，而无需担心财务负担。"
     trauma_title: "重大疾病保险："
     trauma_desc: "事故和重大疾病可能意外发生，造成身体、情感和财务压力。我们的重大疾病保险在诊断出承保的重大疾病或受伤时提供一次性付款，帮助您专注于康复而不是财务担忧。"
     income_title: "收入保障："
@@ -170,14 +170,14 @@ pages:
     disability_desc: "在永久伤残妨碍您工作能力的情况下，我们的保险保障提供财务支持。它提供一次性付款来协助医疗费用、康复费用和其他财务义务，让您有信心地生活。"
     mortgage_title: "房贷保护："
     mortgage_desc: "通过我们的房贷保护保险保护您最重要的投资——您的家。如果您面临伤残、失业或重大疾病等意外情况，此保障为偿还房贷或每月还款提供财务帮助。"
-    closing: "在基石保险，我们优先考虑客户的需求，不懈努力定制符合其独特要求的保险解决方案。我们经验丰富的保险代理团队致力于提供卓越的服务，确保您以最佳价值获得合适的保障。"
-    cta: "不要让您的未来听天由命。今天就联系基石保险，探索我们的保险产品范围，发现知道自己受到保护所带来的内心平静。通过基石保险确保您的今天和明天 - 您值得信赖的保险伙伴。"
+    closing: "在Cornerstone Insurance，我们优先考虑客户的需求，不懈努力定制符合其独特要求的保险解决方案。我们经验丰富的保险代理团队致力于提供卓越的服务，确保您以最佳价值获得合适的保障。"
+    cta: "不要让您的未来听天由命。今天就联系Cornerstone Insurance，探索我们的保险产品范围，发现知道自己受到保护所带来的内心平静。通过Cornerstone Insurance确保您的今天和明天 - 您值得信赖的保险伙伴。"
 
 
   team:
     title: "认识Amy - 您的保险专家"
     description: "来自合格专业人士的个人化服务，了解新西兰家庭的保险需求。"
-    intro: "在基石保险，您不仅仅是一个保单号码。您直接与陶敏Amy合作，她是一位合格的保险专业人士，会花时间了解您家庭的独特需求和预算。"
+    intro: "在Cornerstone Insurance，您不仅仅是一个保单号码。您直接与陶敏Amy合作，她是一位合格的保险专业人士，会花时间了解您家庭的独特需求和预算。"
     amy_title: "FSP持牌保险顾问"
     amy_desc: "Amy已帮助超过500个新西兰家庭获得正确的保险保护。凭借她的学术背景和实践经验，她让保险变得简单易懂且易于购买。"
     qualifications: "专业资质"
@@ -219,7 +219,7 @@ pages:
     monday_friday: "周一至周五"
     hours: "上午9:00 - 下午5:00 新西兰标准时间"
     emergency_support: "提供紧急支持"
-    why_choose_title: "为什么选择基石保险？"
+    why_choose_title: "为什么选择Cornerstone Insurance？"
     free_consultation: "✓ 免费咨询"
     free_consultation_desc: "无义务评估您的保险需求"
     personalized_solutions: "✓ 个性化解决方案"
@@ -242,7 +242,7 @@ pages:
     phone: "电话：021 128 0727"
     email: "邮箱：amy.tao@cornerstonefs.co.nz"
     fspr_number: "FSPR编号：629629"
-    provider_name: "财务咨询提供商名称：基石保险有限公司"
+    provider_name: "财务咨询提供商名称：Cornerstone Insurance有限公司"
     provider_fspr: "FSPR编号：1004360"
     member_info: "我的财务咨询提供商是新西兰金融服务集团有限公司的成员"
     licensing_title: "许可信息"
@@ -403,8 +403,8 @@ pages:
     cta: "准备好保护家人了吗？[获取免费报价](/contact-us)或致电 +64 211 280 727 获取专家建议。"
   team:
     title: "我们的团队"
-    description: "认识基石保险的专业团队，我们致力于为您提供最优质的保险服务和专业建议。"
-    intro: "基石保险由经验丰富的保险专业人士组成，我们深入了解新西兰的保险市场，致力于为每位客户提供个性化的保险解决方案。"
+    description: "认识Cornerstone Insurance的专业团队，我们致力于为您提供最优质的保险服务和专业建议。"
+    intro: "Cornerstone Insurance由经验丰富的保险专业人士组成，我们深入了解新西兰的保险市场，致力于为每位客户提供个性化的保险解决方案。"
     amy_title: "首席保险顾问"
     amy_desc: "Min Tao (Amy) 拥有丰富的保险行业经验和深厚的专业知识。她致力于帮助客户了解复杂的保险产品，并找到最适合他们需求的保障方案。Amy 能够用中文和英文为客户提供服务，确保每位客户都能得到清晰、准确的保险建议。"
     qualifications: "专业资质与经验"
@@ -418,7 +418,7 @@ pages:
     email: "邮箱"
     wechat: "微信"
     our_commitment: "我们的承诺"
-    commitment_intro: "在基石保险，我们承诺："
+    commitment_intro: "在Cornerstone Insurance，我们承诺："
     personalized_service: "个性化服务"
     personalized_desc: "- 我们花时间了解您的独特需求和财务状况，提供量身定制的保险建议。"
     expert_guidance: "专业指导"

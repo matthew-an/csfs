@@ -8,7 +8,7 @@ permalink: /blog/
 {% assign current_lang = page.lang | default: site.default_lang | default: "zh" %}
 {% if current_lang == "zh" %}
   <p class="text-lg text-gray-600 mb-8">
-    欢迎来到基石保险博客！在这里，您可以找到关于新西兰保险的最新信息、专业建议和实用指南。我们的专家团队定期分享保险知识，帮助您做出明智的保险决策。
+    欢迎来到Cornerstone Insurance博客！在这里，您可以找到关于新西兰保险的最新信息、专业建议和实用指南。我们的专家团队定期分享保险知识，帮助您做出明智的保险决策。
   </p>
 {% else %}
   <p class="text-lg text-gray-600 mb-8">
