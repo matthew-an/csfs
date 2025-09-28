@@ -109,6 +109,52 @@ pages:
     title: Insurance Glossary
     description: Understand key insurance industry terms and concepts to help you better understand insurance products and services.
     search_placeholder: Search terms...
+    terms:
+      life_insurance:
+        term: Life Insurance
+        definition: An insurance product that pays a lump sum to beneficiaries upon the death of the insured person. Used to protect family financial security and help pay mortgages, living expenses, and other costs.
+      health_insurance:
+        term: Health Insurance
+        definition: Insurance coverage for private medical services, including private hospital treatment, specialist consultations, and surgical procedures. Helps you skip public hospital waiting lists.
+      trauma_insurance:
+        term: Trauma Insurance
+        definition: Insurance that pays a lump sum upon diagnosis of specific critical illnesses such as cancer, heart attack, or stroke. Funds can be used for treatment, recovery, or lifestyle adjustments.
+      income_protection:
+        term: Income Protection Insurance
+        definition: Insurance that provides partial income replacement when the insured cannot work due to illness or injury. Typically covers up to 75% of income to help maintain living standards.
+      premium:
+        term: Premium
+        definition: The amount paid by the policyholder to the insurance company for insurance coverage. Can be paid monthly, quarterly, or annually.
+      deductible:
+        term: Deductible
+        definition: The amount the insured must pay out of pocket before the insurance company begins to pay claims.
+      beneficiary:
+        term: Beneficiary
+        definition: The person entitled to receive insurance benefits when an insured event occurs. Usually designated by the policyholder and can be family members or other specified individuals.
+      underwriting:
+        term: Underwriting
+        definition: The process by which insurance companies assess applicant risk and decide whether to provide coverage and at what premium rate. Includes health checks and financial assessments.
+      waiting_period:
+        term: Waiting Period
+        definition: The time period between when insurance takes effect and when claims can be made. Insurance events occurring during this period are typically not covered.
+      sum_insured:
+        term: Sum Insured
+        definition: The maximum amount the insurance company will pay under the insurance contract. Also known as the coverage amount or policy limit.
+      policy_holder:
+        term: Policy Holder
+        definition: The person who signs the insurance contract with the insurance company and is responsible for paying premiums.
+      claim:
+        term: Claim
+        definition: The process by which the insured or beneficiary applies to the insurance company for compensation when an insured event occurs.
+      exclusion:
+        term: Exclusion
+        definition: Specific situations or conditions clearly stated in the insurance contract where the insurance company will not provide coverage or pay claims.
+      tpd:
+        term: Total Permanent Disability (TPD)
+        definition: Insurance that provides a lump sum payment when the insured becomes totally and permanently disabled due to illness or accident and cannot perform any work.
+      mortgage_protection:
+        term: Mortgage Protection Insurance
+        definition: Insurance specifically designed to pay off home loans. The insurance benefit is used to clear the remaining mortgage when the insured dies or becomes totally disabled.
   services:
     title: Our Insurance Products
     intro: We keep things simple. Our policies are written in plain English, designed specifically for New Zealanders. Get the protection you need without the confusion.

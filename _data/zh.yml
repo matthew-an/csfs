@@ -110,6 +110,52 @@ pages:
     title: 保险术语表
     description: 了解保险行业的关键术语和概念，帮助您更好地理解保险产品和服务。
     search_placeholder: 搜索术语...
+    terms:
+      life_insurance:
+        term: 人寿保险
+        definition: 在被保险人死亡时向受益人支付一笔保险金的保险产品。用于保护家庭财务安全，帮助支付房贷、生活费用和其他开支。
+      health_insurance:
+        term: 健康保险
+        definition: 为私人医疗服务提供保障的保险产品，包括私立医院治疗、专科医生咨询和手术费用。帮助您跳过公立医院等待名单。
+      trauma_insurance:
+        term: 重大疾病保险
+        definition: 在诊断出特定重大疾病（如癌症、心脏病、中风）时支付一次性保险金的保险产品。资金可用于治疗、康复或生活方式调整。
+      income_protection:
+        term: 收入保障保险
+        definition: 当被保险人因疾病或意外伤害无法工作时，提供部分收入替代的保险产品。通常可覆盖收入的75%，帮助维持生活水平。
+      premium:
+        term: 保险费
+        definition: 投保人为获得保险保障而向保险公司支付的费用。可以按月、季度或年度支付。
+      deductible:
+        term: 免赔额
+        definition: 在保险公司开始支付理赔之前，被保险人需要自己承担的费用金额。
+      beneficiary:
+        term: 受益人
+        definition: 在保险事故发生时有权获得保险金的人员。通常由投保人指定，可以是家庭成员或其他指定人员。
+      underwriting:
+        term: 核保
+        definition: 保险公司评估申请人风险并决定是否承保以及保险费率的过程。包括健康检查、财务状况评估等。
+      waiting_period:
+        term: 等待期
+        definition: 保险生效后到可以申请理赔之间的时间段。在此期间内发生的保险事故通常不予理赔。
+      sum_insured:
+        term: 保险金额
+        definition: 保险合同中约定的保险公司承担赔偿或给付责任的最高限额。也称为保额。
+      policy_holder:
+        term: 投保人
+        definition: 与保险公司签订保险合同并负责支付保险费的人员。
+      claim:
+        term: 理赔
+        definition: 当保险事故发生时，被保险人或受益人向保险公司申请赔偿的过程。
+      exclusion:
+        term: 除外责任
+        definition: 保险合同中明确规定保险公司不承担赔偿责任的情况或条件。
+      tpd:
+        term: 完全永久残疾保险
+        definition: 当被保险人因疾病或意外导致完全永久残疾，无法从事任何工作时提供一次性赔付的保险产品。
+      mortgage_protection:
+        term: 房贷保护保险
+        definition: 专门用于偿还房屋贷款的保险产品。在被保险人死亡或完全残疾时，保险金用于清偿剩余房贷。
   services:
     title: 我们的保险产品
     intro: 我们保持简单。我们的保单用通俗易懂的语言编写，专为新西兰人设计。获得所需的保护，无需困惑。
