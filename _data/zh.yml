@@ -1,566 +1,344 @@
-# Chinese translations (Default)
 site:
-  title: "Cornerstone Insurance"
-  description: "Cornerstone Insurance提供全面的保险解决方案，包括人寿保险、健康保险、重大疾病保险、收入保障保险和房贷保护保险。通过我们值得信赖的保险专业知识和个性化保障选择，为您的未来保驾护航。"
-  company_name: "Cornerstone Insurance"
-  phone: "+64 211 280 727"
-  email: "amy.tao@cornerstonefs.co.nz"
-  wechat: "Amytaoingrace"
-
+  title: Cornerstone Insurance
+  description: Cornerstone Insurance提供全面的保险解决方案，包括人寿保险、健康保险、重大疾病保险、收入保障保险和房贷保护保险。通过我们值得信赖的保险专业知识和个性化保障选择，为您的未来保驾护航。
+  company_name: Cornerstone Insurance
+  phone: +64 211 280 727
+  email: amy.tao@cornerstonefs.co.nz
+  wechat: Amytaoingrace
 nav:
-  home: "首页"
-  services: "服务"
-  team: "团队"
-  blog: "博客"
-  disclosure: "披露"
-  contact: "联系我们"
-  about: "关于我们"
-
+  home: 首页
+  services: 服务
+  team: 团队
+  blog: 博客
+  disclosure: 披露
+  contact: 联系我们
+  about: 关于我们
 about:
-  title: "关于Cornerstone Insurance"
-  trusted_partner: "新西兰可信赖的保险专家"
-  intro: "Cornerstone Insurance一直在帮助新西兰家庭保护最重要的东西。作为FSP持牌专业机构（FSPR编号#1004360），我们在新西兰严格的金融服务法规监管下运营，确保您获得合规的专业建议。我们成功处理了95%以上的理赔，帮助300+家庭通过专为新西兰人量身定制的简单、实惠保险解决方案保障财务未来。"
-  mission_title: "我们的使命"
-  mission_desc: "为每个新西兰家庭提供简单、易懂、实惠的保险。我们相信保险不应该复杂 - 它应该让您安心，知道您的亲人得到了保护。"
-  what_sets_us_apart: "为什么家庭选择我们"
-  expertise_title: "本地专业知识"
-  expertise_desc: "作为新西兰保险专家，我们了解新西兰家庭的独特需求。我们的FSP持牌顾问紧跟当地法规和市场变化，为您提供最相关的建议。"
-  personalized_title: "个性化服务"
-  personalized_desc: "没有呼叫中心或自动系统。当您致电时，您直接与Amy交谈，您的专属保险顾问。我们花时间了解您家庭的独特情况和预算。"
-  comprehensive_title: "简单产品系列"
-  comprehensive_desc: "我们专注于对新西兰家庭最重要的保险产品："
-  life_insurance: "人寿保险 - 保护家人的财务未来"
-  health_insurance: "健康保险 - 跳过公立等待名单，更快获得私人护理"
-  trauma_insurance: "重大疾病保障 - 癌症、心脏病、中风等一次性赔付"
-  income_protection: "收入保障 - 无法工作时最多75%的收入"
-  disability_insurance: "残疾保障 - 永久残疾的财务保障"
-  mortgage_protection: "房贷保护 - 确保家人保住房子"
-  commitment_title: "我们的记录"
-  commitment_desc: "数字不会撒谎：95%+理赔批准率，2分钟平均报价时间，300+家庭受保护。我们致力于成为您最可靠的保险伙伴。"
-  service_desc: "真人服务，真实支持。没有电话菜单或海外呼叫中心。当您需要帮助时，您可以找到Amy - 您的专属顾问，她了解您的情况并关心您家庭的保护。"
-  claims_title: "可信赖的理赔"
-  claims_desc: "当生活发生意外时，我们在这里。我们95%+的理赔批准率说明了一切。我们指导您完成每一步，处理文书工作，为您的理赔而战，让您专注于最重要的事情。"
-  contact_title: "准备好获得保护了吗？"
-  contact_desc: "加入信赖Cornerstone Insurance的300+新西兰家庭。在2分钟内获得个性化报价，或与Amy交谈获取针对您情况的专家建议。"
-  tagline: "保护新西兰家庭，一份保单一份关爱。简单保险，可靠支持，安心保障。"
-
+  title: 关于Cornerstone Insurance
+  trusted_partner: 新西兰可信赖的保险专家
+  intro: Cornerstone Insurance一直在帮助新西兰家庭保护最重要的东西。作为FSP持牌专业机构（FSPR编号#1004360），我们在新西兰严格的金融服务法规监管下运营，确保您获得合规的专业建议。我们成功处理了95%以上的理赔，帮助300+家庭通过专为新西兰人量身定制的简单、实惠保险解决方案保障财务未来。
+  mission_title: 我们的使命
+  mission_desc: 为每个新西兰家庭提供简单、易懂、实惠的保险。我们相信保险不应该复杂 - 它应该让您安心，知道您的亲人得到了保护。
+  what_sets_us_apart: 为什么家庭选择我们
+  expertise_title: 本地专业知识
+  expertise_desc: 作为新西兰保险专家，我们了解新西兰家庭的独特需求。我们的FSP持牌顾问紧跟当地法规和市场变化，为您提供最相关的建议。
+  personalized_title: 个性化服务
+  personalized_desc: 没有呼叫中心或自动系统。当您致电时，您直接与Amy交谈，您的专属保险顾问。我们花时间了解您家庭的独特情况和预算。
+  comprehensive_title: 简单产品系列
+  comprehensive_desc: 我们专注于对新西兰家庭最重要的保险产品：
+  life_insurance: 人寿保险 - 保护家人的财务未来
+  health_insurance: 健康保险 - 跳过公立等待名单，更快获得私人护理
+  trauma_insurance: 重大疾病保障 - 癌症、心脏病、中风等一次性赔付
+  income_protection: 收入保障 - 无法工作时最多75%的收入
+  disability_insurance: 残疾保障 - 永久残疾的财务保障
+  mortgage_protection: 房贷保护 - 确保家人保住房子
+  commitment_title: 我们的记录
+  commitment_desc: 数字不会撒谎：95%+理赔批准率，2分钟平均报价时间，300+家庭受保护。我们致力于成为您最可靠的保险伙伴。
+  service_desc: 真人服务，真实支持。没有电话菜单或海外呼叫中心。当您需要帮助时，您可以找到Amy - 您的专属顾问，她了解您的情况并关心您家庭的保护。
+  claims_title: 可信赖的理赔
+  claims_desc: 当生活发生意外时，我们在这里。我们95%+的理赔批准率说明了一切。我们指导您完成每一步，处理文书工作，为您的理赔而战，让您专注于最重要的事情。
+  contact_title: 准备好获得保护了吗？
+  contact_desc: 加入信赖Cornerstone Insurance的300+新西兰家庭。在2分钟内获得个性化报价，或与Amy交谈获取针对您情况的专家建议。
+  tagline: 保护新西兰家庭，一份保单一份关爱。简单保险，可靠支持，安心保障。
 hero:
-  title_line1: "用专业守护财富"
-  title_line2: "用真诚保障家庭"
-  title_line3: ""
-  subtitle: "资深华人保险顾问为您服务，让保险更简单、更安心。"
-  cta_primary: "立即获取报价"
-  cta_secondary: "致电 +64 211 280 727"
-
+  title_line1: 用专业守护财富
+  title_line2: 用真诚保障家庭
+  title_line3: ''
+  subtitle: 资深华人保险顾问为您服务，让保险更简单、更安心。
+  cta_primary: 立即获取报价
+  cta_secondary: 致电 +64 211 280 727
 company_intro:
-  title: "为什么选择Cornerstone Insurance？"
-  advice_title: "快速简便的报价"
-  advice_desc: "几分钟内获得个性化保险报价，我们的简化流程让保护家人变得简单。"
-  management_title: "专业保单规划"
-  management_desc: "量身定制的保单规划，确保您的保障随着生活变化而调整。"
-  claim_title: "专业理赔支持"
-  claim_desc: "当您最需要我们时，我们经验丰富的团队将指导您完成理赔流程的每一步。"
-
-experience:
-  years: "7+"
-  title: "年经验"
-  subtitle: "深受新西兰家庭信赖"
-  heading: "我们已帮助300+新西兰家庭"
-  tagline: "快速报价，简单流程，可靠支持"
-  description: "Cornerstone Insurance成功处理了95%以上的理赔，平均报价时间不到2分钟。我们致力于为所有新西兰人提供简单易懂的保险服务。"
-  cta_primary: "获取我的报价"
-  cta_secondary: "致电 +64 211 280 727"
-  contact_now: "2分钟内获得报价！"
-
-why_choose:
-  subtitle: "为什么选择Cornerstone Insurance"
-  title: "自2018年以来深受新西兰家庭信赖"
-  fast_quote: "2分钟报价"
-  fast_quote_desc: "在线或电话即时获取报价"
-  easy_process: "简单申请"
-  easy_process_desc: "无复杂文书工作或冗长流程"
-  policy_control: "完全透明"
-  policy_control_desc: "条款清晰，无隐藏费用或意外"
-  save_money: "竞争性费率"
-  save_money_desc: "为您量身定制的最优价值保障"
-
+  title: 为什么选择Cornerstone Insurance？
+  advice_title: 快速简便的报价
+  advice_desc: 几分钟内获得个性化保险报价，我们的简化流程让保护家人变得简单。
+  management_title: 专业保单规划
+  management_desc: 量身定制的保单规划，确保您的保障随着生活变化而调整。
+  claim_title: 专业理赔支持
+  claim_desc: 当您最需要我们时，我们经验丰富的团队将指导您完成理赔流程的每一步。
 services:
-  subtitle: "保险简单化"
-  title: "帮你选择正确的保险产品"
-  health_title: "健康保险"
-  health_desc: "跳过公立医院等待名单。当您和家人最需要时，更快获得私人医疗服务。"
-  life_title: "人寿保险"
-  life_desc: "通过新西兰最可信赖的人寿保险提供商保护家人的财务未来。"
-  trauma_title: "重大疾病保险"
-  trauma_desc: "诊断出癌症、心脏病、中风或其他严重疾病时一次性赔付。专注康复，而非财务问题。"
-  income_title: "收入保障"
-  income_desc: "如果因疾病或受伤无法工作，可获得最多75%的收入。在康复期间保持生活方式。"
-  mortgage_title: "房贷保护"
-  mortgage_desc: "确保如果您发生意外，家人能够保住房子。自动覆盖您的房贷余额。"
-  tpd_title: "残疾保障"
-  tpd_desc: "如果您永久残疾，可获得一次性赔付。在财务保障下改造家庭和调整生活方式。"
-  learn_more: "获取报价 →"
-  view_all: "比较所有选项"
-
+  title: 帮你选择正确的保险产品
+  health_title: 健康保险
+  health_desc: 跳过公立医院等待名单。当您和家人最需要时，更快获得私人医疗服务。
+  life_title: 人寿保险
+  life_desc: 通过新西兰最可信赖的人寿保险提供商保护家人的财务未来。
+  trauma_title: 重大疾病保险
+  trauma_desc: 诊断出癌症、心脏病、中风或其他严重疾病时一次性赔付。专注康复，而非财务问题。
+  income_title: 收入保障
+  income_desc: 如果因疾病或受伤无法工作，可获得最多75%的收入。在康复期间保持生活方式。
+  mortgage_title: 房贷保护
+  mortgage_desc: 确保如果您发生意外，家人能够保住房子。自动覆盖您的房贷余额。
+  tpd_title: 残疾保障
+  tpd_desc: 如果您永久残疾，可获得一次性赔付。在财务保障下改造家庭和调整生活方式。
+  learn_more: 获取报价 →
+  view_all: 比较所有选项
 testimonials:
-  title: "客户评价"
-  excellent: "优秀"
-  reviews_count: "基于 50+ 位满意客户"
-  sarah_review: "Amy让购买人寿保险变得如此简单！整个过程不到一周，我以负担得起的价格为家人获得了所需的保障。强烈推荐！"
-  sarah_name: "Sarah L."
-  sarah_title: "奥克兰两孩母亲"
-  michael_review: "当我需要申请收入保障保险理赔时，Cornerstone Insurance全程陪伴。专业、贴心，完全兑现了他们的承诺。"
-  michael_name: "Michael T."
-  michael_title: "惠灵顿专业人士"
-
-trust_indicators:
-  claims_rate: "95%+"
-  claims_approved: "理赔获批"
-  families_count: "300+"
-  families_protected: "家庭受保护"
-  quote_time: "2分钟"
-  average_quote_time: "平均报价时间"
-  license_code: "NZFSG"
-  licensed_provider: "持牌提供商"
-
+  title: 客户评价
+  excellent: 优秀
+  reviews_count: 基于 50+ 位满意客户
+  sarah_review: Amy让购买人寿保险变得如此简单！整个过程不到一周，我以负担得起的价格为家人获得了所需的保障。强烈推荐！
+  sarah_name: Sarah L.
+  sarah_title: 奥克兰两孩母亲
+  michael_review: 当我需要申请收入保障保险理赔时，Cornerstone Insurance全程陪伴。专业、贴心，完全兑现了他们的承诺。
+  michael_name: Michael T.
+  michael_title: 惠灵顿专业人士
 contact_cta:
-  title: "准备好保护您的家人了吗？"
-  subtitle: "2分钟内获得个性化报价"
-  get_quote: "立即获取我的报价"
-  call_now: "咨询专家"
-  licensed: "FSP持牌 • 专业服务 • 理赔支持随时待命"
-
+  title: 准备好保护您的家人了吗？
+  subtitle: 2分钟内获得个性化报价
+  get_quote: 立即获取我的报价
+  call_now: 咨询专家
+  licensed: FSP持牌 • 专业服务 • 理赔支持随时待命
 footer:
-  copyright: "© 2024 Cornerstone Insurance。保留所有权利。"
-  privacy: "隐私政策"
-  terms: "服务条款"
-  disclosure: "披露声明"
-  tagline: "您值得信赖的保险伙伴，提供全面的保障解决方案"
-  insurance_services: "保险服务"
-  life_insurance: "人寿保险"
-  health_insurance: "健康保险"
-  trauma_insurance: "重大疾病保险"
-  income_protection: "收入保障"
-  company: "公司"
-  about_us: "关于我们"
-  our_team: "我们的团队"
-  contact_us: "联系我们"
-  legal: "法律"
-  terms_conditions: "条款和条件"
-  privacy_policy: "隐私政策"
-  financial_disclosure: "财务披露"
-  file_claim: "提出理赔"
-  contact_info: "联系信息"
-  hours: "周一至周五 上午8点-下午6点"
-
-# Page-specific translations
-pages:
-  services:
-    title: "服务"
-    intro: "我们拥有全面的保险产品系列，旨在保护您的现在并确保您的未来。在Cornerstone Insurance，我们了解生活充满不确定性，拥有合适的保险保障对于内心平静和财务稳定至关重要。"
-    life_title: "人寿保险："
-    life_desc: "在您不幸去世的情况下，保护您亲人的财务福祉。我们的人寿保险保单为您的受益人提供一次性付款，确保他们的财务安全并帮助他们维持生活水平。"
-    health_title: "健康保险："
-    health_desc: "您的健康是您最宝贵的资产。我们的健康保险计划为医疗费用、住院、医生就诊、处方药等提供广泛的保障。有了Cornerstone Insurance，您和您的家人可以获得优质的医疗保健，而无需担心财务负担。"
-    trauma_title: "重大疾病保险："
-    trauma_desc: "事故和重大疾病可能意外发生，造成身体、情感和财务压力。我们的重大疾病保险在诊断出承保的重大疾病或受伤时提供一次性付款，帮助您专注于康复而不是财务担忧。"
-    income_title: "收入保障："
-    income_desc: "保护您的收入免受可能阻止您工作的意外情况影响。我们的收入保障保险确保在您遭受伤残或疾病时有定期收入流，让您在困难时期维持生活方式并支持家人。"
-    disability_title: "永久伤残保险："
-    disability_desc: "在永久伤残妨碍您工作能力的情况下，我们的保险保障提供财务支持。它提供一次性付款来协助医疗费用、康复费用和其他财务义务，让您有信心地生活。"
-    mortgage_title: "房贷保护："
-    mortgage_desc: "通过我们的房贷保护保险保护您最重要的投资——您的家。如果您面临伤残、失业或重大疾病等意外情况，此保障为偿还房贷或每月还款提供财务帮助。"
-    closing: "在Cornerstone Insurance，我们优先考虑客户的需求，不懈努力定制符合其独特要求的保险解决方案。我们经验丰富的保险代理团队致力于提供卓越的服务，确保您以最佳价值获得合适的保障。"
-    cta: "不要让您的未来听天由命。今天就联系Cornerstone Insurance，探索我们的保险产品范围，发现知道自己受到保护所带来的内心平静。通过Cornerstone Insurance确保您的今天和明天 - 您值得信赖的保险伙伴。"
-
-
-  team:
-    title: "认识Amy - 您的保险专家"
-    description: "来自合格专业人士的个性化服务，了解新西兰家庭的保险需求。"
-    intro: "在Cornerstone Insurance，您不仅仅是一个保单号码。您直接与陶敏Amy合作，她是一位合格的保险专业人士，会花时间了解您家庭的独特需求和预算。"
-    amy_title: "FSP持牌保险顾问"
-    amy_desc: "Amy已帮助超过500个新西兰家庭获得正确的保险保护。凭借她的学术背景和实践经验，她让保险变得简单易懂且易于购买。"
-    qualifications: "专业资质"
-    masters: "硕士学位"
-    masters_from: "中国科学院"
-    expertise: "FSP持牌 - 在新西兰合格提供保险建议"
-    languages: "英语和中文普通话双语服务"
-    commitment: "致力于为新西兰家庭提供简单易懂的保险"
-    contact_amy: "今天就与Amy交谈"
-    phone: "电话"
-    email: "邮箱"
-    wechat: "微信"
-    our_commitment: "您可以期待什么"
-    commitment_intro: "当您与Amy合作时，您将获得："
-    personalized_service: "个人关注"
-    personalized_desc: "直接联系您的顾问 - 没有呼叫中心或电话菜单"
-    expert_guidance: "专家建议"
-    expert_desc: "针对新西兰家庭的合格专业指导"
-    ongoing_support: "持续支持"
-    ongoing_desc: "在您最需要时提供帮助 - 从报价到理赔"
-    cultural_understanding: "双语服务"
-    cultural_desc: "英语和中文的专业服务"
-    ready_to_discuss: "准备好保护您的家人了吗？"
-    contact_today: "今天就获取报价"
-    schedule_consultation: " - 不到2分钟。"
-
-  contact:
-    title: "联系我们"
-    get_in_touch: "联系我们"
-    intro: "准备好保护您的财务未来了吗？我们在这里帮助您找到适合您需求的完美保险解决方案。今天就联系我们进行免费咨询。"
-    contact_info: "联系信息"
-    phone_title: "电话"
-    phone_available: "营业时间内可用"
-    email_title: "邮箱"
-    email_response: "我们将在24小时内回复"
-    wechat_title: "微信"
-    wechat_support: "即时消息支持"
-    business_hours: "营业时间"
-    monday_friday: "周一至周五"
-    hours: "上午9:00 - 下午5:00 新西兰标准时间"
-    emergency_support: "提供紧急支持"
-    why_choose_title: "为什么选择Cornerstone Insurance？"
-    free_consultation: "✓ 免费咨询"
-    free_consultation_desc: "无义务评估您的保险需求"
-    personalized_solutions: "✓ 个性化解决方案"
-    personalized_solutions_desc: "适合您生活方式和预算的定制保障"
-    expert_guidance: "✓ 专家指导"
-    expert_guidance_desc: "来自经验丰富的保险专家的专业建议"
-    ongoing_support: "✓ 持续支持"
-    ongoing_support_desc: "在您的保单生命周期内提供专门服务"
-    ready_to_start: "准备开始了吗？"
-    ready_intro: "迈出确保您财务未来的第一步。今天就联系我们进行免费保险咨询。"
-    call_now: "立即致电"
-    send_email: "发送邮件"
-
-  disclosure:
-    title: "披露声明"
-    details_title: "关于我和我的财务咨询提供商的详细信息"
-    details_intro: "我是一名财务顾问。我代表财务咨询提供商提供建议。我的详细信息如下："
-    full_name: "全名：陶敏"
-    address: "地址：新西兰奥克兰森林山森林山路80B号，邮编0620"
-    phone: "电话：021 128 0727"
-    email: "邮箱：amy.tao@cornerstonefs.co.nz"
-    fspr_number: "FSPR编号：629629"
-    provider_name: "财务咨询提供商名称：Cornerstone Insurance有限公司"
-    provider_fspr: "FSPR编号：1004360"
-    member_info: "我的财务咨询提供商是新西兰金融服务集团有限公司的成员"
-    licensing_title: "许可信息"
-    licensing_info: "我的财务咨询提供商获得授权，根据金融市场管理局颁发的现行财务咨询提供商许可证提供财务咨询服务，许可证名称为：新西兰金融服务集团有限公司（NZFSG）"
-    licensing_fspr: "FSPR编号：286965"
-    important_title: "阅读本文件很重要。"
-    important_info: "此信息将帮助您选择最适合您需求的顾问。它还将提供有关您选择的顾问的一些有用信息。"
-    advice_scope_title: "建议的性质和范围"
-    advice_scope_info: "以下信息将帮助您了解我可以为您提供什么类型的建议。我将分析您的保险需求，并帮助您申请和选择适合您目的的保障。我可以帮助您的保险产品类型如下所示。我可以接触到一系列保险公司（如下所示）。一旦我们选择了保险公司以及适合您的保障类型和金额，我将帮助您获得承保。我也可能能够帮助您维护您的保险单，例如，如果您的情况发生变化，需要更改保障。"
-    insurance_products_title: "我可以为您提供建议的保险产品类型："
-    life_insurance: "人寿保险"
-    health_insurance: "健康保险"
-    disability_insurance: "伤残保险"
-    companies_title: "我可以为您提供建议的保险公司："
-    companies_info: "我可以为您提供以下保险公司的产品建议："
-    asteron: "Asteron Life"
-    fidelity: "Fidelity Life"
-    partners: "Partners Life"
-    southern_cross: "Southern Cross"
-    accuro: "Accuro"
-    nib: "nib"
-    unichem: "Unichem"
-    aa: "AA Insurance"
-    anz: "ANZ"
-    kiwibank: "Kiwibank"
-    westpac: "Westpac"
-    companies_note: "我可能会不时推荐其他保险公司的产品。如果我这样做，我会告诉您该保险公司的详细信息。"
-    remuneration_title: "我如何获得报酬"
-    remuneration_info: "我通过以下方式获得报酬："
-    commission_info: "佣金：当您购买保险产品时，我从保险公司获得佣金。佣金通常是您年保费的百分比。不同的产品和保险公司支付不同的佣金率。"
-    commission_rates: "佣金率范围："
-    life_commission: "人寿保险：首年保费的0-200%，续保年度保费的0-10%"
-    health_commission: "健康保险：年保费的0-25%"
-    disability_commission: "伤残保险：首年保费的0-200%，续保年度保费的0-10%"
-    fee_info: "费用：我可能会向您收取费用以提供财务建议。如果我要收取费用，我会在向您提供建议之前告诉您费用金额（或费用计算方法）。"
-    other_incentives: "其他激励措施：我有时可能会从产品提供商那里获得其他激励措施，例如奖金、礼品或款待福利。"
-    no_cost_info: "您无需为我的服务向我付费。保险公司向我支付佣金。"
-    conflicts_title: "可能影响我建议的利益冲突"
-    conflicts_info: "我必须告诉您我知道的任何利益冲突。利益冲突是指我有可能因为我的个人利益、业务利益或与其他人的关系而无法给您公正的建议的情况。"
-    no_conflicts: "我没有任何需要披露的利益冲突。"
-    duties_title: "我对您的职责"
-    duties_info: "我的主要职责是："
-    care_skill: "✓ 在提供财务建议时给予应有的关注、技能和勤勉"
-    suitable_advice: "✓ 确保建议适合您"
-    clear_info: "✓ 以清晰、简洁和有效的方式为您提供信息"
-    other_services_title: "我还能为您提供什么帮助"
-    other_services_info: "我可以通过我的推荐合作伙伴帮助您获得其他服务，让您更轻松。但是，我无法就他们提供的产品给出建议，也没有检查他们是否能满足您的特定需求。您可以自由使用您选择的其他提供商或进行自己的研究。"
-    referral_services: "推荐服务包括："
-    accounting: "会计服务"
-    legal: "法律服务"
-    banking: "银行服务"
-    investment: "投资服务"
-    estate_planning: "遗产规划"
-    complaints_title: "如果您有投诉"
-    complaints_info: "如果您对我提供的服务有投诉，您可以："
-    contact_me: "1. 直接联系我讨论您的担忧"
-    contact_provider: "2. 联系我的财务咨询提供商"
-    external_dispute: "3. 如果我们无法解决您的投诉，您可以联系外部争议解决机构："
-    insurance_ombudsman: "保险和金融服务申诉专员"
-    ombudsman_website: "网站：www.ifso.nz"
-    ombudsman_phone: "电话：0800 888 202"
-    ombudsman_email: "邮箱：info@ifso.nz"
-    work_for_you_title: "我为您工作"
-    work_for_you_info: "作为财务顾问，我有义务遵守金融服务提供商行为准则。虽然我从提供商那里获得我提供服务的报酬，但我为您工作。为了确保我将您的利益置于我自己的利益之上，我在提供个性化财务建议时遵循基于您个人目标和需求的6步建议流程。我以书面形式提供所有建议，以便您在实施我的任何建议之前有机会提出任何问题。我们参加质量保证计划，每年审查我们的建议流程，以确保它基于客户的需求。"
-    privacy_title: "隐私"
-    privacy_info: "我收集您的个人信息以便为您提供财务建议和服务。如果没有这些信息，我可能无法为您提供适当的建议或服务。我不会向任何人披露您的个人信息，除非："
-    privacy_1: "a) 您授权我这样做，或"
-    privacy_2: "b) 法律要求我这样做，或"
-    privacy_3: "c) 其他专业人士，如律师、会计师、金融经纪人、财务规划师，当需要此类服务来补充此建议并且您要求时。"
-    privacy_access: "您有权要求查看我持有的关于您的个人信息，并要求更正任何错误。"
-
-language:
-  switch_to_english: "Switch to English"
-  switch_to_chinese: "切换到中文"
-
-# Pages
+  disclosure: 披露声明
+  tagline: 您值得信赖的保险伙伴，提供全面的保障解决方案
+  insurance_services: 保险服务
+  life_insurance: 人寿保险
+  health_insurance: 健康保险
+  trauma_insurance: 重大疾病保险
+  income_protection: 收入保障
+  company: 公司
+  about_us: 关于我们
+  our_team: 我们的团队
+  contact_us: 联系我们
+  terms_conditions: 条款和条件
+  privacy_policy: 隐私政策
+  file_claim: 提出理赔
+  contact_info: 联系信息
 pages:
   faq:
-    title: "常见问题"
+    title: 常见问题
   glossary:
-    title: "保险术语表"
-    description: "了解保险行业的关键术语和概念，帮助您更好地理解保险产品和服务。"
-    search_placeholder: "搜索术语..."
-    terms:
-      acc:
-        term: "ACC (意外赔偿公司)"
-        definition: "新西兰的国家意外伤害保险计划，为所有新西兰居民和游客提供意外伤害保障，包括医疗费用和收入补偿。"
-      beneficiary:
-        term: "受益人"
-        definition: "在保单持有人死亡或符合理赔条件时，有权获得保险赔付的人员。"
-      claim:
-        term: "理赔"
-        definition: "向保险公司申请赔付的正式请求，通常在发生保险事故或满足保单条件时提出。"
-      deductible:
-        term: "免赔额"
-        definition: "在保险公司开始赔付之前，被保险人需要自己承担的费用金额。"
-      exclusion:
-        term: "除外责任"
-        definition: "保险合同中明确规定不予承保的风险、情况或条件。"
-      grace_period:
-        term: "宽限期"
-        definition: "保费到期后，保险公司给予投保人缴费的额外时间，在此期间保单仍然有效。"
-      health_insurance:
-        term: "健康保险"
-        definition: "为医疗费用提供保障的保险，包括住院、手术、专科治疗等费用。"
-      income_protection:
-        term: "收入保障保险"
-        definition: "在被保险人因疾病或意外无法工作时，提供定期收入替代的保险产品。"
-      life_insurance:
-        term: "人寿保险"
-        definition: "在被保险人死亡时向受益人支付保险金的保险产品，用于保障家庭财务安全。"
-      loading:
-        term: "保费加载"
-        definition: "由于被保险人的健康状况或职业风险较高，保险公司在标准保费基础上增加的额外费用。"
-      medical_examination:
-        term: "体检"
-        definition: "保险公司要求申请人进行的健康检查，用于评估承保风险和确定保费。"
-      no_claims_bonus:
-        term: "无理赔奖励"
-        definition: "对于在一定期间内没有提出理赔的投保人给予的保费折扣或其他优惠。"
-      policy:
-        term: "保单"
-        definition: "保险合同的正式文件，详细说明保险条款、保障范围、保费和理赔程序。"
-      premium:
-        term: "保费"
-        definition: "投保人为获得保险保障而向保险公司支付的费用，可以按月、季度或年度支付。"
-      pre_existing_condition:
-        term: "既往症"
-        definition: "在保险生效前已经存在的健康问题或疾病，通常不在保险保障范围内。"
-      sum_insured:
-        term: "保险金额"
-        definition: "保险合同中约定的最高赔付金额，也是保险公司承担的最大责任限额。"
-      trauma_insurance:
-        term: "重大疾病保险"
-        definition: "在被保险人被诊断患有保单列明的重大疾病时，提供一次性赔付的保险产品。"
-      underwriting:
-        term: "核保"
-        definition: "保险公司评估申请人风险并决定是否承保以及保费水平的过程。"
-      waiting_period:
-        term: "等待期"
-        definition: "保险生效后到可以申请理赔之间的时间间隔，通常适用于疾病相关的保障。"
+    title: 保险术语表
+    description: 了解保险行业的关键术语和概念，帮助您更好地理解保险产品和服务。
+    search_placeholder: 搜索术语...
   services:
-    title: "我们的保险产品"
-    intro: "我们保持简单。我们的保单用通俗易懂的语言编写，专为新西兰人设计。获得所需的保护，无需困惑。"
-    life_title: "人寿保险"
-    life_desc: "在您去世时为家人提供一次性赔付，帮助他们支付房贷、教育投资、生活费用和各种账单。保障金额从5万到200万纽币。"
-    health_title: "健康保险"
-    health_desc: "跳过公立医院等待名单。在您最需要时更快地获得私人专科医生、手术和治疗。选择自己的医生和医院。"
-    trauma_title: "重大疾病保障"
-    trauma_desc: "诊断出癌症、心脏病、中风或其他严重疾病时一次性赔付。按您的需要使用资金 - 治疗、康复或生活方式改变。"
-    income_title: "收入保障"
-    income_desc: "如果因疾病或受伤无法工作，支付您最多75%的收入。在康复期间继续支付账单并保持生活方式。"
-    disability_title: "残疾保障"
-    disability_desc: "如果您永久残疾无法返回工作岗位，可获得一次性赔付。覆盖医疗费用、家庭改造和持续护理需求。"
-    mortgage_title: "房贷保护"
-    mortgage_desc: "确保如果您发生意外，家人能够保住房子。自动支付您的房贷余额，让您的亲人少一份担心。"
-    closing: "不确定哪种保障适合您？我们的专家顾问将帮助您了解选项，并为您的情况和预算找到合适的保护。"
-    cta: "准备好保护家人了吗？[获取免费报价](/contact-us)或致电 +64 211 280 727 获取专家建议。"
+    title: 我们的保险产品
+    intro: 我们保持简单。我们的保单用通俗易懂的语言编写，专为新西兰人设计。获得所需的保护，无需困惑。
+    life_title: 人寿保险
+    life_desc: 在您去世时为家人提供一次性赔付，帮助他们支付房贷、教育投资、生活费用和各种账单。保障金额从5万到200万纽币。
+    health_title: 健康保险
+    health_desc: 跳过公立医院等待名单。在您最需要时更快地获得私人专科医生、手术和治疗。选择自己的医生和医院。
+    trauma_title: 重大疾病保障
+    trauma_desc: 诊断出癌症、心脏病、中风或其他严重疾病时一次性赔付。按您的需要使用资金 - 治疗、康复或生活方式改变。
+    income_title: 收入保障
+    income_desc: 如果因疾病或受伤无法工作，支付您最多75%的收入。在康复期间继续支付账单并保持生活方式。
+    disability_title: 残疾保障
+    disability_desc: 如果您永久残疾无法返回工作岗位，可获得一次性赔付。覆盖医疗费用、家庭改造和持续护理需求。
+    mortgage_title: 房贷保护
+    mortgage_desc: 确保如果您发生意外，家人能够保住房子。自动支付您的房贷余额，让您的亲人少一份担心。
+    closing: 不确定哪种保障适合您？我们的专家顾问将帮助您了解选项，并为您的情况和预算找到合适的保护。
   team:
-    title: "我们的团队"
-    description: "认识Cornerstone Insurance的专业团队，我们致力于为您提供最优质的保险服务和专业建议。"
-    intro: "Cornerstone Insurance由经验丰富的保险专业人士组成，我们深入了解新西兰的保险市场，致力于为每位客户提供个性化的保险解决方案。"
-    amy_title: "首席保险顾问"
-    amy_desc: "Min Tao (Amy) 拥有丰富的保险行业经验和深厚的专业知识。她致力于帮助客户了解复杂的保险产品，并找到最适合他们需求的保障方案。Amy 能够用中文和英文为客户提供服务，确保每位客户都能得到清晰、准确的保险建议。"
-    qualifications: "专业资质与经验"
-    masters: "硕士学位"
-    masters_from: "- 中国科学院"
-    expertise: "多年保险行业从业经验，专精人寿保险、健康保险和收入保障保险"
-    languages: "流利的中文和英文，能够为不同背景的客户提供专业服务"
-    commitment: "持续学习最新的保险产品和法规，确保为客户提供最准确的建议"
-    contact_amy: "联系 Amy"
-    phone: "电话"
-    email: "邮箱"
-    wechat: "微信"
-    our_commitment: "我们的承诺"
-    commitment_intro: "在Cornerstone Insurance，我们承诺："
-    personalized_service: "个性化服务"
-    personalized_desc: "- 我们花时间了解您的独特需求和财务状况，提供量身定制的保险建议。"
-    expert_guidance: "专业指导"
-    expert_desc: "- 我们的团队拥有深厚的行业知识，能够解释复杂的保险条款，帮助您做出明智的决定。"
-    ongoing_support: "持续支持"
-    ongoing_desc: "- 从申请到理赔，我们在整个过程中为您提供支持，确保您获得应有的保障。"
-    cultural_understanding: "文化理解"
-    cultural_desc: "- 我们理解不同文化背景客户的需求，提供贴心的双语服务。"
-    ready_to_discuss: "准备好讨论您的保险需求了吗？"
-    contact_today: "立即联系我们"
-    schedule_consultation: "安排免费咨询。"
+    title: 我们的团队
+    intro: Cornerstone Insurance由经验丰富的保险专业人士组成，我们深入了解新西兰的保险市场，致力于为每位客户提供个性化的保险解决方案。
+    amy_title: 首席保险顾问
+    amy_desc: Min Tao (Amy) 拥有丰富的保险行业经验和深厚的专业知识。她致力于帮助客户了解复杂的保险产品，并找到最适合他们需求的保障方案。Amy 能够用中文和英文为客户提供服务，确保每位客户都能得到清晰、准确的保险建议。
+    qualifications: 专业资质与经验
+    masters: 硕士学位
+    masters_from: '- 中国科学院'
+    expertise: 多年保险行业从业经验，专精人寿保险、健康保险和收入保障保险
+    languages: 流利的中文和英文，能够为不同背景的客户提供专业服务
+    commitment: 持续学习最新的保险产品和法规，确保为客户提供最准确的建议
+    contact_amy: 联系 Amy
+    phone: 电话
+    email: 邮箱
+    wechat: 微信
+    our_commitment: 我们的承诺
+    commitment_intro: 在Cornerstone Insurance，我们承诺：
+    personalized_service: 个性化服务
+    personalized_desc: '- 我们花时间了解您的独特需求和财务状况，提供量身定制的保险建议。'
+    expert_guidance: 专业指导
+    expert_desc: '- 我们的团队拥有深厚的行业知识，能够解释复杂的保险条款，帮助您做出明智的决定。'
+    ongoing_support: 持续支持
+    ongoing_desc: '- 从申请到理赔，我们在整个过程中为您提供支持，确保您获得应有的保障。'
+    cultural_understanding: 文化理解
+    cultural_desc: '- 我们理解不同文化背景客户的需求，提供贴心的双语服务。'
+    ready_to_discuss: 准备好讨论您的保险需求了吗？
+    contact_today: 立即联系我们
+    schedule_consultation: 安排免费咨询。
   contact:
-    title: "联系我们"
-    intro: "准备好保护您的未来了吗？我们的专业团队随时为您提供个性化的保险建议和解决方案。"
-    get_in_touch: "联系我们"
-    contact_info: "联系信息"
-    phone_title: "电话咨询"
-    phone_available: "工作日 9:00-17:00 提供咨询服务"
-    email_title: "邮件咨询"
-    email_response: "我们会在24小时内回复您的邮件"
-    wechat_title: "微信咨询"
-    wechat_support: "中文服务，即时沟通"
-    business_hours: "营业时间"
-    monday_friday: "周一至周五"
-    hours: "9:00 AM - 5:00 PM"
-    emergency_support: "紧急情况下可提供24小时支持"
-    why_choose_title: "为什么选择我们？"
-    free_consultation: "免费咨询"
-    free_consultation_desc: "我们提供免费的初步咨询，帮助您了解保险选择。"
-    personalized_solutions: "个性化方案"
-    personalized_solutions_desc: "根据您的具体需求和预算定制保险方案。"
-    expert_guidance: "专业指导"
-    expert_guidance_desc: "经验丰富的保险顾问为您提供专业建议。"
-    ongoing_support: "持续支持"
-    ongoing_support_desc: "从申请到理赔，全程为您提供支持服务。"
-    ready_to_start: "准备开始了吗？"
-    ready_intro: "联系我们，获取个性化的保险建议，保护您和家人的未来。"
-    call_now: "立即致电"
-    send_email: "发送邮件"
+    title: 联系我们
+    intro: 准备好保护您的未来了吗？我们的专业团队随时为您提供个性化的保险建议和解决方案。
+    contact_info: 联系信息
+    phone_title: 电话咨询
+    phone_available: 工作日 9:00-17:00 提供咨询服务
+    email_title: 邮件咨询
+    email_response: 我们会在24小时内回复您的邮件
+    wechat_title: 微信咨询
+    wechat_support: 中文服务，即时沟通
+    business_hours: 营业时间
+    monday_friday: 周一至周五
+    hours: 9:00 AM - 5:00 PM
+    emergency_support: 紧急情况下可提供24小时支持
+    why_choose_title: 为什么选择我们？
+    free_consultation: 免费咨询
+    free_consultation_desc: 我们提供免费的初步咨询，帮助您了解保险选择。
+    personalized_solutions: 个性化方案
+    personalized_solutions_desc: 根据您的具体需求和预算定制保险方案。
+    expert_guidance: 专业指导
+    expert_guidance_desc: 经验丰富的保险顾问为您提供专业建议。
+    ongoing_support: 持续支持
+    ongoing_support_desc: 从申请到理赔，全程为您提供支持服务。
+    ready_to_start: 准备开始了吗？
+    ready_intro: 联系我们，获取个性化的保险建议，保护您和家人的未来。
+    call_now: 立即致电
+    send_email: 发送邮件
   disclosure:
-    title: "Disclosure Guide"
-    intro: "Here is some key information you need to know to help you understand what type of advice I am able to give you, so that you can make an informed and confident choice when engaging me."
-    details_title: "Details about me and my Financial Advice Provider"
-    full_name: "**Full Name:** Min Tao"
-    address: "**Address:** 80B Forrest Hill Road, Forrest Hill, Auckland, 0620, New Zealand"
-    phone: "**Phone:** 021 128 0727"
-    email: "**Email:** amy.tao@cornerstonefs.co.nz"
-    fspr_number: "**FSPR Number:** 629629"
-    provider_name: "**Financial Advice Provider:** Cornerstone Insurance Limited"
-    provider_trading: "**Trading as:** Cornerstone Insurance Limited"
-    provider_fspr: "**FSPR Number:** 1004360"
-    provider_address: "**Address:** 80B Forrest Hill Road, Forrest Hill, Auckland, 0620, New Zealand"
-    provider_phone: "**Phone:** 0211280727"
-    provider_email: "**Email:** amy.tao@cornerstonefs.co.nz"
-    member_info: "My Financial Advice Provider is a member of NZ Financial Services Group Limited."
-    licensing_title: "Licensing Information"
-    licensing_info: "My Financial Advice Provider is authorised to provide a financial advice service under a current financial advice provider licence issued by the Financial Markets Authority in the name of: **NZ Financial Services Group Limited**"
-    licensing_fspr: "**FSPR Number:** 286965"
-    advice_scope_title: "Nature and Scope of Advice"
-    advice_scope_info: "I will analyse your insurance needs and help you apply for and choose cover that is suitable for your purpose."
-    advice_scope_maintain: "I may also be able to help you maintain your insurance policy, for example if there are changes in your circumstances requiring changes to the cover."
-    insurers_title: "Insurers I use"
-    insurers_list: "- AIA\n- Asteron Life\n- NIB\n- Partners Life\n- Chubb Life"
-    products_title: "Products I can advise on"
-    products_list: "- Life\n- Income Protection\n- Health\n- Trauma\n- Permanent Disablement\n- Mortgage Protection/Repayment\n- Redundancy Cover\n- Waiver of Premium/Premium Cover"
-    other_services_title: "Other referral services"
-    other_services_list: "- Tower F&G\n- Initio F&G\n- XE Money\n- FastConnect"
-    legal_advice: "*(I am unable to offer legal or tax advice and recommend you consult your solicitor or accountant.)*"
-    fees_title: "Fees and Expenses"
-    fees_intro: "Generally you won't be charged any fees for the financial advice I provide to you. This is possible because insurers usually pay commission."
-    oneoff_fees_title: "One-off Fees"
-    oneoff_fees_info: "I may charge you a one-off fee if:\n\n- I do not receive a commission from the insurer.\n- You request advice on a product outside my usual panel."
-    commissions_title: "Commissions & Incentives"
-    commissions_info: "- Commissions are typically **upfront and/or ongoing**, based on premiums.\n- Referral fees may also apply.\n- Occasionally I may receive non-monetary incentives (e.g., gifts, tickets)."
-    commission_table: "| Insurer       | Upfront (max) | Ongoing (max) |\n| ------------- | ------------- | ------------- |\n| Asteron Life  | 200%          | 10%           |\n| NIB           | 230%          | 7.5%          |\n| Chubb Life    | 230%          | 15%           |\n| Partners Life | 230%          | 10%           |\n| AIA           | 220%          | 7.5%          |"
-    privacy_title: "Privacy Policy & Security"
-    privacy_info: "- Personal information is collected under my Privacy Policy.\n- Data may be shared with NZ Financial Services Group Limited for audits.\n- Stored securely on **Amazon Web Services**."
-    complaints_title: "Complaints Process"
-    complaints_process: "If you have a complaint:\n\n1. Contact me via phone or email (Subject: Complaint - Your Name).\n2. I will acknowledge within 24 hours and record it.\n3. Aim to resolve within 7 working days.\n4. If unresolved, you can refer to:"
-    ombudsman_info: "**Insurance and Financial Services Ombudsman**\nEmail: info@ifso.nz\nPhone: 0800 888 202\n[Website](https://www.ifso.nz/)\nPO Box 10-845, Wellington 6143"
-    duties_title: "My Duties"
-    duties_info: "Under the Financial Markets Conduct Act 2013, I must:\n\n- Meet standards of competence, knowledge, and skill.\n- Prioritise client interests.\n- Exercise care, diligence, and skill.\n- Meet ethical behaviour and client care standards."
-    availability_title: "Availability of Information"
-    availability_info: "This information can also be provided in hardcopy upon request."
-  calculators:
-    title: "保险计算器"
-    description: "使用我们的专业保险计算器，快速估算您的保险需求。这些工具基于行业标准，帮助您做出明智的保险决策。"
-    life_insurance:
-      title: "人寿保险需求计算器"
-      description: "计算您需要多少人寿保险来保护家人的财务安全"
-      annual_income: "年收入 (纽币)"
-      annual_income_help: "您的税前年收入"
-      mortgage_debt: "房贷余额 (纽币)"
-      mortgage_debt_help: "剩余的房贷金额"
-      other_debts: "其他债务 (纽币)"
-      other_debts_help: "信用卡、个人贷款等其他债务"
-      dependents: "受抚养人数量"
-      dependents_help: "需要您经济支持的家庭成员数量"
-      years_support: "需要支持的年数"
-      years_support_help: "您希望为家人提供经济支持的年数"
-      final_expenses: "最终费用 (纽币)"
-      final_expenses_help: "葬礼费用和其他最终开支"
-      existing_coverage: "现有保险金额 (纽币)"
-      existing_coverage_help: "您已有的人寿保险金额"
-      calculate: "计算保险需求"
-      results_title: "您的人寿保险需求"
-      recommended_coverage: "推荐保险金额"
-      breakdown_title: "计算明细"
-      income_replacement: "收入替代"
-      debt_coverage: "债务覆盖"
-      final_costs: "最终费用"
-      existing_deduction: "减去现有保险"
-      total_need: "总保险需求"
-      get_quote: "获取专业报价"
-      disclaimer: "此计算器仅供参考。实际保险需求可能因个人情况而异。建议咨询专业保险顾问获取个性化建议。"
-    income_protection:
-      title: "收入保障保险计算器"
-      description: "计算您需要多少收入保障保险来维持生活水平"
-      monthly_income: "月收入 (纽币)"
-      monthly_income_help: "您的税前月收入"
-      essential_expenses: "基本月支出 (纽币)"
-      essential_expenses_help: "房贷/房租、食物、水电等必需支出"
-      acc_coverage: "ACC 覆盖百分比"
-      acc_coverage_help: "意外伤害时 ACC 覆盖的收入百分比 (通常80%)"
-      existing_benefits: "现有福利 (纽币/月)"
-      existing_benefits_help: "雇主提供的病假工资或其他福利"
-      coverage_percentage: "希望覆盖的收入百分比"
-      coverage_percentage_help: "您希望保险覆盖的收入百分比"
-      waiting_period: "等待期 (天)"
-      waiting_period_help: "开始获得保险赔付前的等待天数"
-      calculate: "计算保障需求"
-      results_title: "您的收入保障需求"
-      recommended_benefit: "推荐月度赔付"
-      coverage_gap: "保障缺口"
-      monthly_premium_estimate: "预估月保费"
-      scenarios_title: "不同情况对比"
-      with_insurance: "有收入保障保险"
-      without_insurance: "无收入保障保险"
-      illness_scenario: "疾病无法工作6个月的情况"
-      income_loss: "收入损失"
-      insurance_benefit: "保险赔付"
-      net_impact: "净影响"
-      get_quote: "获取专业报价"
-      disclaimer: "此计算器仅供参考。实际保费和赔付金额可能因个人健康状况、职业风险等因素而异。"
+    title: Disclosure Guide
+    intro: Here is some key information you need to know to help you understand what type of advice I am able to give you, so that you can make an informed and confident choice when engaging me.
+    details_title: Details about me and my Financial Advice Provider
+    full_name: '**Full Name:** Min Tao'
+    address: '**Address:** 80B Forrest Hill Road, Forrest Hill, Auckland, 0620, New Zealand'
+    phone: '**Phone:** 021 128 0727'
+    email: '**Email:** amy.tao@cornerstonefs.co.nz'
+    fspr_number: '**FSPR Number:** 629629'
+    provider_name: '**Financial Advice Provider:** Cornerstone Insurance Limited'
+    provider_trading: '**Trading as:** Cornerstone Insurance Limited'
+    provider_fspr: '**FSPR Number:** 1004360'
+    provider_address: '**Address:** 80B Forrest Hill Road, Forrest Hill, Auckland, 0620, New Zealand'
+    provider_phone: '**Phone:** 0211280727'
+    provider_email: '**Email:** amy.tao@cornerstonefs.co.nz'
+    member_info: My Financial Advice Provider is a member of NZ Financial Services Group Limited.
+    licensing_title: Licensing Information
+    licensing_info: 'My Financial Advice Provider is authorised to provide a financial advice service under a current financial advice provider licence issued by the Financial Markets Authority in the name of: **NZ Financial Services Group Limited**'
+    licensing_fspr: '**FSPR Number:** 286965'
+    advice_scope_title: Nature and Scope of Advice
+    advice_scope_info: I will analyse your insurance needs and help you apply for and choose cover that is suitable for your purpose.
+    advice_scope_maintain: I may also be able to help you maintain your insurance policy, for example if there are changes in your circumstances requiring changes to the cover.
+    insurers_title: Insurers I use
+    insurers_list: '- AIA
 
+      - Asteron Life
+
+      - NIB
+
+      - Partners Life
+
+      - Chubb Life'
+    products_title: Products I can advise on
+    products_list: '- Life
+
+      - Income Protection
+
+      - Health
+
+      - Trauma
+
+      - Permanent Disablement
+
+      - Mortgage Protection/Repayment
+
+      - Redundancy Cover
+
+      - Waiver of Premium/Premium Cover'
+    other_services_title: Other referral services
+    other_services_list: '- Tower F&G
+
+      - Initio F&G
+
+      - XE Money
+
+      - FastConnect'
+    legal_advice: '*(I am unable to offer legal or tax advice and recommend you consult your solicitor or accountant.)*'
+    fees_title: Fees and Expenses
+    fees_intro: Generally you won't be charged any fees for the financial advice I provide to you. This is possible because insurers usually pay commission.
+    oneoff_fees_title: One-off Fees
+    oneoff_fees_info: 'I may charge you a one-off fee if:
+
+
+      - I do not receive a commission from the insurer.
+
+      - You request advice on a product outside my usual panel.'
+    commissions_title: Commissions & Incentives
+    commissions_info: '- Commissions are typically **upfront and/or ongoing**, based on premiums.
+
+      - Referral fees may also apply.
+
+      - Occasionally I may receive non-monetary incentives (e.g., gifts, tickets).'
+    commission_table: '| Insurer       | Upfront (max) | Ongoing (max) |
+
+      | ------------- | ------------- | ------------- |
+
+      | Asteron Life  | 200%          | 10%           |
+
+      | NIB           | 230%          | 7.5%          |
+
+      | Chubb Life    | 230%          | 15%           |
+
+      | Partners Life | 230%          | 10%           |
+
+      | AIA           | 220%          | 7.5%          |'
+    privacy_title: Privacy Policy & Security
+    privacy_info: '- Personal information is collected under my Privacy Policy.
+
+      - Data may be shared with NZ Financial Services Group Limited for audits.
+
+      - Stored securely on **Amazon Web Services**.'
+    complaints_title: Complaints Process
+    complaints_process: 'If you have a complaint:
+
+
+      1. Contact me via phone or email (Subject: Complaint - Your Name).
+
+      2. I will acknowledge within 24 hours and record it.
+
+      3. Aim to resolve within 7 working days.
+
+      4. If unresolved, you can refer to:'
+    ombudsman_info: '**Insurance and Financial Services Ombudsman**
+
+      Email: info@ifso.nz
+
+      Phone: 0800 888 202
+
+      [Website](https://www.ifso.nz/)
+
+      PO Box 10-845, Wellington 6143'
+    duties_title: My Duties
+    duties_info: 'Under the Financial Markets Conduct Act 2013, I must:
+
+
+      - Meet standards of competence, knowledge, and skill.
+
+      - Prioritise client interests.
+
+      - Exercise care, diligence, and skill.
+
+      - Meet ethical behaviour and client care standards.'
+    availability_title: Availability of Information
+    availability_info: This information can also be provided in hardcopy upon request.
+  calculators:
+    title: 保险计算器
+    description: 使用我们的专业保险计算器，快速估算您的保险需求。这些工具基于行业标准，帮助您做出明智的保险决策。
+    life_insurance:
+      title: 人寿保险需求计算器
+      description: 计算您需要多少人寿保险来保护家人的财务安全
+      annual_income: 年收入 (纽币)
+      annual_income_help: 您的税前年收入
+      mortgage_debt: 房贷余额 (纽币)
+      mortgage_debt_help: 剩余的房贷金额
+      other_debts: 其他债务 (纽币)
+      other_debts_help: 信用卡、个人贷款等其他债务
+      dependents: 受抚养人数量
+      dependents_help: 需要您经济支持的家庭成员数量
+      years_support: 需要支持的年数
+      years_support_help: 您希望为家人提供经济支持的年数
+      final_expenses: 最终费用 (纽币)
+      final_expenses_help: 葬礼费用和其他最终开支
+      existing_coverage: 现有保险金额 (纽币)
+      existing_coverage_help: 您已有的人寿保险金额
+      calculate: 计算保险需求
+      results_title: 您的人寿保险需求
+    income_protection:
+      title: 收入保障保险计算器
+      description: 计算您需要多少收入保障保险来维持生活水平
+      monthly_income: 月收入 (纽币)
+      monthly_income_help: 您的税前月收入
+      essential_expenses: 基本月支出 (纽币)
+      essential_expenses_help: 房贷/房租、食物、水电等必需支出
+      existing_benefits: 现有福利 (纽币/月)
+      existing_benefits_help: 雇主提供的病假工资或其他福利
+      coverage_percentage: 希望覆盖的收入百分比
+      coverage_percentage_help: 您希望保险覆盖的收入百分比
+      waiting_period: 等待期 (天)
+      waiting_period_help: 开始获得保险赔付前的等待天数
+      calculate: 计算保障需求
+      results_title: 您的收入保障需求

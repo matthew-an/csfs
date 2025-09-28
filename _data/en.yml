@@ -1,566 +1,344 @@
-# English translations
 site:
-  title: "Cornerstone Insurance"
-  description: "Cornerstone Insurance provides comprehensive insurance solutions including life, health, trauma, income protection, and mortgage protection. Secure your future with our trusted insurance expertise and personalized coverage options."
-  company_name: "Cornerstone Insurance"
-  phone: "+64 211 280 727"
-  email: "amy.tao@cornerstonefs.co.nz"
-  wechat: "Amytaoingrace"
-
+  title: Cornerstone Insurance
+  description: Cornerstone Insurance provides comprehensive insurance solutions including life, health, trauma, income protection, and mortgage protection. Secure your future with our trusted insurance expertise and personalized coverage options.
+  company_name: Cornerstone Insurance
+  phone: +64 211 280 727
+  email: amy.tao@cornerstonefs.co.nz
+  wechat: Amytaoingrace
 nav:
-  home: "Home"
-  services: "Services"
-  team: "Team"
-  blog: "Blog"
-  disclosure: "Disclosure"
-  contact: "Contact"
-  about: "About"
-
+  home: Home
+  services: Services
+  team: Team
+  blog: Blog
+  disclosure: Disclosure
+  contact: Contact
+  about: About
 about:
-  title: "About Cornerstone Insurance"
-  trusted_partner: "New Zealand's Trusted Insurance Specialists"
-  intro: "Cornerstone Insurance has been helping Kiwi families protect what matters most. As FSP-licensed professionals (FSPR #1004360), we operate under New Zealand's strict financial services regulations, ensuring you receive compliant, expert advice. We've successfully processed over 95% of claims and helped 300+ families secure their financial future with simple, affordable insurance solutions tailored specifically for New Zealanders."
-  mission_title: "Our Mission"
-  mission_desc: "To make insurance simple, accessible, and affordable for every New Zealand family. We believe insurance shouldn't be complicated - it should give you peace of mind knowing your loved ones are protected."
-  what_sets_us_apart: "Why Families Choose Us"
-  expertise_title: "Local Expertise"
-  expertise_desc: "As New Zealand insurance specialists, we understand the unique needs of Kiwi families. Our FSP-licensed advisors stay current with local regulations and market changes to provide you with the most relevant advice."
-  personalized_title: "Personal Touch"
-  personalized_desc: "No call centers or automated systems. When you call us, you speak directly with Amy, your dedicated insurance advisor. We take time to understand your family's unique situation and budget."
-  comprehensive_title: "Simple Product Range"
-  comprehensive_desc: "We focus on the insurance products that matter most to New Zealand families:"
-  life_insurance: "Life Insurance - Protect your family's financial future"
-  health_insurance: "Health Insurance - Skip public waiting lists, access private care faster"
-  trauma_insurance: "Critical Illness Cover - Lump sum for cancer, heart attack, stroke & more"
-  income_protection: "Income Protection - Up to 75% of your income if you can't work"
-  disability_insurance: "Disability Cover - Financial security for permanent disability"
-  mortgage_protection: "Mortgage Protection - Ensure your family keeps the home"
-  commitment_title: "Our Track Record"
-  commitment_desc: "Numbers don't lie: 95%+ claims approval rate, 2-minute average quote time, and 300+ families protected. We're committed to being your most reliable insurance partner."
-  service_desc: "Real people, real support. No phone trees or overseas call centers. When you need help, you get Amy - your dedicated advisor who knows your situation and cares about your family's protection."
-  claims_title: "Claims You Can Count On"
-  claims_desc: "When life happens, we're here. Our 95%+ claims approval rate speaks for itself. We guide you through every step, handle the paperwork, and fight for your claim so you can focus on what matters most."
-  contact_title: "Ready to Get Protected?"
-  contact_desc: "Join the 300+ New Zealand families who trust Cornerstone Insurance. Get your personalized quote in under 2 minutes or speak with Amy for expert advice tailored to your situation."
-  tagline: "Protecting New Zealand families, one policy at a time. Simple insurance, reliable support, peace of mind guaranteed."
-
+  title: About Cornerstone Insurance
+  trusted_partner: New Zealand's Trusted Insurance Specialists
+  intro: 'Cornerstone Insurance has been helping Kiwi families protect what matters most. As FSP-licensed professionals (FSPR #1004360), we operate under New Zealand''s strict financial services regulations, ensuring you receive compliant, expert advice. We''ve successfully processed over 95% of claims and helped 300+ families secure their financial future with simple, affordable insurance solutions tailored specifically for New Zealanders.'
+  mission_title: Our Mission
+  mission_desc: To make insurance simple, accessible, and affordable for every New Zealand family. We believe insurance shouldn't be complicated - it should give you peace of mind knowing your loved ones are protected.
+  what_sets_us_apart: Why Families Choose Us
+  expertise_title: Local Expertise
+  expertise_desc: As New Zealand insurance specialists, we understand the unique needs of Kiwi families. Our FSP-licensed advisors stay current with local regulations and market changes to provide you with the most relevant advice.
+  personalized_title: Personal Touch
+  personalized_desc: No call centers or automated systems. When you call us, you speak directly with Amy, your dedicated insurance advisor. We take time to understand your family's unique situation and budget.
+  comprehensive_title: Simple Product Range
+  comprehensive_desc: 'We focus on the insurance products that matter most to New Zealand families:'
+  life_insurance: Life Insurance - Protect your family's financial future
+  health_insurance: Health Insurance - Skip public waiting lists, access private care faster
+  trauma_insurance: Critical Illness Cover - Lump sum for cancer, heart attack, stroke & more
+  income_protection: Income Protection - Up to 75% of your income if you can't work
+  disability_insurance: Disability Cover - Financial security for permanent disability
+  mortgage_protection: Mortgage Protection - Ensure your family keeps the home
+  commitment_title: Our Track Record
+  commitment_desc: 'Numbers don''t lie: 95%+ claims approval rate, 2-minute average quote time, and 300+ families protected. We''re committed to being your most reliable insurance partner.'
+  service_desc: Real people, real support. No phone trees or overseas call centers. When you need help, you get Amy - your dedicated advisor who knows your situation and cares about your family's protection.
+  claims_title: Claims You Can Count On
+  claims_desc: When life happens, we're here. Our 95%+ claims approval rate speaks for itself. We guide you through every step, handle the paperwork, and fight for your claim so you can focus on what matters most.
+  contact_title: Ready to Get Protected?
+  contact_desc: Join the 300+ New Zealand families who trust Cornerstone Insurance. Get your personalized quote in under 2 minutes or speak with Amy for expert advice tailored to your situation.
+  tagline: Protecting New Zealand families, one policy at a time. Simple insurance, reliable support, peace of mind guaranteed.
 hero:
-  title_line1: "Protecting your future"
-  title_line2: "Safeguarding your family"
-  title_line3: ""
-  subtitle: "Your trusted advisor in every stage of life."
-  cta_primary: "Get Your Quote"
-  cta_secondary: "Call +64 211 280 727"
-
+  title_line1: Protecting your future
+  title_line2: Safeguarding your family
+  title_line3: ''
+  subtitle: Your trusted advisor in every stage of life.
+  cta_primary: Get Your Quote
+  cta_secondary: Call +64 211 280 727
 company_intro:
-  title: "Why Choose Cornerstone Insurance?"
-  advice_title: "Fast & Easy Quotes"
-  advice_desc: "Get personalized insurance quotes in minutes, not hours. Our streamlined process makes protecting your family simple."
-  management_title: "Expert Policy Management"
-  management_desc: "Professional ongoing support to ensure your coverage evolves with your life changes."
-  claim_title: "Dedicated Claims Support"
-  claim_desc: "When you need us most, our experienced team guides you through every step of the claims process."
-
-experience:
-  years: "7+"
-  title: "Years of<br>Experience"
-  subtitle: "TRUSTED BY KIWI FAMILIES"
-  heading: "We've helped 300+ New Zealand families"
-  tagline: "Fast quotes, easy process, reliable support"
-  description: "Cornerstone Insurance has processed over 95% of claims successfully, with an average quote time of under 2 minutes. We're committed to making insurance simple and accessible for all New Zealanders."
-  cta_primary: "Get My Quote"
-  cta_secondary: "Call +64 211 280 727"
-  contact_now: "Get your quote in 2 minutes!"
-
-why_choose:
-  subtitle: "WHY CHOOSE CORNERSTONE"
-  title: "Trusted by New Zealand families"
-  fast_quote: "2-Minute Quotes"
-  fast_quote_desc: "Get instant quotes online or over the phone"
-  easy_process: "Simple Application"
-  easy_process_desc: "No complicated paperwork or lengthy processes"
-  policy_control: "Full Transparency"
-  policy_control_desc: "Clear terms, no hidden fees or surprises"
-  save_money: "Competitive Rates"
-  save_money_desc: "Best value coverage tailored to your needs"
-
+  title: Why Choose Cornerstone Insurance?
+  advice_title: Fast & Easy Quotes
+  advice_desc: Get personalized insurance quotes in minutes, not hours. Our streamlined process makes protecting your family simple.
+  management_title: Expert Policy Management
+  management_desc: Professional ongoing support to ensure your coverage evolves with your life changes.
+  claim_title: Dedicated Claims Support
+  claim_desc: When you need us most, our experienced team guides you through every step of the claims process.
 services:
-  subtitle: "INSURANCE MADE SIMPLE"
-  title: "Protect what matters most to you"
-  health_title: "Health Insurance"
-  health_desc: "Skip the public waiting lists. Get faster access to private healthcare when you and your family need it most."
-  life_title: "Life Insurance"
-  life_desc: "Protect your family's financial future with New Zealand's most trusted life insurance provider."
-  trauma_title: "Trauma Insurance"
-  trauma_desc: "Lump sum payment when diagnosed with cancer, heart attack, stroke or other serious conditions. Focus on recovery, not finances."
-  income_title: "Income Protection"
-  income_desc: "Up to 75% of your income if you can't work due to illness or injury. Keep your lifestyle while you recover."
-  mortgage_title: "Mortgage Protection"
-  mortgage_desc: "Ensure your family keeps the home if something happens to you. Covers your mortgage balance automatically."
-  tpd_title: "Disability Cover"
-  tpd_desc: "Lump sum payment if you become permanently disabled. Adapt your home and lifestyle with financial security."
-  learn_more: "Get Quote →"
-  view_all: "Compare All Options"
-
+  title: Protect what matters most to you
+  health_title: Health Insurance
+  health_desc: Skip the public waiting lists. Get faster access to private healthcare when you and your family need it most.
+  life_title: Life Insurance
+  life_desc: Protect your family's financial future with New Zealand's most trusted life insurance provider.
+  trauma_title: Trauma Insurance
+  trauma_desc: Lump sum payment when diagnosed with cancer, heart attack, stroke or other serious conditions. Focus on recovery, not finances.
+  income_title: Income Protection
+  income_desc: Up to 75% of your income if you can't work due to illness or injury. Keep your lifestyle while you recover.
+  mortgage_title: Mortgage Protection
+  mortgage_desc: Ensure your family keeps the home if something happens to you. Covers your mortgage balance automatically.
+  tpd_title: Disability Cover
+  tpd_desc: Lump sum payment if you become permanently disabled. Adapt your home and lifestyle with financial security.
+  learn_more: Get Quote →
+  view_all: Compare All Options
 testimonials:
-  title: "What Our Clients Say"
-  excellent: "EXCELLENT"
-  reviews_count: "Based on 50+ satisfied customers"
-  sarah_review: "Amy made getting life insurance so easy! The whole process took less than a week, and I got exactly the coverage I needed for my family at a price I could afford. Highly recommend!"
-  sarah_name: "Sarah L."
-  sarah_title: "Auckland Mother of 2"
-  michael_review: "When I needed to claim on my income protection policy, Cornerstone Insurance was there every step of the way. Professional, caring, and they delivered exactly what they promised."
-  michael_name: "Michael T."
-  michael_title: "Wellington Professional"
-
-trust_indicators:
-  claims_rate: "95%+"
-  claims_approved: "Claims Approved"
-  families_count: "300+"
-  families_protected: "Families Protected"
-  quote_time: "2 min"
-  average_quote_time: "Average Quote Time"
-  license_code: "NZFSG"
-  licensed_provider: "Licensed Provider"
-
+  title: What Our Clients Say
+  excellent: EXCELLENT
+  reviews_count: Based on 50+ satisfied customers
+  sarah_review: Amy made getting life insurance so easy! The whole process took less than a week, and I got exactly the coverage I needed for my family at a price I could afford. Highly recommend!
+  sarah_name: Sarah L.
+  sarah_title: Auckland Mother of 2
+  michael_review: When I needed to claim on my income protection policy, Cornerstone Insurance was there every step of the way. Professional, caring, and they delivered exactly what they promised.
+  michael_name: Michael T.
+  michael_title: Wellington Professional
 contact_cta:
-  title: "Ready to Protect Your Family?"
-  subtitle: "Get your personalized quote in under 2 minutes"
-  get_quote: "Get My Quote Now"
-  call_now: "Speak to an Expert"
-  licensed: "FSP Licensed • Professional Service • Claims Support When You Need It"
-
+  title: Ready to Protect Your Family?
+  subtitle: Get your personalized quote in under 2 minutes
+  get_quote: Get My Quote Now
+  call_now: Speak to an Expert
+  licensed: FSP Licensed • Professional Service • Claims Support When You Need It
 footer:
-  copyright: "© 2024 Cornerstone Insurance. All rights reserved."
-  privacy: "Privacy Policy"
-  terms: "Terms of Service"
-  disclosure: "Disclosure"
-  tagline: "Your trusted insurance partner providing comprehensive coverage solutions"
-  insurance_services: "INSURANCE SERVICES"
-  life_insurance: "Life Insurance"
-  health_insurance: "Health Insurance"
-  trauma_insurance: "Trauma Insurance"
-  income_protection: "Income Protection"
-  company: "COMPANY"
-  about_us: "About Us"
-  our_team: "Our Team"
-  contact_us: "Contact Us"
-  legal: "LEGAL"
-  terms_conditions: "Terms & Conditions"
-  privacy_policy: "Privacy Policy"
-  financial_disclosure: "Financial Disclosure"
-  file_claim: "File a Claim"
-  contact_info: "CONTACT INFO"
-  hours: "Mon-Fri 8AM-6PM"
-
-# Page-specific translations
-pages:
-  services:
-    title: "Services"
-    intro: "We have a comprehensive range of insurance products designed to protect your present and secure your future. At Cornerstone Insurance, we understand that life is filled with uncertainties, and having the right insurance coverage is essential for peace of mind and financial stability."
-    life_title: "Life Insurance:"
-    life_desc: "Protect your loved ones' financial well-being in the unfortunate event of your passing. Our life insurance policies provide a lump-sum payment to your beneficiaries, ensuring their financial security and helping them maintain their standard of living."
-    health_title: "Health Insurance:"
-    health_desc: "Your health is your most valuable asset. Our health insurance plans provide comprehensive coverage for medical expenses, hospitalization, doctor visits, prescription medications, and more. With Cornerstone Insurance, you and your family can access quality healthcare without worrying about the financial burden."
-    trauma_title: "Trauma Insurance:"
-    trauma_desc: "Accidents and major illnesses can happen unexpectedly, causing physical, emotional, and financial stress. Our trauma insurance provides a lump-sum payment upon diagnosis of a covered major illness or injury, helping you focus on recovery rather than financial worries."
-    income_title: "Income Protection:"
-    income_desc: "Protect your income from unexpected circumstances that may prevent you from working. Our income protection insurance ensures you have a regular income stream in case you suffer from disability or illness, allowing you to maintain your lifestyle and support your family during difficult times."
-    disability_title: "Permanent Disability Insurance:"
-    disability_desc: "In the event that permanent disability hinders your ability to work, our insurance coverage provides financial support. It offers a lump-sum payment to assist with medical expenses, rehabilitation costs, and other financial obligations, allowing you to live with confidence."
-    mortgage_title: "Mortgage Protection:"
-    mortgage_desc: "Protect your most important investment - your home - with our mortgage protection insurance. This coverage provides financial assistance for mortgage repayment or monthly payments if you face unexpected circumstances such as disability, unemployment, or major illness."
-    closing: "At Cornerstone Insurance, we prioritize our clients' needs and work tirelessly to tailor insurance solutions that align with their unique requirements. Our experienced team of insurance agents is committed to delivering exceptional service, ensuring you receive the right coverage at the best value."
-    cta: "Don't leave your future to chance. Contact Cornerstone Insurance today to explore our range of insurance products and discover the peace of mind that comes with knowing you're protected. Secure your today and tomorrow with Cornerstone Insurance - your trusted insurance partner."
-
-
-  team:
-    title: "Meet Amy - Your Insurance Specialist"
-    description: "Personal service from a qualified professional who understands New Zealand families' insurance needs."
-    intro: "At Cornerstone Insurance, you're not just a policy number. You work directly with Amy Tao, a qualified insurance professional who takes the time to understand your family's unique needs and budget."
-    amy_title: "FSP Licensed Insurance Advisor"
-    amy_desc: "Amy has helped over 500 New Zealand families secure the right insurance protection. With her academic background and hands-on experience, she makes insurance simple to understand and easy to buy."
-    qualifications: "Professional Credentials"
-    masters: "Master's Degree"
-    masters_from: "Chinese Academy of Sciences"
-    expertise: "FSP Licensed - qualified to provide insurance advice in New Zealand"
-    languages: "Bilingual service in English and Mandarin Chinese"
-    commitment: "Dedicated to making insurance simple and accessible for Kiwi families"
-    contact_amy: "Speak with Amy Today"
-    phone: "Phone"
-    email: "Email"
-    wechat: "WeChat"
-    our_commitment: "What You Can Expect"
-    commitment_intro: "When you work with Amy, you get:"
-    personalized_service: "Personal Attention"
-    personalized_desc: "Direct access to your advisor - no call centers or phone trees"
-    expert_guidance: "Expert Advice"
-    expert_desc: "Qualified professional guidance tailored to New Zealand families"
-    ongoing_support: "Ongoing Support"
-    ongoing_desc: "Help when you need it most - from quotes to claims"
-    cultural_understanding: "Bilingual Service"
-    cultural_desc: "Professional service in both English and Chinese"
-    ready_to_discuss: "Ready to protect your family?"
-    contact_today: "Get your quote today"
-    schedule_consultation: "- it takes less than 2 minutes."
-
-  contact:
-    title: "Contact Us"
-    get_in_touch: "Get In Touch"
-    intro: "Ready to secure your financial future? We're here to help you find the perfect insurance solution tailored to your needs. Contact us today for a free consultation."
-    contact_info: "Contact Information"
-    phone_title: "Phone"
-    phone_available: "Available during business hours"
-    email_title: "Email"
-    email_response: "We'll respond within 24 hours"
-    wechat_title: "WeChat"
-    wechat_support: "Instant messaging support"
-    business_hours: "Business Hours"
-    monday_friday: "Monday - Friday"
-    hours: "9:00 AM - 5:00 PM NZST"
-    emergency_support: "Emergency support available"
-    why_choose_title: "Why Choose Cornerstone Insurance?"
-    free_consultation: "✓ Free Consultation"
-    free_consultation_desc: "No obligation assessment of your insurance needs"
-    personalized_solutions: "✓ Personalized Solutions"
-    personalized_solutions_desc: "Tailored coverage that fits your lifestyle and budget"
-    expert_guidance: "✓ Expert Guidance"
-    expert_guidance_desc: "Professional advice from experienced insurance specialists"
-    ongoing_support: "✓ Ongoing Support"
-    ongoing_support_desc: "Dedicated service throughout your policy lifetime"
-    ready_to_start: "Ready to Get Started?"
-    ready_intro: "Take the first step towards securing your financial future. Contact us today for your free insurance consultation."
-    call_now: "Call Now"
-    send_email: "Send Email"
-
-  disclosure:
-    title: "Disclosure Statement"
-    details_title: "Details about me and my Financial Advice Provider"
-    details_intro: "I am a Financial Adviser. I give advice on behalf of a Financial Advice Provider. My details are set out below:"
-    full_name: "Full Name: Min Tao"
-    address: "Address: 80B Forrest Hill Road, Forrest Hill, Auckland, 0620, New Zealand"
-    phone: "Phone: 021 128 0727"
-    email: "Email: amy.tao@cornerstonefs.co.nz"
-    fspr_number: "FSPR Number: 629629"
-    provider_name: "Name of Financial Advice Provider: Cornerstone Insurance Limited"
-    provider_fspr: "FSPR Number: 1004360"
-    member_info: "My Financial Advice Provider is a member of NZ Financial Services Group Limited"
-    licensing_title: "Licensing Information"
-    licensing_info: "My Financial Advice Provider is authorised to provide financial advice services under a current Financial Advice Provider licence issued by the Financial Markets Authority, licence name: NZ Financial Services Group Limited (NZFSG)"
-    licensing_fspr: "FSPR Number: 286965"
-    important_title: "It is important that you read this document."
-    important_info: "It will help you to choose a Financial Adviser that is right for your needs. It will also provide you with some useful information about your chosen Financial Adviser."
-    advice_scope_title: "The nature and scope of advice"
-    advice_scope_info: "The following information will help you understand what type of advice I can give you. I will analyse your insurance needs and help you apply for and choose cover that suits your purposes. The types of insurance products I can help you with are shown below. I have access to a range of insurance companies (as shown below). Once we have selected an insurance company and the type and amount of cover that suits you, I will help you to obtain cover. I may also be able to help you maintain your insurance policies, for example, if your circumstances change and you need to alter your cover."
-    insurance_products_title: "Types of insurance products I can give you advice on:"
-    life_insurance: "Life Insurance"
-    health_insurance: "Health Insurance"
-    disability_insurance: "Disability Insurance"
-    companies_title: "Insurance companies I can give you advice on:"
-    companies_info: "I can provide advice on products from the following insurance companies:"
-    asteron: "Asteron Life"
-    fidelity: "Fidelity Life"
-    partners: "Partners Life"
-    southern_cross: "Southern Cross"
-    accuro: "Accuro"
-    nib: "nib"
-    unichem: "Unichem"
-    aa: "AA Insurance"
-    anz: "ANZ"
-    kiwibank: "Kiwibank"
-    westpac: "Westpac"
-    companies_note: "I may from time to time recommend products from other insurance companies. If I do so, I will tell you the details of that insurance company."
-    remuneration_title: "How I am paid"
-    remuneration_info: "I am paid in the following ways:"
-    commission_info: "Commission: I receive commission from insurance companies when you buy an insurance product. Commission is usually a percentage of your annual premium. Different products and insurance companies pay different commission rates."
-    commission_rates: "Commission rates range:"
-    life_commission: "Life Insurance: 0-200% of first year premium, 0-10% of renewal premiums"
-    health_commission: "Health Insurance: 0-25% of annual premium"
-    disability_commission: "Disability Insurance: 0-200% of first year premium, 0-10% of renewal premiums"
-    fee_info: "Fees: I may charge you a fee for providing financial advice. If I am to charge a fee, I will tell you the amount of the fee (or how the fee is calculated) before I provide you with advice."
-    other_incentives: "Other incentives: I may from time to time receive other incentives from product providers, such as bonuses, gifts or hospitality benefits."
-    no_cost_info: "You do not pay me for my services. The insurance companies pay me commission."
-    conflicts_title: "Conflicts of interest that may influence my advice"
-    conflicts_info: "I must tell you about conflicts of interest that I know about. A conflict of interest is something that could prevent me from giving you impartial advice because of my personal interests, business interests or relationships with other people."
-    no_conflicts: "I do not have any conflicts of interest to disclose."
-    duties_title: "My duties to you"
-    duties_info: "My primary duties are to:"
-    care_skill: "✓ Give due care, skill and diligence when providing financial advice"
-    suitable_advice: "✓ Ensure the advice is suitable for you"
-    clear_info: "✓ Provide you with information in a clear, concise and effective manner"
-    other_services_title: "What else I can help you with"
-    other_services_info: "I can help you with other services through my referral partners to make it easier for you. However, I am not able to give advice on the products they offer and I have not checked to see if they can meet your specific needs. You are free to use other providers of your choice or undertake your own research."
-    referral_services: "Referral services include:"
-    accounting: "Accounting services"
-    legal: "Legal services"
-    banking: "Banking services"
-    investment: "Investment services"
-    estate_planning: "Estate planning"
-    complaints_title: "If you have a complaint"
-    complaints_info: "If you have a complaint about the service I have provided, you can:"
-    contact_me: "1. Contact me directly to discuss your concerns"
-    contact_provider: "2. Contact my Financial Advice Provider"
-    external_dispute: "3. If we cannot resolve your complaint, you can contact an external dispute resolution service:"
-    insurance_ombudsman: "Insurance and Financial Services Ombudsman"
-    ombudsman_website: "Website: www.ifso.nz"
-    ombudsman_phone: "Phone: 0800 888 202"
-    ombudsman_email: "Email: info@ifso.nz"
-    work_for_you_title: "I work for you"
-    work_for_you_info: "As a Financial Adviser, it is my duty to abide by the Code of Conduct for Financial Service Providers. Although I am paid by the providers for the services I provide, it is you that I work for. To ensure I put your interests ahead of my own, I follow a 6-step advice process when providing personalized financial advice which is based on your individual goals and needs. I provide all my recommendations in writing so that you have the opportunity to ask any questions you might have before implementing any of my advice. We take part in a quality assurance program to review our advice process on an annual basis to ensure it is based on the needs of our clients."
-    privacy_title: "Privacy"
-    privacy_info: "I collect your personal information in order to provide you with financial advice and services. Without this information I may not be able to provide you with appropriate advice or services. I will not disclose your personal information to any other person except:"
-    privacy_1: "a) where you have authorised me to do so, or"
-    privacy_2: "b) where I am required to do so by law, or"
-    privacy_3: "c) other professionals such as solicitors, accountants, finance brokers, financial planners when such services are required to complement this advice and as requested by you."
-    privacy_access: "You have the right to request access to the personal information I hold about you and to request correction of any errors."
-
-language:
-  switch_to_english: "English"
-  switch_to_chinese: "中文"
-
-# Pages
+  disclosure: Disclosure
+  tagline: Your trusted insurance partner providing comprehensive coverage solutions
+  insurance_services: INSURANCE SERVICES
+  life_insurance: Life Insurance
+  health_insurance: Health Insurance
+  trauma_insurance: Trauma Insurance
+  income_protection: Income Protection
+  company: COMPANY
+  about_us: About Us
+  our_team: Our Team
+  contact_us: Contact Us
+  terms_conditions: Terms & Conditions
+  privacy_policy: Privacy Policy
+  file_claim: File a Claim
+  contact_info: CONTACT INFO
 pages:
   faq:
-    title: "Frequently Asked Questions"
+    title: Frequently Asked Questions
   glossary:
-    title: "Insurance Glossary"
-    description: "Understand key insurance industry terms and concepts to help you better understand insurance products and services."
-    search_placeholder: "Search terms..."
-    terms:
-      acc:
-        term: "ACC (Accident Compensation Corporation)"
-        definition: "New Zealand's national accident insurance scheme that provides accident injury coverage for all New Zealand residents and visitors, including medical costs and income compensation."
-      beneficiary:
-        term: "Beneficiary"
-        definition: "The person entitled to receive insurance benefits when the policyholder dies or meets claim conditions."
-      claim:
-        term: "Claim"
-        definition: "A formal request to an insurance company for payment, typically made when an insured event occurs or policy conditions are met."
-      deductible:
-        term: "Deductible/Excess"
-        definition: "The amount the insured person must pay out of pocket before the insurance company begins to pay."
-      exclusion:
-        term: "Exclusion"
-        definition: "Risks, situations, or conditions specifically not covered by an insurance contract."
-      grace_period:
-        term: "Grace Period"
-        definition: "Additional time given by the insurance company for premium payment after the due date, during which the policy remains in effect."
-      health_insurance:
-        term: "Health Insurance"
-        definition: "Insurance that provides coverage for medical expenses, including hospitalization, surgery, and specialist treatments."
-      income_protection:
-        term: "Income Protection Insurance"
-        definition: "Insurance that provides regular income replacement when the insured person cannot work due to illness or accident."
-      life_insurance:
-        term: "Life Insurance"
-        definition: "Insurance that pays benefits to beneficiaries upon the death of the insured person, designed to protect family financial security."
-      loading:
-        term: "Premium Loading"
-        definition: "Additional charges added to standard premiums due to higher health or occupational risks of the insured person."
-      medical_examination:
-        term: "Medical Examination"
-        definition: "Health assessment required by the insurance company to evaluate underwriting risk and determine premiums."
-      no_claims_bonus:
-        term: "No Claims Bonus"
-        definition: "Premium discounts or other benefits given to policyholders who have not made claims during a specified period."
-      policy:
-        term: "Policy"
-        definition: "The formal insurance contract document that details terms, coverage, premiums, and claim procedures."
-      premium:
-        term: "Premium"
-        definition: "The amount paid by the policyholder to the insurance company for coverage, which can be paid monthly, quarterly, or annually."
-      pre_existing_condition:
-        term: "Pre-existing Condition"
-        definition: "Health problems or illnesses that existed before the insurance policy took effect, typically not covered by insurance."
-      sum_insured:
-        term: "Sum Insured"
-        definition: "The maximum amount payable under an insurance contract, representing the insurer's maximum liability."
-      trauma_insurance:
-        term: "Trauma Insurance"
-        definition: "Insurance that provides a lump sum payment when the insured person is diagnosed with a serious illness listed in the policy."
-      underwriting:
-        term: "Underwriting"
-        definition: "The process by which insurance companies assess applicant risk and decide whether to provide coverage and at what premium level."
-      waiting_period:
-        term: "Waiting Period"
-        definition: "The time interval between when insurance takes effect and when claims can be made, typically applicable to illness-related coverage."
+    title: Insurance Glossary
+    description: Understand key insurance industry terms and concepts to help you better understand insurance products and services.
+    search_placeholder: Search terms...
   services:
-    title: "Our Insurance Products"
-    intro: "We keep things simple. Our policies are written in plain English, designed specifically for New Zealanders. Get the protection you need without the confusion."
-    life_title: "Life Insurance"
-    life_desc: "Provides a lump sum to your family when you die, helping them pay the mortgage, invest in education, put food on the table, and pay the bills. Cover from $50,000 to $2 million."
-    health_title: "Health Insurance"
-    health_desc: "Skip the public waiting lists. Get faster access to private specialists, surgery, and treatment when you need it most. Choose your own doctor and hospital."
-    trauma_title: "Critical Illness Cover"
-    trauma_desc: "Lump sum payment on diagnosis of cancer, heart attack, stroke, or other serious conditions. Use the money however you need - treatment, recovery, or lifestyle changes."
-    income_title: "Income Protection"
-    income_desc: "Pays you up to 75% of your income if you can't work due to illness or injury. Keep paying your bills and maintain your lifestyle while you recover."
-    disability_title: "Disability Cover"
-    disability_desc: "Lump sum payment if you become permanently disabled and can't return to your job. Covers medical costs, home modifications, and ongoing care needs."
-    mortgage_title: "Mortgage Protection"
-    mortgage_desc: "Ensures your family can keep the home if something happens to you. Automatically pays off your mortgage balance, giving your loved ones one less worry."
-    closing: "Not sure which cover is right for you? Our expert advisors will help you understand your options and find the right protection for your situation and budget."
-    cta: "Ready to protect your family? [Get your free quote](/contact-us) or call us on +64 211 280 727 for expert advice."
+    title: Our Insurance Products
+    intro: We keep things simple. Our policies are written in plain English, designed specifically for New Zealanders. Get the protection you need without the confusion.
+    life_title: Life Insurance
+    life_desc: Provides a lump sum to your family when you die, helping them pay the mortgage, invest in education, put food on the table, and pay the bills. Cover from $50,000 to $2 million.
+    health_title: Health Insurance
+    health_desc: Skip the public waiting lists. Get faster access to private specialists, surgery, and treatment when you need it most. Choose your own doctor and hospital.
+    trauma_title: Critical Illness Cover
+    trauma_desc: Lump sum payment on diagnosis of cancer, heart attack, stroke, or other serious conditions. Use the money however you need - treatment, recovery, or lifestyle changes.
+    income_title: Income Protection
+    income_desc: Pays you up to 75% of your income if you can't work due to illness or injury. Keep paying your bills and maintain your lifestyle while you recover.
+    disability_title: Disability Cover
+    disability_desc: Lump sum payment if you become permanently disabled and can't return to your job. Covers medical costs, home modifications, and ongoing care needs.
+    mortgage_title: Mortgage Protection
+    mortgage_desc: Ensures your family can keep the home if something happens to you. Automatically pays off your mortgage balance, giving your loved ones one less worry.
+    closing: Not sure which cover is right for you? Our expert advisors will help you understand your options and find the right protection for your situation and budget.
   team:
-    title: "Our Team"
-    description: "Meet the professional team at Cornerstone Insurance, dedicated to providing you with the highest quality insurance services and expert advice."
-    intro: "Cornerstone Insurance consists of experienced insurance professionals who have deep knowledge of the New Zealand insurance market and are committed to providing personalized insurance solutions for every client."
-    amy_title: "Principal Insurance Advisor"
-    amy_desc: "Min Tao (Amy) has extensive experience in the insurance industry and deep professional knowledge. She is dedicated to helping clients understand complex insurance products and finding protection solutions that best suit their needs. Amy can serve clients in both Chinese and English, ensuring every client receives clear and accurate insurance advice."
-    qualifications: "Professional Qualifications & Experience"
-    masters: "Master's Degree"
-    masters_from: "Chinese Academy of Sciences"
-    expertise: "Years of experience in the insurance industry, specializing in life insurance, health insurance, and income protection insurance"
-    languages: "Fluent in Chinese and English, able to provide professional services to clients from different backgrounds"
-    commitment: "Continuously learning about the latest insurance products and regulations to ensure the most accurate advice for clients"
-    contact_amy: "Contact Amy"
-    phone: "Phone"
-    email: "Email"
-    wechat: "WeChat"
-    our_commitment: "Our Commitment"
-    commitment_intro: "At Cornerstone Insurance, we commit to:"
-    personalized_service: "Personalized Service"
-    personalized_desc: "We take time to understand your unique needs and financial situation, providing tailored insurance advice."
-    expert_guidance: "Expert Guidance"
-    expert_desc: "Our team has deep industry knowledge and can explain complex insurance terms to help you make informed decisions."
-    ongoing_support: "Ongoing Support"
-    ongoing_desc: "From application to claims, we support you throughout the entire process to ensure you get the protection you deserve."
-    cultural_understanding: "Cultural Understanding"
-    cultural_desc: "We understand the needs of clients from different cultural backgrounds and provide thoughtful bilingual services."
-    ready_to_discuss: "Ready to discuss your insurance needs?"
-    contact_today: "Contact us today"
-    schedule_consultation: "to schedule a free consultation."
+    title: Our Team
+    intro: Cornerstone Insurance consists of experienced insurance professionals who have deep knowledge of the New Zealand insurance market and are committed to providing personalized insurance solutions for every client.
+    amy_title: Principal Insurance Advisor
+    amy_desc: Min Tao (Amy) has extensive experience in the insurance industry and deep professional knowledge. She is dedicated to helping clients understand complex insurance products and finding protection solutions that best suit their needs. Amy can serve clients in both Chinese and English, ensuring every client receives clear and accurate insurance advice.
+    qualifications: Professional Qualifications & Experience
+    masters: Master's Degree
+    masters_from: Chinese Academy of Sciences
+    expertise: Years of experience in the insurance industry, specializing in life insurance, health insurance, and income protection insurance
+    languages: Fluent in Chinese and English, able to provide professional services to clients from different backgrounds
+    commitment: Continuously learning about the latest insurance products and regulations to ensure the most accurate advice for clients
+    contact_amy: Contact Amy
+    phone: Phone
+    email: Email
+    wechat: WeChat
+    our_commitment: Our Commitment
+    commitment_intro: 'At Cornerstone Insurance, we commit to:'
+    personalized_service: Personalized Service
+    personalized_desc: We take time to understand your unique needs and financial situation, providing tailored insurance advice.
+    expert_guidance: Expert Guidance
+    expert_desc: Our team has deep industry knowledge and can explain complex insurance terms to help you make informed decisions.
+    ongoing_support: Ongoing Support
+    ongoing_desc: From application to claims, we support you throughout the entire process to ensure you get the protection you deserve.
+    cultural_understanding: Cultural Understanding
+    cultural_desc: We understand the needs of clients from different cultural backgrounds and provide thoughtful bilingual services.
+    ready_to_discuss: Ready to discuss your insurance needs?
+    contact_today: Contact us today
+    schedule_consultation: to schedule a free consultation.
   contact:
-    title: "Contact Us"
-    intro: "Ready to protect your future? Our professional team is here to provide you with personalized insurance advice and solutions."
-    get_in_touch: "Get in Touch"
-    contact_info: "Contact Information"
-    phone_title: "Phone Consultation"
-    phone_available: "Available for consultation weekdays 9:00-17:00"
-    email_title: "Email Consultation"
-    email_response: "We'll respond to your email within 24 hours"
-    wechat_title: "WeChat Consultation"
-    wechat_support: "Chinese service, instant communication"
-    business_hours: "Business Hours"
-    monday_friday: "Monday to Friday"
-    hours: "9:00 AM - 5:00 PM"
-    emergency_support: "24-hour support available for emergencies"
-    why_choose_title: "Why Choose Us?"
-    free_consultation: "Free Consultation"
-    free_consultation_desc: "We provide free initial consultations to help you understand your insurance options."
-    personalized_solutions: "Personalized Solutions"
-    personalized_solutions_desc: "Customized insurance plans based on your specific needs and budget."
-    expert_guidance: "Expert Guidance"
-    expert_guidance_desc: "Experienced insurance advisors provide professional recommendations."
-    ongoing_support: "Ongoing Support"
-    ongoing_support_desc: "Full support from application to claims processing."
-    ready_to_start: "Ready to Get Started?"
-    ready_intro: "Contact us for personalized insurance advice to protect you and your family's future."
-    call_now: "Call Now"
-    send_email: "Send Email"
+    title: Contact Us
+    intro: Ready to protect your future? Our professional team is here to provide you with personalized insurance advice and solutions.
+    contact_info: Contact Information
+    phone_title: Phone Consultation
+    phone_available: Available for consultation weekdays 9:00-17:00
+    email_title: Email Consultation
+    email_response: We'll respond to your email within 24 hours
+    wechat_title: WeChat Consultation
+    wechat_support: Chinese service, instant communication
+    business_hours: Business Hours
+    monday_friday: Monday to Friday
+    hours: 9:00 AM - 5:00 PM
+    emergency_support: 24-hour support available for emergencies
+    why_choose_title: Why Choose Us?
+    free_consultation: Free Consultation
+    free_consultation_desc: We provide free initial consultations to help you understand your insurance options.
+    personalized_solutions: Personalized Solutions
+    personalized_solutions_desc: Customized insurance plans based on your specific needs and budget.
+    expert_guidance: Expert Guidance
+    expert_guidance_desc: Experienced insurance advisors provide professional recommendations.
+    ongoing_support: Ongoing Support
+    ongoing_support_desc: Full support from application to claims processing.
+    ready_to_start: Ready to Get Started?
+    ready_intro: Contact us for personalized insurance advice to protect you and your family's future.
+    call_now: Call Now
+    send_email: Send Email
   disclosure:
-    title: "Disclosure Guide"
-    intro: "Here is some key information you need to know to help you understand what type of advice I am able to give you, so that you can make an informed and confident choice when engaging me."
-    details_title: "Details about me and my Financial Advice Provider"
-    full_name: "**Full Name:** Min Tao"
-    address: "**Address:** 80B Forrest Hill Road, Forrest Hill, Auckland, 0620, New Zealand"
-    phone: "**Phone:** 021 128 0727"
-    email: "**Email:** amy.tao@cornerstonefs.co.nz"
-    fspr_number: "**FSPR Number:** 629629"
-    provider_name: "**Financial Advice Provider:** Cornerstone Insurance Limited"
-    provider_trading: "**Trading as:** Cornerstone Insurance Limited"
-    provider_fspr: "**FSPR Number:** 1004360"
-    provider_address: "**Address:** 80B Forrest Hill Road, Forrest Hill, Auckland, 0620, New Zealand"
-    provider_phone: "**Phone:** 0211280727"
-    provider_email: "**Email:** amy.tao@cornerstonefs.co.nz"
-    member_info: "My Financial Advice Provider is a member of NZ Financial Services Group Limited."
-    licensing_title: "Licensing Information"
-    licensing_info: "My Financial Advice Provider is authorised to provide a financial advice service under a current financial advice provider licence issued by the Financial Markets Authority in the name of: **NZ Financial Services Group Limited**"
-    licensing_fspr: "**FSPR Number:** 286965"
-    advice_scope_title: "Nature and Scope of Advice"
-    advice_scope_info: "I will analyse your insurance needs and help you apply for and choose cover that is suitable for your purpose."
-    advice_scope_maintain: "I may also be able to help you maintain your insurance policy, for example if there are changes in your circumstances requiring changes to the cover."
-    insurers_title: "Insurers I use"
-    insurers_list: "- AIA\n- Asteron Life\n- NIB\n- Partners Life\n- Chubb Life"
-    products_title: "Products I can advise on"
-    products_list: "- Life\n- Income Protection\n- Health\n- Trauma\n- Permanent Disablement\n- Mortgage Protection/Repayment\n- Redundancy Cover\n- Waiver of Premium/Premium Cover"
-    other_services_title: "Other referral services"
-    other_services_list: "- Tower F&G\n- Initio F&G\n- XE Money\n- FastConnect"
-    legal_advice: "*(I am unable to offer legal or tax advice and recommend you consult your solicitor or accountant.)*"
-    fees_title: "Fees and Expenses"
-    fees_intro: "Generally you won't be charged any fees for the financial advice I provide to you. This is possible because insurers usually pay commission."
-    oneoff_fees_title: "One-off Fees"
-    oneoff_fees_info: "I may charge you a one-off fee if:\n\n- I do not receive a commission from the insurer.\n- You request advice on a product outside my usual panel."
-    commissions_title: "Commissions & Incentives"
-    commissions_info: "- Commissions are typically **upfront and/or ongoing**, based on premiums.\n- Referral fees may also apply.\n- Occasionally I may receive non-monetary incentives (e.g., gifts, tickets)."
-    commission_table: "| Insurer       | Upfront (max) | Ongoing (max) |\n| ------------- | ------------- | ------------- |\n| Asteron Life  | 200%          | 10%           |\n| NIB           | 230%          | 7.5%          |\n| Chubb Life    | 230%          | 15%           |\n| Partners Life | 230%          | 10%           |\n| AIA           | 220%          | 7.5%          |"
-    privacy_title: "Privacy Policy & Security"
-    privacy_info: "- Personal information is collected under my Privacy Policy.\n- Data may be shared with NZ Financial Services Group Limited for audits.\n- Stored securely on **Amazon Web Services**."
-    complaints_title: "Complaints Process"
-    complaints_process: "If you have a complaint:\n\n1. Contact me via phone or email (Subject: Complaint - Your Name).\n2. I will acknowledge within 24 hours and record it.\n3. Aim to resolve within 7 working days.\n4. If unresolved, you can refer to:"
-    ombudsman_info: "**Insurance and Financial Services Ombudsman**\nEmail: info@ifso.nz\nPhone: 0800 888 202\n[Website](https://www.ifso.nz/)\nPO Box 10-845, Wellington 6143"
-    duties_title: "My Duties"
-    duties_info: "Under the Financial Markets Conduct Act 2013, I must:\n\n- Meet standards of competence, knowledge, and skill.\n- Prioritise client interests.\n- Exercise care, diligence, and skill.\n- Meet ethical behaviour and client care standards."
-    availability_title: "Availability of Information"
-    availability_info: "This information can also be provided in hardcopy upon request."
-  calculators:
-    title: "Insurance Calculators"
-    description: "Use our professional insurance calculators to quickly estimate your insurance needs. These tools are based on industry standards to help you make informed insurance decisions."
-    life_insurance:
-      title: "Life Insurance Needs Calculator"
-      description: "Calculate how much life insurance you need to protect your family's financial security"
-      annual_income: "Annual Income (NZD)"
-      annual_income_help: "Your gross annual income before tax"
-      mortgage_debt: "Mortgage Balance (NZD)"
-      mortgage_debt_help: "Remaining amount on your mortgage"
-      other_debts: "Other Debts (NZD)"
-      other_debts_help: "Credit cards, personal loans, and other debts"
-      dependents: "Number of Dependents"
-      dependents_help: "Number of family members who depend on your income"
-      years_support: "Years of Support Needed"
-      years_support_help: "How many years you want to provide financial support"
-      final_expenses: "Final Expenses (NZD)"
-      final_expenses_help: "Funeral costs and other final expenses"
-      existing_coverage: "Existing Coverage (NZD)"
-      existing_coverage_help: "Amount of life insurance you already have"
-      calculate: "Calculate Insurance Need"
-      results_title: "Your Life Insurance Need"
-      recommended_coverage: "Recommended Coverage Amount"
-      breakdown_title: "Calculation Breakdown"
-      income_replacement: "Income Replacement"
-      debt_coverage: "Debt Coverage"
-      final_costs: "Final Expenses"
-      existing_deduction: "Less Existing Coverage"
-      total_need: "Total Insurance Need"
-      get_quote: "Get Professional Quote"
-      disclaimer: "This calculator is for reference only. Actual insurance needs may vary based on individual circumstances. We recommend consulting with a professional insurance advisor for personalized advice."
-    income_protection:
-      title: "Income Protection Calculator"
-      description: "Calculate how much income protection insurance you need to maintain your lifestyle"
-      monthly_income: "Monthly Income (NZD)"
-      monthly_income_help: "Your gross monthly income before tax"
-      essential_expenses: "Essential Monthly Expenses (NZD)"
-      essential_expenses_help: "Mortgage/rent, food, utilities, and other essential expenses"
-      acc_coverage: "ACC Coverage Percentage"
-      acc_coverage_help: "Percentage of income covered by ACC for accidents (typically 80%)"
-      existing_benefits: "Existing Benefits (NZD/month)"
-      existing_benefits_help: "Employer sick pay or other existing benefits"
-      coverage_percentage: "Desired Income Coverage Percentage"
-      coverage_percentage_help: "Percentage of income you want insurance to cover"
-      waiting_period: "Waiting Period (days)"
-      waiting_period_help: "Number of days before insurance payments begin"
-      calculate: "Calculate Protection Need"
-      results_title: "Your Income Protection Need"
-      recommended_benefit: "Recommended Monthly Benefit"
-      coverage_gap: "Coverage Gap"
-      monthly_premium_estimate: "Estimated Monthly Premium"
-      scenarios_title: "Scenario Comparison"
-      with_insurance: "With Income Protection"
-      without_insurance: "Without Income Protection"
-      illness_scenario: "Unable to work for 6 months due to illness"
-      income_loss: "Income Loss"
-      insurance_benefit: "Insurance Benefit"
-      net_impact: "Net Impact"
-      get_quote: "Get Professional Quote"
-      disclaimer: "This calculator is for reference only. Actual premiums and benefits may vary based on individual health, occupation risk, and other factors."
+    title: Disclosure Guide
+    intro: Here is some key information you need to know to help you understand what type of advice I am able to give you, so that you can make an informed and confident choice when engaging me.
+    details_title: Details about me and my Financial Advice Provider
+    full_name: '**Full Name:** Min Tao'
+    address: '**Address:** 80B Forrest Hill Road, Forrest Hill, Auckland, 0620, New Zealand'
+    phone: '**Phone:** 021 128 0727'
+    email: '**Email:** amy.tao@cornerstonefs.co.nz'
+    fspr_number: '**FSPR Number:** 629629'
+    provider_name: '**Financial Advice Provider:** Cornerstone Insurance Limited'
+    provider_trading: '**Trading as:** Cornerstone Insurance Limited'
+    provider_fspr: '**FSPR Number:** 1004360'
+    provider_address: '**Address:** 80B Forrest Hill Road, Forrest Hill, Auckland, 0620, New Zealand'
+    provider_phone: '**Phone:** 0211280727'
+    provider_email: '**Email:** amy.tao@cornerstonefs.co.nz'
+    member_info: My Financial Advice Provider is a member of NZ Financial Services Group Limited.
+    licensing_title: Licensing Information
+    licensing_info: 'My Financial Advice Provider is authorised to provide a financial advice service under a current financial advice provider licence issued by the Financial Markets Authority in the name of: **NZ Financial Services Group Limited**'
+    licensing_fspr: '**FSPR Number:** 286965'
+    advice_scope_title: Nature and Scope of Advice
+    advice_scope_info: I will analyse your insurance needs and help you apply for and choose cover that is suitable for your purpose.
+    advice_scope_maintain: I may also be able to help you maintain your insurance policy, for example if there are changes in your circumstances requiring changes to the cover.
+    insurers_title: Insurers I use
+    insurers_list: '- AIA
 
+      - Asteron Life
+
+      - NIB
+
+      - Partners Life
+
+      - Chubb Life'
+    products_title: Products I can advise on
+    products_list: '- Life
+
+      - Income Protection
+
+      - Health
+
+      - Trauma
+
+      - Permanent Disablement
+
+      - Mortgage Protection/Repayment
+
+      - Redundancy Cover
+
+      - Waiver of Premium/Premium Cover'
+    other_services_title: Other referral services
+    other_services_list: '- Tower F&G
+
+      - Initio F&G
+
+      - XE Money
+
+      - FastConnect'
+    legal_advice: '*(I am unable to offer legal or tax advice and recommend you consult your solicitor or accountant.)*'
+    fees_title: Fees and Expenses
+    fees_intro: Generally you won't be charged any fees for the financial advice I provide to you. This is possible because insurers usually pay commission.
+    oneoff_fees_title: One-off Fees
+    oneoff_fees_info: 'I may charge you a one-off fee if:
+
+
+      - I do not receive a commission from the insurer.
+
+      - You request advice on a product outside my usual panel.'
+    commissions_title: Commissions & Incentives
+    commissions_info: '- Commissions are typically **upfront and/or ongoing**, based on premiums.
+
+      - Referral fees may also apply.
+
+      - Occasionally I may receive non-monetary incentives (e.g., gifts, tickets).'
+    commission_table: '| Insurer       | Upfront (max) | Ongoing (max) |
+
+      | ------------- | ------------- | ------------- |
+
+      | Asteron Life  | 200%          | 10%           |
+
+      | NIB           | 230%          | 7.5%          |
+
+      | Chubb Life    | 230%          | 15%           |
+
+      | Partners Life | 230%          | 10%           |
+
+      | AIA           | 220%          | 7.5%          |'
+    privacy_title: Privacy Policy & Security
+    privacy_info: '- Personal information is collected under my Privacy Policy.
+
+      - Data may be shared with NZ Financial Services Group Limited for audits.
+
+      - Stored securely on **Amazon Web Services**.'
+    complaints_title: Complaints Process
+    complaints_process: 'If you have a complaint:
+
+
+      1. Contact me via phone or email (Subject: Complaint - Your Name).
+
+      2. I will acknowledge within 24 hours and record it.
+
+      3. Aim to resolve within 7 working days.
+
+      4. If unresolved, you can refer to:'
+    ombudsman_info: '**Insurance and Financial Services Ombudsman**
+
+      Email: info@ifso.nz
+
+      Phone: 0800 888 202
+
+      [Website](https://www.ifso.nz/)
+
+      PO Box 10-845, Wellington 6143'
+    duties_title: My Duties
+    duties_info: 'Under the Financial Markets Conduct Act 2013, I must:
+
+
+      - Meet standards of competence, knowledge, and skill.
+
+      - Prioritise client interests.
+
+      - Exercise care, diligence, and skill.
+
+      - Meet ethical behaviour and client care standards.'
+    availability_title: Availability of Information
+    availability_info: This information can also be provided in hardcopy upon request.
+  calculators:
+    title: Insurance Calculators
+    description: Use our professional insurance calculators to quickly estimate your insurance needs. These tools are based on industry standards to help you make informed insurance decisions.
+    life_insurance:
+      title: Life Insurance Needs Calculator
+      description: Calculate how much life insurance you need to protect your family's financial security
+      annual_income: Annual Income (NZD)
+      annual_income_help: Your gross annual income before tax
+      mortgage_debt: Mortgage Balance (NZD)
+      mortgage_debt_help: Remaining amount on your mortgage
+      other_debts: Other Debts (NZD)
+      other_debts_help: Credit cards, personal loans, and other debts
+      dependents: Number of Dependents
+      dependents_help: Number of family members who depend on your income
+      years_support: Years of Support Needed
+      years_support_help: How many years you want to provide financial support
+      final_expenses: Final Expenses (NZD)
+      final_expenses_help: Funeral costs and other final expenses
+      existing_coverage: Existing Coverage (NZD)
+      existing_coverage_help: Amount of life insurance you already have
+      calculate: Calculate Insurance Need
+      results_title: Your Life Insurance Need
+    income_protection:
+      title: Income Protection Calculator
+      description: Calculate how much income protection insurance you need to maintain your lifestyle
+      monthly_income: Monthly Income (NZD)
+      monthly_income_help: Your gross monthly income before tax
+      essential_expenses: Essential Monthly Expenses (NZD)
+      essential_expenses_help: Mortgage/rent, food, utilities, and other essential expenses
+      existing_benefits: Existing Benefits (NZD/month)
+      existing_benefits_help: Employer sick pay or other existing benefits
+      coverage_percentage: Desired Income Coverage Percentage
+      coverage_percentage_help: Percentage of income you want insurance to cover
+      waiting_period: Waiting Period (days)
+      waiting_period_help: Number of days before insurance payments begin
+      calculate: Calculate Protection Need
+      results_title: Your Income Protection Need
