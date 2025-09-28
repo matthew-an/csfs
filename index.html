@@ -255,107 +255,88 @@ layout: home
   </div>
 </section>
 
-<!-- Enhanced Trust Indicators Section -->
-<section class="section-padding-compact-sm gradient-bg text-white relative overflow-hidden">
-  <!-- Background Pattern -->
-  <div class="absolute inset-0 opacity-10">
-    <div class="absolute top-0 left-0 w-full h-full" style="background-image: radial-gradient(circle at 25% 25%, white 2px, transparent 2px); background-size: 50px 50px;"></div>
-  </div>
-  
-  <div class="container-custom relative">
+<!-- Company Introduction Section -->
+<section class="section-padding bg-gray-50">
+  <div class="container-custom">
     <div class="text-center mb-12">
-      <h2 class="heading-2 text-white mb-4">
-        {% if page.lang == "en" %}Trusted by Thousands{% else %}数千客户信赖{% endif %}
+      <h2 class="heading-2 mb-4">
+        {% include translate.html key='about.title' %}
       </h2>
-      <p class="lead text-primary-100 max-w-2xl mx-auto">
-        {% if page.lang == "en" %}Our track record speaks for itself{% else %}我们的业绩记录不言而喻{% endif %}
+      <p class="lead text-primary-600 max-w-3xl mx-auto">
+        {% include translate.html key='about.trusted_partner' %}
       </p>
     </div>
     
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-      <div class="group animate-fade-in">
-        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20 transition-all duration-300 border border-white/20 hover-lift">
-          <div class="stat-number mb-2 group-hover:scale-110 transition-transform duration-300 text-white">{% include translate.html key='trust_indicators.claims_rate' %}</div>
-          <p class="stat-label text-primary-100">{% include translate.html key='trust_indicators.claims_approved' %}</p>
-        </div>
-      </div>
-      <div class="group animate-fade-in" style="animation-delay: 0.1s;">
-        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20 transition-all duration-300 border border-white/20 hover-lift">
-          <div class="stat-number mb-2 group-hover:scale-110 transition-transform duration-300 text-white">{% include translate.html key='trust_indicators.families_count' %}</div>
-          <p class="stat-label text-primary-100">{% include translate.html key='trust_indicators.families_protected' %}</p>
-        </div>
-      </div>
-      <div class="group animate-fade-in" style="animation-delay: 0.2s;">
-        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20 transition-all duration-300 border border-white/20 hover-lift">
-          <div class="stat-number mb-2 group-hover:scale-110 transition-transform duration-300 text-white">{% include translate.html key='trust_indicators.quote_time' %}</div>
-          <p class="stat-label text-primary-100">{% include translate.html key='trust_indicators.average_quote_time' %}</p>
-        </div>
-      </div>
-      <div class="group animate-fade-in" style="animation-delay: 0.3s;">
-        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20 transition-all duration-300 border border-white/20 hover-lift">
-          <div class="stat-number mb-2 group-hover:scale-110 transition-transform duration-300 text-white">{% include translate.html key='trust_indicators.license_code' %}</div>
-          <p class="stat-label text-primary-100">{% include translate.html key='trust_indicators.licensed_provider' %}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Enhanced Experience Section -->
-<section class="section-padding-compact bg-white">
-  <div class="container-custom">
-    <div class="flex flex-col lg:flex-row items-center gap-12">
-      <div class="lg:w-1/2 mb-8 lg:mb-0 animate-slide-up">
-        <div class="text-center lg:text-left">
-          <!-- Experience Badge -->
-          <div class="inline-flex items-center justify-center w-32 h-32 bg-primary-600 rounded-3xl mb-6 shadow-2xl hover:scale-105 transition-transform duration-300">
-            <div class="text-center text-white">
-              <div class="text-4xl font-black">{% include translate.html key='experience.years' %}</div>
-              <div class="text-sm font-medium opacity-90">{% if page.lang == "en" %}Years{% else %}年{% endif %}</div>
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <!-- Company Story -->
+      <div class="animate-slide-up">
+        <div class="bg-white rounded-2xl p-8 shadow-lg hover-lift">
+          <div class="flex items-center mb-6">
+            <div class="w-12 h-12 bg-primary-600 rounded-xl flex items-center justify-center mr-4">
+              <i class="fas fa-shield-alt text-white text-xl"></i>
             </div>
+            <h3 class="heading-3 text-primary-600">{% include translate.html key='about.mission_title' %}</h3>
           </div>
-          
-          <div class="heading-3 mb-4 text-primary-600">
-            {% include translate.html key='experience.title' %}
-          </div>
-          <p class="body-large text-gray-600 mb-6">{% include translate.html key='experience.subtitle' %}</p>
-          
-          <!-- Achievement Badges -->
-          <div class="flex flex-wrap gap-3 justify-center lg:justify-start">
-            <span class="badge badge-primary">{% if page.lang == "en" %}Licensed Professional{% else %}持牌专业人士{% endif %}</span>
-            <span class="badge badge-success">{% if page.lang == "en" %}Award Winner{% else %}获奖者{% endif %}</span>
-            <span class="badge badge-warning">{% if page.lang == "en" %}Top Performer{% else %}顶级表现{% endif %}</span>
-          </div>
+          <p class="body-text text-gray-600 mb-6">
+            {% include translate.html key='about.intro' %}
+          </p>
+          <p class="body-text text-gray-600">
+            {% include translate.html key='about.mission_desc' %}
+          </p>
         </div>
       </div>
       
-      <div class="lg:w-1/2 animate-fade-in">
-        <h2 class="heading-2 mb-6">
-          {% include translate.html key='experience.heading' %}
-        </h2>
-        <p class="lead text-primary-600 font-semibold mb-6">
-          {% include translate.html key='experience.tagline' %}
-        </p>
-        <p class="body-text mb-8 text-gray-600">
-          {% include translate.html key='experience.description' %}
-        </p>
+      <!-- Why Choose Us -->
+      <div class="animate-fade-in">
+        <h3 class="heading-3 mb-8 text-center lg:text-left">
+          {% include translate.html key='about.what_sets_us_apart' %}
+        </h3>
         
-        <!-- Enhanced CTA Buttons -->
-        <div class="flex flex-col sm:flex-row gap-4 mb-6">
-          <a href="/contact-us" class="btn btn-primary btn-lg hover-lift group">
-            <i class="fas fa-calendar-check mr-2 group-hover:scale-110 transition-transform duration-200"></i>
-            {% include translate.html key='experience.cta_primary' %}
-          </a>
-          <a href="tel:+64211280727" class="btn btn-secondary btn-lg hover-glow">
-            <i class="fas fa-phone mr-2"></i>
-            {% include translate.html key='experience.cta_secondary' %}
-          </a>
+        <div class="space-y-6">
+          <!-- Local Expertise -->
+          <div class="flex items-start">
+            <div class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+              <i class="fas fa-map-marker-alt text-primary-600"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-900 mb-2">{% include translate.html key='about.expertise_title' %}</h4>
+              <p class="text-gray-600 text-sm">{% include translate.html key='about.expertise_desc' %}</p>
+            </div>
+          </div>
+          
+          <!-- Personal Touch -->
+          <div class="flex items-start">
+            <div class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+              <i class="fas fa-user-friends text-primary-600"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-900 mb-2">{% include translate.html key='about.personalized_title' %}</h4>
+              <p class="text-gray-600 text-sm">{% include translate.html key='about.personalized_desc' %}</p>
+            </div>
+          </div>
+          
+          <!-- Track Record -->
+          <div class="flex items-start">
+            <div class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+              <i class="fas fa-chart-line text-primary-600"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-900 mb-2">{% include translate.html key='about.commitment_title' %}</h4>
+              <p class="text-gray-600 text-sm">{% include translate.html key='about.commitment_desc' %}</p>
+            </div>
+          </div>
         </div>
         
-        <!-- Contact Info -->
-        <div class="flex items-center text-sm text-gray-500 bg-gray-50 rounded-lg p-4">
-          <i class="fas fa-info-circle mr-2 text-primary-500"></i>
-          {% include translate.html key='experience.contact_now' %}
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4 mt-8">
+          <a href="/contact-us" class="btn btn-primary hover-lift group">
+            <i class="fas fa-calendar-check mr-2 group-hover:scale-110 transition-transform duration-200"></i>
+            {% include translate.html key='about.contact_title' %}
+          </a>
+          <a href="/about" class="btn btn-secondary">
+            <i class="fas fa-info-circle mr-2"></i>
+            {% if page.lang == "en" %}Learn More{% else %}了解更多{% endif %}
+          </a>
         </div>
       </div>
     </div>

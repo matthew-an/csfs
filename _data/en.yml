@@ -19,7 +19,7 @@ nav:
 about:
   title: "About Cornerstone Insurance"
   trusted_partner: "New Zealand's Trusted Insurance Specialists"
-  intro: "Since 2018, Cornerstone Insurance has been helping Kiwi families protect what matters most. We've successfully processed over 95% of claims and helped 300+ families secure their financial future with simple, affordable insurance solutions."
+  intro: "Cornerstone Insurance has been helping Kiwi families protect what matters most. As FSP-licensed professionals (FSPR #1004360), we operate under New Zealand's strict financial services regulations, ensuring you receive compliant, expert advice. We've successfully processed over 95% of claims and helped 300+ families secure their financial future with simple, affordable insurance solutions tailored specifically for New Zealanders."
   mission_title: "Our Mission"
   mission_desc: "To make insurance simple, accessible, and affordable for every New Zealand family. We believe insurance shouldn't be complicated - it should give you peace of mind knowing your loved ones are protected."
   what_sets_us_apart: "Why Families Choose Us"
@@ -36,7 +36,7 @@ about:
   disability_insurance: "Disability Cover - Financial security for permanent disability"
   mortgage_protection: "Mortgage Protection - Ensure your family keeps the home"
   commitment_title: "Our Track Record"
-  commitment_desc: "Numbers don't lie: 95%+ claims approval rate, 2-minute average quote time, and 300+ families protected. We're not the biggest insurance company in New Zealand, but we're committed to being the most reliable."
+  commitment_desc: "Numbers don't lie: 95%+ claims approval rate, 2-minute average quote time, and 300+ families protected. We're committed to being your most reliable insurance partner."
   service_desc: "Real people, real support. No phone trees or overseas call centers. When you need help, you get Amy - your dedicated advisor who knows your situation and cares about your family's protection."
   claims_title: "Claims You Can Count On"
   claims_desc: "When life happens, we're here. Our 95%+ claims approval rate speaks for itself. We guide you through every step, handle the paperwork, and fight for your claim so you can focus on what matters most."
@@ -74,7 +74,7 @@ experience:
 
 why_choose:
   subtitle: "WHY CHOOSE CORNERSTONE"
-  title: "Trusted by New Zealand families since 2018"
+  title: "Trusted by New Zealand families"
   fast_quote: "2-Minute Quotes"
   fast_quote_desc: "Get instant quotes online or over the phone"
   easy_process: "Simple Application"
