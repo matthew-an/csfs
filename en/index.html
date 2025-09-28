@@ -648,11 +648,15 @@ lang: en
           <div class="font-semibold text-white mb-1">{% if page.lang == "en" %}Email Us{% else %}邮件联系{% endif %}</div>
           <div class="text-primary-100">{% include translate.html key='site.email' %}</div>
         </div>
-        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/20 transition-all duration-300">
-          <i class="fab fa-weixin text-3xl mb-3 text-green-300"></i>
+        <button class="wechat-qr-trigger bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/20 transition-all duration-300 w-full text-center cursor-pointer group" data-wechat-qr="{{ '/assets/img/wechat_qr.jpg' | relative_url }}">
+          <div class="flex items-center justify-center mb-3">
+            <i class="fab fa-weixin text-3xl text-green-300 mr-2"></i>
+            <i class="fas fa-qrcode text-lg text-green-300 opacity-70 group-hover:opacity-100 transition-opacity duration-200"></i>
+          </div>
           <div class="font-semibold text-white mb-1">{% if page.lang == "en" %}WeChat{% else %}微信联系{% endif %}</div>
-          <div class="text-primary-100">{% include translate.html key='site.wechat' %}</div>
-        </div>
+          <div class="text-primary-100 mb-2">{% include translate.html key='site.wechat' %}</div>
+          <div class="text-xs text-primary-200 opacity-80">{% if page.lang == "en" %}Click to view QR code{% else %}点击查看二维码{% endif %}</div>
+        </button>
       </div>
       
       <!-- Trust Badge -->
