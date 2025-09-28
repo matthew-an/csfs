@@ -314,18 +314,18 @@ permalink: /services/
   </h2>
   <div class="overflow-x-auto">
     <table class="w-full bg-white rounded-lg shadow-md">
-      <thead class="bg-primary-600 text-white">
+      <thead class="bg-primary-600">
         <tr>
-          <th class="px-6 py-4 text-left font-semibold">
+          <th class="px-6 py-4 text-left text-white font-semibold">
             {% if current_lang == "zh" %}保险类型{% else %}Insurance Type{% endif %}
           </th>
-          <th class="px-6 py-4 text-left font-semibold">
+          <th class="px-6 py-4 text-left text-white font-semibold">
             {% if current_lang == "zh" %}主要用途{% else %}Primary Purpose{% endif %}
           </th>
-          <th class="px-6 py-4 text-left font-semibold">
+          <th class="px-6 py-4 text-left text-white font-semibold">
             {% if current_lang == "zh" %}赔付方式{% else %}Payment Method{% endif %}
           </th>
-          <th class="px-6 py-4 text-left font-semibold">
+          <th class="px-6 py-4 text-left text-white font-semibold">
             {% if current_lang == "zh" %}适合人群{% else %}Suitable For{% endif %}
           </th>
         </tr>
@@ -395,7 +395,7 @@ permalink: /services/
 <!-- Why Choose Our Services -->
 <div class="bg-primary-600 text-white rounded-xl p-8 mb-16">
   <div class="text-center mb-8">
-    <h2 class="text-3xl font-bold mb-4">
+    <h2 class="text-3xl font-bold mb-4 text-white">
       {% if current_lang == "zh" %}为什么选择我们的服务？{% else %}Why Choose Our Services?{% endif %}
     </h2>
     <p class="text-xl text-primary-100">
@@ -407,7 +407,7 @@ permalink: /services/
       <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
         <i class="fas fa-user-tie text-2xl"></i>
       </div>
-      <h3 class="text-lg font-semibold mb-2">
+      <h3 class="text-lg font-semibold mb-2 text-white">
         {% if current_lang == "zh" %}专业顾问{% else %}Expert Advisors{% endif %}
       </h3>
       <p class="text-primary-100 text-sm">
@@ -418,7 +418,7 @@ permalink: /services/
       <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
         <i class="fas fa-handshake text-2xl"></i>
       </div>
-      <h3 class="text-lg font-semibold mb-2">
+      <h3 class="text-lg font-semibold mb-2 text-white">
         {% if current_lang == "zh" %}个性化服务{% else %}Personalized Service{% endif %}
       </h3>
       <p class="text-primary-100 text-sm">
@@ -429,7 +429,7 @@ permalink: /services/
       <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
         <i class="fas fa-language text-2xl"></i>
       </div>
-      <h3 class="text-lg font-semibold mb-2">
+      <h3 class="text-lg font-semibold mb-2 text-white">
         {% if current_lang == "zh" %}双语服务{% else %}Bilingual Service{% endif %}
       </h3>
       <p class="text-primary-100 text-sm">
@@ -440,7 +440,7 @@ permalink: /services/
       <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
         <i class="fas fa-clock text-2xl"></i>
       </div>
-      <h3 class="text-lg font-semibold mb-2">
+      <h3 class="text-lg font-semibold mb-2 text-white">
         {% if current_lang == "zh" %}全程支持{% else %}Full Support{% endif %}
       </h3>
       <p class="text-primary-100 text-sm">
