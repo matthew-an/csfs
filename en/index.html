@@ -603,6 +603,82 @@ lang: en
   </div>
 </section>
 
+<!-- Partners Section -->
+<section class="section-padding-compact bg-gray-50">
+  <div class="container-custom">
+    <div class="text-center mb-16 animate-fade-in">
+      <h2 class="heading-2 mb-6">
+        {% if page.lang == "en" %}Our Trusted Partners{% else %}我们的合作伙伴{% endif %}
+      </h2>
+      <p class="lead text-gray-600 max-w-3xl mx-auto">
+        {% if page.lang == "en" %}We work with New Zealand's leading insurance providers to offer you the best coverage options{% else %}我们与新西兰领先的保险公司合作，为您提供最佳的保险选择{% endif %}
+      </p>
+    </div>
+    
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center justify-items-center">
+      <!-- AIA -->
+      <div class="partner-logo-container group animate-slide-up">
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-all duration-300 transform group-hover:scale-105">
+          <img src="{{ '/assets/img/partners/aia-logo.png' | relative_url }}" 
+               alt="AIA Insurance" 
+               class="h-12 w-auto mx-auto transition-all duration-300"
+               loading="lazy">
+        </div>
+      </div>
+      
+      <!-- Partners Life -->
+      <div class="partner-logo-container group animate-slide-up" style="animation-delay: 0.1s;">
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-all duration-300 transform group-hover:scale-105">
+          <img src="{{ '/assets/img/partners/partners-life-logo.png' | relative_url }}" 
+               alt="Partners Life Insurance" 
+               class="h-12 w-auto mx-auto transition-all duration-300"
+               loading="lazy">
+        </div>
+      </div>
+      
+      <!-- Nib -->
+      <div class="partner-logo-container group animate-slide-up" style="animation-delay: 0.2s;">
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-all duration-300 transform group-hover:scale-105">
+          <img src="{{ '/assets/img/partners/nib-logo.png' | relative_url }}" 
+               alt="Nib Health Insurance" 
+               class="h-12 w-auto mx-auto transition-all duration-300"
+               loading="lazy">
+        </div>
+      </div>
+      
+      <!-- Chubb Life -->
+      <div class="partner-logo-container group animate-slide-up" style="animation-delay: 0.3s;">
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-all duration-300 transform group-hover:scale-105">
+          <img src="{{ '/assets/img/partners/chubb-life-logo.png' | relative_url }}" 
+               alt="Chubb Life Insurance" 
+               class="h-12 w-auto mx-auto transition-all duration-300"
+               loading="lazy">
+        </div>
+      </div>
+      
+      <!-- Asteron Life -->
+      <div class="partner-logo-container group animate-slide-up" style="animation-delay: 0.4s;">
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-all duration-300 transform group-hover:scale-105">
+          <img src="{{ '/assets/img/partners/asteron-life-logo.png' | relative_url }}" 
+               alt="Asteron Life Insurance" 
+               class="h-12 w-auto mx-auto transition-all duration-300"
+               loading="lazy">
+        </div>
+      </div>
+    </div>
+    
+    <!-- Trust Message -->
+    <div class="text-center mt-12">
+      <div class="inline-flex items-center bg-white rounded-full px-6 py-3 shadow-md border border-gray-200">
+        <i class="fas fa-handshake mr-3 text-primary-600"></i>
+        <span class="text-gray-700 font-medium">
+          {% if page.lang == "en" %}Authorized to represent leading insurance providers across New Zealand{% else %}获授权代表新西兰各大保险公司{% endif %}
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Enhanced Contact CTA -->
 <section class="section-padding-compact gradient-bg text-white relative overflow-hidden">
   <!-- Background Elements -->

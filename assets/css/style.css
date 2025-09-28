@@ -925,3 +925,36 @@ mark {
     max-height: 250px;
   }
 }
+
+/* Partners Section Styles */
+.partner-logo-container {
+  transition: all 0.3s ease;
+}
+
+.partner-logo-container:hover {
+  transform: translateY(-4px);
+}
+
+.partner-logo-container img {
+  transition: all 0.3s ease;
+  max-height: 48px;
+  width: auto;
+}
+
+.partner-logo-container:hover img {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+/* Responsive adjustments for partners section */
+@media (max-width: 768px) {
+  .partner-logo-container img {
+    max-height: 36px;
+  }
+}
+
+@media (max-width: 640px) {
+  .partner-logo-container img {
+    max-height: 32px;
+  }
+}
