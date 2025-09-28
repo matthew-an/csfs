@@ -163,20 +163,15 @@ layout: home
     
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       <!-- Enhanced Health Insurance -->
-      <div class="card card-elevated hover-lift group animate-slide-up">
-        <div class="card-body">
-          <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
-            <i class="ph-heart text-xl text-primary-600"></i>
-          </div>
-          <h3 class="heading-4 mb-4">{% include translate.html key='services.health_title' %}</h3>
-          <p class="body-text text-gray-600 mb-6">
-            {% include translate.html key='services.health_desc' %}
-          </p>
-          <a href="/services" class="inline-flex items-center text-primary-600 font-semibold hover:text-primary-700 transition-colors duration-200 group">
-            {% include translate.html key='services.learn_more' %}
-            <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform duration-200"></i>
-          </a>
+      <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+        <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+          <i class="ph-heart text-xl text-primary-600"></i>
         </div>
+        <h3 class="text-xl font-semibold mb-3">{% include translate.html key='services.health_title' %}</h3>
+        <p class="text-gray-600 mb-4">
+          {% include translate.html key='services.health_desc' %}
+        </p>
+        <a href="/services" class="text-primary-600 font-semibold hover:text-primary-700">{% include translate.html key='services.learn_more' %}</a>
       </div>
       
       <!-- Life Insurance -->
