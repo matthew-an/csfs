@@ -638,16 +638,18 @@ lang: en
       
       <!-- Enhanced Contact Info Grid -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/20 transition-all duration-300">
-          <i class="ph-phone text-3xl mb-3 text-primary-200"></i>
+        <a href="tel:+64211280727" class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/20 transition-all duration-300 block text-center group">
+          <i class="ph-phone text-3xl mb-3 text-primary-200 group-hover:scale-110 transition-transform duration-200"></i>
           <div class="font-semibold text-white mb-1">{% if page.lang == "en" %}Call Us{% else %}致电我们{% endif %}</div>
-          <div class="text-primary-100">{% include translate.html key='site.phone' %}</div>
-        </div>
-        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/20 transition-all duration-300">
-          <i class="ph-envelope text-3xl mb-3 text-primary-200"></i>
+          <div class="text-primary-100 mb-2">{% include translate.html key='site.phone' %}</div>
+          <div class="text-xs text-primary-200 opacity-80">{% if page.lang == "en" %}Click to call{% else %}点击拨打{% endif %}</div>
+        </a>
+        <a href="mailto:amy.tao@cornerstonefs.co.nz" class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/20 transition-all duration-300 block text-center group">
+          <i class="ph-envelope text-3xl mb-3 text-primary-200 group-hover:scale-110 transition-transform duration-200"></i>
           <div class="font-semibold text-white mb-1">{% if page.lang == "en" %}Email Us{% else %}邮件联系{% endif %}</div>
-          <div class="text-primary-100">{% include translate.html key='site.email' %}</div>
-        </div>
+          <div class="text-primary-100 mb-2">{% include translate.html key='site.email' %}</div>
+          <div class="text-xs text-primary-200 opacity-80">{% if page.lang == "en" %}Click to email{% else %}点击发邮件{% endif %}</div>
+        </a>
         <button class="wechat-qr-trigger bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/20 transition-all duration-300 w-full text-center cursor-pointer group" data-wechat-qr="{{ '/assets/img/wechat_qr.jpg' | relative_url }}">
           <div class="flex items-center justify-center mb-3">
             <i class="fab fa-weixin text-3xl text-green-300 mr-2"></i>
