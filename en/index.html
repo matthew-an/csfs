@@ -345,13 +345,10 @@ lang: en
   </div>
 </section>
 
-<!-- Enhanced Testimonials -->
+<!-- Enhanced Customer Reviews -->
 <section class="section-padding-compact bg-white">
   <div class="container-custom">
     <div class="text-center mb-16 animate-fade-in">
-      <div class="inline-block px-4 py-2 bg-yellow-100 text-yellow-600 rounded-full text-sm font-medium mb-4">
-        ⭐ {% if page.lang == "en" %}Client Reviews{% else %}客户评价{% endif %}
-      </div>
       <h2 class="heading-2 mb-6">{% include translate.html key='testimonials.title' %}</h2>
       <div class="flex items-center justify-center mb-4">
         <div class="flex text-yellow-400 text-2xl">
@@ -366,55 +363,246 @@ lang: en
       <p class="lead text-gray-600 max-w-2xl mx-auto">{% include translate.html key='testimonials.reviews_count' %}</p>
     </div>
     
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div class="card hover-lift animate-slide-up">
-        <div class="card-body">
-          <div class="flex text-yellow-400 text-lg mb-6">
-            <i class="ph-star-fill"></i>
-            <i class="ph-star-fill"></i>
-            <i class="ph-star-fill"></i>
-            <i class="ph-star-fill"></i>
-            <i class="ph-star-fill"></i>
-          </div>
-          <blockquote class="testimonial-quote mb-6">
-            {% include translate.html key='testimonials.sarah_review' %}
-          </blockquote>
-          <div class="flex items-center">
-            <img alt="testimonial" src="{{ '/assets/img/team-1-800x800.jpg' | relative_url }}" class="w-16 h-16 rounded-full object-cover mr-4 border-2 border-primary-100" loading="lazy">
-            <div>
-              <div class="font-semibold text-gray-900 text-lg">{% include translate.html key='testimonials.sarah_name' %}</div>
-              <div class="text-gray-500">{% include translate.html key='testimonials.sarah_title' %}</div>
-              <div class="flex items-center mt-1">
-                <span class="badge badge-primary">{% if page.lang == "en" %}Verified Client{% else %}认证客户{% endif %}</span>
+    <!-- Customer Review Images Gallery -->
+    <div class="mb-12">
+      <div class="flex overflow-x-auto gap-6 pb-4 scrollbar-hide" style="scroll-snap-type: x mandatory;">
+        <div class="flex-shrink-0 group cursor-pointer animate-slide-up" style="scroll-snap-align: start;">
+          <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 transform group-hover:scale-105 w-64">
+            <img src="{{ '/assets/img/customer_reviews/1066c23e0230cae2c0e5147bbb22f9c2.JPG' | relative_url }}" 
+                 alt="Customer Review" 
+                 class="w-full h-64 object-cover" 
+                 loading="lazy">
+            <div class="p-4">
+              <div class="flex text-yellow-400 text-sm mb-2">
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
               </div>
+              <p class="text-sm text-gray-600">{% if page.lang == "en" %}Customer Feedback{% else %}客户反馈{% endif %}</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flex-shrink-0 group cursor-pointer animate-slide-up" style="animation-delay: 0.1s; scroll-snap-align: start;">
+          <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 transform group-hover:scale-105 w-64">
+            <img src="{{ '/assets/img/customer_reviews/41e6fbd1f5fa5c39c2d4c04787fe4392.JPG' | relative_url }}" 
+                 alt="Customer Review" 
+                 class="w-full h-64 object-cover" 
+                 loading="lazy">
+            <div class="p-4">
+              <div class="flex text-yellow-400 text-sm mb-2">
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+              </div>
+              <p class="text-sm text-gray-600">{% if page.lang == "en" %}Customer Feedback{% else %}客户反馈{% endif %}</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flex-shrink-0 group cursor-pointer animate-slide-up" style="animation-delay: 0.2s; scroll-snap-align: start;">
+          <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 transform group-hover:scale-105 w-64">
+            <img src="{{ '/assets/img/customer_reviews/55a8256361def91c93b8370c42adb769.JPG' | relative_url }}" 
+                 alt="Customer Review" 
+                 class="w-full h-64 object-cover" 
+                 loading="lazy">
+            <div class="p-4">
+              <div class="flex text-yellow-400 text-sm mb-2">
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+              </div>
+              <p class="text-sm text-gray-600">{% if page.lang == "en" %}Customer Feedback{% else %}客户反馈{% endif %}</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flex-shrink-0 group cursor-pointer animate-slide-up" style="animation-delay: 0.3s; scroll-snap-align: start;">
+          <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 transform group-hover:scale-105 w-64">
+            <img src="{{ '/assets/img/customer_reviews/631e7f40f4498cf37e97cbe6ae0bb843.JPG' | relative_url }}" 
+                 alt="Customer Review" 
+                 class="w-full h-64 object-cover" 
+                 loading="lazy">
+            <div class="p-4">
+              <div class="flex text-yellow-400 text-sm mb-2">
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+              </div>
+              <p class="text-sm text-gray-600">{% if page.lang == "en" %}Customer Feedback{% else %}客户反馈{% endif %}</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flex-shrink-0 group cursor-pointer animate-slide-up" style="animation-delay: 0.4s; scroll-snap-align: start;">
+          <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 transform group-hover:scale-105 w-64">
+            <img src="{{ '/assets/img/customer_reviews/7cbbc39f88254ef9d74d726d1b383f0c.JPG' | relative_url }}" 
+                 alt="Customer Review" 
+                 class="w-full h-64 object-cover" 
+                 loading="lazy">
+            <div class="p-4">
+              <div class="flex text-yellow-400 text-sm mb-2">
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+              </div>
+              <p class="text-sm text-gray-600">{% if page.lang == "en" %}Customer Feedback{% else %}客户反馈{% endif %}</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flex-shrink-0 group cursor-pointer animate-slide-up" style="animation-delay: 0.5s; scroll-snap-align: start;">
+          <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 transform group-hover:scale-105 w-64">
+            <img src="{{ '/assets/img/customer_reviews/9de3d1834be84a2ac15bb45526d79b4c.JPG' | relative_url }}" 
+                 alt="Customer Review" 
+                 class="w-full h-64 object-cover" 
+                 loading="lazy">
+            <div class="p-4">
+              <div class="flex text-yellow-400 text-sm mb-2">
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+              </div>
+              <p class="text-sm text-gray-600">{% if page.lang == "en" %}Customer Feedback{% else %}客户反馈{% endif %}</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flex-shrink-0 group cursor-pointer animate-slide-up" style="animation-delay: 0.6s; scroll-snap-align: start;">
+          <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 transform group-hover:scale-105 w-64">
+            <img src="{{ '/assets/img/customer_reviews/a9c79b0f3ee936b70c4d63705dbae133.JPG' | relative_url }}" 
+                 alt="Customer Review" 
+                 class="w-full h-64 object-cover" 
+                 loading="lazy">
+            <div class="p-4">
+              <div class="flex text-yellow-400 text-sm mb-2">
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+              </div>
+              <p class="text-sm text-gray-600">{% if page.lang == "en" %}Customer Feedback{% else %}客户反馈{% endif %}</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flex-shrink-0 group cursor-pointer animate-slide-up" style="animation-delay: 0.7s; scroll-snap-align: start;">
+          <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 transform group-hover:scale-105 w-64">
+            <img src="{{ '/assets/img/customer_reviews/b24440d2fb974545e5274644328c65ca.JPG' | relative_url }}" 
+                 alt="Customer Review" 
+                 class="w-full h-64 object-cover" 
+                 loading="lazy">
+            <div class="p-4">
+              <div class="flex text-yellow-400 text-sm mb-2">
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+              </div>
+              <p class="text-sm text-gray-600">{% if page.lang == "en" %}Customer Feedback{% else %}客户反馈{% endif %}</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flex-shrink-0 group cursor-pointer animate-slide-up" style="animation-delay: 0.8s; scroll-snap-align: start;">
+          <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 transform group-hover:scale-105 w-64">
+            <img src="{{ '/assets/img/customer_reviews/be84ab7396ab996bd88e4d52e11d57aa.JPG' | relative_url }}" 
+                 alt="Customer Review" 
+                 class="w-full h-64 object-cover" 
+                 loading="lazy">
+            <div class="p-4">
+              <div class="flex text-yellow-400 text-sm mb-2">
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+              </div>
+              <p class="text-sm text-gray-600">{% if page.lang == "en" %}Customer Feedback{% else %}客户反馈{% endif %}</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flex-shrink-0 group cursor-pointer animate-slide-up" style="animation-delay: 0.9s; scroll-snap-align: start;">
+          <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 transform group-hover:scale-105 w-64">
+            <img src="{{ '/assets/img/customer_reviews/cddf8c77f77659e3df184eb57c950888.JPG' | relative_url }}" 
+                 alt="Customer Review" 
+                 class="w-full h-64 object-cover" 
+                 loading="lazy">
+            <div class="p-4">
+              <div class="flex text-yellow-400 text-sm mb-2">
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+              </div>
+              <p class="text-sm text-gray-600">{% if page.lang == "en" %}Customer Feedback{% else %}客户反馈{% endif %}</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flex-shrink-0 group cursor-pointer animate-slide-up" style="animation-delay: 1.0s; scroll-snap-align: start;">
+          <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 transform group-hover:scale-105 w-64">
+            <img src="{{ '/assets/img/customer_reviews/f9e0291300ade8a441e0934e5705e86f.JPG' | relative_url }}" 
+                 alt="Customer Review" 
+                 class="w-full h-64 object-cover" 
+                 loading="lazy">
+            <div class="p-4">
+              <div class="flex text-yellow-400 text-sm mb-2">
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+              </div>
+              <p class="text-sm text-gray-600">{% if page.lang == "en" %}Customer Feedback{% else %}客户反馈{% endif %}</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flex-shrink-0 group cursor-pointer animate-slide-up" style="animation-delay: 1.1s; scroll-snap-align: start;">
+          <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 transform group-hover:scale-105 w-64">
+            <img src="{{ '/assets/img/customer_reviews/fa632f87e5fc3752ea8b624b421cea56.JPG' | relative_url }}" 
+                 alt="Customer Review" 
+                 class="w-full h-64 object-cover" 
+                 loading="lazy">
+            <div class="p-4">
+              <div class="flex text-yellow-400 text-sm mb-2">
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+                <i class="ph-star-fill"></i>
+              </div>
+              <p class="text-sm text-gray-600">{% if page.lang == "en" %}Customer Feedback{% else %}客户反馈{% endif %}</p>
             </div>
           </div>
         </div>
       </div>
-      
-      <div class="card hover-lift animate-slide-up" style="animation-delay: 0.1s;">
-        <div class="card-body">
-          <div class="flex text-yellow-400 text-lg mb-6">
-            <i class="ph-star-fill"></i>
-            <i class="ph-star-fill"></i>
-            <i class="ph-star-fill"></i>
-            <i class="ph-star-fill"></i>
-            <i class="ph-star-fill"></i>
-          </div>
-          <blockquote class="testimonial-quote mb-6">
-            {% include translate.html key='testimonials.michael_review' %}
-          </blockquote>
-          <div class="flex items-center">
-            <img alt="testimonial" src="{{ '/assets/img/team-2-800x800.jpg' | relative_url }}" class="w-16 h-16 rounded-full object-cover mr-4 border-2 border-primary-100" loading="lazy">
-            <div>
-              <div class="font-semibold text-gray-900 text-lg">{% include translate.html key='testimonials.michael_name' %}</div>
-              <div class="text-gray-500">{% include translate.html key='testimonials.michael_title' %}</div>
-              <div class="flex items-center mt-1">
-                <span class="badge badge-success">{% if page.lang == "en" %}Happy Customer{% else %}满意客户{% endif %}</span>
-              </div>
-            </div>
-          </div>
-        </div>
+    </div>
+    
+    <!-- Scroll Instructions -->
+    <div class="text-center mt-8">
+      <div class="inline-flex items-center bg-gray-50 rounded-full px-6 py-3 border border-gray-200">
+        <i class="fas fa-arrows-alt-h mr-2 text-primary-600"></i>
+        <span class="text-gray-700 font-medium">
+          {% if page.lang == "en" %}Scroll horizontally to view more customer feedback images{% else %}左右滑动查看更多客户反馈图片{% endif %}
+        </span>
       </div>
     </div>
   </div>
