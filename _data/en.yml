@@ -70,7 +70,6 @@ services:
   tpd_title: Disability Cover
   tpd_desc: Lump sum payment if you become permanently disabled. Adapt your home and lifestyle with financial security.
   learn_more: Get Quote →
-  view_all: Compare All Options
 testimonials:
   title: What Our Clients Say
   excellent: EXCELLENT

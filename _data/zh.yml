@@ -70,7 +70,7 @@ services:
   tpd_title: 残疾保障
   tpd_desc: 如果您永久残疾，可获得一次性赔付。在财务保障下改造家庭和调整生活方式。
   learn_more: 获取报价 →
-  view_all: 比较所有选项
+
 testimonials:
   title: 客户评价
   excellent: 优秀
