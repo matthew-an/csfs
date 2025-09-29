@@ -6,25 +6,138 @@
   <!-- Browser Compatibility -->
   <meta name="format-detection" content="telephone=no">
   <meta name="msapplication-tap-highlight" content="no">
-  <title>{% if page.title_key %}{% include translate.html key=page.title_key %} - {% elsif page.title %}{{ page.title | escape }} - {% endif %}{% include translate.html key='site.title' %}</title>
-  <meta name="description" content="{% if page.description_key %}{% include translate.html key=page.description_key %}{% elsif page.description %}{{ page.description | escape }}{% else %}{% include translate.html key='site.description' %}{% endif %}">
   
+  {% comment %} SEO Meta Tags {% endcomment %}
+  {% assign current_lang = page.lang | default: site.default_lang | default: 'zh' %}
+  {% capture site_title %}{% include translate.html key='site.title' %}{% endcapture %}
+  {% capture page_title_local %}
+    {% if page.seo and page.seo.title %}
+      {{ page.seo.title }}
+    {% elsif page.title_key %}
+      {% include translate.html key=page.title_key %}
+    {% elsif page.title %}
+      {{ page.title | strip_html | strip }}
+    {% endif %}
+  {% endcapture %}
+  {% assign formatted_title = site_title | strip %}
+  {% if page_title_local | strip != '' %}
+    {% assign formatted_title = page_title_local | strip | append: ' | ' | append: formatted_title %}
+  {% endif %}
+  <title>{{ formatted_title }}</title>
+
+  {% capture site_description %}{% include translate.html key='site.description' %}{% endcapture %}
+  {% capture page_description %}
+    {% if page.description_key %}
+      {% include translate.html key=page.description_key %}
+    {% elsif page.seo and page.seo.description %}
+      {{ page.seo.description }}
+    {% elsif page.description %}
+      {{ page.description }}
+    {% elsif page.excerpt %}
+      {{ page.excerpt | strip_html }}
+    {% else %}
+      {{ site_description }}
+    {% endif %}
+  {% endcapture %}
+  {% assign sanitized_description = page_description | strip_html | strip | replace: '\n', ' ' | replace: '  ', ' ' %}
+  <meta name="description" content="{{ sanitized_description }}">
+
+  {% assign keyword_list = nil %}
+  {% if page.keywords %}
+    {% assign keyword_list = page.keywords %}
+  {% elsif page.seo and page.seo.keywords %}
+    {% assign keyword_list = page.seo.keywords %}
+  {% endif %}
+  {% if keyword_list %}
+    <meta name="keywords" content="{{ keyword_list | join: ', ' }}">
+  {% endif %}
+
+  {% if page.noindex %}
+    <meta name="robots" content="noindex, nofollow">
+  {% elsif page.nofollow %}
+    <meta name="robots" content="index, nofollow">
+  {% elsif page.robots %}
+    <meta name="robots" content="{{ page.robots }}">
+  {% endif %}
+
+  {% assign page_path = page.url | default: '/' %}
+  {% if page.canonical_url %}
+    {% assign canonical_url = page.canonical_url %}
+  {% elsif page_path contains '://' %}
+    {% assign canonical_url = page_path %}
+  {% elsif site.url and site.url != '' %}
+    {% assign canonical_url = site.url | append: site.baseurl | append: page_path %}
+  {% else %}
+    {% assign canonical_url = site.baseurl | append: page_path %}
+  {% endif %}
+  <link rel="canonical" href="{{ canonical_url }}">
+
+  {% assign og_type = 'website' %}
+  {% if page.layout == 'post' or page.collection == 'posts' %}
+    {% assign og_type = 'article' %}
+  {% endif %}
+  {% assign raw_seo_image = page.og_image | default: page.image | default: site.seo.default_image | default: '/assets/img/logo.svg' %}
+  {% if raw_seo_image contains '://' %}
+    {% assign seo_image = raw_seo_image %}
+  {% else %}
+    {% assign seo_image = site.url | append: site.baseurl | append: raw_seo_image %}
+  {% endif %}
+  {% assign seo_image_alt = page.seo.image_alt | default: page.image_alt | default: formatted_title %}
+  {% assign og_locale = 'zh-CN' %}
+  {% if current_lang == 'en' %}
+    {% assign og_locale = 'en-NZ' %}
+  {% endif %}
+
   <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
-  <meta property="og:title" content="{% if page.title_key %}{% include translate.html key=page.title_key %} - {% elsif page.title %}{{ page.title | escape }} - {% endif %}{% include translate.html key='site.title' %}">
-  <meta property="og:description" content="{% if page.description_key %}{% include translate.html key=page.description_key %}{% elsif page.description %}{{ page.description | escape }}{% else %}{% include translate.html key='site.description' %}{% endif %}">
-  <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/assets/img/logo.svg">
-  
+  <meta property="og:type" content="{{ og_type }}">
+  <meta property="og:url" content="{{ canonical_url }}">
+  <meta property="og:title" content="{{ formatted_title }}">
+  <meta property="og:description" content="{{ sanitized_description }}">
+  <meta property="og:image" content="{{ seo_image }}">
+  <meta property="og:image:alt" content="{{ seo_image_alt }}">
+  <meta property="og:locale" content="{{ og_locale }}">
+  {% if site.social and site.social.links %}
+    {% for social_url in site.social.links %}
+      <meta property="og:see_also" content="{{ social_url }}">
+    {% endfor %}
+  {% endif %}
+  {% if page.layout == 'post' %}
+    {% if page.author %}
+      <meta property="article:author" content="{{ page.author }}">
+    {% endif %}
+    {% if page.categories %}
+      {% for category in page.categories %}
+        <meta property="article:section" content="{{ category | replace: '-', ' ' | capitalize }}">
+      {% endfor %}
+    {% endif %}
+    {% if page.tags %}
+      {% for tag in page.tags %}
+        <meta property="article:tag" content="{{ tag }}">
+      {% endfor %}
+    {% endif %}
+    <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+    {% if page.modified_date %}
+      <meta property="article:modified_time" content="{{ page.modified_date | date_to_xmlschema }}">
+    {% endif %}
+  {% endif %}
+
   <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
-  <meta property="twitter:title" content="{% if page.title_key %}{% include translate.html key=page.title_key %} - {% elsif page.title %}{{ page.title | escape }} - {% endif %}{% include translate.html key='site.title' %}">
-  <meta property="twitter:description" content="{% if page.description_key %}{% include translate.html key=page.description_key %}{% elsif page.description %}{{ page.description | escape }}{% else %}{% include translate.html key='site.description' %}{% endif %}">
-  <meta property="twitter:image" content="{{ site.url }}{{ site.baseurl }}/assets/img/logo.svg">
+  {% assign twitter_card = 'summary_large_image' %}
+  {% if page.seo and page.seo.twitter_card %}
+    {% assign twitter_card = page.seo.twitter_card %}
+  {% endif %}
+  <meta property="twitter:card" content="{{ twitter_card }}">
+  <meta property="twitter:url" content="{{ canonical_url }}">
+  <meta property="twitter:title" content="{{ formatted_title }}">
+  <meta property="twitter:description" content="{{ sanitized_description }}">
+  <meta property="twitter:image" content="{{ seo_image }}">
+  <meta property="twitter:image:alt" content="{{ seo_image_alt }}">
+  {% if site.twitter and site.twitter.username %}
+    <meta property="twitter:site" content="@{{ site.twitter.username | replace: '@', '' }}">
+    <meta property="twitter:creator" content="@{{ site.twitter.username | replace: '@', '' }}">
+  {% endif %}
   
   <!-- Hreflang tags for bilingual SEO -->
-  {% assign current_lang = page.lang | default: site.default_lang | default: "zh" %}
   {% if current_lang == "zh" %}
     <link rel="alternate" hreflang="zh-CN" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
     <link rel="alternate" hreflang="en" href="{{ site.url }}{{ site.baseurl }}/en{{ page.url }}" />
@@ -239,5 +352,48 @@
   </script>
   
   {%- include custom-head.html -%}
+
+  {% if page.schema_type and page.schema_data %}
+    {% assign structured_entities = page.schema_data %}
+  {% else %}
+    {% assign structured_entities = nil %}
+  {% endif %}
+
+  {% capture org_schema %}{
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Cornerstone Insurance",
+    "url": "{{ site.url }}{{ site.baseurl }}",
+    "logo": "{{ site.url }}{{ site.baseurl }}/assets/img/logo.svg",
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "telephone": "{{ site.data[current_lang].site.phone }}",
+      "contactType": "customer service",
+      "areaServed": "NZ"
+    }]
+  }{% endcapture %}
+  <script type="application/ld+json">
+  {{ org_schema | strip }}
+  </script>
+  {% if structured_entities %}
+  <script type="application/ld+json">
+  {{ structured_entities | jsonify }}
+  </script>
+  {% endif %}
+
+  {% capture website_schema %}{
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "{{ site_title | strip }}",
+    "url": "{{ site.url }}{{ site.baseurl }}",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "{{ site.url }}{{ site.baseurl }}/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }{% endcapture %}
+  <script type="application/ld+json">
+  {{ website_schema | strip }}
+  </script>
 
 </head>

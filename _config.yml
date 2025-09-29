@@ -39,10 +39,15 @@ social:
     - "https://www.cornerstonefs.co.nz"
 
 # Additional SEO settings and i18n
-lang: zh_CN
+lang: zh-CN
 default_lang: zh
 languages: ["zh", "en"]
 timezone: Pacific/Auckland
+
+# Global SEO defaults
+seo:
+  default_image: "/assets/img/hero-bg.jpg"
+  image_alt: "Cornerstone Insurance hero background"
 
 # i18n settings
 t:
