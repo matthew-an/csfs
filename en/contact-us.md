@@ -30,7 +30,7 @@ permalink: /en/contact-us/
       {% include translate.html key='pages.contact.email_title' %}
     </h3>
     <p class="text-lg">
-      <a href="mailto:amy.tao@cornerstonefs.co.nz" class="text-primary-600 hover:text-primary-700 font-medium">
+      <a href="mailto:amy.tao@cornerstonefs.co.nz" class="text-primary-600 hover:text-primary-700 font-medium break-words">
         amy.tao@cornerstonefs.co.nz
       </a>
     </p>
@@ -64,15 +64,6 @@ permalink: /en/contact-us/
     <p class="text-gray-600 text-sm mt-2">Follow my Xiaohongshu for more insurance insights</p>
   </div>
 
-  <div class="bg-gray-50 p-6 rounded-lg">
-    <h3 class="text-xl font-semibold mb-4 flex items-center">
-      <i class="ph-clock text-primary-600 mr-2"></i>
-      {% include translate.html key='pages.contact.business_hours' %}
-    </h3>
-    <p class="text-lg">{% include translate.html key='pages.contact.monday_friday' %}</p>
-    <p class="text-gray-600">{% include translate.html key='pages.contact.hours' %}</p>
-    <p class="text-gray-600 text-sm mt-2">{% include translate.html key='pages.contact.emergency_support' %}</p>
-  </div>
 </div>
 
 ## {% include translate.html key='pages.contact.why_choose_title' %}

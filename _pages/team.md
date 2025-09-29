@@ -27,7 +27,7 @@ permalink: /team/
 - {% include translate.html key='pages.team.commitment' %}
 
 ### {% include translate.html key='pages.team.contact_amy' %}
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-4 mb-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4 mb-8">
   <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm text-center hover:shadow-md transition-shadow">
     <div class="flex items-center justify-center gap-2 mb-3">
       <i class="ph-phone text-primary-600 text-2xl"></i>
@@ -40,7 +40,7 @@ permalink: /team/
       <i class="ph-envelope text-primary-600 text-2xl"></i>
       <strong class="text-gray-800">{% include translate.html key='pages.team.email' %}</strong>
     </div>
-    <a href="mailto:amy.tao@cornerstonefs.co.nz" class="text-primary-600 hover:text-primary-700 font-medium break-all">amy.tao@cornerstonefs.co.nz</a>
+    <a href="mailto:amy.tao@cornerstonefs.co.nz" class="text-primary-600 hover:text-primary-700 font-medium break-words">amy.tao@cornerstonefs.co.nz</a>
   </div>
   <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm text-center hover:shadow-md transition-shadow">
     <div class="flex items-center justify-center gap-2 mb-1">
@@ -54,6 +54,9 @@ permalink: /team/
       </a>
     </div>
   </div>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4 mb-8">
   <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm text-center hover:shadow-md transition-shadow">
     <div class="flex items-center justify-center gap-2 mb-3">
       <i class="fas fa-book text-red-600 text-2xl"></i>
