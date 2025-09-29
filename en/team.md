@@ -66,6 +66,20 @@ permalink: /en/team/
   </div>
 </div>
 
+
+## Ella Zhang
+**Administrative Assistant**
+
+<div class="flex flex-col md:flex-row items-start gap-6 mb-8">
+  <div class="flex-1">
+    <p class="text-lg text-gray-700 mb-6">
+      Ella handles our team's daily administrative operations, ensuring smooth client service delivery. She is dedicated to providing efficient and professional support services to our clients.
+    </p>
+        <a href="mailto:admin@cornerstonefs.co.nz" class="text-primary-600 hover:text-primary-700 font-medium break-words">admin@cornerstonefs.co.nz</a>
+  </div>
+</div>
+
+
 ## {% include translate.html key='pages.team.our_commitment' %}
 
 {% include translate.html key='pages.team.commitment_intro' %}
