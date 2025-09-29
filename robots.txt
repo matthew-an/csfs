@@ -1,32 +1,33 @@
 User-agent: *
 Allow: /
 
-# Sitemap location
-Sitemap: https://www.cornerstonefs.co.nz/sitemap.xml
+# Chinese content prioritization
+Allow: /services/
+Allow: /team/
+Allow: /faq/
+Allow: /contact-us/
+Allow: /about/
+Allow: /blog/
+Allow: /calculators/
+Allow: /glossary/
 
-# Block access to admin and development files
-Disallow: /bin/
-Disallow: /node_modules/
-Disallow: /_site/
-Disallow: /Gemfile
-Disallow: /Gemfile.lock
-Disallow: /package.json
-Disallow: /package-lock.json
-Disallow: /.git/
-Disallow: /.gitignore
-Disallow: /README.md
-Disallow: /tailwind.config.js
-Disallow: /postcss.config.js
-
-# Allow important pages
-Allow: /assets/
+# English content
 Allow: /en/
-Allow: /services
-Allow: /team
-Allow: /contact-us
-Allow: /about
-Allow: /disclosure
-Allow: /blog
 
-# Crawl delay (optional - be respectful to search engines)
+# Assets and resources
+Allow: /assets/
+Allow: /search.json
+
+# Disallow admin and development files
+Disallow: /_site/
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /bin/
+Disallow: /_config_dev.yml
+
+# Sitemaps
+Sitemap: {{ site.url }}{{ site.baseurl }}/sitemap.xml
+Sitemap: {{ site.url }}{{ site.baseurl }}/sitemap_zh.xml
+
+# Crawl delay for respectful crawling
 Crawl-delay: 1

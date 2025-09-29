@@ -44,10 +44,19 @@ default_lang: zh
 languages: ["zh", "en"]
 timezone: Pacific/Auckland
 
+# Chinese SEO optimization
+chinese_seo:
+  baidu_site_verification: # Add your Baidu verification code here
+  sogou_site_verification: # Add your Sogou verification code here
+  bing_site_verification: # Add your Bing verification code here
+  google_site_verification: # Add your Google verification code here
+
 # Global SEO defaults
 seo:
   default_image: "/assets/img/hero-bg.jpg"
   image_alt: "Cornerstone Insurance hero background"
+  chinese_keywords: "新西兰保险,华人保险顾问,奥克兰保险,人寿保险,健康保险,重大疾病保险,收入保障保险,房贷保护保险,FSP持牌,保险理赔,Amy保险顾问"
+  location_keywords: "奥克兰,新西兰,惠灵顿,基督城,汉密尔顿,华人社区,新西兰华人"
 
 # i18n settings
 t:

@@ -47,6 +47,14 @@
     {% assign keyword_list = page.keywords %}
   {% elsif page.seo and page.seo.keywords %}
     {% assign keyword_list = page.seo.keywords %}
+  {% elsif current_lang == 'zh' %}
+    {% capture default_keywords %}{% include translate.html key='site.keywords' %}{% endcapture %}
+    {% if page.title_key %}
+      {% capture page_keywords %}{% include translate.html key=page.title_key %}{% endcapture %}
+      {% assign keyword_list = default_keywords | append: ',' | append: page_keywords | split: ',' %}
+    {% else %}
+      {% assign keyword_list = default_keywords | split: ',' %}
+    {% endif %}
   {% endif %}
   {% if keyword_list %}
     <meta name="keywords" content="{{ keyword_list | join: ', ' }}">
@@ -140,11 +148,17 @@
   <!-- Hreflang tags for bilingual SEO -->
   {% if current_lang == "zh" %}
     <link rel="alternate" hreflang="zh-CN" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
+    <link rel="alternate" hreflang="zh-Hans" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
+    <link rel="alternate" hreflang="zh" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
     <link rel="alternate" hreflang="en" href="{{ site.url }}{{ site.baseurl }}/en{{ page.url }}" />
+    <link rel="alternate" hreflang="en-NZ" href="{{ site.url }}{{ site.baseurl }}/en{{ page.url }}" />
     <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
   {% else %}
     <link rel="alternate" hreflang="zh-CN" href="{{ site.url }}{{ site.baseurl }}{{ page.url | replace: '/en', '' }}" />
+    <link rel="alternate" hreflang="zh-Hans" href="{{ site.url }}{{ site.baseurl }}{{ page.url | replace: '/en', '' }}" />
+    <link rel="alternate" hreflang="zh" href="{{ site.url }}{{ site.baseurl }}{{ page.url | replace: '/en', '' }}" />
     <link rel="alternate" hreflang="en" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
+    <link rel="alternate" hreflang="en-NZ" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
     <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ site.baseurl }}{{ page.url | replace: '/en', '' }}" />
   {% endif %}
   
@@ -256,9 +270,10 @@
     "@context": "https://schema.org",
     "@type": "InsuranceAgency",
     "name": "{% include translate.html key='site.company_name' %}",
-    "alternateName": "Cornerstone Insurance Limited",
+    "alternateName": ["Cornerstone Insurance Limited", "新西兰华人保险专家", "奥克兰华人保险顾问"],
     "description": "{% include translate.html key='site.description' %}",
     "url": "{{ site.url }}{{ site.baseurl }}",
+    "inLanguage": ["zh-CN", "en-NZ"],
     "logo": {
       "@type": "ImageObject",
       "url": "{{ site.url }}{{ site.baseurl }}/assets/img/logo.svg",

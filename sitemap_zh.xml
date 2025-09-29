@@ -1,0 +1,49 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- Chinese Homepage -->
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="{{ site.url }}{{ site.baseurl }}/" />
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}{{ site.baseurl }}/en/" />
+  </url>
+  
+  <!-- Chinese Pages -->
+  {% for page in site.pages %}
+    {% if page.lang == 'zh' or page.lang == nil %}
+      {% unless page.url contains '/en/' or page.url contains '/assets/' or page.url contains '/404' %}
+        <url>
+          <loc>{{ site.url }}{{ site.baseurl }}{{ page.url }}</loc>
+          {% if page.date %}
+            <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
+          {% else %}
+            <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+          {% endif %}
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+          <xhtml:link rel="alternate" hreflang="zh-CN" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
+          {% assign en_url = page.url | prepend: '/en' %}
+          <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}{{ site.baseurl }}{{ en_url }}" />
+        </url>
+      {% endunless %}
+    {% endif %}
+  {% endfor %}
+  
+  <!-- Chinese Blog Posts -->
+  {% for post in site.posts %}
+    {% if post.lang == 'zh' or post.lang == nil %}
+      <url>
+        <loc>{{ site.url }}{{ site.baseurl }}{{ post.url }}</loc>
+        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" />
+      </url>
+    {% endif %}
+  {% endfor %}
+</urlset>

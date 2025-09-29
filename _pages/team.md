@@ -4,6 +4,18 @@ title_key: pages.team.title
 description_key: pages.team.description
 lang: zh
 permalink: /team/
+seo:
+  keywords:
+    - 华人保险顾问
+    - FSP持牌顾问
+    - Amy Tao保险
+    - 新西兰华人保险
+    - 双语保险服务
+    - 奥克兰保险顾问
+    - 中科院硕士
+    - 保险专业人士
+    - 新西兰保险专家
+    - 华人保险团队
 ---
 
 {% include translate.html key='pages.team.intro' %}

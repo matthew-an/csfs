@@ -1,8 +1,21 @@
 ---
 layout: page
 title_key: pages.services.title
+description_key: pages.services.description
 lang: zh
 permalink: /services/
+seo:
+  keywords:
+    - 新西兰保险产品
+    - 华人保险服务
+    - 人寿保险新西兰
+    - 健康保险奥克兰
+    - 重大疾病保险
+    - 收入保障保险
+    - 房贷保护保险
+    - FSP持牌顾问
+    - Amy保险顾问
+    - 奥克兰保险专家
 ---
 
 {% assign current_lang = page.lang | default: site.default_lang | default: "zh" %}

@@ -1,9 +1,21 @@
 ---
 layout: page
 title_key: pages.contact.title
-description_key: pages.contact.intro
+description_key: pages.contact.description
 lang: zh
 permalink: /contact-us/
+seo:
+  keywords:
+    - 华人保险咨询
+    - 新西兰保险顾问联系
+    - Amy保险顾问
+    - 奥克兰保险咨询
+    - 免费保险评估
+    - 华人保险服务
+    - FSP持牌顾问联系
+    - 保险免费咨询
+    - 新西兰保险专家
+    - 华人保险公司
 ---
 
 {% include translate.html key='pages.contact.intro' %}

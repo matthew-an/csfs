@@ -1,10 +1,13 @@
 site:
-  title: Cornerstone Insurance
-  description: Cornerstone Insurance提供全面的保险解决方案，包括人寿保险、健康保险、重大疾病保险、收入保障保险和房贷保护保险。通过我们值得信赖的保险专业知识和个性化保障选择，为您的未来保驾护航。
+  title: Cornerstone Insurance - 新西兰华人保险专家 | 人寿保险 健康保险 收入保障
+  description: Cornerstone Insurance新西兰华人保险专家，提供人寿保险、健康保险、重大疾病保险、收入保障保险和房贷保护保险。FSP持牌顾问Amy专业服务，95%理赔成功率，为奥克兰华人家庭提供最优保险方案。
   company_name: Cornerstone Insurance
   phone: +64 211 280 727
   email: amy.tao@cornerstonefs.co.nz
   wechat: Amytaoingrace
+  keywords: 新西兰保险,华人保险顾问,奥克兰保险,人寿保险,健康保险,重大疾病保险,收入保障保险,房贷保护保险,FSP持牌,保险理赔,Amy保险顾问
+  location: 奥克兰,新西兰
+  service_area: 新西兰全境,奥克兰,惠灵顿,基督城,汉密尔顿
 nav:
   home: 首页
   services: 服务
@@ -105,10 +108,13 @@ footer:
   contact_info: 联系信息
 pages:
   faq:
-    title: 常见问题
+    title: 新西兰保险常见问题 - 华人保险专家解答
+    description: 新西兰保险常见问题专业解答，涵盖人寿保险、健康保险、重大疾病保险等。FSP持牌华人顾问Amy为您详细解答保险疑问，帮助华人家庭选择最适合的保险方案。
+    keywords: 新西兰保险问题,华人保险咨询,保险FAQ,人寿保险问题,健康保险咨询,保险理赔问题
   glossary:
-    title: 保险术语表
-    description: 了解保险行业的关键术语和概念，帮助您更好地理解保险产品和服务。
+    title: 新西兰保险术语表 - 华人保险知识大全
+    description: 新西兰保险术语中文详解，帮助华人客户理解保险行业专业术语。涵盖人寿保险、健康保险、重大疾病保险等各类保险产品的关键概念和定义。
+    keywords: 保险术语,保险词汇,新西兰保险知识,华人保险教育,保险概念解释
     search_placeholder: 搜索术语...
     terms:
       life_insurance:
@@ -157,7 +163,9 @@ pages:
         term: 房贷保护保险
         definition: 专门用于偿还房屋贷款的保险产品。在被保险人死亡或完全残疾时，保险金用于清偿剩余房贷。
   services:
-    title: 我们的保险产品
+    title: 新西兰保险产品服务 - 华人专业保险顾问
+    description: 新西兰专业保险服务，提供人寿保险、健康保险、重大疾病保险、收入保障保险、房贷保护保险。FSP持牌华人顾问Amy专业服务，为奥克兰华人家庭量身定制保险方案。
+    keywords: 新西兰保险产品,华人保险服务,人寿保险新西兰,健康保险奥克兰,重大疾病保险,收入保障保险,房贷保护保险
     intro: 我们保持简单。我们的保单用通俗易懂的语言编写，专为新西兰人设计。获得所需的保护，无需困惑。
     life_title: 人寿保险
     life_desc: 在您身故时为家人提供一次性赔付，帮助他们支付房贷、教育投资、生活费用和各种账单。保障金额从5万到200万纽币。
@@ -173,7 +181,9 @@ pages:
     mortgage_desc: 确保如果您发生意外，家人能够保住房子。自动支付您的房贷余额，让您的亲人少一份担心。
     closing: 不确定哪种保障适合您？我们的专家顾问将帮助您了解选项，并为您的情况和预算找到合适的保护。
   team:
-    title: 我们的团队
+    title: 新西兰华人保险团队 - FSP持牌专业顾问
+    description: Cornerstone Insurance华人保险团队，FSP持牌专业顾问Amy Tao领衔。中科院硕士学历，多年新西兰保险行业经验，专为华人家庭提供双语保险服务和专业建议。
+    keywords: 华人保险顾问,FSP持牌顾问,Amy Tao保险,新西兰华人保险,双语保险服务,奥克兰保险顾问
     intro: Cornerstone Insurance由经验丰富的保险专业人士组成，我们深入了解新西兰的保险市场，致力于为每位客户提供个性化的保险解决方案。
     amy_title: 首席保险顾问
     amy_desc: Min Tao (Amy) 拥有丰富的保险行业经验和深厚的专业知识。她致力于帮助客户了解复杂的保险产品，并找到最适合他们需求的保障方案。Amy 能够用中文和英文为客户提供服务，确保每位客户都能得到清晰、准确的保险建议。
@@ -201,7 +211,9 @@ pages:
     contact_today: 立即联系我们
     schedule_consultation: 安排免费咨询。
   contact:
-    title: 联系我们
+    title: 联系新西兰华人保险专家 - 免费保险咨询
+    description: 联系Cornerstone Insurance华人保险专家Amy，获得免费保险咨询。FSP持牌顾问，提供人寿保险、健康保险等专业建议。奥克兰办公室，服务新西兰全境华人客户。
+    keywords: 华人保险咨询,新西兰保险顾问联系,Amy保险顾问,奥克兰保险咨询,免费保险评估,华人保险服务
     intro: 准备好保护您的未来了吗？我们的专业团队随时为您提供个性化的保险建议和解决方案。
     contact_info: 联系信息
     phone_title: 电话咨询
@@ -352,8 +364,9 @@ pages:
     availability_title: Availability of Information
     availability_info: This information can also be provided in hardcopy upon request.
   calculators:
-    title: 保险计算器
-    description: 使用我们的专业保险计算器，快速估算您的保险需求。这些工具基于行业标准，帮助您做出明智的保险决策。
+    title: 新西兰保险需求计算器 - 免费保险评估工具
+    description: 新西兰专业保险计算器，免费评估人寿保险和收入保障保险需求。基于行业标准设计，帮助华人家庭快速了解保险需求，做出明智的保险决策。
+    keywords: 保险计算器,人寿保险计算,收入保障计算,新西兰保险评估,免费保险工具,保险需求分析
     life_insurance:
       title: 人寿保险需求计算器
       description: 计算您需要多少人寿保险来保护家人的财务安全
