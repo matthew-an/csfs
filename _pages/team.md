@@ -27,7 +27,7 @@ permalink: /team/
 - {% include translate.html key='pages.team.commitment' %}
 
 ### {% include translate.html key='pages.team.contact_amy' %}
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4 mb-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-4 mb-8">
   <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm text-center hover:shadow-md transition-shadow">
     <div class="flex items-center justify-center gap-2 mb-3">
       <i class="ph-phone text-primary-600 text-2xl"></i>
@@ -53,6 +53,13 @@ permalink: /team/
         <img src="/assets/img/wechat_qr_small.jpg" alt="WeChat QR Code" class="w-6 h-6 rounded border border-gray-300" loading="lazy" />
       </a>
     </div>
+  </div>
+  <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm text-center hover:shadow-md transition-shadow">
+    <div class="flex items-center justify-center gap-2 mb-3">
+      <i class="fas fa-book text-red-600 text-2xl"></i>
+      <strong class="text-gray-800">小红书</strong>
+    </div>
+    <a href="https://www.xiaohongshu.com/user/profile/5b174220e8ac2b64b56665b7?xsec_token=ABUIxCKlzaQbv-IauUE1AcTvDSEvcn-cn2gRHxATX3vgg%3D&xsec_source=pc_search" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 font-medium">新西兰Amy Tao 咨询</a>
   </div>
 </div>
 

@@ -10,7 +10,7 @@ permalink: /contact-us/
 
 ## {% include translate.html key='pages.contact.contact_info' %}
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-8">
   <div class="bg-gray-50 p-6 rounded-lg">
     <h3 class="text-xl font-semibold mb-4 flex items-center">
       <i class="ph-phone text-primary-600 mr-2"></i>
@@ -49,6 +49,19 @@ permalink: /contact-us/
       </a>
     </div>
     <p class="text-gray-600 text-sm">{% include translate.html key='pages.contact.wechat_support' %}</p>
+  </div>
+
+  <div class="bg-gray-50 p-6 rounded-lg">
+    <h3 class="text-xl font-semibold mb-4 flex items-center">
+      <i class="fas fa-book text-red-600 mr-2"></i>
+      小红书
+    </h3>
+    <p class="text-lg">
+      <a href="https://www.xiaohongshu.com/user/profile/5b174220e8ac2b64b56665b7?xsec_token=ABUIxCKlzaQbv-IauUE1AcTvDSEvcn-cn2gRHxATX3vgg%3D&xsec_source=pc_search" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 font-medium">
+        新西兰Amy Tao 咨询
+      </a>
+    </p>
+    <p class="text-gray-600 text-sm mt-2">关注我的小红书获取更多保险资讯</p>
   </div>
 
   <div class="bg-gray-50 p-6 rounded-lg">
