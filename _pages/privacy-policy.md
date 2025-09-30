@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Privacy Policy
+lang: zh
 permalink: /privacy-policy/
 ---
 

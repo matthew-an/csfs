@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Terms and Conditions
+lang: zh
 permalink: /terms/
 ---
 

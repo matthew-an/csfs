@@ -1,12 +1,12 @@
-# Redirect Chinese pages with trailing slash to without trailing slash
-/faq/                /faq                301
-/services/           /services           301
-/team/               /team               301
-/blog/               /blog               301
-/contact-us/         /contact-us         301
-/about/              /about              301
-/glossary/           /glossary           301
-/calculators/        /calculators        301
-/disclosure/         /disclosure         301
-/privacy-policy/     /privacy-policy     301
-/terms/              /terms              301
+# Redirect English pages with double trailing slash to single trailing slash
+/en/faq//            /en/faq/            301
+/en/services//       /en/services/       301
+/en/team//           /en/team/           301
+/en/blog//           /en/blog/           301
+/en/contact-us//     /en/contact-us/     301
+/en/about//          /en/about/          301
+/en/glossary//       /en/glossary/       301
+/en/calculators//    /en/calculators/    301
+/en/disclosure//     /en/disclosure/     301
+/en/privacy-policy// /en/privacy-policy/ 301
+/en/terms//          /en/terms/          301
