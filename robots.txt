@@ -1,23 +1,6 @@
 User-agent: *
 Allow: /
 
-# Chinese content prioritization
-Allow: /services/
-Allow: /team/
-Allow: /faq/
-Allow: /contact-us/
-Allow: /about/
-Allow: /blog/
-Allow: /calculators/
-Allow: /glossary/
-
-# English content
-Allow: /en/
-
-# Assets and resources
-Allow: /assets/
-Allow: /search.json
-
 # Disallow admin and development files
 Disallow: /_site/
 Disallow: /node_modules/
@@ -26,8 +9,8 @@ Disallow: /bin/
 Disallow: /_config_dev.yml
 
 # Sitemaps
-Sitemap: {{ site.url }}{{ site.baseurl }}/sitemap.xml
-Sitemap: {{ site.url }}{{ site.baseurl }}/sitemap_zh.xml
+Sitemap: https://www.cornerstonefs.co.nz/sitemap.xml
+Sitemap: https://www.cornerstonefs.co.nz/sitemap_zh.xml
 
 # Crawl delay for respectful crawling
 Crawl-delay: 1
