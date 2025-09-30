@@ -150,8 +150,11 @@
     <link rel="alternate" hreflang="zh-CN" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
     <link rel="alternate" hreflang="zh-Hans" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
     <link rel="alternate" hreflang="zh" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
-    <link rel="alternate" hreflang="en" href="{{ site.url }}{{ site.baseurl }}/en{{ page.url }}" />
-    <link rel="alternate" hreflang="en-NZ" href="{{ site.url }}{{ site.baseurl }}/en{{ page.url }}" />
+    {% comment %}Only add English hreflang for pages, not blog posts since blog posts don't have English versions{% endcomment %}
+    {% unless page.url contains '/blog/' and page.url != '/blog/' %}
+      <link rel="alternate" hreflang="en" href="{{ site.url }}{{ site.baseurl }}/en{{ page.url }}" />
+      <link rel="alternate" hreflang="en-NZ" href="{{ site.url }}{{ site.baseurl }}/en{{ page.url }}" />
+    {% endunless %}
     <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
   {% else %}
     <link rel="alternate" hreflang="zh-CN" href="{{ site.url }}{{ site.baseurl }}{{ page.url | replace: '/en', '' }}" />
