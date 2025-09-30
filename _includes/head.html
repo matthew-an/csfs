@@ -273,7 +273,18 @@
     "alternateName": ["Cornerstone Insurance Limited", "新西兰华人保险专家", "奥克兰华人保险顾问"],
     "description": "{% include translate.html key='site.description' %}",
     "url": "{{ site.url }}{{ site.baseurl }}",
-    "inLanguage": ["zh-CN", "en-NZ"],
+    "knowsLanguage": [
+      {
+        "@type": "Language",
+        "name": "Chinese",
+        "alternateName": "zh-CN"
+      },
+      {
+        "@type": "Language", 
+        "name": "English",
+        "alternateName": "en-NZ"
+      }
+    ],
     "logo": {
       "@type": "ImageObject",
       "url": "{{ site.url }}{{ site.baseurl }}/assets/img/logo.svg",
@@ -310,14 +321,6 @@
     },
     "sameAs": [
       "{{ site.url }}{{ site.baseurl }}"
-    ],
-    "serviceType": [
-      "Life Insurance",
-      "Health Insurance", 
-      "Trauma Insurance",
-      "Income Protection",
-      "Mortgage Protection",
-      "Total Permanent Disability Insurance"
     ],
     "areaServed": {
       "@type": "Country",
