@@ -8,9 +8,8 @@ Disallow: /.git/
 Disallow: /bin/
 Disallow: /_config_dev.yml
 
-# Sitemaps
+# Sitemap (includes all Chinese, English pages and blog posts with hreflang tags)
 Sitemap: https://www.cornerstonefs.co.nz/sitemap.xml
-Sitemap: https://www.cornerstonefs.co.nz/sitemap_zh.xml
 
 # RSS Feeds
 # Chinese feed: https://www.cornerstonefs.co.nz/feed.xml

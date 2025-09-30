@@ -1,0 +1,101 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- Chinese Homepage -->
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="{{ site.url }}{{ site.baseurl }}/" />
+    <xhtml:link rel="alternate" hreflang="en-NZ" href="{{ site.url }}{{ site.baseurl }}/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ site.baseurl }}/" />
+  </url>
+  
+  <!-- Chinese Pages -->
+  {% for page in site.html_pages %}
+    {% if page.lang == 'zh' or page.lang == nil %}
+      {% unless page.url contains '/en/' or page.url contains '/assets/' or page.url contains '/404' %}
+        <url>
+          <loc>{{ site.url }}{{ site.baseurl }}{{ page.url }}</loc>
+          {% if page.date %}
+            <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
+          {% else %}
+            <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+          {% endif %}
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+          <xhtml:link rel="alternate" hreflang="zh-CN" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
+          {% assign en_url = '/en' | append: page.url %}
+          {% assign en_page = site.html_pages | where: "url", en_url | first %}
+          {% if en_page %}
+            <xhtml:link rel="alternate" hreflang="en-NZ" href="{{ site.url }}{{ site.baseurl }}{{ en_url }}" />
+          {% endif %}
+          <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
+        </url>
+      {% endunless %}
+    {% endif %}
+  {% endfor %}
+  
+  <!-- Chinese Blog Posts -->
+  {% for post in site.posts_zh %}
+    <url>
+      <loc>{{ site.url }}{{ site.baseurl }}{{ post.url }}</loc>
+      <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+      <xhtml:link rel="alternate" hreflang="zh-CN" href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ site.baseurl }}/" />
+    </url>
+  {% endfor %}
+  
+  <!-- English Homepage -->
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}/en/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en-NZ" href="{{ site.url }}{{ site.baseurl }}/en/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="{{ site.url }}{{ site.baseurl }}/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ site.baseurl }}/" />
+  </url>
+  
+  <!-- English Pages -->
+  {% for page in site.html_pages %}
+    {% if page.url contains '/en/' and page.url != '/en/' %}
+      {% unless page.url contains '/assets/' or page.url contains '/404' or (page.url contains '/blog/' and page.url != '/en/blog/') %}
+        <url>
+          <loc>{{ site.url }}{{ site.baseurl }}{{ page.url }}</loc>
+          {% if page.date %}
+            <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
+          {% else %}
+            <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+          {% endif %}
+          <changefreq>monthly</changefreq>
+          <priority>0.8</priority>
+          <xhtml:link rel="alternate" hreflang="en-NZ" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
+          {% assign zh_url = page.url | replace: '/en', '' %}
+          {% assign zh_page = site.html_pages | where: "url", zh_url | first %}
+          {% if zh_page %}
+            <xhtml:link rel="alternate" hreflang="zh-CN" href="{{ site.url }}{{ site.baseurl }}{{ zh_url }}" />
+          {% endif %}
+          <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ site.baseurl }}{{ zh_url }}" />
+        </url>
+      {% endunless %}
+    {% endif %}
+  {% endfor %}
+  
+  <!-- English Blog Posts -->
+  {% for post in site.posts_en %}
+    <url>
+      <loc>{{ site.url }}{{ site.baseurl }}{{ post.url }}</loc>
+      <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+      <xhtml:link rel="alternate" hreflang="en-NZ" href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" />
+      <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ site.baseurl }}/" />
+    </url>
+  {% endfor %}
+</urlset>

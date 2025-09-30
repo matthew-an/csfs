@@ -8,7 +8,7 @@ baseurl: ''
 
 plugins:
   - jekyll-feed
-  - jekyll-sitemap
+  # - jekyll-sitemap  # Disabled - using custom sitemap.xml with hreflang support instead
   - jekyll-minifier
 
 css_dir: "assets/css" # defaults to "css"
