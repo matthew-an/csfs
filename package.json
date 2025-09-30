@@ -1,24 +1,23 @@
 {
-  "name": "cookie",
+  "name": "cornerstone-insurance",
   "version": "1.0.0",
-  "description": "Landing website with blog using Jekyll and TailwindCSS",
-  "homepage": "https://cookie-demo.netlify.app",
+  "description": "Cornerstone Insurance - Bilingual (Chinese/English) insurance advisory website providing comprehensive insurance solutions in New Zealand",
+  "homepage": "https://www.cornerstonefs.co.nz",
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.3.0",
     "@tailwindcss/forms": "^0.4.0",
     "@tailwindcss/typography": "^0.5.0",
     "autoprefixer": "^10.4.2",
     "postcss": "^8.4.5",
+    "postcss-cli": "10.0.0",
     "postcss-import": "14.0.0",
-    "tailwindcss": "^3.0.15",
-    "postcss-cli": "10.0.0"
+    "tailwindcss": "^3.0.15"
   },
   "scripts": {
     "build": "bundle exec jekyll build",
     "dev": "bundle exec jekyll serve --livereload",
     "clean": "bundle exec jekyll clean"
   },
-  "author": "Abhinav Saxena",
-  "license": "MIT",
-  "dependencies": {}
+  "author": "Cornerstone Insurance",
+  "license": "MIT"
 }
