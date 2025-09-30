@@ -1,11 +1,12 @@
 ---
 layout: post
-title: "Income Protection: Your Financial Safety Net When You Can't Work"
+title: "收入保障：无法工作时的财务安全网"
 date: 2024-12-11 09:00:00 +1300
 categories: [income-protection, disability-insurance, financial-planning]
-tags: [income protection, disability insurance, financial security, new zealand insurance, salary protection]
+tags: [收入保障, 残疾保险, 财务安全, 新西兰保险, 薪资保障]
 author: "Amy Tao"
-excerpt: "What happens to your income if illness or injury prevents you from working? Learn how income protection insurance can safeguard your financial future and maintain your lifestyle during difficult times."
+lang: zh
+excerpt: "如果疾病或受伤导致您无法工作，您的收入会发生什么？了解收入保障保险如何保障您的财务未来并在困难时期维持您的生活方式。"
 image: "/assets/img/blog/income-protection-safety-net.jpg"
 ---
 

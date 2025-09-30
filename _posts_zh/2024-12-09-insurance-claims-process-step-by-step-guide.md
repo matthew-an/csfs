@@ -1,11 +1,12 @@
 ---
 layout: post
-title: "Insurance Claims Process: A Step-by-Step Guide for New Zealand"
+title: "保险理赔流程：新西兰分步指南"
 date: 2024-12-09 13:00:00 +1300
 categories: [insurance-claims, claims-process, insurance-guide]
-tags: [insurance claims, claims process, new zealand insurance, claims tips, insurance advice]
+tags: [保险理赔, 理赔流程, 新西兰保险, 理赔技巧, 保险建议]
 author: "Amy Tao"
-excerpt: "Filing an insurance claim can be stressful. This comprehensive guide walks you through the entire claims process in New Zealand, from initial notification to final settlement."
+lang: zh
+excerpt: "提交保险理赔可能会让人感到压力。这份综合指南将带您了解新西兰的整个理赔流程，从初始通知到最终结算。"
 image: "/assets/img/blog/insurance-claims-process.jpg"
 ---
 

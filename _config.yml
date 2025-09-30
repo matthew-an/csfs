@@ -16,9 +16,12 @@ css_dir: "assets/css" # defaults to "css"
 highlighter: rouge
 
 collections:
-  posts:
+  posts_zh:
     output: true
     permalink: "/blog/:title/"
+  posts_en:
+    output: true
+    permalink: "/en/blog/:title/"
   pages:
     output: true
 

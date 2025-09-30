@@ -1,11 +1,12 @@
 ---
 layout: post
-title: "First Home Buyers: Insurance You Can't Ignore in New Zealand"
+title: "首次购房者：新西兰不可忽视的保险"
 date: 2024-12-10 11:00:00 +1300
 categories: [first-home-buyers, mortgage-protection, home-insurance, life-insurance]
-tags: [first home buyers, mortgage protection, home insurance, life insurance, new zealand property, financial planning]
+tags: [首次购房, 房贷保障, 房屋保险, 人寿保险, 新西兰房产, 财务规划]
 author: "Amy Tao"
-excerpt: "Buying your first home in New Zealand? Don't overlook these essential insurance protections that could save your home and your family's financial future."
+lang: zh
+excerpt: "在新西兰购买首套房？不要忽视这些重要的保险保障，它们可能会救您的房子和家庭的财务未来。"
 image: "/assets/img/blog/first-home-buyers-insurance.jpg"
 ---
 

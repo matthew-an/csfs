@@ -1,11 +1,12 @@
 ---
 layout: post
-title: "Health Insurance vs ACC: What You Need to Know in New Zealand"
+title: "健康保险与ACC：新西兰您需要了解的事情"
 date: 2024-12-12 14:00:00 +1300
 categories: [health-insurance, acc, new-zealand, insurance-guide]
-tags: [health insurance, ACC, medical coverage, new zealand healthcare, private health insurance]
+tags: [健康保险, ACC, 医疗保障, 新西兰医疗, 私人健康保险]
 author: "Amy Tao"
-excerpt: "Confused about what ACC covers versus private health insurance? This comprehensive guide explains the differences, gaps in coverage, and why many New Zealanders choose both."
+lang: zh
+excerpt: "对ACC与私人健康保险的保障范围感到困惑？这份综合指南解释了两者的区别、保障空白，以及为什么许多新西兰人选择同时拥有两者。"
 image: "/assets/img/blog/health-insurance-vs-acc.jpg"
 ---
 

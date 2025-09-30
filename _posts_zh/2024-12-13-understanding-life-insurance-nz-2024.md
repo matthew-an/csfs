@@ -1,11 +1,12 @@
 ---
 layout: post
-title: "Understanding Life Insurance in New Zealand 2024: A Complete Guide"
+title: "了解新西兰人寿保险2024：完整指南"
 date: 2024-12-13 10:00:00 +1300
 categories: [life-insurance, new-zealand, insurance-guide]
-tags: [life insurance, family protection, financial planning, new zealand insurance]
+tags: [人寿保险, 家庭保障, 财务规划, 新西兰保险]
 author: "Amy Tao"
-excerpt: "Everything you need to know about life insurance in New Zealand in 2024, including coverage options, costs, and how to choose the right policy for your family's needs."
+lang: zh
+excerpt: "关于2024年新西兰人寿保险您需要了解的一切，包括保障选项、费用以及如何为您的家庭需求选择合适的保单。"
 image: "/assets/img/blog/life-insurance-nz-2024.jpg"
 ---
 

@@ -17,7 +17,7 @@ permalink: /en/blog/
 {% endif %}
 
 <div class="grid gap-8 mt-12">
-  {%- for post in site.posts -%}
+  {%- for post in site.posts_en -%}
   <article class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 overflow-hidden">
     <div class="p-6">
       <div class="flex items-center text-sm text-gray-500 mb-3">
@@ -68,7 +68,7 @@ permalink: /en/blog/
   {%- endfor -%}
 </div>
 
-{% if site.posts.size == 0 %}
+{% if site.posts_en.size == 0 %}
   <div class="text-center py-12">
     <i class="ph-article text-6xl text-gray-300 mb-4"></i>
     {% if current_lang == "zh" %}
