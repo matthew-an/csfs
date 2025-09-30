@@ -14,6 +14,10 @@ nav:
   disclosure: Disclosure
   contact: Contact
   about: About
+pages:
+  about:
+    title: About Cornerstone Insurance
+    description: Cornerstone Insurance - New Zealand's trusted FSP-licensed insurance specialists. 95%+ claims approval rate, 300+ families protected. Professional advice for life, health, trauma, and income protection insurance.
 about:
   title: About Cornerstone Insurance
   trusted_partner: New Zealand's Trusted Insurance Specialists
@@ -106,6 +110,7 @@ footer:
 pages:
   faq:
     title: Frequently Asked Questions
+    description: Comprehensive New Zealand insurance FAQ answers covering life insurance, health insurance, trauma insurance, income protection, and claims. Expert advice from FSP-licensed advisors for Kiwi families.
   glossary:
     title: Insurance Glossary
     description: Understand key insurance industry terms and concepts to help you better understand insurance products and services.
@@ -158,6 +163,7 @@ pages:
         definition: Insurance specifically designed to pay off home loans. The insurance benefit is used to clear the remaining mortgage when the insured dies or becomes totally disabled.
   services:
     title: Our Insurance Products
+    description: Comprehensive New Zealand insurance products including life, health, trauma, income protection, disability, and mortgage protection insurance. Expert FSP-licensed advisors providing personalized coverage solutions for Kiwi families.
     intro: We keep things simple. Our policies are written in plain English, designed specifically for New Zealanders. Get the protection you need without the confusion.
     life_title: Life Insurance
     life_desc: Provides a lump sum to your family when you die, helping them pay the mortgage, invest in education, put food on the table, and pay the bills. Cover from $50,000 to $2 million.
@@ -202,6 +208,7 @@ pages:
     schedule_consultation: to schedule a free consultation.
   contact:
     title: Contact Us
+    description: Contact Cornerstone Insurance for expert insurance advice in New Zealand. FSP-licensed advisors offering free consultations for life, health, trauma, and income protection insurance. Available for Auckland and nationwide clients.
     intro: Ready to protect your future? Our professional team is here to provide you with personalized insurance advice and solutions.
     contact_info: Contact Information
     phone_title: Phone Consultation

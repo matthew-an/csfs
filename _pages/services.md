@@ -15,7 +15,8 @@ seo:
     - 房贷保护保险
     - FSP持牌顾问
     - Amy保险顾问
-    - 奥克兰保险专家
+    - 医疗险
+    - 奥克兰保险顾问
 ---
 
 {% assign current_lang = page.lang | default: site.default_lang | default: "zh" %}
@@ -424,7 +425,7 @@ seo:
         {% if current_lang == "zh" %}专业顾问{% else %}Expert Advisors{% endif %}
       </h3>
       <p class="text-primary-100 text-sm">
-        {% if current_lang == "zh" %}经验丰富的保险专家为您提供专业建议{% else %}Experienced insurance experts provide professional advice{% endif %}
+        {% if current_lang == "zh" %}经验丰富的保险顾问为您提供专业建议{% else %}Experienced insurance experts provide professional advice{% endif %}
       </p>
     </div>
     <div class="text-center">

@@ -1,6 +1,7 @@
 ---
 layout: page
-title_key: nav.about
+title_key: pages.about.title
+description_key: pages.about.description
 lang: zh
 permalink: /about/
 ---

@@ -1,6 +1,7 @@
 ---
 layout: page
 title_key: pages.glossary.title
+description_key: pages.glossary.description
 lang: zh
 permalink: /glossary/
 ---

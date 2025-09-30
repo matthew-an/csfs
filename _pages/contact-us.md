@@ -14,8 +14,9 @@ seo:
     - 华人保险服务
     - FSP持牌顾问联系
     - 保险免费咨询
-    - 新西兰保险专家
+    - 新西兰保险顾问
     - 华人保险公司
+    - 华人保险经纪
 ---
 
 {% include translate.html key='pages.contact.intro' %}

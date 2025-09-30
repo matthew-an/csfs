@@ -1,6 +1,7 @@
 ---
 layout: page
 title_key: pages.calculators.title
+description_key: pages.calculators.description
 lang: en
 permalink: /en/calculators/
 ---

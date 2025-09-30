@@ -1,6 +1,7 @@
 ---
 layout: page
 title_key: pages.services.title
+description_key: pages.services.description
 lang: en
 permalink: /en/services/
 ---
@@ -411,7 +412,7 @@ permalink: /en/services/
         {% if current_lang == "zh" %}专业顾问{% else %}Expert Advisors{% endif %}
       </h3>
       <p class="text-primary-100 text-sm">
-        {% if current_lang == "zh" %}经验丰富的保险专家为您提供专业建议{% else %}Experienced insurance experts provide professional advice{% endif %}
+        {% if current_lang == "zh" %}经验丰富的保险顾问为您提供专业建议{% else %}Experienced insurance experts provide professional advice{% endif %}
       </p>
     </div>
     <div class="text-center">

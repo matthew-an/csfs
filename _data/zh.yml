@@ -1,6 +1,6 @@
 site:
-  title: Cornerstone Insurance - 新西兰华人保险专家 | 人寿保险 健康保险 收入保障
-  description: Cornerstone Insurance新西兰华人保险专家，提供人寿保险、健康保险、重大疾病保险、收入保障保险和房贷保护保险。FSP持牌顾问Amy专业服务，95%理赔成功率，为奥克兰华人家庭提供最优保险方案。
+  title: Cornerstone Insurance - 新西兰华人保险顾问 | 人寿保险 健康保险 收入保障
+  description: Cornerstone Insurance新西兰华人保险顾问经纪专家，提供人寿保险、健康保险、重大疾病保险、收入保障保险和房贷保护保险。FSP持牌顾问Amy专业服务，95%理赔成功率，为奥克兰华人家庭提供最优保险方案。
   company_name: Cornerstone Insurance
   phone: +64 211 280 727
   email: amy.tao@cornerstonefs.co.nz
@@ -16,15 +16,19 @@ nav:
   disclosure: 披露
   contact: 联系我们
   about: 关于我们
+pages:
+  about:
+    title: 关于Cornerstone Insurance - 新西兰华人保险顾问经纪专家团队
+    description: Cornerstone Insurance新西兰华人保险顾问，FSP持牌专业团队，95%理赔成功率。提供人寿保险、健康保险、重大疾病保险专业服务，为300+家庭提供保障方案。
 about:
   title: 关于Cornerstone Insurance
-  trusted_partner: 新西兰可信赖的保险专家
+  trusted_partner: 新西兰可信赖的保险顾问
   intro: Cornerstone Insurance一直在帮助新西兰家庭保护最重要的东西。作为FSP持牌专业机构（FSPR编号#1004360），我们在新西兰严格的金融服务法规监管下运营，确保您获得合规的专业建议。我们成功处理了95%以上的理赔，帮助300+家庭通过专为新西兰人量身定制的简单、实惠保险解决方案保障财务未来。
   mission_title: 我们的使命
   mission_desc: 为每个新西兰家庭提供简单、易懂、实惠的保险。我们相信保险不应该复杂 - 它应该让您安心，知道您的亲人得到了保护。
   what_sets_us_apart: 为什么家庭选择我们
   expertise_title: 本地专业知识
-  expertise_desc: 作为新西兰保险专家，我们了解新西兰家庭的独特需求。我们的FSP持牌顾问紧跟当地法规和市场变化，为您提供最相关的建议。
+  expertise_desc: 作为新西兰保险顾问，我们了解新西兰家庭的独特需求。我们的FSP持牌顾问紧跟当地法规和市场变化，为您提供最相关的建议。
   personalized_title: 个性化服务
   personalized_desc: 没有呼叫中心或自动系统。当您致电时，您直接与Amy交谈，您的专属保险顾问。我们花时间了解您家庭的独特情况和预算。
   comprehensive_title: 简单产品系列
@@ -108,7 +112,7 @@ footer:
   contact_info: 联系信息
 pages:
   faq:
-    title: 新西兰保险常见问题 - 华人保险专家解答
+    title: 新西兰保险常见问题 - 华人保险顾问解答
     description: 新西兰保险常见问题专业解答，涵盖人寿保险、健康保险、重大疾病保险等。FSP持牌华人顾问Amy为您详细解答保险疑问，帮助华人家庭选择最适合的保险方案。
     keywords: 新西兰保险问题,华人保险咨询,保险FAQ,人寿保险问题,健康保险咨询,保险理赔问题
   glossary:
@@ -211,8 +215,8 @@ pages:
     contact_today: 立即联系我们
     schedule_consultation: 安排免费咨询。
   contact:
-    title: 联系新西兰华人保险专家 - 免费保险咨询
-    description: 联系Cornerstone Insurance华人保险专家Amy，获得免费保险咨询。FSP持牌顾问，提供人寿保险、健康保险等专业建议。奥克兰办公室，服务新西兰全境华人客户。
+    title: 联系新西兰华人保险顾问 - 免费保险咨询
+    description: 联系Cornerstone Insurance华人保险顾问Amy，获得免费保险咨询。FSP持牌顾问，提供人寿保险、健康保险等专业建议。奥克兰办公室，服务新西兰全境华人客户。
     keywords: 华人保险咨询,新西兰保险顾问联系,Amy保险顾问,奥克兰保险咨询,免费保险评估,华人保险服务
     intro: 准备好保护您的未来了吗？我们的专业团队随时为您提供个性化的保险建议和解决方案。
     contact_info: 联系信息

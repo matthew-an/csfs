@@ -1,7 +1,7 @@
 ---
 layout: page
 title_key: pages.contact.title
-description_key: pages.contact.intro
+description_key: pages.contact.description
 lang: en
 permalink: /en/contact-us/
 ---
