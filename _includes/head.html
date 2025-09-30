@@ -80,6 +80,13 @@
   {% endif %}
   <link rel="canonical" href="{{ canonical_url }}">
 
+  <!-- RSS Feed Links -->
+  {% if current_lang == "zh" %}
+    <link rel="alternate" type="application/atom+xml" title="{{ site.title }} - Chinese Feed" href="{{ site.url }}{{ site.baseurl }}/feed.xml" />
+  {% else %}
+    <link rel="alternate" type="application/atom+xml" title="{{ site.title }} - English Feed" href="{{ site.url }}{{ site.baseurl }}/feed_en.xml" />
+  {% endif %}
+
   {% assign og_type = 'website' %}
   {% if page.layout == 'post' or page.collection == 'posts' %}
     {% assign og_type = 'article' %}
