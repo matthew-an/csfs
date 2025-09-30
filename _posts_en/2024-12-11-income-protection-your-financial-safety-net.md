@@ -7,7 +7,6 @@ tags: [income protection, disability insurance, financial security, new zealand 
 author: "Amy Tao"
 lang: en
 excerpt: "What happens to your income if illness or injury prevents you from working? Learn how income protection insurance can safeguard your financial future and maintain your lifestyle during difficult times."
-image: "/assets/img/blog/income-protection-safety-net.jpg"
 ---
 
 Imagine this scenario: You're 35 years old, earning $75,000 per year, with a mortgage, car loan, and family to support. Suddenly, a serious illness or injury prevents you from working for six months, a year, or even permanently. How would you maintain your lifestyle and meet your financial obligations?

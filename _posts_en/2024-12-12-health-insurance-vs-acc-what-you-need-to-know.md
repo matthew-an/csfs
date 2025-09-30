@@ -7,7 +7,6 @@ tags: [health insurance, ACC, medical coverage, new zealand healthcare, private 
 author: "Amy Tao"
 lang: en
 excerpt: "Confused about what ACC covers versus private health insurance? This comprehensive guide explains the differences, gaps in coverage, and why many New Zealanders choose both."
-image: "/assets/img/blog/health-insurance-vs-acc.jpg"
 ---
 
 One of the most common questions we hear from New Zealanders is: "Do I need private health insurance if I have ACC?" It's a great question, and the answer isn't as straightforward as you might think.

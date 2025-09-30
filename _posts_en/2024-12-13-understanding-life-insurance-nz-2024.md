@@ -7,7 +7,6 @@ tags: [life insurance, family protection, financial planning, new zealand insura
 author: "Amy Tao"
 lang: en
 excerpt: "Everything you need to know about life insurance in New Zealand in 2024, including coverage options, costs, and how to choose the right policy for your family's needs."
-image: "/assets/img/blog/life-insurance-nz-2024.jpg"
 ---
 
 Life insurance is one of the most important financial decisions you'll make for your family's future. In New Zealand, understanding your options and choosing the right coverage can seem overwhelming, but it doesn't have to be. This comprehensive guide will walk you through everything you need to know about life insurance in 2024.

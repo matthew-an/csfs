@@ -7,7 +7,6 @@ tags: [first home buyers, mortgage protection, home insurance, life insurance, n
 author: "Amy Tao"
 lang: en
 excerpt: "Buying your first home in New Zealand? Don't overlook these essential insurance protections that could save your home and your family's financial future."
-image: "/assets/img/blog/first-home-buyers-insurance.jpg"
 ---
 
 Congratulations! You've navigated New Zealand's competitive property market and are about to become a first-time homeowner. Between saving for the deposit, securing a mortgage, and dealing with lawyers and real estate agents, insurance might be the last thing on your mind.

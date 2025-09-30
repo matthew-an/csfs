@@ -7,7 +7,6 @@ tags: [insurance claims, claims process, new zealand insurance, claims tips, ins
 author: "Amy Tao"
 lang: en
 excerpt: "Filing an insurance claim can be stressful. This comprehensive guide walks you through the entire claims process in New Zealand, from initial notification to final settlement."
-image: "/assets/img/blog/insurance-claims-process.jpg"
 ---
 
 Nobody wants to think about making an insurance claim, but when life throws you a curveball – whether it's a car accident, house fire, serious illness, or injury – knowing how to navigate the claims process can make the difference between a smooth experience and a stressful nightmare.
