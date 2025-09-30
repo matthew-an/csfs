@@ -6,7 +6,6 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.15.0"
   gem "jekyll-postcss-v2"
   gem "jekyll-minifier"
-  gem 'jekyll-sitemap'
 end
 gem "rouge"
 
