@@ -1,0 +1,44 @@
+# Cornerstone Financial Services
+
+> Bilingual (Chinese/English) insurance and financial advisory service for New Zealand families. FSP licensed. Based in Auckland.
+
+## Services
+
+- [Insurance Services (Chinese)](https://www.cornerstonefs.co.nz/services/): Life, health, trauma, income protection, disability, and mortgage protection insurance for NZ families.
+- [Insurance Services (English)](https://www.cornerstonefs.co.nz/en/services/): Comprehensive insurance solutions with coverage from $50K-$2M NZD.
+
+## Company
+
+- [About Us](https://www.cornerstonefs.co.nz/about/): Our mission to help Chinese-speaking families navigate NZ's insurance landscape.
+- [Our Team](https://www.cornerstonefs.co.nz/team/): Meet our FSP licensed advisors including Amy and team.
+- [Contact Us](https://www.cornerstonefs.co.nz/contact-us/): Book free consultation. WeChat, phone, and email support available.
+
+## Resources
+
+- [Blog (Chinese)](https://www.cornerstonefs.co.nz/blog/): 40+ articles on NZ insurance topics - claims process, first home buyers, children's insurance, ACC vs health insurance.
+- [FAQ](https://www.cornerstonefs.co.nz/faq/): Common questions about insurance in New Zealand.
+- [Calculators](https://www.cornerstonefs.co.nz/calculators/): Insurance needs calculators and tools.
+- [Glossary](https://www.cornerstonefs.co.nz/glossary/): Insurance terminology in Chinese and English.
+
+## Key Context
+
+**Target Audience**: Chinese-speaking families, new immigrants, first home buyers in New Zealand.
+
+**Languages**: Primary Chinese (Simplified/Traditional), Secondary English. All major pages available in both languages.
+
+**Important NZ Insurance Context**:
+- NZ has ACC (Accident Compensation Corporation) for accidents but NOT illness
+- Private health insurance covers medical conditions, surgeries, cancer treatment
+- Public system has 6-12+ month waitlists; private insurance provides faster access
+- Services regulated by NZ Financial Markets Authority (FMA)
+
+**Service Coverage**: Life insurance ($50K-$2M), health insurance (private medical services), trauma insurance (lump sum for serious illness), income protection (monthly payments if unable to work), disability insurance, mortgage protection.
+
+## Popular Topics
+
+Insurance claims process | First home buyer insurance | Children's health insurance | Health insurance vs ACC | Insurance for elderly parents | Pregnancy coverage | Dental care NZ | Private vs public hospitals | Cancer screening | Premium savings
+
+## Sitemaps
+
+- [XML Sitemap](https://www.cornerstonefs.co.nz/sitemap.xml)
+- [Chinese Sitemap](https://www.cornerstonefs.co.nz/sitemap_zh.xml)
