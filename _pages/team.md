@@ -61,7 +61,7 @@ seo:
     </div>
     <div class="flex items-center justify-center gap-2">
       <span class="text-gray-700 font-medium">Amytaoingrace</span>
-      <a href="/assets/img/wechat_qr.jpg" class="wechat-qr-trigger inline-block hover:opacity-80 transition-opacity" title="Click to view WeChat QR Code">
+      <a href="/assets/img/wechat_qr.jpg" class="wechat-qr-trigger inline-block hover:opacity-80 transition-opacity" title="Amy的WeChat二维码">
         <img src="/assets/img/wechat_qr_small.jpg" alt="WeChat QR Code" class="w-6 h-6 rounded border border-gray-300" loading="lazy" />
       </a>
     </div>
@@ -70,11 +70,34 @@ seo:
 
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4 mb-8">
   <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm text-center hover:shadow-md transition-shadow">
+    <div class="flex items-center justify-center gap-2 mb-1">
+      <i class="fab fa-whatsapp text-green-600 text-2xl"></i>
+      <strong class="text-gray-800">WhatsApp</strong>
+    </div>
+    <div class="flex items-center justify-center gap-2">
+      <span class="text-gray-700 font-medium">+64211280727</span>
+      <button class="qr-trigger inline-block hover:opacity-80 transition-opacity border-0 bg-transparent p-0 cursor-pointer" 
+              data-qr-image="/assets/img/whatsapp_qr.png" 
+              data-qr-title="Amy的WhatsApp二维码" 
+              data-qr-description="使用WhatsApp扫描此二维码添加Amy为联系人"
+              title="点击查看WhatsApp二维码">
+        <img src="/assets/img/whatsapp_qr_small.png" alt="WhatsApp QR Code" class="w-6 h-6 rounded border border-gray-300" loading="lazy" />
+      </button>
+    </div>
+  </div>
+  <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm text-center hover:shadow-md transition-shadow">
     <div class="flex items-center justify-center gap-2 mb-3">
       <i class="fas fa-book text-red-600 text-2xl"></i>
       <strong class="text-gray-800">小红书</strong>
     </div>
     <a href="https://www.xiaohongshu.com/user/profile/5b174220e8ac2b64b56665b7?xsec_token=ABUIxCKlzaQbv-IauUE1AcTvDSEvcn-cn2gRHxATX3vgg%3D&xsec_source=pc_search" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 font-medium">新西兰Amy Tao 咨询</a>
+  </div>
+  <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm text-center hover:shadow-md transition-shadow">
+    <div class="flex items-center justify-center gap-2 mb-3">
+      <i class="fab fa-youtube text-red-600 text-2xl"></i>
+      <strong class="text-gray-800">YouTube</strong>
+    </div>
+    <a href="https://www.youtube.com/@%E6%96%B0%E8%A5%BF%E5%85%B0AmyTao" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 font-medium">新西兰AmyTao</a>
   </div>
 </div>
 

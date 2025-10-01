@@ -44,7 +44,7 @@ permalink: /en/contact-us/
     </h3>
     <div class="flex items-center gap-2 mb-2">
       <p class="text-lg font-medium">Amytaoingrace</p>
-      <a href="/en/wechat_qr.jpg" class="wechat-qr-trigger inline-block hover:opacity-80 transition-opacity" title="Click to view WeChat QR Code">
+      <a href="/en/wechat_qr.jpg" class="wechat-qr-trigger inline-block hover:opacity-80 transition-opacity" title="Amy's WeChat QR Code">
         <img src="/en/wechat_qr_small.jpg" alt="WeChat QR Code" class="w-6 h-6 rounded border border-gray-300" loading="lazy" />
       </a>
     </div>

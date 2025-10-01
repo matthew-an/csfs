@@ -660,11 +660,12 @@ mark {
 
 .wechat-modal-content {
   background-color: white;
-  padding: 2rem;
+  padding: 2.5rem;
   border-radius: 1rem;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  max-width: 90vw;
+  max-width: 500px;
   max-height: 90vh;
+  min-width: 400px;
   position: relative;
   animation: slideIn 0.3s ease-out;
   display: flex;
@@ -674,18 +675,18 @@ mark {
 
 .wechat-modal-close {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: 1.25rem;
+  right: 1.25rem;
   background: rgba(0, 0, 0, 0.1);
   border: none;
   border-radius: 50%;
-  width: 2rem;
-  height: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: #6b7280;
   transition: all 0.2s ease;
 }
@@ -726,8 +727,9 @@ mark {
 /* Responsive adjustments for different screen sizes */
 @media (max-width: 768px) {
   .wechat-modal-content {
-    padding: 1.5rem;
-    max-width: 95vw;
+    padding: 2rem;
+    max-width: 90vw;
+    min-width: 320px;
     max-height: 95vh;
   }
   
@@ -738,7 +740,8 @@ mark {
 
 @media (max-width: 480px) {
   .wechat-modal-content {
-    padding: 1rem;
+    padding: 1.5rem;
+    min-width: 280px;
   }
   
   .wechat-modal img {
@@ -860,12 +863,13 @@ mark {
 
 .wechat-modal-content {
   background-color: white;
-  padding: 2rem;
+  padding: 2.5rem;
   border-radius: 1rem;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   position: relative;
-  max-width: 90vw;
+  max-width: 500px;
   max-height: 90vh;
+  min-width: 400px;
   transform: scale(0.9);
   transition: transform 0.3s ease-in-out;
 }
@@ -876,8 +880,8 @@ mark {
 
 .wechat-modal-close {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: 1.25rem;
+  right: 1.25rem;
   background: none;
   border: none;
   font-size: 2rem;
@@ -916,8 +920,10 @@ mark {
 
 @media (max-width: 640px) {
   .wechat-modal-content {
-    padding: 1.5rem;
+    padding: 2rem;
     margin: 1rem;
+    max-width: 90vw;
+    min-width: 280px;
   }
   
   .wechat-modal img {
