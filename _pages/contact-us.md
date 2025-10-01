@@ -66,6 +66,24 @@ seo:
 
   <div class="bg-gray-50 p-6 rounded-lg">
     <h3 class="text-xl font-semibold mb-4 flex items-center">
+      <i class="fab fa-whatsapp text-green-600 mr-2"></i>
+      WhatsApp
+    </h3>
+    <div class="flex items-center gap-2 mb-2">
+      <p class="text-lg font-medium">+64211280727</p>
+      <button class="qr-trigger inline-block hover:opacity-80 transition-opacity border-0 bg-transparent p-0 cursor-pointer" 
+              data-qr-image="/assets/img/whatsapp_qr.png" 
+              data-qr-title="Amy的WhatsApp二维码" 
+              data-qr-description="使用WhatsApp扫描此二维码添加Amy为联系人"
+              title="点击查看WhatsApp二维码">
+        <img src="/assets/img/whatsapp_qr_small.png" alt="WhatsApp QR Code" class="w-6 h-6 rounded border border-gray-300" loading="lazy" />
+      </button>
+    </div>
+    <p class="text-gray-600 text-sm">通过WhatsApp联系获得即时咨询</p>
+  </div>
+
+  <div class="bg-gray-50 p-6 rounded-lg">
+    <h3 class="text-xl font-semibold mb-4 flex items-center">
       <i class="fas fa-book text-red-600 mr-2"></i>
       小红书
     </h3>
@@ -75,6 +93,19 @@ seo:
       </a>
     </p>
     <p class="text-gray-600 text-sm mt-2">关注我的小红书获取更多保险资讯</p>
+  </div>
+
+  <div class="bg-gray-50 p-6 rounded-lg">
+    <h3 class="text-xl font-semibold mb-4 flex items-center">
+      <i class="fab fa-youtube text-red-600 mr-2"></i>
+      YouTube
+    </h3>
+    <p class="text-lg">
+      <a href="https://www.youtube.com/@%E6%96%B0%E8%A5%BF%E5%85%B0AmyTao" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 font-medium">
+        新西兰AmyTao
+      </a>
+    </p>
+    <p class="text-gray-600 text-sm mt-2">订阅我的YouTube频道了解更多保险知识</p>
   </div>
 
 </div>

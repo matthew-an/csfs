@@ -53,6 +53,24 @@ permalink: /en/contact-us/
 
   <div class="bg-gray-50 p-6 rounded-lg">
     <h3 class="text-xl font-semibold mb-4 flex items-center">
+      <i class="fab fa-whatsapp text-green-600 mr-2"></i>
+      WhatsApp
+    </h3>
+    <div class="flex items-center gap-2 mb-2">
+      <p class="text-lg font-medium">+64211280727</p>
+      <button class="qr-trigger inline-block hover:opacity-80 transition-opacity border-0 bg-transparent p-0 cursor-pointer" 
+              data-qr-image="/assets/img/whatsapp_qr.png" 
+              data-qr-title="Amy's WhatsApp QR Code" 
+              data-qr-description="Scan this QR code with WhatsApp to add Amy as a contact"
+              title="Click to view WhatsApp QR Code">
+        <img src="/assets/img/whatsapp_qr_small.png" alt="WhatsApp QR Code" class="w-6 h-6 rounded border border-gray-300" loading="lazy" />
+      </button>
+    </div>
+    <p class="text-gray-600 text-sm">Connect via WhatsApp for instant consultation</p>
+  </div>
+
+  <div class="bg-gray-50 p-6 rounded-lg">
+    <h3 class="text-xl font-semibold mb-4 flex items-center">
       <i class="fas fa-book text-red-600 mr-2"></i>
       Xiaohongshu
     </h3>
@@ -62,6 +80,19 @@ permalink: /en/contact-us/
       </a>
     </p>
     <p class="text-gray-600 text-sm mt-2">Follow my Xiaohongshu for more insurance insights</p>
+  </div>
+
+  <div class="bg-gray-50 p-6 rounded-lg">
+    <h3 class="text-xl font-semibold mb-4 flex items-center">
+      <i class="fab fa-youtube text-red-600 mr-2"></i>
+      YouTube
+    </h3>
+    <p class="text-lg">
+      <a href="https://www.youtube.com/@%E6%96%B0%E8%A5%BF%E5%85%B0AmyTao" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 font-medium">
+        AmyTao New Zealand
+      </a>
+    </p>
+    <p class="text-gray-600 text-sm mt-2">Subscribe to my YouTube channel for more insurance knowledge</p>
   </div>
 
 </div>

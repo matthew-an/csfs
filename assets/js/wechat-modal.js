@@ -1,20 +1,20 @@
 /**
- * WeChat QR Code Modal Functionality
- * Handles opening and closing of WeChat QR code modals
+ * QR Code Modal Functionality
+ * Handles opening and closing of QR code modals (WeChat, WhatsApp, etc.)
  */
 
 document.addEventListener('DOMContentLoaded', function() {
   // Create modal HTML structure
   const modalHTML = `
-    <div id="wechat-modal" class="wechat-modal">
+    <div id="qr-modal" class="wechat-modal">
       <div class="wechat-modal-content">
         <button class="wechat-modal-close" aria-label="Close modal">&times;</button>
         <div class="text-center">
-          <h3 class="text-xl font-semibold mb-4 text-gray-800">Amy's WeChat QR Code</h3>
+          <h3 id="qr-modal-title" class="text-xl font-semibold mb-4 text-gray-800"></h3>
           <div class="image-container">
-            <img id="wechat-modal-image" src="" alt="Amy's WeChat QR Code" />
+            <img id="qr-modal-image" src="" alt="QR Code" />
           </div>
-          <p class="text-sm text-gray-600 mt-4">Scan this QR code with WeChat to add Amy as a contact</p>
+          <p id="qr-modal-description" class="text-sm text-gray-600 mt-4"></p>
         </div>
       </div>
     </div>
@@ -23,13 +23,18 @@ document.addEventListener('DOMContentLoaded', function() {
   // Add modal to the page
   document.body.insertAdjacentHTML('beforeend', modalHTML);
   
-  const modal = document.getElementById('wechat-modal');
-  const modalImage = document.getElementById('wechat-modal-image');
+  const modal = document.getElementById('qr-modal');
+  const modalImage = document.getElementById('qr-modal-image');
+  const modalTitle = document.getElementById('qr-modal-title');
+  const modalDescription = document.getElementById('qr-modal-description');
   const closeButton = modal.querySelector('.wechat-modal-close');
   
   // Function to open modal
-  function openModal(imageSrc) {
+  function openModal(imageSrc, title, description) {
     modalImage.src = imageSrc;
+    modalImage.alt = title;
+    modalTitle.textContent = title;
+    modalDescription.textContent = description;
     modal.classList.add('show');
     document.body.style.overflow = 'hidden'; // Prevent background scrolling
     
@@ -43,28 +48,39 @@ document.addEventListener('DOMContentLoaded', function() {
     document.body.style.overflow = ''; // Restore scrolling
   }
   
-  // Add click event listeners to all WeChat QR icons
+  // Add click event listeners to all QR code triggers (WeChat, WhatsApp, etc.)
   document.addEventListener('click', function(e) {
-    if (e.target.matches('.wechat-qr-trigger, .wechat-qr-trigger img, .wechat-qr-trigger *')) {
+    // Check for both wechat-qr-trigger and qr-trigger classes
+    if (e.target.matches('.wechat-qr-trigger, .wechat-qr-trigger img, .wechat-qr-trigger *, .qr-trigger, .qr-trigger img, .qr-trigger *')) {
       e.preventDefault();
       
-      // Get the image source from the link href or data attribute
-      let imageSrc;
-      const trigger = e.target.closest('.wechat-qr-trigger');
+      // Get the image source and modal data from the trigger
+      let imageSrc, title, description;
+      const trigger = e.target.closest('.wechat-qr-trigger') || e.target.closest('.qr-trigger');
       
       if (trigger) {
-        // Check for data attribute first (for buttons)
-        if (trigger.dataset.wechatQr) {
+        // Check for data attributes first
+        if (trigger.dataset.qrImage) {
+          imageSrc = trigger.dataset.qrImage;
+          title = trigger.dataset.qrTitle || 'QR Code';
+          description = trigger.dataset.qrDescription || 'Scan this QR code';
+        }
+        // Backward compatibility with wechatQr data attribute
+        else if (trigger.dataset.wechatQr) {
           imageSrc = trigger.dataset.wechatQr;
+          title = "Amy's WeChat QR Code";
+          description = "Scan this QR code with WeChat to add Amy as a contact";
         }
         // Fallback to href for links
         else if (trigger.href) {
           imageSrc = trigger.href;
+          title = trigger.title || "QR Code";
+          description = "Scan this QR code";
         }
       }
       
       if (imageSrc) {
-        openModal(imageSrc);
+        openModal(imageSrc, title, description);
       }
     }
   });
