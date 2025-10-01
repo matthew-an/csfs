@@ -36,14 +36,14 @@
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   
-  /* Font Weights (Phase 2: optimized - removed 300/800/900, mapped to nearest) */
-  --font-light: 400;      /* Mapped to normal (was 300) */
+  /* Font Weights */
+  --font-light: 300;
   --font-normal: 400;
   --font-medium: 500;
   --font-semibold: 600;
   --font-bold: 700;
-  --font-extrabold: 700;  /* Mapped to bold (was 800) */
-  --font-black: 700;      /* Mapped to bold (was 900) */
+  --font-extrabold: 800;
+  --font-black: 900;
   
   /* Spacing Scale */
   --space-xs: 0.25rem;
