@@ -217,154 +217,117 @@
   
   {%- feed_meta -%}
   
-  <!-- Enhanced Structured Data for SEO -->
+  <!-- Consolidated Structured Data for SEO (optimized for text-HTML ratio) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "InsuranceAgency",
-    "name": "{% include translate.html key='site.company_name' %}",
-    "alternateName": ["Cornerstone Insurance Limited", "新西兰华人保险顾问", "奥克兰华人保险顾问"],
-    "description": "{% include translate.html key='site.description' %}",
-    "url": "{{ site.url }}{{ site.baseurl }}",
-    "knowsLanguage": [
+    "@graph": [
       {
-        "@type": "Language",
-        "name": "Chinese",
-        "alternateName": "zh-CN"
+        "@type": ["InsuranceAgency", "Organization"],
+        "@id": "{{ site.url }}{{ site.baseurl }}/#organization",
+        "name": "{% include translate.html key='site.company_name' %}",
+        "alternateName": ["Cornerstone Insurance Limited", "新西兰华人保险顾问", "奥克兰华人保险顾问"],
+        "description": "{% include translate.html key='site.description' %}",
+        "url": "{{ site.url }}{{ site.baseurl }}",
+        "knowsLanguage": ["zh-CN", "en-NZ"],
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{{ site.url }}{{ site.baseurl }}/assets/img/logo.svg",
+          "width": 200,
+          "height": 200
+        },
+        "image": "{{ site.url }}{{ site.baseurl }}/assets/img/logo.svg",
+        "telephone": "+64211280727",
+        "email": "amy.tao@cornerstonefs.co.nz",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "{{ site.data[current_lang].site.phone }}",
+          "contactType": "customer service",
+          "areaServed": "NZ"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "80B Forrest Hill Road",
+          "addressLocality": "Forrest Hill",
+          "addressRegion": "Auckland",
+          "postalCode": "0620",
+          "addressCountry": "NZ"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -36.7595,
+          "longitude": 174.7633
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "17:00"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "New Zealand"
+        },
+        "founder": {
+          "@type": "Person",
+          "name": "Min Tao (Amy)",
+          "jobTitle": "Principal Insurance Advisor",
+          "email": "amy.tao@cornerstonefs.co.nz",
+          "telephone": "+64211280727"
+        },
+        "priceRange": "$$",
+        "currenciesAccepted": "NZD",
+        "paymentAccepted": "Cash, Credit Card, Bank Transfer"{% if page.url == "/" or page.layout == "home" %},
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Insurance Services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Life Insurance",
+                "description": "Comprehensive life insurance coverage to protect your family's financial future"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Health Insurance",
+                "description": "Private health insurance for faster access to medical treatment"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Income Protection",
+                "description": "Financial security when you're unable to work due to illness or injury"
+              }
+            }
+          ]
+        }{% endif %}
       },
       {
-        "@type": "Language", 
-        "name": "English",
-        "alternateName": "en-NZ"
-      }
-    ],
-    "logo": {
-      "@type": "ImageObject",
-      "url": "{{ site.url }}{{ site.baseurl }}/assets/img/logo.svg",
-      "width": 200,
-      "height": 200
-    },
-    "image": "{{ site.url }}{{ site.baseurl }}/assets/img/logo.svg",
-    "telephone": "+64211280727",
-    "email": "amy.tao@cornerstonefs.co.nz",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "80B Forrest Hill Road",
-      "addressLocality": "Forrest Hill",
-      "addressRegion": "Auckland",
-      "postalCode": "0620",
-      "addressCountry": "NZ"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": -36.7595,
-      "longitude": 174.7633
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday", 
-        "Wednesday",
-        "Thursday",
-        "Friday"
-      ],
-      "opens": "09:00",
-      "closes": "17:00"
-    },
-    "sameAs": [
-      "{{ site.url }}{{ site.baseurl }}"
-    ],
-    "areaServed": {
-      "@type": "Country",
-      "name": "New Zealand"
-    },
-    "founder": {
-      "@type": "Person",
-      "name": "Min Tao (Amy)",
-      "jobTitle": "Principal Insurance Advisor",
-      "email": "amy.tao@cornerstonefs.co.nz",
-      "telephone": "+64211280727"
-    },
-    "priceRange": "$$",
-    "currenciesAccepted": "NZD",
-    "paymentAccepted": "Cash, Credit Card, Bank Transfer",
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Insurance Services",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Life Insurance",
-            "description": "Comprehensive life insurance coverage to protect your family's financial future"
-          }
+        "@type": "WebSite",
+        "@id": "{{ site.url }}{{ site.baseurl }}/#website",
+        "url": "{{ site.url }}{{ site.baseurl }}",
+        "name": "{{ site_title | strip }}",
+        "publisher": {
+          "@id": "{{ site.url }}{{ site.baseurl }}/#organization"
         },
-        {
-          "@type": "Offer", 
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Health Insurance",
-            "description": "Private health insurance for faster access to medical treatment"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service", 
-            "name": "Income Protection",
-            "description": "Financial security when you're unable to work due to illness or injury"
-          }
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "{{ site.url }}{{ site.baseurl }}/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
         }
-      ]
-    }
+      }{% if page.schema_type and page.schema_data %},
+      {{ page.schema_data | jsonify }}{% endif %}
+    ]
   }
   </script>
   
   {%- include custom-head.html -%}
-
-  {% if page.schema_type and page.schema_data %}
-    {% assign structured_entities = page.schema_data %}
-  {% else %}
-    {% assign structured_entities = nil %}
-  {% endif %}
-
-  {% capture org_schema %}{
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Cornerstone Insurance",
-    "url": "{{ site.url }}{{ site.baseurl }}",
-    "logo": "{{ site.url }}{{ site.baseurl }}/assets/img/logo.svg",
-    "contactPoint": [{
-      "@type": "ContactPoint",
-      "telephone": "{{ site.data[current_lang].site.phone }}",
-      "contactType": "customer service",
-      "areaServed": "NZ"
-    }]
-  }{% endcapture %}
-  <script type="application/ld+json">
-  {{ org_schema | strip }}
-  </script>
-  {% if structured_entities %}
-  <script type="application/ld+json">
-  {{ structured_entities | jsonify }}
-  </script>
-  {% endif %}
-
-  {% capture website_schema %}{
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "{{ site_title | strip }}",
-    "url": "{{ site.url }}{{ site.baseurl }}",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "{{ site.url }}{{ site.baseurl }}/search?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
-  }{% endcapture %}
-  <script type="application/ld+json">
-  {{ website_schema | strip }}
-  </script>
 
 </head>

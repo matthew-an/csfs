@@ -30,6 +30,17 @@ collections:
 #   uglifier_args:
 #     harmony: true
 
+# HTML Compression (Phase 1 optimization for text-HTML ratio)
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: []
+  blanklines: false
+  profile: false
+  ignore:
+    envs: [development]
+
 
 twitter:
   card: summary_large_image
