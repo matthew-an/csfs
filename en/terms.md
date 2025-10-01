@@ -3,6 +3,7 @@ layout: page
 title: Terms and Conditions
 lang: en
 permalink: /en/terms/
+description: Terms and conditions for using Cornerstone Insurance website and services. Read our usage guidelines, disclaimers, and legal policies.
 ---
 
 ### 1. Acceptance of Terms

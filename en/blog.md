@@ -3,6 +3,7 @@ layout: page
 title_key: nav.blog
 lang: en
 permalink: /en/blog/
+description: Expert insurance advice and guides for New Zealand. Read our blog for tips on life insurance, health insurance, income protection, and more.
 ---
 
 {% assign current_lang = page.lang | default: site.default_lang | default: "zh" %}

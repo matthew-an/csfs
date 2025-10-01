@@ -3,6 +3,7 @@ layout: page
 title: Privacy Policy
 lang: en
 permalink: /en/privacy-policy/
+description: Privacy policy for Cornerstone Insurance. How we collect, use, and protect your personal information in compliance with NZ Privacy Act 2020.
 ---
 
 **Effective Date: September 13, 2025**

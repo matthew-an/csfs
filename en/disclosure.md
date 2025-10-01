@@ -3,6 +3,7 @@ layout: page
 title_key: pages.disclosure.title
 lang: en
 permalink: /en/disclosure/
+description: Official disclosure statement for Cornerstone Insurance Limited, FSP registered insurance advisor. Learn about our licensing, services, and regulatory compliance.
 ---
 
 {% include translate.html key='pages.disclosure.intro' %}
