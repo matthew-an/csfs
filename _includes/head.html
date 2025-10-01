@@ -136,20 +136,20 @@
     {% endif %}
   {% endif %}
 
-  <!-- Twitter -->
+  <!-- Twitter (Phase 2: conditional - only on key pages, otherwise fallback to OG) -->
+  {% if page.url == "/" or page.url == "/en/" or page.url contains "/services" or page.url contains "/about" or page.url contains "/team" %}
   {% assign twitter_card = 'summary_large_image' %}
   {% if page.seo and page.seo.twitter_card %}
     {% assign twitter_card = page.seo.twitter_card %}
   {% endif %}
   <meta property="twitter:card" content="{{ twitter_card }}">
-  <meta property="twitter:url" content="{{ canonical_url }}">
-  <meta property="twitter:title" content="{{ formatted_title }}">
-  <meta property="twitter:description" content="{{ sanitized_description }}">
   <meta property="twitter:image" content="{{ seo_image }}">
-  <meta property="twitter:image:alt" content="{{ seo_image_alt }}">
   {% if site.twitter and site.twitter.username %}
     <meta property="twitter:site" content="@{{ site.twitter.username | replace: '@', '' }}">
-    <meta property="twitter:creator" content="@{{ site.twitter.username | replace: '@', '' }}">
+  {% endif %}
+  {% else %}
+  <!-- Twitter falls back to Open Graph tags for other pages -->
+  <meta property="twitter:card" content="summary_large_image">
   {% endif %}
   
   <!-- Hreflang tags for bilingual SEO -->
@@ -183,17 +183,16 @@
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <link rel="preconnect" href="https://unpkg.com">
   
-  <!-- Optimized font loading with font-display: swap and preload -->
-  <!-- Primary fonts with optimized loading -->
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
+  <!-- Optimized font loading (Phase 2: reduced from 15 to 8 weights) -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"></noscript>
   
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;500;600;700&display=swap"></noscript>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;500;600&display=swap"></noscript>
   
-  <!-- Accent font for special elements -->
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"></noscript>
+  <!-- Accent font (minimal weight for testimonials) -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap"></noscript>
   
   <!-- Deferred JavaScript loading -->
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
@@ -217,7 +216,7 @@
   
   {%- feed_meta -%}
   
-  <!-- Consolidated Structured Data for SEO (optimized for text-HTML ratio) -->
+  <!-- Consolidated Structured Data for SEO (Phase 1: working version) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -232,9 +231,7 @@
         "knowsLanguage": ["zh-CN", "en-NZ"],
         "logo": {
           "@type": "ImageObject",
-          "url": "{{ site.url }}{{ site.baseurl }}/assets/img/logo.svg",
-          "width": 200,
-          "height": 200
+          "url": "{{ site.url }}{{ site.baseurl }}/assets/img/logo.svg"
         },
         "image": "{{ site.url }}{{ site.baseurl }}/assets/img/logo.svg",
         "telephone": "+64211280727",
@@ -253,31 +250,10 @@
           "postalCode": "0620",
           "addressCountry": "NZ"
         },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": -36.7595,
-          "longitude": 174.7633
-        },
-        "openingHoursSpecification": {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-          "opens": "09:00",
-          "closes": "17:00"
-        },
         "areaServed": {
           "@type": "Country",
           "name": "New Zealand"
-        },
-        "founder": {
-          "@type": "Person",
-          "name": "Min Tao (Amy)",
-          "jobTitle": "Principal Insurance Advisor",
-          "email": "amy.tao@cornerstonefs.co.nz",
-          "telephone": "+64211280727"
-        },
-        "priceRange": "$$",
-        "currenciesAccepted": "NZD",
-        "paymentAccepted": "Cash, Credit Card, Bank Transfer"{% if page.url == "/" or page.layout == "home" %},
+        }{% if page.url == "/" or page.layout == "home" %},
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
           "name": "Insurance Services",
