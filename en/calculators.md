@@ -285,4 +285,8 @@ permalink: /en/calculators/
 </div>
 
 <!-- Calculator JavaScript -->
+{% if jekyll.environment == "production" %}
+<script src="{{ '/assets/js/calculators.min.js' | relative_url }}"></script>
+{% else %}
 <script src="{{ '/assets/js/calculators.js' | relative_url }}"></script>
+{% endif %}

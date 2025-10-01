@@ -6,3 +6,9 @@ _site
 Gemfile.lock
 node_modules
 .vercel
+
+# Minified assets (generated during build)
+*.min.js
+*.min.css
+*.min.js.map
+*.min.css.map

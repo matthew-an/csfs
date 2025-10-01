@@ -9,7 +9,7 @@ baseurl: ''
 plugins:
   - jekyll-feed
   # - jekyll-sitemap  # Disabled - using custom sitemap.xml with hreflang support instead
-  - jekyll-minifier
+  # - jekyll-minifier  # Disabled - using terser/cssnano for better minification
 
 css_dir: "assets/css" # defaults to "css"
 
@@ -25,9 +25,10 @@ collections:
   pages:
     output: true
 
-jekyll-minifier:
-  uglifier_args:
-    harmony: true
+# jekyll-minifier disabled - using modern terser/cssnano instead
+# jekyll-minifier:
+#   uglifier_args:
+#     harmony: true
 
 
 twitter:
@@ -87,3 +88,4 @@ exclude:
   - tailwind.config.js
   - .gitignore
   - vendor
+  - BUILD.md

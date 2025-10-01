@@ -13,10 +13,18 @@
   {%- include footer.html -%}
 
   <!-- Search Functionality -->
+  {% if jekyll.environment == "production" %}
+  <script src="{{ '/assets/js/search.min.js' | relative_url }}"></script>
+  {% else %}
   <script src="{{ '/assets/js/search.js' | relative_url }}"></script>
+  {% endif %}
 
   <!-- Customer Review Image Gallery -->
+  {% if jekyll.environment == "production" %}
+  <script src="{{ '/assets/js/image-gallery.min.js' | relative_url }}"></script>
+  {% else %}
   <script src="{{ '/assets/js/image-gallery.js' | relative_url }}"></script>
+  {% endif %}
 
 </body>
 
