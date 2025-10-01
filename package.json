@@ -17,11 +17,12 @@
   },
   "scripts": {
     "clean": "bundle exec jekyll clean",
-    "js:minify": "npm run js:minify:calculators && npm run js:minify:search && npm run js:minify:wechat && npm run js:minify:gallery",
+    "js:minify": "npm run js:minify:calculators && npm run js:minify:search && npm run js:minify:wechat && npm run js:minify:gallery && npm run js:minify:nav",
     "js:minify:calculators": "terser assets/js/calculators.js -o assets/js/calculators.min.js --compress --mangle --source-map",
     "js:minify:search": "terser assets/js/search.js -o assets/js/search.min.js --compress --mangle --source-map",
     "js:minify:wechat": "terser assets/js/wechat-modal.js -o assets/js/wechat-modal.min.js --compress --mangle --source-map",
     "js:minify:gallery": "terser assets/js/image-gallery.js -o assets/js/image-gallery.min.js --compress --mangle --source-map",
+    "js:minify:nav": "terser assets/js/nav.js -o assets/js/nav.min.js --compress --mangle --source-map",
     "css:minify": "NODE_ENV=production postcss _site/assets/css/style.css -o _site/assets/css/style.min.css && cp _site/assets/css/style.min.css assets/css/style.min.css",
     "build": "bundle exec jekyll build",
     "build:prod": "npm run js:minify && JEKYLL_ENV=production bundle exec jekyll build && npm run css:minify",

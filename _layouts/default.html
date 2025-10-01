@@ -15,6 +15,13 @@ layout: compress
 
   {%- include footer.html -%}
 
+  <!-- Navigation -->
+  {% if jekyll.environment == "production" %}
+  <script src="{{ '/assets/js/nav.min.js' | relative_url }}"></script>
+  {% else %}
+  <script src="{{ '/assets/js/nav.js' | relative_url }}"></script>
+  {% endif %}
+
   <!-- Search Functionality -->
   {% if jekyll.environment == "production" %}
   <script src="{{ '/assets/js/search.min.js' | relative_url }}"></script>

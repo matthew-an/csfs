@@ -1,8 +1,3 @@
-{% comment %}
-Breadcrumb navigation component
-Generates breadcrumbs based on page URL structure
-{% endcomment %}
-
 {% assign current_lang = page.lang | default: site.default_lang | default: "zh" %}
 {% if current_lang == "en" %}
   {% assign home_url = "/en/" %}
@@ -16,79 +11,25 @@ Generates breadcrumbs based on page URL structure
 <nav aria-label="Breadcrumb" class="bg-gray-50 py-3">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <ol class="flex items-center space-x-2 text-sm text-gray-600">
-      <!-- Home breadcrumb -->
       <li>
-        <a href="{{ home_url }}" class="text-primary-600 hover:text-primary-700 transition duration-200">
-          <i class="ph-house text-base mr-1"></i>
-          {{ home_text }}
+        <a href="{{ home_url }}" class="text-primary-600 hover:text-primary-700">
+          <i class="ph-house text-base mr-1"></i>{{ home_text }}
         </a>
       </li>
-      
       {% assign url_parts = page.url | split: '/' %}
       {% assign breadcrumb_url = '' %}
-      
       {% for part in url_parts %}
         {% unless part == '' or part == 'en' %}
           {% assign breadcrumb_url = breadcrumb_url | append: '/' | append: part %}
-          
           <li class="flex items-center">
             <i class="ph-caret-right text-gray-400 mx-2"></i>
-            
             {% if forloop.last %}
-              <!-- Current page - not a link -->
               <span class="text-gray-900 font-medium" aria-current="page">
-                {% if page.title_key %}
-                  {% include translate.html key=page.title_key %}
-                {% elsif page.title %}
-                  {{ page.title }}
-                {% else %}
-                  {% case part %}
-                    {% when 'services' %}
-                      {% if current_lang == "en" %}Services{% else %}服务{% endif %}
-                    {% when 'team' %}
-                      {% if current_lang == "en" %}Team{% else %}团队{% endif %}
-                    {% when 'contact-us' %}
-                      {% if current_lang == "en" %}Contact Us{% else %}联系我们{% endif %}
-                    {% when 'about' %}
-                      {% if current_lang == "en" %}About{% else %}关于我们{% endif %}
-                    {% when 'disclosure' %}
-                      {% if current_lang == "en" %}Disclosure{% else %}披露{% endif %}
-                    {% when 'blog' %}
-                      {% if current_lang == "en" %}Blog{% else %}博客{% endif %}
-                    {% when 'privacy-policy' %}
-                      {% if current_lang == "en" %}Privacy Policy{% else %}隐私政策{% endif %}
-                    {% when 'terms' %}
-                      {% if current_lang == "en" %}Terms{% else %}条款{% endif %}
-                    {% else %}
-                      {{ part | replace: '-', ' ' | capitalize }}
-                  {% endcase %}
-                {% endif %}
+                {% if page.title %}{{ page.title }}{% else %}{% case part %}{% when 'services' %}{% if current_lang == "en" %}Services{% else %}服务{% endif %}{% when 'team' %}{% if current_lang == "en" %}Team{% else %}团队{% endif %}{% when 'contact-us' %}{% if current_lang == "en" %}Contact Us{% else %}联系我们{% endif %}{% when 'about' %}{% if current_lang == "en" %}About{% else %}关于我们{% endif %}{% when 'blog' %}{% if current_lang == "en" %}Blog{% else %}博客{% endif %}{% when 'privacy-policy' %}{% if current_lang == "en" %}Privacy Policy{% else %}隐私政策{% endif %}{% when 'terms' %}{% if current_lang == "en" %}Terms{% else %}条款{% endif %}{% else %}{{ part | replace: '-', ' ' | capitalize }}{% endcase %}{% endif %}
               </span>
             {% else %}
-              <!-- Intermediate breadcrumb - make it a link -->
-              {% if current_lang == "en" %}
-                {% assign link_url = "/en" | append: breadcrumb_url %}
-              {% else %}
-                {% assign link_url = breadcrumb_url %}
-              {% endif %}
-              
-              <a href="{{ link_url }}" class="text-primary-600 hover:text-primary-700 transition duration-200">
-                {% case part %}
-                  {% when 'services' %}
-                    {% if current_lang == "en" %}Services{% else %}服务{% endif %}
-                  {% when 'team' %}
-                    {% if current_lang == "en" %}Team{% else %}团队{% endif %}
-                  {% when 'contact-us' %}
-                    {% if current_lang == "en" %}Contact Us{% else %}联系我们{% endif %}
-                  {% when 'about' %}
-                    {% if current_lang == "en" %}About{% else %}关于我们{% endif %}
-                  {% when 'disclosure' %}
-                    {% if current_lang == "en" %}Disclosure{% else %}披露{% endif %}
-                  {% when 'blog' %}
-                    {% if current_lang == "en" %}Blog{% else %}博客{% endif %}
-                  {% else %}
-                    {{ part | replace: '-', ' ' | capitalize }}
-                {% endcase %}
+              <a href="{% if current_lang == "en" %}/en{% endif %}{{ breadcrumb_url }}" class="text-primary-600 hover:text-primary-700">
+                {% case part %}{% when 'services' %}{% if current_lang == "en" %}Services{% else %}服务{% endif %}{% when 'team' %}{% if current_lang == "en" %}Team{% else %}团队{% endif %}{% when 'contact-us' %}{% if current_lang == "en" %}Contact Us{% else %}联系我们{% endif %}{% when 'about' %}{% if current_lang == "en" %}About{% else %}关于我们{% endif %}{% when 'blog' %}{% if current_lang == "en" %}Blog{% else %}博客{% endif %}{% else %}{{ part | replace: '-', ' ' | capitalize }}{% endcase %}
               </a>
             {% endif %}
           </li>
@@ -97,38 +38,4 @@ Generates breadcrumbs based on page URL structure
     </ol>
   </div>
 </nav>
-
-<!-- Structured Data for Breadcrumbs -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "{{ home_text }}",
-      "item": "{{ site.url }}{{ site.baseurl }}{{ home_url }}"
-    }
-    {% assign position = 2 %}
-    {% assign breadcrumb_url = '' %}
-    {% for part in url_parts %}
-      {% unless part == '' or part == 'en' %}
-        {% assign breadcrumb_url = breadcrumb_url | append: '/' | append: part %}
-        ,{
-          "@type": "ListItem",
-          "position": {{ position }},
-          "name": "{% case part %}{% when 'services' %}{% if current_lang == "en" %}Services{% else %}服务{% endif %}{% when 'team' %}{% if current_lang == "en" %}Team{% else %}团队{% endif %}{% when 'contact-us' %}{% if current_lang == "en" %}Contact Us{% else %}联系我们{% endif %}{% when 'about' %}{% if current_lang == "en" %}About{% else %}关于我们{% endif %}{% when 'disclosure' %}{% if current_lang == "en" %}Disclosure{% else %}披露{% endif %}{% when 'blog' %}{% if current_lang == "en" %}Blog{% else %}博客{% endif %}{% else %}{{ part | replace: '-', ' ' | capitalize }}{% endcase %}"
-          {% if forloop.last %}
-          ,"item": "{{ site.url }}{{ site.baseurl }}{{ page.url }}"
-          {% else %}
-          ,"item": "{{ site.url }}{{ site.baseurl }}{% if current_lang == "en" %}/en{% endif %}{{ breadcrumb_url }}"
-          {% endif %}
-        }
-        {% assign position = position | plus: 1 %}
-      {% endunless %}
-    {% endfor %}
-  ]
-}
-</script>
 {% endunless %}
