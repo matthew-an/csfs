@@ -14,10 +14,6 @@ nav:
   disclosure: Disclosure
   contact: Contact
   about: About
-pages:
-  about:
-    title: About Cornerstone Insurance
-    description: Cornerstone Insurance - New Zealand's trusted FSP-licensed insurance specialists. 95%+ claims approval rate, 300+ families protected. Professional advice for life, health, trauma, and income protection insurance.
 about:
   title: About Cornerstone Insurance
   trusted_partner: New Zealand's Trusted Insurance Specialists
@@ -108,6 +104,9 @@ footer:
   file_claim: File a Claim
   contact_info: CONTACT INFO
 pages:
+  about:
+    title: About Cornerstone Insurance
+    description: Cornerstone Insurance - New Zealand's trusted FSP-licensed insurance specialists. 95%+ claims approval rate, 300+ families protected. Professional advice for life, health, trauma, and income protection insurance.
   faq:
     title: Frequently Asked Questions
     description: Comprehensive New Zealand insurance FAQ answers covering life insurance, health insurance, trauma insurance, income protection, and claims. Expert advice from FSP-licensed advisors for Kiwi families.
