@@ -123,4 +123,4 @@ seo:
 
 ---
 
-*{% include translate.html key='pages.team.ready_to_discuss' %} [{% include translate.html key='pages.team.contact_today' %}](/contact-us) {% include translate.html key='pages.team.schedule_consultation' %}*
+*{% include translate.html key='pages.team.ready_to_discuss' %} [{% include translate.html key='pages.team.contact_today' %}](/contact-us/) {% include translate.html key='pages.team.schedule_consultation' %}*

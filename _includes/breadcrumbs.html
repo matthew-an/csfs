@@ -28,7 +28,7 @@
                 {% if page.title %}{{ page.title }}{% else %}{% case part %}{% when 'services' %}{% if current_lang == "en" %}Services{% else %}服务{% endif %}{% when 'team' %}{% if current_lang == "en" %}Team{% else %}团队{% endif %}{% when 'contact-us' %}{% if current_lang == "en" %}Contact Us{% else %}联系我们{% endif %}{% when 'about' %}{% if current_lang == "en" %}About{% else %}关于我们{% endif %}{% when 'blog' %}{% if current_lang == "en" %}Blog{% else %}博客{% endif %}{% when 'privacy-policy' %}{% if current_lang == "en" %}Privacy Policy{% else %}隐私政策{% endif %}{% when 'terms' %}{% if current_lang == "en" %}Terms{% else %}条款{% endif %}{% else %}{{ part | replace: '-', ' ' | capitalize }}{% endcase %}{% endif %}
               </span>
             {% else %}
-              <a href="{% if current_lang == "en" %}/en{% endif %}{{ breadcrumb_url }}" class="text-primary-600 hover:text-primary-700">
+              <a href="{% if current_lang == "en" %}/en{% endif %}{{ breadcrumb_url }}/" class="text-primary-600 hover:text-primary-700">
                 {% case part %}{% when 'services' %}{% if current_lang == "en" %}Services{% else %}服务{% endif %}{% when 'team' %}{% if current_lang == "en" %}Team{% else %}团队{% endif %}{% when 'contact-us' %}{% if current_lang == "en" %}Contact Us{% else %}联系我们{% endif %}{% when 'about' %}{% if current_lang == "en" %}About{% else %}关于我们{% endif %}{% when 'blog' %}{% if current_lang == "en" %}Blog{% else %}博客{% endif %}{% else %}{{ part | replace: '-', ' ' | capitalize }}{% endcase %}
               </a>
             {% endif %}

@@ -67,7 +67,7 @@ AI 引擎引用某一条问答时可以直接深链到页面对应位置。
         <i class="ph-phone mr-2"></i>
         {% if faq_lang == 'en' %}Call Now{% else %}立即致电{% endif %}
       </a>
-      <a href="{% if faq_lang == 'en' %}/en/contact-us{% else %}/contact-us{% endif %}" class="inline-flex items-center justify-center px-6 py-3 border-2 border-primary-600 text-base font-medium rounded-md text-primary-600 hover:bg-primary-50 transition duration-300">
+      <a href="{% if faq_lang == 'en' %}/en/contact-us/{% else %}/contact-us/{% endif %}" class="inline-flex items-center justify-center px-6 py-3 border-2 border-primary-600 text-base font-medium rounded-md text-primary-600 hover:bg-primary-50 transition duration-300">
         <i class="ph-envelope mr-2"></i>
         {% if faq_lang == 'en' %}Contact Us{% else %}联系我们{% endif %}
       </a>

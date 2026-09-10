@@ -273,11 +273,11 @@ permalink: /en/calculators/
     {% endif %}
   </p>
   <div class="flex flex-col sm:flex-row gap-4 justify-center">
-    <a href="{{ lang_prefix }}/contact-us" class="inline-flex items-center justify-center px-8 py-4 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition duration-300">
+    <a href="{{ lang_prefix }}/contact-us/" class="inline-flex items-center justify-center px-8 py-4 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition duration-300">
       <i class="fas fa-phone mr-2"></i>
       {% if current_lang == "zh" %}联系顾问{% else %}Contact Advisor{% endif %}
     </a>
-    <a href="{{ lang_prefix }}/services" class="inline-flex items-center justify-center px-8 py-4 border-2 border-primary-600 text-primary-600 font-semibold rounded-lg hover:bg-primary-50 transition duration-300">
+    <a href="{{ lang_prefix }}/services/" class="inline-flex items-center justify-center px-8 py-4 border-2 border-primary-600 text-primary-600 font-semibold rounded-lg hover:bg-primary-50 transition duration-300">
       <i class="fas fa-info-circle mr-2"></i>
       {% if current_lang == "zh" %}了解服务{% else %}Learn More{% endif %}
     </a>

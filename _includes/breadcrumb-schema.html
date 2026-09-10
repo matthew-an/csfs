@@ -35,7 +35,7 @@ JSON-LD Structured Data for Breadcrumbs
           {% if forloop.last %}
           ,"item": "{{ site.url }}{{ site.baseurl }}{{ page.url }}"
           {% else %}
-          ,"item": "{{ site.url }}{{ site.baseurl }}{% if current_lang == "en" %}/en{% endif %}{{ breadcrumb_url }}"
+          ,"item": "{{ site.url }}{{ site.baseurl }}{% if current_lang == "en" %}/en{% endif %}{{ breadcrumb_url }}/"
           {% endif %}
         }
         {% assign position = position | plus: 1 %}
