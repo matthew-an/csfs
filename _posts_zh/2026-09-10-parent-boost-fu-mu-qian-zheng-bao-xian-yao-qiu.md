@@ -2,6 +2,16 @@
 layout: post
 title: "Parent Boost 父母签证的保险要求：最低保额、买多久、怎么选"
 date: 2026-09-10 08:00:00 +1200
+modified_date: 2026-09-11 12:00:00 +1200
+citations:
+  - name: "Potential insurance costs cast shadow over parent visa"
+    url: "https://www.rnz.co.nz/news/chinese/563697/potential-insurance-costs-cast-shadow-over-parent-visa"
+    publisher: "RNZ"
+    date: "2025-06-12"
+  - name: "Alarm over health insurance costs for Parent Boost Visa"
+    url: "https://www.rnz.co.nz/news/chinese/574245/alarm-over-health-insurance-costs-for-parent-boost-visa"
+    publisher: "RNZ"
+    date: "2025-09-26"
 categories: [family-planning]
 tags: [Parent Boost, 父母签证, 父母保险, 访客保险, 移民局, 保险要求, 五年签证]
 author: "Amy Tao"
@@ -53,6 +63,20 @@ Parent Boost 上线后，已经有几家公司推出了专门对标这个签证�
 ## 拿到居民签证之后呢？
 
 Parent Boost 是访客签证，不是移民。如果父母以后拿到了居民签证，保险的考虑就完全不一样了：不再是签证要求，而是要看公立医疗能不能满足需求、要不要保非 PHARMAC 药、旧病能不能保进来。这部分我在[父母移民新西兰后，中国有医保还需要买保险吗](/blog/fu-mu-yi-min-hou-gai-bu-gai-mai-bao-xian/)里详细讲过。
+
+## 媒体报道
+
+Parent Boost 的保险成本从签证公布起就是争议焦点。新西兰国家广播电台（RNZ）就此做过两篇报道，都采访了我：
+
+**[Potential insurance costs cast shadow over parent visa](https://www.rnz.co.nz/news/chinese/563697/potential-insurance-costs-cast-shadow-over-parent-visa)**（RNZ，2025 年 6 月 12 日，记者 Liu Chen）——当时签证细则还没公布，我的判断是市面上的新产品大概率就是在现有旅游险的基础上加保障：
+
+> "It will just be upgraded to include the $100,000 cancer treatment cover, for example."
+
+**[Alarm over health insurance costs for Parent Boost Visa](https://www.rnz.co.nz/news/chinese/574245/alarm-over-health-insurance-costs-for-parent-boost-visa)**（RNZ，2025 年 9 月 26 日，记者 Liu Chen）——签证开放后，谈到符合要求的保险到底有多贵：
+
+> "It's much more expensive than travel insurance. I think most families would struggle to afford it. But seems that if you want to apply for this visa, you'd have to purchase such an insurance."
+
+这也是我一直提醒大家的：**Parent Boost 的保险不是可选项，是签证条件**，所以要在算总账的时候就把它算进去，而不是等签证批了才发现负担不起。
 
 如果你正在给父母准备 Parent Boost 申请，可以把父母的年龄、健康状况和预算发给我，我帮你把符合要求、又适合他们的方案比出来。
 

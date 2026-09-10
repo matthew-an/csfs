@@ -55,7 +55,19 @@ dateModified 的处理：没有 modified_date 就等于 datePublished —— 不
   }{% endif %},
   "publisher": { "@id": "{{ site_base }}/#organization" },
   "isPartOf": { "@id": "{{ site_base }}/#website" },
-  {% if page.categories and page.categories.size > 0 %}"articleSection": {{ page.categories | jsonify }},
+  {% if page.citations and page.citations.size > 0 %}"citation": [
+    {%- for c in page.citations -%}
+    {%- unless forloop.first -%},{%- endunless -%}
+    {
+      "@type": "NewsArticle",
+      "name": {{ c.name | jsonify }},
+      "url": {{ c.url | jsonify }}{% if c.publisher %},
+      "publisher": { "@type": "NewsMediaOrganization", "name": {{ c.publisher | jsonify }} }{% endif %}{% if c.date %},
+      "datePublished": {{ c.date | jsonify }}{% endif %}
+    }
+    {%- endfor %}
+  ],
+  {% endif %}{% if page.categories and page.categories.size > 0 %}"articleSection": {{ page.categories | jsonify }},
   {% endif %}{% if page.tags and page.tags.size > 0 %}"keywords": {{ page.tags | join: ', ' | jsonify }},
   {% endif %}"isAccessibleForFree": true
 }

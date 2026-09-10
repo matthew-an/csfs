@@ -113,4 +113,12 @@ permalink: /en/team/
 
 ---
 
+
+## In the media
+
+Amy has been interviewed by RNZ on the cost of health insurance under the Parent Boost visa:
+
+- [Potential insurance costs cast shadow over parent visa](https://www.rnz.co.nz/news/chinese/563697/potential-insurance-costs-cast-shadow-over-parent-visa) — RNZ, 12 June 2025
+- [Alarm over health insurance costs for Parent Boost Visa](https://www.rnz.co.nz/news/chinese/574245/alarm-over-health-insurance-costs-for-parent-boost-visa) — RNZ, 26 September 2025
+
 *{% include translate.html key='pages.team.ready_to_discuss' %} [{% include translate.html key='pages.team.contact_today' %}](/en/contact-us/) {% include translate.html key='pages.team.schedule_consultation' %}*

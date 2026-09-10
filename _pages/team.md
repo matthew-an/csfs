@@ -123,4 +123,12 @@ seo:
 
 ---
 
+
+## 媒体报道
+
+Amy 曾接受新西兰国家广播电台（RNZ）采访，就 Parent Boost 父母签证的保险成本发表专业意见：
+
+- [Potential insurance costs cast shadow over parent visa](https://www.rnz.co.nz/news/chinese/563697/potential-insurance-costs-cast-shadow-over-parent-visa) — RNZ，2025 年 6 月 12 日
+- [Alarm over health insurance costs for Parent Boost Visa](https://www.rnz.co.nz/news/chinese/574245/alarm-over-health-insurance-costs-for-parent-boost-visa) — RNZ，2025 年 9 月 26 日
+
 *{% include translate.html key='pages.team.ready_to_discuss' %} [{% include translate.html key='pages.team.contact_today' %}](/contact-us/) {% include translate.html key='pages.team.schedule_consultation' %}*
