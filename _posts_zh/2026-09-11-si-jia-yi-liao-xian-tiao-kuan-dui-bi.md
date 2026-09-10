@@ -26,11 +26,11 @@ excerpt: "把 nib、AIA、Partners Life、南十字星四家的现行条款逐�
 <table style="min-width:820px; width:100%; border-collapse:collapse; font-size:0.92rem;">
 <thead>
 <tr style="background:#1C459D; color:#fff;">
-<th style="padding:10px 12px; text-align:left; border:1px solid #dbe2ee;">项目</th>
-<th style="padding:10px 12px; text-align:left; border:1px solid #dbe2ee;">nib<br><span style="font-weight:400; font-size:0.85em;">Ultimate Health</span></th>
-<th style="padding:10px 12px; text-align:left; border:1px solid #dbe2ee;">AIA<br><span style="font-weight:400; font-size:0.85em;">Private Health</span></th>
-<th style="padding:10px 12px; text-align:left; border:1px solid #dbe2ee;">Partners Life<br><span style="font-weight:400; font-size:0.85em;">Private Medical Cover</span></th>
-<th style="padding:10px 12px; text-align:left; border:1px solid #dbe2ee;">Southern Cross<br><span style="font-weight:400; font-size:0.85em;">Wellbeing One / Two</span></th>
+<th style="padding:10px 12px !important; text-align:left; border:1px solid #dbe2ee; color:#ffffff;">项目</th>
+<th style="padding:10px 12px !important; text-align:left; border:1px solid #dbe2ee; color:#ffffff;">nib<br><span style="font-weight:400; font-size:0.85em;">Ultimate Health</span></th>
+<th style="padding:10px 12px !important; text-align:left; border:1px solid #dbe2ee; color:#ffffff;">AIA<br><span style="font-weight:400; font-size:0.85em;">Private Health</span></th>
+<th style="padding:10px 12px !important; text-align:left; border:1px solid #dbe2ee; color:#ffffff;">Partners Life<br><span style="font-weight:400; font-size:0.85em;">Private Medical Cover</span></th>
+<th style="padding:10px 12px !important; text-align:left; border:1px solid #dbe2ee; color:#ffffff;">Southern Cross<br><span style="font-weight:400; font-size:0.85em;">Wellbeing One / Two</span></th>
 </tr>
 </thead>
 <tbody>
