@@ -12,3 +12,6 @@ node_modules
 *.min.css
 *.min.js.map
 *.min.css.map
+
+# 本地开发配置（Claude Code 的预览服务定义），不进版本库
+.claude/launch.json
