@@ -2,6 +2,7 @@
 layout: post
 title: "父母来新西兰需要买保险吗"
 date: 2024-10-08 10:00:00 +1300
+modified_date: 2026-09-10 10:00:00 +1200
 categories: [family-planning]
 tags: [旅游险, 父母保险, 访客保险, Southern Cross]
 author: "Amy Tao"
@@ -9,6 +10,8 @@ lang: zh
 excerpt: "详解父母来新西兰玩或居住时是否需要买保险，以及如何选择性价比高的旅游险。对比不同年龄段的保费，避免巨额医疗账单。"
 
 ---
+
+> **2026 年 9 月更新：** 如果父母申请的是 **Parent Boost（最长 5 年）签证**，保险不再是“建议”而是签证的硬性要求，并且有四项最低保额标准，见[Parent Boost 父母签证的保险要求](/blog/parent-boost-fu-mu-qian-zheng-bao-xian-yao-qiu/)。本文讨论的是普通访客签证的情况。
 
 当我们的父母来新西兰玩或者是跟我们一起生活一段时间，但是没有PR，需不需要买保险，以及该怎么买保险呢？
 

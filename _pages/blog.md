@@ -17,7 +17,7 @@ permalink: /blog/
 {% endif %}
 
 <div class="grid gap-8 mt-12">
-  {%- for post in site.posts_zh -%}
+  {%- for post in site.posts_zh reversed -%}
   <article class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 overflow-hidden">
     <div class="p-6">
       <div class="flex items-center text-sm text-gray-500 mb-3">

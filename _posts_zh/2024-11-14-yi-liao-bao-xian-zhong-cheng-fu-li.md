@@ -2,12 +2,15 @@
 layout: post
 title: "医疗保险忠诚福利"
 date: 2024-11-14 10:00:00 +1300
+modified_date: 2026-09-10 10:00:00 +1200
 categories: [medical-insurance]
 tags: [医疗保险, 忠诚福利, 体检, Nib, AIA, 孕产津贴]
 author: "Amy Tao"
 lang: zh
 excerpt: "详解医疗保险的忠诚福利。投保2-3年后可享受免费体检、孕产津贴、绝育手术报销等额外福利，不知道就亏大了。"
 ---
+
+> **2026 年 9 月更新：** nib 从 2025 年 11 月 24 日起，从部分保单中移除了 Loyalty Check-Up（家医体检）、Active Wellness 等忠诚福利（Ultimate Health Max 不受影响），详见 [nib 官网说明](https://www.nib.co.nz/policy-change-faqs)。文中关于 nib 的部分，请以你当前保单的条款为准；其他公司的福利也会调整，用之前先向我确认。
 
 如果你的医疗保险已经买了两三年，你知道其实你是可以享受一些额外的忠诚福利吗？
 

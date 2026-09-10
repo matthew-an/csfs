@@ -18,7 +18,7 @@ description: Expert insurance advice and guides for New Zealand. Read our blog f
 {% endif %}
 
 <div class="grid gap-8 mt-12">
-  {%- for post in site.posts_en -%}
+  {%- for post in site.posts_en reversed -%}
   <article class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 overflow-hidden">
     <div class="p-6">
       <div class="flex items-center text-sm text-gray-500 mb-3">

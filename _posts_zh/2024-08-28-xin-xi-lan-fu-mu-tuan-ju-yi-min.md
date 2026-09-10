@@ -2,12 +2,15 @@
 layout: post
 title: "新西兰父母团聚移民"
 date: 2024-08-28 10:00:00 +1300
+modified_date: 2026-09-10 10:00:00 +1200
 categories: [family-planning]
 tags: [父母团聚, 移民签证, Parent Visa, 医疗保险]
 author: "Amy Tao"
 lang: zh
 excerpt: "新西兰三大党派推出的父母团聚签证对比分析。了解国家党、行动党和工党的不同方案，以及医疗保险要求。"
 ---
+
+> **2026 年 9 月更新：** 本文写于 2024 年大选前，记录的是三党当时的竞选方案。国家党的 Parent Boost 父母访客签证已于 **2025 年 9 月 29 日**正式开放申请，保险是硬性要求（紧急医疗每年至少 25 万纽币、癌症治疗每年至少 10 万等），最新要求见[Parent Boost 父母签证的保险要求](/blog/parent-boost-fu-mu-qian-zheng-bao-xian-yao-qiu/)。
 
 # 新西兰父母团聚签证
 

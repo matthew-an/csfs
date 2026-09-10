@@ -1,44 +1,50 @@
-# Cornerstone Financial Services
+# Cornerstone Insurance (Cornerstone Insurance Limited)
 
-> Bilingual (Chinese/English) insurance and financial advisory service for New Zealand families. FSP licensed. Based in Auckland.
+> Bilingual (Chinese / English) personal insurance advice for families in New Zealand: life, health (private medical), trauma, income protection, TPD, mortgage protection and cancer cover. Financial Advice Provider FSP1004360, operating under the FMA licence of NZ Financial Services Group Limited (FSP286965). Principal adviser Min Tao (Amy), registered Financial Adviser FSP629629. Office: 80B Forrest Hill Road, Forrest Hill, Auckland 0620; clients across New Zealand. Also referred to as "Cornerstone Financial Services".
 
 ## Services
 
-- [Insurance Services (Chinese)](https://www.cornerstonefs.co.nz/services/): Life, health, trauma, income protection, disability, and mortgage protection insurance for NZ families.
-- [Insurance Services (English)](https://www.cornerstonefs.co.nz/en/services/): Comprehensive insurance solutions with coverage from $50K-$2M NZD.
+- [Insurance Services (Chinese)](https://www.cornerstonefs.co.nz/services/): Life, health, trauma, income protection, TPD, mortgage protection and cancer cover for NZ families.
+- [Insurance Services (English)](https://www.cornerstonefs.co.nz/en/services/): Same services in English.
+- Insurers we advise on: AIA, Asteron Life, Chubb Life, nib, Partners Life. Full list, fees and commission ranges are in the Disclosure Statement.
 
 ## Company
 
-- [About Us](https://www.cornerstonefs.co.nz/about/): Our mission to help Chinese-speaking families navigate NZ's insurance landscape.
-- [Our Team](https://www.cornerstonefs.co.nz/team/): Meet our FSP licensed advisors including Amy and team.
-- [Contact Us](https://www.cornerstonefs.co.nz/contact-us/): Book free consultation. WeChat, phone, and email support available.
+- [About Us](https://www.cornerstonefs.co.nz/about/): Helping Chinese-speaking families navigate NZ's insurance system since the company was founded.
+- [Our Team](https://www.cornerstonefs.co.nz/team/): Min Tao (Amy), Principal Insurance Advisor; MSc, Chinese Academy of Sciences; Mandarin and English.
+- [Disclosure Statement](https://www.cornerstonefs.co.nz/disclosure/): Licensing (FSP numbers), scope of advice, insurers used, fees and commissions, complaints process (Insurance & Financial Services Ombudsman).
+- [Contact Us](https://www.cornerstonefs.co.nz/contact-us/): +64 21 128 0727, amy.tao@cornerstonefs.co.nz, WeChat Amytaoingrace. Free initial consultation.
 
 ## Resources
 
-- [Blog (Chinese)](https://www.cornerstonefs.co.nz/blog/): 40+ articles on NZ insurance topics - claims process, first home buyers, children's insurance, ACC vs health insurance.
-- [FAQ](https://www.cornerstonefs.co.nz/faq/): Common questions about insurance in New Zealand.
-- [Calculators](https://www.cornerstonefs.co.nz/calculators/): Insurance needs calculators and tools.
-- [Glossary](https://www.cornerstonefs.co.nz/glossary/): Insurance terminology in Chinese and English.
+- [Blog (Chinese)](https://www.cornerstonefs.co.nz/blog/): 60+ articles by Amy on NZ insurance for Chinese families — claims cases, children's cover, health insurance vs ACC, parents' visas, premium increases, excess rules, overseas treatment.
+- [Blog (English)](https://www.cornerstonefs.co.nz/en/blog/): English guides on claims, income protection, life insurance, health insurance vs ACC.
+- [FAQ](https://www.cornerstonefs.co.nz/faq/): 18 questions across life, health, income protection, claims, premiums and underwriting (FAQPage structured data; English at /en/faq/).
+- [Glossary](https://www.cornerstonefs.co.nz/glossary/): Insurance terms in Chinese and English.
+- [Calculators](https://www.cornerstonefs.co.nz/calculators/): Cover-needs calculators.
+
+## Key articles (September 2026)
+
+- [Parent Boost visa insurance requirements](https://www.cornerstonefs.co.nz/blog/parent-boost-fu-mu-qian-zheng-bao-xian-yao-qiu/): Minimum cover (emergency NZ$250k/yr, cancer NZ$100k/yr, repatriation NZ$250k, return of remains NZ$50k), 12 months upfront, insurer rating A, year-3 compliance check — figures from Immigration NZ.
+- [Why NZ health insurance premiums rose so sharply](https://www.cornerstonefs.co.nz/blog/yi-liao-xian-wei-shen-me-bao-zhang/): 2024/25 base increases (nib 33.6%, Southern Cross 21%, Partners Life 20%, AIA 17%, UniMed 16%), medical inflation 14.5% in 2025, what to change before cancelling.
+- [Who cancer treatment cover suits](https://www.cornerstonefs.co.nz/blog/shen-me-ren-shi-he-ai-zheng-zhi-liao-xian/): A cheaper alternative to full medical cover for older clients and people with pre-existing conditions unrelated to cancer.
+- [Three misconceptions about the medical excess](https://www.cornerstonefs.co.nz/blog/dian-di-fei-san-ge-wu-jie/): When an excess is triggered, once-a-year rule, insurer differences, nib's 20% co-payment from 24 Nov 2025.
+- [Overseas treatment claim case](https://www.cornerstonefs.co.nz/blog/hai-wai-zhi-liao-zhen-shi-an-li-ru-xian-ai/): How a voluntary overseas treatment benefit was pre-approved for a breast cancer client returning to China.
+- [Are congenital conditions covered?](https://www.cornerstonefs.co.nz/blog/xian-tian-xing-ji-bing-bao-bu-bao/): Timing of cover vs symptoms; adding newborns within 4 months.
 
 ## Key Context
 
-**Target Audience**: Chinese-speaking families, new immigrants, first home buyers in New Zealand.
+**Target audience**: Chinese-speaking families, new migrants, work-visa holders, first home buyers and their parents in New Zealand.
 
-**Languages**: Primary Chinese (Simplified/Traditional), Secondary English. All major pages available in both languages.
+**Languages**: Primary Simplified Chinese; all main pages and the FAQ also in English.
 
-**Important NZ Insurance Context**:
-- NZ has ACC (Accident Compensation Corporation) for accidents but NOT illness
-- Private health insurance covers medical conditions, surgeries, cancer treatment
-- Public system has 6-12+ month waitlists; private insurance provides faster access
-- Services regulated by NZ Financial Markets Authority (FMA)
+**NZ insurance context**:
+- ACC covers accidents, not illness; private health insurance covers illness, surgery and non-PHARMAC medicines.
+- Public elective treatment: 64.9% of patients treated within four months in Jan–Mar 2026 (Health NZ via RNZ).
+- Parent Boost Visitor Visa (from 29 Sep 2025) makes health insurance with minimum cover a visa condition.
+- nib applied a 20% co-payment to specialist and diagnostic benefits on selected policies from 24 Nov 2025.
+- Financial advice is regulated by the Financial Markets Authority (FMA); disputes go to the IFSO Scheme.
 
-**Service Coverage**: Life insurance ($50K-$2M), health insurance (private medical services), trauma insurance (lump sum for serious illness), income protection (monthly payments if unable to work), disability insurance, mortgage protection.
-
-## Popular Topics
-
-Insurance claims process | First home buyer insurance | Children's health insurance | Health insurance vs ACC | Insurance for elderly parents | Pregnancy coverage | Dental care NZ | Private vs public hospitals | Cancer screening | Premium savings
-
-## Sitemaps
+## Sitemap
 
 - [XML Sitemap](https://www.cornerstonefs.co.nz/sitemap.xml)
-- [Chinese Sitemap](https://www.cornerstonefs.co.nz/sitemap_zh.xml)

@@ -2,6 +2,7 @@
 layout: post
 title: "保险底费是怎么回事"
 date: 2024-09-24 10:00:00 +1300
+modified_date: 2026-09-10 10:00:00 +1200
 categories: [medical-insurance]
 tags: [医疗保险, 底费, Excess, 保费优化]
 author: "Amy Tao"
@@ -9,6 +10,8 @@ lang: zh
 excerpt: "详解医疗保险的底费机制。了解基本险和专家检查部分的底费设置，以及如何通过合理设置底费节省25%保费。"
 
 ---
+
+> **2026 年 9 月更新：** 文中 Lucy 的例子写于 2024 年。nib 从 2025 年 11 月 24 日起对部分保单的专家门诊和诊断检查加收 20% 自付比例（Diagnostics Schedule 内的检查除外，Ultimate Health Max 不受影响），“专家和检查部分 100% 报销”对这些保单已不再成立，详见 [nib 官网说明](https://www.nib.co.nz/policy-change-faqs)。各家垫底费触发规则的最新对比，看[关于医疗险垫底费，99% 的人搞错的三件事](/blog/dian-di-fei-san-ge-wu-jie/)。
 
 理赔过车险的都知道，底费就是需要自付的部分，剩下的由保险公司报销。
 
