@@ -1,0 +1,65 @@
+{% comment %}
+FAQPage 结构化数据
+
+内容来自 _data/faq.yml —— 与页面上渲染的手风琴是同一份来源，不会出现
+「页面改了 schema 没改」这种 AI 引擎最容易被误导的情况。
+
+生成式引擎（ChatGPT / Perplexity / Google AI Overviews 等）主要靠这段
+JSON-LD 判断「这一页有哪些问答、答案是什么、谁在回答」，所以：
+  - acceptedAnswer.text 走 strip_html，只留纯文本
+  - author / publisher 指回 head.html @graph 里的同一批 @id，保持实体一致
+  - dateModified 只在 _data/faq.yml 的 last_reviewed 有值时才输出
+{% endcomment %}
+
+{% assign faq_lang = page.lang | default: site.default_lang | default: 'zh' %}
+{% if faq_lang == 'en' %}
+  {% assign faq_locale = 'en-NZ' %}
+{% else %}
+  {% assign faq_locale = 'zh-CN' %}
+{% endif %}
+{% assign site_base = site.url | append: site.baseurl %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "{{ site_base }}{{ page.url }}#faqpage",
+  "url": "{{ site_base }}{{ page.url }}",
+  "inLanguage": "{{ faq_locale }}",
+  "isPartOf": { "@id": "{{ site_base }}/#website" },
+  "publisher": { "@id": "{{ site_base }}/#organization" },
+  "author": { "@id": "{{ site_base }}/#advisor-amy" },
+  {% if site.data.faq.last_reviewed %}"dateModified": "{{ site.data.faq.last_reviewed | date: '%Y-%m-%d' }}",
+  {% endif %}"mainEntity": [
+    {%- assign is_first = true -%}
+    {%- for category in site.data.faq.categories -%}
+      {%- for item in category.questions -%}
+        {%- unless is_first -%},{%- endunless -%}
+        {%- assign is_first = false -%}
+        {%- assign answer_sep = ' ' -%}
+        {%- assign answer_text = '' -%}
+        {%- for paragraph in item.a[faq_lang] -%}
+          {%- assign answer_paragraph = paragraph | strip_html | strip -%}
+          {%- if forloop.first -%}
+            {%- assign answer_text = answer_paragraph -%}
+          {%- else -%}
+            {%- assign answer_text = answer_text | append: answer_sep | append: answer_paragraph -%}
+          {%- endif -%}
+        {%- endfor -%}
+    {
+      "@type": "Question",
+      "@id": "{{ site_base }}{{ page.url }}#{{ item.id }}",
+      "name": {{ item.q[faq_lang] | strip_html | strip | jsonify }},
+      "answerCount": 1,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ answer_text | strip | jsonify }},
+        "url": "{{ site_base }}{{ page.url }}#{{ item.id }}",
+        "author": { "@id": "{{ site_base }}/#advisor-amy" }
+      }
+    }
+      {%- endfor -%}
+    {%- endfor %}
+  ]
+}
+</script>

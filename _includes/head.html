@@ -226,7 +226,20 @@
         "@type": ["InsuranceAgency", "Organization"],
         "@id": "{{ site.url }}{{ site.baseurl }}/#organization",
         "name": "{% include translate.html key='site.company_name' %}",
-        "alternateName": ["Cornerstone Insurance Limited", "新西兰华人保险顾问", "奥克兰华人保险顾问"],
+        "legalName": "Cornerstone Insurance Limited",
+        "alternateName": ["Cornerstone Insurance Limited", "Cornerstone Financial Services", "新西兰华人保险顾问", "奥克兰华人保险顾问"],
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "NZ Financial Service Providers Register number",
+          "value": "FSP1004360",
+          "url": "https://fsp-register.companiesoffice.govt.nz/"
+        },
+        "memberOf": {
+          "@type": "Organization",
+          "name": "NZ Financial Services Group Limited",
+          "description": "持有 FMA 金融建议服务牌照的持牌机构，Cornerstone Insurance Limited 在其牌照下提供金融建议服务。",
+          "identifier": "FSP286965"
+        },
         "description": "{% include translate.html key='site.description' %}",
         "url": "{{ site.url }}{{ site.baseurl }}",
         "knowsLanguage": ["zh-CN", "en-NZ"],
@@ -268,13 +281,8 @@
           "@type": "Country",
           "name": "New Zealand"
         },
-        "founder": {
-          "@type": "Person",
-          "name": "Min Tao (Amy)",
-          "jobTitle": "Principal Insurance Advisor",
-          "email": "amy.tao@cornerstonefs.co.nz",
-          "telephone": "+64211280727"
-        },
+        "founder": { "@id": "{{ site.url }}{{ site.baseurl }}/#advisor-amy" },
+        "employee": { "@id": "{{ site.url }}{{ site.baseurl }}/#advisor-amy" },
         "priceRange": "$$",
         "currenciesAccepted": "NZD",
         "paymentAccepted": "Cash, Credit Card, Bank Transfer"{% if page.url == "/" or page.layout == "home" %},
@@ -322,6 +330,59 @@
           "target": "{{ site.url }}{{ site.baseurl }}/search?q={search_term_string}",
           "query-input": "required name=search_term_string"
         }
+      },
+      {
+        "@type": "Person",
+        "@id": "{{ site.url }}{{ site.baseurl }}/#advisor-amy",
+        "name": "Min Tao",
+        "alternateName": ["Amy Tao", "Amy"],
+        "givenName": "Min",
+        "familyName": "Tao",
+        "jobTitle": ["Financial Adviser", "Principal Insurance Advisor"],
+        "description": "新西兰持牌金融顾问（Financial Adviser），FSPR 编号 629629，为奥克兰及全新西兰的华人家庭提供中英文双语的人身保险建议。",
+        "url": "{{ site.url }}{{ site.baseurl }}/team/",
+        "image": "{{ site.url }}{{ site.baseurl }}/assets/img/amytao.png",
+        "email": "amy.tao@cornerstonefs.co.nz",
+        "telephone": "+64211280727",
+        "worksFor": { "@id": "{{ site.url }}{{ site.baseurl }}/#organization" },
+        "knowsLanguage": ["zh-CN", "en-NZ"],
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "NZ Financial Service Providers Register number",
+          "value": "FSP629629",
+          "url": "https://fsp-register.companiesoffice.govt.nz/"
+        },
+        "hasCredential": {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Registered Financial Adviser (New Zealand)",
+          "credentialCategory": "Financial Service Providers Register registration",
+          "identifier": "FSP629629",
+          "recognizedBy": {
+            "@type": "GovernmentOrganization",
+            "name": "Financial Markets Authority",
+            "alternateName": "FMA",
+            "url": "https://www.fma.govt.nz/"
+          }
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Chinese Academy of Sciences",
+          "alternateName": "中国科学院"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "New Zealand"
+        },
+        "knowsAbout": [
+          "Life insurance",
+          "Health insurance",
+          "Trauma insurance",
+          "Income protection insurance",
+          "Total and permanent disablement insurance",
+          "Mortgage protection insurance",
+          "New Zealand ACC scheme",
+          "Insurance claims and underwriting in New Zealand"
+        ]
       }{% if page.schema_type and page.schema_data %},
       {{ page.schema_data | jsonify }}{% endif %}
     ]

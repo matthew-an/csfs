@@ -1,0 +1,62 @@
+{% comment %}
+BlogPosting 结构化数据（博客文章用）
+
+取代原先写在 _layouts/post.html 里的 microdata：那套只声明了 headline /
+datePublished / author 名字，既没有 publisher，也没有把作者关联到任何可核实的
+身份，AI 引擎无从判断「这段话是谁说的、有没有资质、什么时候说的」。
+
+author 的处理：文章 front matter 里的 author 是纯字符串。凡是 Amy 本人写的，
+一律指向 head.html @graph 里那个带 FSPR 编号的 Person 实体（#advisor-amy），
+让全站的作者身份收敛成同一个节点；其他作者则退化成一个普通的 Person。
+
+dateModified 的处理：没有 modified_date 就等于 datePublished —— 不拿构建时间
+冒充「最近更新」，那是骗 AI 引擎，也骗自己。要标更新时间，请在文章 front matter
+里加真实的 modified_date。
+{% endcomment %}
+
+{% assign post_lang = page.lang | default: site.default_lang | default: 'zh' %}
+{% if post_lang == 'en' %}
+  {% assign post_locale = 'en-NZ' %}
+{% else %}
+  {% assign post_locale = 'zh-CN' %}
+{% endif %}
+{% assign site_base = site.url | append: site.baseurl %}
+{% assign post_url = site_base | append: page.url %}
+
+{% assign raw_post_image = page.image | default: site.seo.default_image | default: '/assets/img/logo.svg' %}
+{% if raw_post_image contains '://' %}
+  {% assign post_image = raw_post_image %}
+{% else %}
+  {% assign post_image = site_base | append: raw_post_image %}
+{% endif %}
+
+{% capture author_name %}{% for a in page.author %}{{ a }}{% unless forloop.last %}, {% endunless %}{% endfor %}{% endcapture %}
+{% assign author_name = author_name | strip %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "@id": "{{ post_url }}#article",
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "{{ post_url }}" },
+  "url": "{{ post_url }}",
+  "headline": {{ page.title | strip_html | strip | truncate: 110 | jsonify }},
+  {% if page.excerpt %}"description": {{ page.excerpt | strip_html | strip | jsonify }},
+  {% endif %}"inLanguage": "{{ post_locale }}",
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{% if page.modified_date %}{{ page.modified_date | date_to_xmlschema }}{% else %}{{ page.date | date_to_xmlschema }}{% endif %}",
+  "image": {
+    "@type": "ImageObject",
+    "url": "{{ post_image }}"
+  },
+  "author": {% if author_name contains 'Amy' or author_name contains 'Min Tao' %}{ "@id": "{{ site_base }}/#advisor-amy" }{% else %}{
+    "@type": "Person",
+    "name": {{ author_name | default: 'Cornerstone Insurance' | jsonify }}
+  }{% endif %},
+  "publisher": { "@id": "{{ site_base }}/#organization" },
+  "isPartOf": { "@id": "{{ site_base }}/#website" },
+  {% if page.categories and page.categories.size > 0 %}"articleSection": {{ page.categories | jsonify }},
+  {% endif %}{% if page.tags and page.tags.size > 0 %}"keywords": {{ page.tags | join: ', ' | jsonify }},
+  {% endif %}"isAccessibleForFree": true
+}
+</script>

@@ -1,0 +1,104 @@
+{% comment %}
+FAQ 页面主体（中英文共用）
+
+/faq/ 和 /en/faq/ 都 include 这一份，语言由 page.lang 决定。
+内容全部来自 _data/faq.yml —— 要增删问答请改那个文件，不要改这里。
+
+每个 <details> 带 id，与 _includes/faq-schema.html 生成的 Question @id 锚点一致，
+AI 引擎引用某一条问答时可以直接深链到页面对应位置。
+{% endcomment %}
+
+{% assign faq_lang = page.lang | default: site.default_lang | default: 'zh' %}
+
+<p class="text-lg text-gray-600 mb-8">
+  {% if faq_lang == 'en' %}
+    Here are the most frequently asked questions from our clients. If you can't find the answer you're looking for, please don't hesitate to contact our professional team.
+  {% else %}
+    以下是我们客户最常问的保险问题。如果您没有找到您需要的答案，请随时联系我们的专业团队。
+  {% endif %}
+</p>
+
+<div class="space-y-8">
+  {% for category in site.data.faq.categories %}
+    <h2 class="text-2xl font-bold text-gray-900 mb-6 mt-8" id="{{ category.id }}">
+      {{ category.title[faq_lang] }}
+    </h2>
+
+    <div class="bg-white rounded-lg shadow-md">
+      <div class="divide-y divide-gray-200">
+        {% for item in category.questions %}
+          <details class="group" id="{{ item.id }}">
+            <summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-gray-50 transition duration-200">
+              <h3 class="text-lg font-semibold text-gray-900">
+                {{ item.q[faq_lang] }}
+              </h3>
+              <i class="ph-plus text-gray-400 group-open:rotate-45 transition-transform duration-200"></i>
+            </summary>
+            <div class="px-6 pb-6">
+              {% for paragraph in item.a[faq_lang] %}
+                <p class="text-gray-600{% unless forloop.last %} mb-4{% endunless %}">
+                  {{ paragraph }}
+                </p>
+              {% endfor %}
+            </div>
+          </details>
+        {% endfor %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+<hr class="my-12 border-gray-200">
+
+<div class="bg-primary-50 rounded-lg p-6 mt-12">
+  <div class="text-center">
+    <h2 class="text-2xl font-bold text-primary-800 mb-4">
+      {% if faq_lang == 'en' %}Have More Questions?{% else %}还有其他问题？{% endif %}
+    </h2>
+    <p class="text-gray-700 mb-6">
+      {% if faq_lang == 'en' %}
+        Our professional team is ready to provide personalized insurance advice and answers.
+      {% else %}
+        我们的专业团队随时为您提供个性化的保险建议和解答。
+      {% endif %}
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="tel:+64211280727" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 transition duration-300">
+        <i class="ph-phone mr-2"></i>
+        {% if faq_lang == 'en' %}Call Now{% else %}立即致电{% endif %}
+      </a>
+      <a href="{% if faq_lang == 'en' %}/en/contact-us{% else %}/contact-us{% endif %}" class="inline-flex items-center justify-center px-6 py-3 border-2 border-primary-600 text-base font-medium rounded-md text-primary-600 hover:bg-primary-50 transition duration-300">
+        <i class="ph-envelope mr-2"></i>
+        {% if faq_lang == 'en' %}Contact Us{% else %}联系我们{% endif %}
+      </a>
+    </div>
+  </div>
+</div>
+
+<style>
+/* Custom styles for FAQ accordion */
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] summary .ph-plus {
+  transform: rotate(45deg);
+}
+
+details summary {
+  list-style: none;
+}
+
+details summary:focus {
+  outline: 2px solid #e11d48;
+  outline-offset: 2px;
+}
+
+details {
+  transition: all 0.3s ease;
+}
+
+details[open] {
+  background-color: #fafafa;
+}
+</style>
