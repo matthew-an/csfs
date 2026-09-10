@@ -10,10 +10,16 @@
 #   - 结构化数据里会 strip_html，所以标签只影响页面显示，不影响 schema
 #   - id 用于锚点，改了会让外部链接失效，尽量别动
 
-# 内容最后由持牌顾问核对的日期（YYYY-MM-DD）。
-# 有值时才会输出到 FAQPage 的 dateModified —— 这是给 AI 引擎看的时效性信号，
-# 所以只有真的逐条核对过条款/数字之后才填，不要因为改了排版就更新它。
-last_reviewed:
+# 内容最后核对/修改的日期（YYYY-MM-DD），有值时输出到 FAQPage 的 dateModified。
+# 这是给 AI 引擎看的时效性信号，只有逐条核对过条款/数字之后才更新，改排版不算。
+# 2026-09-10：AI agent 对照共享盘 2026-08 六家条款、ACC / IRD / IFSO 官方页面和 Amy 文稿
+#   逐条核对，改写了 8 条（term-vs-whole-life、waiting-periods、how-income-protection-works、
+#   claim-processing-time、claim-declined、will-premiums-increase、premiums-tax-deductible、
+#   medical-exam-required），其余 10 条原样保留。
+#   同日经 Matthew 转达确认：how-much-life-cover 改为按缺口（房贷 + 子女教育 + 若干年家庭开支）
+#   定保额，其余 17 条照此通过。
+last_reviewed: 2026-09-10
+reviewed_by: Amy Tao, confirmed via Matthew 2026-09-10 (AI-agent verification)
 
 categories:
   - id: life
@@ -28,10 +34,10 @@ categories:
         a:
           zh:
             - |-
-              一般建议是年收入的10-12倍，但更准确的方法是计算您的具体需求：房贷余额、子女教育费用、生活开支、债务等。例如，如果您的房贷还有$60万，子女教育需要$15万，10年生活费$70万，那么您可能需要$145万的保险。
+              我们给客户定保额，不用“年收入几倍”的经验法则，而是按家庭真实的缺口来算：<strong>房贷余额 + 子女到经济独立前的教育费用 + 若干年的家庭生活开支</strong>，再加上其他债务，减去已有的储蓄和保障。例如，房贷还有 $60 万，子女教育需要 $15 万，10 年生活费 $70 万，那么大约需要 $145 万的保额。保额不是越高越好，要和保费放在一起看，找到家庭负担得起、又真正能填上缺口的那个数。
           en:
             - |-
-              The general rule is 10-12 times your annual income, but a more accurate approach is calculating your specific needs: mortgage balance, children's education costs, living expenses, debts, etc. For example, if you have a $600k mortgage, $150k for children's education, and $700k for 10 years of living expenses, you might need $1.45M in coverage.
+              We do not size cover with an income-multiple rule of thumb. We work out the family's real gap: <strong>mortgage balance + children's education until they are financially independent + a number of years of household living costs</strong>, plus any other debts, less existing savings and cover. For example, with a $600k mortgage, $150k for children's education and $700k for 10 years of living costs, you would need around $1.45M of cover. More is not automatically better — the sum insured has to be weighed against the premium to find the amount the family can afford that genuinely closes the gap.
 
       - id: term-vs-whole-life
         q:
@@ -40,14 +46,18 @@ categories:
         a:
           zh:
             - |-
-              <strong>定期寿险：</strong>保障特定期间（如10-30年），保费较低，适合年轻家庭和临时需求。
+              新西兰市面上的人寿险基本都是<strong>纯保障型</strong>的：每年交保费换取身故赔付，没有现金价值，中途取消或到期都不返还，和中国常见的储蓄型、分红型“终身寿险”不是一回事。
             - |-
-              <strong>终身寿险：</strong>终身保障，保费较高但固定，有现金价值累积，适合遗产规划。
+              <strong>保到什么时候：</strong>大多数产品是可续保的定期寿险，可以一直保到你取消或达到条款的年龄上限；也有专门保终身的产品（例如 AIA Cover for Life），但条款同样写明没有退保价值或现金价值。
+            - |-
+              <strong>真正要选的是保费结构：</strong>浮动保费（stepped）年轻时便宜、每年随年龄上涨；固定保费（level）前期贵一些，但在选定期限内不随年龄上涨，长期总保费通常更低，也是给孩子买重疾险时常见的选择。
           en:
             - |-
-              <strong>Term Life:</strong> Covers a specific period (10-30 years), lower premiums, suitable for young families and temporary needs.
+              Almost all life insurance sold in New Zealand is <strong>pure protection</strong>: you pay premiums for a death benefit, there is no cash value, and nothing is returned if you cancel or the cover ends. It is different from the savings-style whole-of-life policies common in China.
             - |-
-              <strong>Whole Life:</strong> Lifetime coverage, higher but fixed premiums, builds cash value, suitable for estate planning.
+              <strong>How long it lasts:</strong> most products are renewable term cover that continues until you cancel or reach the policy's age limit. A few products cover you for life (for example AIA Cover for Life), but their wording also states there is no surrender or cash value.
+            - |-
+              <strong>The real choice is the premium structure:</strong> stepped premiums start cheap and rise every year with age; level premiums cost more at first but stay flat for the chosen term regardless of age, usually cost less over the long run, and are a common choice for children's trauma cover.
 
       - id: group-cover-enough
         q:
@@ -89,10 +99,18 @@ categories:
         a:
           zh:
             - |-
-              等待期是保单生效后您必须等待的时间，之后才能申请某些疾病的理赔。一般等待期为6个月，特定疾病（如癌症）可能有12-24个月的等待期。意外伤害通常没有等待期。
+              要分险种看。<strong>医疗险：</strong>新西兰的私人医疗险一般<strong>没有</strong>一般性等待期，保单生效后新发生的疾病就可以理赔（前提是投保时如实告知）。只有个别项目有等待期，比如有的公司拔智齿要等 1 年，忠诚福利要投保 2–3 年，孕产福利要 1–2 年。保险公司靠“既往症排除”管理风险，而不是让你等半年。
+            - |-
+              <strong>重疾险：</strong>癌症、心脏病、中风等主要疾病通常有 90 天（3 个月）的等待期，投保后 3 个月内确诊不赔。
+            - |-
+              <strong>收入保障险：</strong>这里的“等待期”是另一个概念——你在投保时自己选择的免赔期（常见 4 周到 2 年），失去工作能力超过这段时间后，才开始按月赔付。
           en:
             - |-
-              Waiting periods are the time you must wait after your policy starts before you can claim for certain conditions. General waiting period is 6 months, specific conditions (like cancer) may have 12-24 month waiting periods. Accidents usually have no waiting period.
+              It depends on the type of cover. <strong>Health insurance:</strong> private medical cover in New Zealand generally has <strong>no</strong> general waiting period — conditions that start after the policy begins can be claimed, provided you disclosed honestly. Only specific benefits carry waits: some insurers require 1 year for wisdom teeth, 2–3 years for loyalty benefits, 1–2 years for maternity benefits. Insurers manage risk with pre-existing condition exclusions, not by making you wait six months.
+            - |-
+              <strong>Trauma insurance:</strong> the major conditions (cancer, heart attack, stroke) usually carry a 90-day stand-down; a diagnosis within 3 months of the start date is not paid.
+            - |-
+              <strong>Income protection:</strong> here “waiting period” means something different — the elimination period you choose at application (commonly 4 weeks to 2 years) that must pass before monthly benefits begin.
 
       - id: pre-existing-conditions
         q:
@@ -118,10 +136,10 @@ categories:
         a:
           zh:
             - |-
-              如果您因疾病或受伤无法工作，收入保障保险会在等待期（通常30-365天）后支付您收入的一定比例（通常75%）。付款会持续到您能够重返工作、达到退休年龄或保单期限结束。
+              如果您因疾病或受伤无法工作，收入保障险会在您选择的等待期（常见 4 周到 2 年，如 4/8/13/26/52/104 周）之后，每月支付您税前收入的一定比例（通常最高 75%；有的产品按事先约定的固定金额赔付）。赔付持续到您能重返工作、或达到保单约定的赔付期限或年龄（如 65 岁）为止。
           en:
             - |-
-              If you can't work due to illness or injury, income protection insurance pays a percentage of your income (usually 75%) after a waiting period (typically 30-365 days). Payments continue until you can return to work, reach retirement age, or the policy term ends.
+              If you cannot work because of illness or injury, income protection pays a monthly benefit after the waiting period you chose (commonly 4 weeks to 2 years, e.g. 4/8/13/26/52/104 weeks). The benefit is typically up to 75% of your pre-disability income, or a pre-agreed fixed amount on agreed-value products. Payments continue until you can return to work or reach the policy's benefit period or age limit (e.g. 65).
 
       - id: which-waiting-period
         q:
@@ -163,10 +181,10 @@ categories:
         a:
           zh:
             - |-
-              处理时间因保险类型和复杂程度而异：简单的健康保险理赔通常5-10个工作日，人寿保险理赔2-6周，复杂的收入保障理赔可能需要6-12周。及时提供完整文件可以加快处理速度。
+              因保险类型和复杂程度而异，没有统一标准。一般来说，医疗险的门诊和检查报销最快，几个工作日到两周；手术住院如果事先做了预批，出院后报销也很快。人寿险和重疾险需要医疗证明、有时要调阅病历，通常以周计；收入保障险要评估工作能力，往往最久。及时提供完整文件、让顾问帮你跟进，是加快速度最有效的办法。
           en:
             - |-
-              Processing times vary by insurance type and complexity: Simple health insurance claims usually 5-10 business days, life insurance claims 2-6 weeks, complex income protection claims may take 6-12 weeks. Providing complete documentation promptly can speed up processing.
+              It varies by cover type and complexity; there is no standard timeframe. Broadly, outpatient and diagnostic claims on health insurance are fastest (a few working days to two weeks), and surgery or hospital claims that were pre-approved are paid quickly after discharge. Life and trauma claims need medical evidence and sometimes medical records, so they usually take weeks; income protection claims require an assessment of your capacity to work and often take longest. Complete documents submitted promptly, with your adviser following up, is the most effective way to speed things up.
 
       - id: claim-declined
         q:
@@ -175,10 +193,10 @@ categories:
         a:
           zh:
             - |-
-              首先要求保险公司提供书面解释。如果不满意，可以通过保险公司的内部投诉程序申诉。如果仍未解决，可以联系保险和金融服务申诉专员（IFSO），这是免费的独立争议解决服务。
+              先要求保险公司给出<strong>书面</strong>拒赔理由。很多拒赔其实有争取的空间——这正是保险顾问的价值：代表你去和保险公司沟通、补资料、申诉。如果仍不满意，走保险公司的内部投诉程序（保险公司有 2 个月的处理时间）；仍未解决或已达 deadlock，可以在 3 个月内向保险与金融服务申诉专员（IFSO Scheme，电话 0800 888 202）投诉，这是独立且对消费者<strong>免费</strong>的争议解决机构。
           en:
             - |-
-              First, request a written explanation from the insurer. If unsatisfied, you can appeal through the insurer's internal complaints process. If still unresolved, contact the Insurance and Financial Services Ombudsman (IFSO), which is a free independent dispute resolution service.
+              First ask the insurer for the reason in <strong>writing</strong>. Many declines can be challenged — that is exactly where an adviser earns their keep, by dealing with the insurer, supplying further evidence and appealing on your behalf. If you are still unhappy, use the insurer's internal complaints process (they have 2 months to resolve it). If it remains unresolved or reaches deadlock, you have 3 months to take it to the Insurance & Financial Services Ombudsman Scheme (IFSO, 0800 888 202), an independent service that is <strong>free</strong> for consumers.
 
       - id: claim-documents
         q:
@@ -204,10 +222,14 @@ categories:
         a:
           zh:
             - |-
-              这取决于保费结构：阶梯式保费每年随年龄增长，平准式保费在保证期内固定。可审查保费可能根据理赔经验调整。选择保证不可审查的保费可以避免意外涨价。
+              <strong>医疗险：</strong>每家都一定会涨。保费按年龄段定价，再叠加医疗通胀和保险公司整体的赔付情况，与你个人有没有理赔无关，所以该赔就赔。
+            - |-
+              <strong>人寿险、重疾险等：</strong>看你选的保费结构。浮动保费（stepped）每年随年龄上涨；固定保费（level）在选定期限内不随年龄上涨，但除非条款注明 Guaranteed，保险公司通常保留调整整体费率的权利（例如 Partners Life 和 Chubb 的条款都把固定保费分成 Guaranteed 和 Non-Guaranteed 两种，保证的那种更贵）。有的公司还会在投保两年后给逐年递增的忠诚折扣。
           en:
             - |-
-              This depends on the premium structure: Stepped premiums increase annually with age, level premiums are fixed during the guarantee period. Reviewable premiums may be adjusted based on claims experience. Choose guaranteed non-reviewable premiums to avoid unexpected increases.
+              <strong>Health insurance:</strong> every insurer's premiums rise. They are priced by age band and then adjusted for medical inflation and the insurer's overall claims experience — not your personal claims, so claim when you need to.
+            - |-
+              <strong>Life, trauma and similar covers:</strong> it depends on the premium structure you chose. Stepped premiums rise every year with age; level premiums do not rise with age for the chosen term, but unless the policy says Guaranteed, the insurer usually keeps the right to review its overall rates (Partners Life and Chubb, for example, both distinguish Guaranteed from Non-Guaranteed level premiums in their wordings, with the guaranteed version costing more). Some insurers also add a loyalty discount that grows each year after the second year.
 
       - id: premiums-tax-deductible
         q:
@@ -216,10 +238,10 @@ categories:
         a:
           zh:
             - |-
-              个人保险费通常不能税务抵扣，但理赔金通常免税。企业主的某些保险费可能可以抵扣。建议咨询税务顾问了解您的具体情况。
+              人寿险、重疾险、医疗险的个人保费<strong>不能</strong>抵税，理赔金也<strong>不用</strong>交税。收入保障险要分两种：赔付金按收入征税的（indemnity / loss of earnings 类），保费可以抵扣；赔付金免税的（agreed value 类），保费不能抵扣——IRD 的原则是“赔付要交税，保费才能抵”。企业主为员工或关键人买的保险另有规定。具体到你的情况，请咨询会计师。
           en:
             - |-
-              Personal insurance premiums are usually not tax deductible, but claim payouts are typically tax-free. Some insurance premiums for business owners may be deductible. Consult a tax advisor for your specific situation.
+              Personal premiums for life, trauma and health insurance are <strong>not</strong> tax deductible, and the payouts are <strong>not</strong> taxed. Income protection comes in two kinds: where the benefit is taxable as income (indemnity / loss-of-earnings types) the premiums are deductible; where the benefit is tax-free (agreed value) the premiums are not — Inland Revenue's rule is that premiums are deductible only if the payout would be taxable. Business owners insuring staff or key people have separate rules. Check your own situation with an accountant.
 
       - id: reduce-insurance-costs
         q:
@@ -245,10 +267,10 @@ categories:
         a:
           zh:
             - |-
-              这取决于您的年龄、健康状况和保额：50万以下通常只需健康问卷，50万-100万可能需要基本体检和血检，100万以上通常需要全面体检包括心电图。年龄越大要求越严格。
+              一般<strong>不需要</strong>。新西兰买保险主要是填一份健康问卷，按最大诚信原则如实回答；保险公司有时会向你的家医调阅病历来核保。只有在保额很高、或健康描述和病历都不足以判断时，保险公司才可能要求体检或验血，这种情况比较少见。
           en:
             - |-
-              This depends on your age, health, and coverage amount: Under $500k usually only requires health questionnaire, $500k-$1M may need basic exam and blood tests, over $1M usually requires comprehensive exam including ECG. Requirements become stricter with age.
+              Usually <strong>no</strong>. Applying for insurance in New Zealand mainly involves a health questionnaire, answered honestly under the duty of disclosure; insurers sometimes obtain your GP records to underwrite. Only for very large sums insured, or when the questionnaire and records are not enough to assess you, might an insurer ask for a medical exam or blood tests — and that is relatively uncommon.
 
       - id: apply-after-decline
         q:
