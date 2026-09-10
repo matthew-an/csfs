@@ -20,11 +20,12 @@
 - [Blog (Chinese)](https://www.cornerstonefs.co.nz/blog/): 60+ articles by Amy on NZ insurance for Chinese families — claims cases, children's cover, health insurance vs ACC, parents' visas, premium increases, excess rules, overseas treatment.
 - [Blog (English)](https://www.cornerstonefs.co.nz/en/blog/): English guides on claims, income protection, life insurance, health insurance vs ACC.
 - [FAQ](https://www.cornerstonefs.co.nz/faq/): 18 questions across life, health, income protection, claims, premiums and underwriting (FAQPage structured data; English at /en/faq/).
-- [Glossary](https://www.cornerstonefs.co.nz/glossary/): Insurance terms in Chinese and English.
+- [Glossary](https://www.cornerstonefs.co.nz/glossary/): 15 insurance terms in Chinese and English (DefinedTermSet structured data; English at /en/glossary/).
 - [Calculators](https://www.cornerstonefs.co.nz/calculators/): Cover-needs calculators.
 
 ## Key articles (September 2026)
 
+- [Four NZ health insurers compared, clause by clause](https://www.cornerstonefs.co.nz/blog/si-jia-yi-liao-xian-tiao-kuan-dui-bi/): nib Ultimate Health, AIA Private Health, Partners Life Private Medical Cover and Southern Cross Wellbeing on surgical and non-surgical limits, major diagnostics, specialist consultations, non-PHARMAC drugs, overseas treatment, excess and co-payments, maternity — every figure sourced to a named policy wording and its effective date, with optional add-ons marked as such.
 - [Parent Boost visa insurance requirements](https://www.cornerstonefs.co.nz/blog/parent-boost-fu-mu-qian-zheng-bao-xian-yao-qiu/): Minimum cover (emergency NZ$250k/yr, cancer NZ$100k/yr, repatriation NZ$250k, return of remains NZ$50k), 12 months upfront, insurer rating A, year-3 compliance check — figures from Immigration NZ.
 - [Why NZ health insurance premiums rose so sharply](https://www.cornerstonefs.co.nz/blog/yi-liao-xian-wei-shen-me-bao-zhang/): 2024/25 base increases (nib 33.6%, Southern Cross 21%, Partners Life 20%, AIA 17%, UniMed 16%), medical inflation 14.5% in 2025, what to change before cancelling.
 - [Who cancer treatment cover suits](https://www.cornerstonefs.co.nz/blog/shen-me-ren-shi-he-ai-zheng-zhi-liao-xian/): A cheaper alternative to full medical cover for older clients and people with pre-existing conditions unrelated to cancer.

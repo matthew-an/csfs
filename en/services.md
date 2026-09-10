@@ -6,6 +6,8 @@ lang: en
 permalink: /en/services/
 ---
 
+{% include services-schema.html %}
+
 {% assign current_lang = page.lang | default: site.default_lang | default: "zh" %}
 
 <!-- Introduction Section -->

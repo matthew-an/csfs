@@ -6,6 +6,8 @@ lang: en
 permalink: /en/glossary/
 ---
 
+{% include glossary-schema.html %}
+
 {% assign current_lang = page.lang | default: site.default_lang | default: "zh" %}
 
 <div class="mb-8">
@@ -32,7 +34,7 @@ permalink: /en/glossary/
     {% assign term_key = term_data[0] %}
     {% assign term_info = term_data[1] %}
     
-    <div class="glossary-item bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 p-6 border-l-4 border-primary-500">
+    <div class="glossary-item bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 p-6 border-l-4 border-primary-500" id="{{ term_key | replace: '_', '-' }}">
       <h3 class="text-xl font-bold text-gray-900 mb-3 glossary-term">
         {{ term_info.term }}
       </h3>

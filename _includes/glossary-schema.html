@@ -1,0 +1,43 @@
+{% comment %}
+术语表的结构化数据（DefinedTermSet / DefinedTerm）。
+
+术语本身已经结构化在 _data/<lang>.yml 的 pages.glossary.terms 里，这里直接读同一份，
+所以页面和标记不会各说各话。每个 DefinedTerm 的 @id 对应页面上术语卡片的锚点。
+{% endcomment %}
+
+{% assign g_lang = page.lang | default: site.default_lang | default: 'zh' %}
+{% if g_lang == 'en' %}{% assign g_locale = 'en-NZ' %}{% else %}{% assign g_locale = 'zh-CN' %}{% endif %}
+{% assign site_base = site.url | append: site.baseurl %}
+{% assign g = site.data[g_lang].pages.glossary %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTermSet",
+  "@id": "{{ site_base }}{{ page.url }}#glossary",
+  "name": {{ g.title | strip_html | strip | jsonify }},
+  {% if g.description %}"description": {{ g.description | strip_html | strip | jsonify }},
+  {% endif %}"url": "{{ site_base }}{{ page.url }}",
+  "inLanguage": "{{ g_locale }}",
+  "publisher": { "@id": "{{ site_base }}/#organization" },
+  "isPartOf": { "@id": "{{ site_base }}/#website" },
+  "hasDefinedTerm": [
+    {%- assign first = true -%}
+    {%- for pair in g.terms -%}
+      {%- assign k = pair[0] -%}
+      {%- assign v = pair[1] -%}
+      {%- if v.term and v.definition -%}
+        {%- unless first -%},{%- endunless -%}
+        {%- assign first = false -%}
+    {
+      "@type": "DefinedTerm",
+      "@id": "{{ site_base }}{{ page.url }}#{{ k | replace: '_', '-' }}",
+      "name": {{ v.term | strip_html | strip | jsonify }},
+      "description": {{ v.definition | strip_html | strip | jsonify }},
+      "inDefinedTermSet": { "@id": "{{ site_base }}{{ page.url }}#glossary" }
+    }
+      {%- endif -%}
+    {%- endfor %}
+  ]
+}
+</script>
