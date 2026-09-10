@@ -228,12 +228,20 @@
         "name": "{% include translate.html key='site.company_name' %}",
         "legalName": "Cornerstone Insurance Limited",
         "alternateName": ["Cornerstone Insurance Limited", "Cornerstone Financial Services", "新西兰华人保险顾问", "奥克兰华人保险顾问"],
-        "identifier": {
-          "@type": "PropertyValue",
-          "propertyID": "NZ Financial Service Providers Register number",
-          "value": "FSP1004360",
-          "url": "https://fsp-register.companiesoffice.govt.nz/"
-        },
+        "identifier": [
+          {
+            "@type": "PropertyValue",
+            "propertyID": "New Zealand Business Number",
+            "value": "9429049123425",
+            "url": "https://www.nzbn.govt.nz/mynzbn/nzbndetails/9429049123425/"
+          },
+          {
+            "@type": "PropertyValue",
+            "propertyID": "NZ Financial Service Providers Register number",
+            "value": "FSP1004360",
+            "url": "https://fsp-register.companiesoffice.govt.nz/"
+          }
+        ],
         "memberOf": {
           "@type": "Organization",
           "name": "NZ Financial Services Group Limited",
@@ -260,16 +268,9 @@
         },
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "80B Forrest Hill Road",
-          "addressLocality": "Forrest Hill",
+          "addressLocality": "Auckland",
           "addressRegion": "Auckland",
-          "postalCode": "0620",
           "addressCountry": "NZ"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": -36.7595,
-          "longitude": 174.7633
         },
         "openingHoursSpecification": {
           "@type": "OpeningHoursSpecification",
@@ -373,10 +374,7 @@
           "@type": "Place",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "80B Forrest Hill Road",
-            "addressLocality": "Forrest Hill",
-            "addressRegion": "Auckland",
-            "postalCode": "0620",
+            "addressLocality": "Auckland",
             "addressCountry": "NZ"
           }
         },
