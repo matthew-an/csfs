@@ -20,14 +20,14 @@ nib / Partners Life 承保。把自己标成 FinancialProduct 会把顾问说成
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "OfferCatalog",
-  "@id": "{{ site_base }}{{ page.url }}#services",
-  "name": {{ s.title | strip_html | strip | jsonify }},
-  "url": "{{ site_base }}{{ page.url }}",
-  "inLanguage": "{{ svc_locale }}",
-  "provider": { "@id": "{{ site_base }}/#organization" },
-  "isPartOf": { "@id": "{{ site_base }}/#website" },
-  "itemListElement": [
+  "@type": ["InsuranceAgency", "Organization"],
+  "@id": "{{ site_base }}/#organization",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "@id": "{{ site_base }}{{ page.url }}#services",
+    "name": {{ s.title | strip_html | strip | jsonify }},
+    "url": "{{ site_base }}{{ page.url }}",
+    "itemListElement": [
     {%- assign first = true -%}
     {%- for key in svc_keys -%}
       {%- capture t_key %}{{ key }}_title{% endcapture -%}
@@ -46,12 +46,12 @@ nib / Partners Life 承保。把自己标成 FinancialProduct 会把顾问说成
         "serviceType": {{ svc_types[forloop.index0] | jsonify }},
         "description": {{ d | strip_html | strip | jsonify }},
         "provider": { "@id": "{{ site_base }}/#organization" },
-        "areaServed": { "@type": "Country", "name": "New Zealand" },
-        "availableLanguage": ["zh-CN", "en-NZ"]
+        "areaServed": { "@type": "Country", "name": "New Zealand" }
       }
     }
       {%- endif -%}
     {%- endfor %}
-  ]
+    ]
+  }
 }
 </script>
