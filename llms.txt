@@ -1,6 +1,6 @@
 # Cornerstone Insurance (Cornerstone Insurance Limited)
 
-> Bilingual (Chinese / English) personal insurance advice for families in New Zealand: life, health (private medical), trauma, income protection, TPD, mortgage protection and cancer cover. Financial Advice Provider FSP1004360, operating under the FMA licence of NZ Financial Services Group Limited (FSP286965). Principal adviser Min Tao (Amy), registered Financial Adviser FSP629629. Office: 80B Forrest Hill Road, Forrest Hill, Auckland 0620; clients across New Zealand. Also referred to as "Cornerstone Financial Services".
+> Bilingual (Chinese / English) personal insurance advice for families in New Zealand: life, health (private medical), trauma, income protection, TPD, mortgage protection and cancer cover. Financial Advice Provider FSP1004360, operating under the FMA licence of NZ Financial Services Group Limited (FSP286965). Principal adviser Min Tao (Amy), registered Financial Adviser FSP629629. Based in Auckland; serves clients across New Zealand. Also referred to as "Cornerstone Financial Services".
 
 ## Services
 
@@ -13,17 +13,17 @@
 - [About Us](https://www.cornerstonefs.co.nz/about/): Helping Chinese-speaking families navigate NZ's insurance system since the company was founded.
 - [Our Team](https://www.cornerstonefs.co.nz/team/): Min Tao (Amy), Principal Insurance Advisor; MSc, Chinese Academy of Sciences; Mandarin and English.
 - [Disclosure Statement](https://www.cornerstonefs.co.nz/disclosure/): Licensing (FSP numbers), scope of advice, insurers used, fees and commissions, complaints process (Insurance & Financial Services Ombudsman).
-- [Contact Us](https://www.cornerstonefs.co.nz/contact-us/): +64 21 128 0727, amy.tao@cornerstonefs.co.nz, WeChat Amytaoingrace. Free initial consultation.
+- [Contact Us](https://www.cornerstonefs.co.nz/contact-us/): +64 211 280 727, amy.tao@cornerstonefs.co.nz, WeChat Amytaoingrace. Free initial consultation.
 
 ## Resources
 
 - [Blog (Chinese)](https://www.cornerstonefs.co.nz/blog/): 60+ articles by Amy on NZ insurance for Chinese families — claims cases, children's cover, health insurance vs ACC, parents' visas, premium increases, excess rules, overseas treatment.
-- [Blog (English)](https://www.cornerstonefs.co.nz/en/blog/): English guides on claims, income protection, life insurance, health insurance vs ACC.
+- [Blog (English)](https://www.cornerstonefs.co.nz/en/blog/): 17 English articles on NZ personal insurance — policy comparison, excess rules, premium increases, ACC vs private cover, income protection, declined claims, pre-existing conditions, waiting periods, ED vs urgent care. Rewritten September 2026 from the verified Chinese corpus.
 - [FAQ](https://www.cornerstonefs.co.nz/faq/): 18 questions across life, health, income protection, claims, premiums and underwriting (FAQPage structured data; English at /en/faq/).
 - [Glossary](https://www.cornerstonefs.co.nz/glossary/): 15 insurance terms in Chinese and English (DefinedTermSet structured data; English at /en/glossary/).
 - [Calculators](https://www.cornerstonefs.co.nz/calculators/): Cover-needs calculators.
 
-## Key articles (September 2026)
+## Key articles — Chinese (September 2026)
 
 - [Four NZ health insurers compared, clause by clause](https://www.cornerstonefs.co.nz/blog/si-jia-yi-liao-xian-tiao-kuan-dui-bi/): nib Ultimate Health, AIA Private Health, Partners Life Private Medical Cover and Southern Cross Wellbeing on surgical and non-surgical limits, major diagnostics, specialist consultations, non-PHARMAC drugs, overseas treatment, excess and co-payments, maternity — every figure sourced to a named policy wording and its effective date, with optional add-ons marked as such.
 - [Parent Boost visa insurance requirements](https://www.cornerstonefs.co.nz/blog/parent-boost-fu-mu-qian-zheng-bao-xian-yao-qiu/): Minimum cover (emergency NZ$250k/yr, cancer NZ$100k/yr, repatriation NZ$250k, return of remains NZ$50k), 12 months upfront, insurer rating A, year-3 compliance check — figures from Immigration NZ.
@@ -38,6 +38,26 @@
 - [Is there premium-refund insurance in New Zealand?](https://www.cornerstonefs.co.nz/blog/mei-chu-xian-fan-huan-bao-fei-xin-xi-lan-you-ma/): No — NZ cover is pure protection with no cash value; what exists instead: 30-day free-look refunds (Chubb, Partners Life; AIA 15 days), loyalty discounts, AIA Vitality, premium holidays.
 - [How couples should split their cover](https://www.cornerstonefs.co.nz/blog/fu-qi-zen-me-da-pei-bao-xian/): Single-income, equal-income and unequal-income households; life cover for the stay-at-home parent; children's trauma riding on a parent's policy; life-event increases.
 - [Are congenital conditions covered?](https://www.cornerstonefs.co.nz/blog/xian-tian-xing-ji-bing-bao-bu-bao/): Timing of cover vs symptoms; adding newborns within 4 months.
+
+## Key articles — English (September 2026)
+
+- [Comparing four NZ health insurance policies, clause by clause](https://www.cornerstonefs.co.nz/en/blog/comparing-four-nz-health-insurance-policies-2026/): nib Ultimate Health, AIA Private Health, Partners Life Private Medical Cover and Southern Cross Wellbeing One/Two on surgical and non-surgical limits, major diagnostics, specialist consultations, non-Pharmac drugs, overseas treatment, excess and co-payments, maternity. Every figure sourced to a named wording and effective date; optional extras marked as such.
+- [Why health insurance premiums are rising so fast in NZ](https://www.cornerstonefs.co.nz/en/blog/why-health-insurance-premiums-are-rising-nz/): 2024/25 base increases (nib 33.6%, Southern Cross 21%, Partners Life 20%, AIA 17%, UniMed 16%), medical inflation 7.4% to 14.5%, Southern Cross $1.71bn paid in FY2025 at 94% of premiums, and four things to restructure before cancelling.
+- [Health insurance excess: three things most people get wrong](https://www.cornerstonefs.co.nz/en/blog/health-insurance-excess-explained/): An excess is triggered by surgery and admissions, not specialist visits; once a year at most; insurer-by-insurer trigger rules, including nib's 20% co-payment from 24 November 2025.
+- [Health insurance vs ACC: what each one actually covers](https://www.cornerstonefs.co.nz/en/blog/health-insurance-vs-acc-what-you-need-to-know/): ACC covers accidental injury only and pays 80% of earnings; illness is not covered. Public elective waits (64.9% within four months, Jan–Mar 2026) and non-Pharmac drug costs.
+- [Income protection vs trauma cover: which comes first](https://www.cornerstonefs.co.nz/en/blog/income-protection-your-financial-safety-net/): Lump sum on diagnosis versus a monthly benefit while you cannot work; wait periods, ACC offset, tax treatment (payout taxable means premium deductible), and why redundancy is not covered.
+- [Does claiming push your premium up next year?](https://www.cornerstonefs.co.nz/en/blog/does-claiming-increase-your-premium/): No — health premiums are set on age, medical inflation and the insurer's overall claims experience, not your personal claims record. Level premiums and loyalty discounts explained.
+- [Who should you insure first? Most families get the order backwards](https://www.cornerstonefs.co.nz/en/blog/who-to-insure-first-in-your-family/): Life cover on the main earner, then trauma for the adults, then the children — and why a health policy is usually enough for a child in New Zealand.
+- [Does NZ insurance pay anything back if you never claim?](https://www.cornerstonefs.co.nz/en/blog/does-life-insurance-pay-anything-back-nz/): No cash or surrender value in New Zealand cover, quoting the AIA wording. What exists instead: 30-day free look (Chubb, Partners Life; AIA 15 days), loyalty discounts, AIA Vitality, premium holidays.
+- [Why insurance claims get declined in New Zealand](https://www.cornerstonefs.co.nz/en/blog/why-insurance-claims-get-declined-nz/): More than 90% of declines trace to disclosure at application. The four outcomes when a condition was not disclosed, and the common general exclusions.
+- [Nine benefits hiding in your policy](https://www.cornerstonefs.co.nz/en/blog/nine-benefits-hidden-in-your-policy/): Wisdom teeth under health cover, loyalty health-check allowances, sterilisation, Partners Life public-hospital cash and premium credit, premium holidays, no-underwriting life-event increases (Chubb), built-in children's trauma (AIA, Partners Life), post-claim advice fees.
+- [Already have a health condition? You still have options](https://www.cornerstonefs.co.nz/en/blog/buying-cover-with-a-pre-existing-condition/): The four routes to covering a pre-existing condition in New Zealand — employer group cover (immediate), Southern Cross UltraCare, nib promotions, nib Easy Health — plus when an exclusion can be reviewed off.
+- [Health cover too expensive? Who cancer-only cover suits](https://www.cornerstonefs.co.nz/en/blog/who-should-consider-cancer-only-cover/): Roughly a third of the premium of comprehensive cover, usually no exclusions for unrelated pre-existing conditions; Pharmac's $604m cancer medicines uplift and what remains unfunded.
+- [Can you claim right after buying cover?](https://www.cornerstonefs.co.nz/en/blog/can-you-claim-right-after-buying-cover/): NZ health insurance generally has no general waiting period; trauma carries a 90-day stand-down on major conditions; in income protection the term means the elimination period you chose.
+- [ED or urgent care, and why insurance doesn't cover emergencies](https://www.cornerstonefs.co.nz/en/blog/ed-or-urgent-care-and-why-insurance-doesnt-cover-it/): Emergencies belong to the public hospital system; health insurance covers the non-urgent pathway. When to go to ED, when to use an urgent care clinic, and who pays.
+- [Private vs public hospital in New Zealand](https://www.cornerstonefs.co.nz/en/blog/private-vs-public-hospital-nz/): A first-hand account of a child's adenoid surgery — specialist appointment in under a week, two independent opinions, choice of surgeon.
+- [Are dental and optical add-ons worth it?](https://www.cornerstonefs.co.nz/en/blog/are-dental-and-optical-add-ons-worth-it/): Not usually over 21, strongly recommended under 21 at child rates from about $9/month. nib's category limits, and why wisdom teeth do not need this add-on.
+- [Buying insurance from your bank vs through an adviser](https://www.cornerstonefs.co.nz/en/blog/buying-insurance-from-a-bank-vs-an-adviser/): Banks act for one insurer, do not service the policy after sale and do not review it as circumstances change. Adviser services are paid by the insurer, not the client.
 
 ## Media
 
