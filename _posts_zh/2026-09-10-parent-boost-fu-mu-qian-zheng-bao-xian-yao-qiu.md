@@ -21,7 +21,7 @@ excerpt: "Parent Boost 父母访客签证 2025 年 9 月 29 日开放申请，�
 
 先说结论：**Parent Boost 签证的保险不是"建议买"，是"不买不批"。** 移民局规定了四项最低保额、要求签证批准前就买满至少 12 个月、保险公司信用评级不低于 A，而且第三年必须离境接受一次健康和保险复核——拿不出连续投保的证明，签证可能被取消。
 
-大家好，我是新西兰保险顾问Amy。从 2025 年 9 月底这个签证开放以来，我已经帮几个家庭处理过 Parent Boost 的保险，把大家问得最多的问题整理在这里。**以下数字全部来自移民局官方页面；签证政策会调整，申请前请以[移民局官网](https://www.immigration.govt.nz/visas/parent-boost-visitor-visa/)为准。**
+从 2025 年 9 月底这个签证开放以来，我已经帮几个家庭处理过 Parent Boost 的保险，把大家问得最多的问题整理在这里。**以下数字全部来自移民局官方页面；签证政策会调整，申请前请以[移民局官网](https://www.immigration.govt.nz/visas/parent-boost-visitor-visa/)为准。**
 
 ## Parent Boost 是什么
 
