@@ -59,9 +59,9 @@ I strongly advise against cancelling because of a price rise. Once you cancel yo
 What you can do is **restructure**, especially on a policy that has not been reviewed for a few years:
 
 1. **Raise the surgical and hospital excess.** This is the most direct lever. On some products a $500 excess buys around a 25% discount, and most people do not have surgery or a hospital admission in a given year. [Here is exactly when an excess is triggered.](/en/blog/health-insurance-excess-explained/)
-2. **Cut add-ons you rarely use.** Dental and optical are everyday allowance benefits with low reimbursement leverage for adults. It comes down to how much you actually use them.
+2. **Cut add-ons you rarely use.** Dental and optical are everyday allowance benefits with low reimbursement leverage for adults. It comes down to how much you actually use them — [here is where the line falls](/en/blog/are-dental-and-optical-add-ons-worth-it/).
 3. **Rethink what the family core needs actually are.** What is it you are most afraid of? Spend the money there and leave the rest to the public system. That is the point of [who to insure first](/en/blog/who-to-insure-first-in-your-family/).
-4. **Consider covering only the risk that would really hurt.** When comprehensive health cover is genuinely unaffordable, cancer-only cover is a rational trade-off: roughly a third of the premium, and it generally does not exclude conditions like high blood pressure or diabetes.
+4. **Consider covering only the risk that would really hurt.** When comprehensive health cover is genuinely unaffordable, cancer-only cover is a rational trade-off: roughly a third of the premium, and it generally does not exclude conditions like high blood pressure or diabetes. [Who it suits.](/en/blog/who-should-consider-cancer-only-cover/)
 
 If your policy has not been reviewed in two or three years, or you are staring at a renewal notice wondering whether to cancel — don't do anything yet. Send it to me and let's go through it before you decide.
 

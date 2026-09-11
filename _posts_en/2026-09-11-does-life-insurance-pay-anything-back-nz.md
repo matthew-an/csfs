@@ -59,7 +59,7 @@ Compare the two paths. Cancel the policy because money is tight, then try to buy
 
 ### 4. Loyalty benefits you can use without claiming
 
-Health check allowances, sterilisation procedures and maternity benefits become available after two or three years in force. You do not have to get sick to use them, which effectively returns part of your premium.
+Health check allowances, sterilisation procedures and maternity benefits become available after two or three years in force. You do not have to get sick to use them, which effectively returns part of your premium. I have listed [nine of these benefits in detail](/en/blog/nine-benefits-hidden-in-your-policy/).
 
 ## If someone tells you New Zealand does have a policy that pays your money back
 

@@ -147,9 +147,9 @@ This is the order I work in.
 
 **Start with what you are most afraid of.** If it is being unable to afford the right drugs for cancer, the non-subsidised drugs row is the one that matters. If you want the option of going home for treatment, look at whether overseas cover is voluntary or only for what New Zealand cannot do.
 
-**Then look at your health.** If you have a pre-existing condition, whether you can get covered at all matters far more than the size of a limit.
+**Then look at your health.** If you have a pre-existing condition, whether you can get covered at all matters far more than the size of a limit — and [there are four routes to getting one covered](/en/blog/buying-cover-with-a-pre-existing-condition/).
 
-**Price comes last.** Premiums can be tuned with the excess and the optional extras — [here is how the excess works](/en/blog/health-insurance-excess-explained/) — and premiums have risen sharply for [reasons worth understanding](/en/blog/why-health-insurance-premiums-are-rising-nz/) before you make a decision.
+**Price comes last.** Premiums can be tuned with the excess and the optional extras — [here is how the excess works](/en/blog/health-insurance-excess-explained/) — and premiums have risen sharply for [reasons worth understanding](/en/blog/why-health-insurance-premiums-are-rising-nz/) before you make a decision. If the budget is genuinely tight, [cancer-only cover is a rational trade-off](/en/blog/who-should-consider-cancer-only-cover/).
 
 Want to know where your current policy sits on this table, and whether you actually bought the optional extras you think you did? Send it to me and I will check it against the wording.
 
