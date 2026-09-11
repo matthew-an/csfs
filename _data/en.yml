@@ -17,7 +17,7 @@ nav:
 about:
   title: About Cornerstone Insurance
   trusted_partner: New Zealand's Trusted Insurance Specialists
-  intro: 'Cornerstone Insurance has been helping Kiwi families protect what matters most. As FSP-licensed professionals (FSPR #1004360), we operate under New Zealand''s strict financial services regulations, ensuring you receive compliant, expert advice. We''ve successfully processed over 95% of claims and helped 300+ families secure their financial future with simple, affordable insurance solutions tailored specifically for New Zealanders.'
+  intro: 'Cornerstone Insurance has been helping Kiwi families protect what matters most. As FSP-licensed professionals (FSPR #1004360), we operate under New Zealand''s strict financial services regulations, ensuring you receive compliant, expert advice. We deal with the insurers on your behalf — how your health history is disclosed when you apply, and how a claim is documented and argued when you need one. An adviser''s service costs you nothing.'
   mission_title: Our Mission
   mission_desc: To make insurance simple, accessible, and affordable for every New Zealand family. We believe insurance shouldn't be complicated - it should give you peace of mind knowing your loved ones are protected.
   what_sets_us_apart: Why Families Choose Us
@@ -34,12 +34,12 @@ about:
   disability_insurance: Disability Cover - Financial security for permanent disability
   mortgage_protection: Mortgage Protection - Ensure your family keeps the home
   commitment_title: Our Track Record
-  commitment_desc: 'Numbers don''t lie: 95%+ claims approval rate, 2-minute average quote time, and 300+ families protected. We''re committed to being your most reliable insurance partner.'
+  commitment_desc: 'We act for several insurers, so cover is built around your household, your budget and your health history rather than a single product offered to everyone. Once the policy is in place, it is reviewed with you each year.'
   service_desc: Real people, real support. No phone trees or overseas call centers. When you need help, you get Amy - your dedicated advisor who knows your situation and cares about your family's protection.
   claims_title: Claims You Can Count On
-  claims_desc: When life happens, we're here. Our 95%+ claims approval rate speaks for itself. We guide you through every step, handle the paperwork, and fight for your claim so you can focus on what matters most.
+  claims_desc: When life happens, we're here. We walk you through every step of a claim, handle the paperwork and deal with the insurer, so you can focus on what matters most.
   contact_title: Ready to Get Protected?
-  contact_desc: Join the 300+ New Zealand families who trust Cornerstone Insurance. Get your personalized quote in under 2 minutes or speak with Amy for expert advice tailored to your situation.
+  contact_desc: Tell us about your situation and Amy will advise around your household, your budget and your health history. The first consultation is free.
   tagline: Protecting New Zealand families, one policy at a time. Simple insurance, reliable support, peace of mind guaranteed.
 hero:
   title_line1: Protecting your future
@@ -83,7 +83,7 @@ testimonials:
   michael_title: Wellington Professional
 contact_cta:
   title: Ready to Protect Your Family?
-  subtitle: Get your personalized quote in under 2 minutes
+  subtitle: A few details is all it takes to get a quote for your situation
   get_quote: Get My Quote Now
   call_now: Speak to an Expert
   licensed: FSP Licensed • Professional Service • Claims Support When You Need It
@@ -106,7 +106,7 @@ footer:
 pages:
   about:
     title: About Cornerstone Insurance
-    description: Cornerstone Insurance - New Zealand's trusted FSP-licensed insurance specialists. 95%+ claims approval rate, 300+ families protected. Professional advice for life, health, trauma, and income protection insurance.
+    description: Cornerstone Insurance - FSP-licensed insurance advisers in New Zealand (FSPR #1004360). Bilingual advice on life, health, trauma and income protection insurance.
   faq:
     title: Frequently Asked Questions
     description: Comprehensive New Zealand insurance FAQ answers covering life insurance, health insurance, trauma insurance, income protection, and claims. Expert advice from FSP-licensed advisors for Kiwi families.
