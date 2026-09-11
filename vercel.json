@@ -58,6 +58,21 @@
       "source": "/en/terms//",
       "destination": "/en/terms/",
       "permanent": true
+    },
+    {
+      "source": "/en/blog/understanding-life-insurance-nz-2024/",
+      "destination": "/en/blog/does-life-insurance-pay-anything-back-nz/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/insurance-claims-process-step-by-step-guide/",
+      "destination": "/en/blog/why-insurance-claims-get-declined-nz/",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/first-home-buyers-insurance-you-cant-ignore/",
+      "destination": "/en/blog/who-to-insure-first-in-your-family/",
+      "permanent": true
     }
   ]
 }
