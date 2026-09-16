@@ -1,16 +1,20 @@
 ---
 layout: default
 ---
-{%- include breadcrumbs.html -%}
-<div class="relative pt-32 pb-24 md:pt-36 md:pb-28 bg-white overflow-hidden font-sans">
-  <div class="relative px-4 sm:px-6 lg:px-8">
-    <div class="text-lg max-w-prose mx-auto mb-8">
-      <h1
-        class="font-misc mt-2 mb-4 text-4xl text-center-DIS leading-8 font-extrabold text-gray-800 md:text-4xl sm:leading-10">
-        {% if page.title_key %}{% include translate.html key=page.title_key %}{% else %}{{ page.title | escape }}{% endif %}</h1>
-    </div>
-    <div class="prose prose-lg text-gray-800 mx-auto">
-      {{ content }}
+{%- assign current_lang = page.lang | default: site.default_lang | default: "zh" -%}
+<main id="main-content" class="pg">
+  <div class="hp-wrap">
+    {%- include breadcrumbs.html -%}
+    <header class="pg-head{% unless page.wide %} pg-narrow{% endunless %}">
+      <h1>{% if page.heading %}{{ page.heading }}{% elsif page.title_key %}{% include translate.html key=page.title_key %}{% else %}{{ page.title | escape }}{% endif %}</h1>
+      {%- if page.intro %}<p class="pg-intro">{{ page.intro }}</p>{% endif -%}
+    </header>
+    <div class="pg-body">
+      {%- if page.plain -%}
+      <div{% unless page.wide %} class="pg-narrow"{% endunless %}>{{ content }}</div>
+      {%- else -%}
+      <div class="prose prose-lg pg-narrow">{{ content }}</div>
+      {%- endif -%}
     </div>
   </div>
-</div>
+</main>

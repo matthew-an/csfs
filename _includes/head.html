@@ -2,6 +2,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.documentElement.classList.add('js')</script>
   
   <!-- Browser Compatibility -->
   <meta name="format-detection" content="telephone=no">
@@ -195,6 +196,11 @@
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"></noscript>
   
+  <!-- Homepage hero photograph: preloaded so the first paint isn't flat navy -->
+  {% if page.layout == "home" %}
+  <link rel="preload" as="image" fetchpriority="high" href="{{ '/assets/img/nz/auckland-harbour-dusk.jpg' | relative_url }}">
+  {% endif %}
+  
   <!-- Deferred JavaScript loading -->
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
   {% if jekyll.environment == "production" %}
@@ -342,7 +348,7 @@
         "jobTitle": ["Financial Adviser", "Principal Insurance Advisor"],
         "description": "新西兰持牌金融顾问（Financial Adviser），FSPR 编号 629629，为奥克兰及全新西兰的华人家庭提供中英文双语的人身保险建议。",
         "url": "{{ site.url }}{{ site.baseurl }}/team/",
-        "image": "{{ site.url }}{{ site.baseurl }}/assets/img/amytao.png",
+        "image": "{{ site.url }}{{ site.baseurl }}/assets/img/amy-tao.jpg",
         "email": "amy.tao@cornerstonefs.co.nz",
         "telephone": "+64211280727",
         "worksFor": { "@id": "{{ site.url }}{{ site.baseurl }}/#organization" },

@@ -29,6 +29,13 @@ layout: compress
   <script src="{{ '/assets/js/search.js' | relative_url }}"></script>
   {% endif %}
 
+  <!-- Homepage scroll reveal / parallax -->
+  {% if jekyll.environment == "production" %}
+  <script src="{{ '/assets/js/reveal.min.js' | relative_url }}" defer></script>
+  {% else %}
+  <script src="{{ '/assets/js/reveal.js' | relative_url }}" defer></script>
+  {% endif %}
+
   <!-- Customer Review Image Gallery -->
   {% if jekyll.environment == "production" %}
   <script src="{{ '/assets/js/image-gallery.min.js' | relative_url }}"></script>

@@ -54,6 +54,6 @@ If you have any questions about these Terms and Conditions, please contact us at
 **Cornerstone Insurance Limited**  
 Email: amy.tao@cornerstonefs.co.nz  
 Phone: +64 211 280 727  
-Address: 80B Forrest Hill Road, Forrest Hill, Auckland 0620, New Zealand
+Location: Auckland, New Zealand
 
 *Last updated: 13 January 2021*

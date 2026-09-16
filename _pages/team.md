@@ -1,6 +1,8 @@
 ---
 layout: page
+plain: true
 title_key: pages.team.title
+heading: 团队
 description_key: pages.team.description
 lang: zh
 permalink: /team/
@@ -18,117 +20,70 @@ seo:
     - 华人保险团队
 ---
 
-{% include translate.html key='pages.team.intro' %}
+{% assign current_lang = page.lang | default: site.default_lang | default: "zh" %}
+{% if current_lang == "en" %}{% assign lp = "/en" %}{% else %}{% assign lp = "" %}{% endif %}
 
-## Amy Tao
-**{% include translate.html key='pages.team.amy_title' %}**
+<section class="pg-section">
+  <div class="pg-person">
+    <img src="{{ '/assets/img/amy-tao.jpg' | relative_url }}" alt="{% if current_lang == 'en' %}Portrait of Min (Amy) Tao{% else %}Min（Amy）Tao 的照片{% endif %}" width="1000" height="1250" loading="lazy" decoding="async">
+    <div>
+      <h2>Min（Amy）Tao</h2>
+      <p class="pg-person__role">{% if current_lang == "en" %}Licensed financial adviser · English and Mandarin{% else %}持牌金融顾问 · 中英文双语{% endif %}</p>
+      <p class="pg-person__facts">
+        FSPR 629629<br>
+        {% if current_lang == "en" %}Master's degree, Chinese Academy of Sciences{% else %}中国科学院硕士{% endif %}<br>
+        {% if current_lang == "en" %}Advises on life, health, trauma, income protection, TPD and mortgage protection{% else %}人寿、医疗、重疾、收入保障、全残、房贷保护{% endif %}
+      </p>
+      {% if current_lang == "en" %}
+      <p class="pg-p">Amy works from the household’s structure to analyse what cover is needed and where the gaps in any existing cover lie, and from that establishes which risks should be covered first. She then compares the equivalent products from the five insurers clause by clause and on premium, and builds the combination that best fits the client’s needs and budget.</p>
+      <p class="pg-p">Once a policy is in force, a claim is where the adviser’s work counts for most. Clients do not deal with the insurer themselves: Amy sets out the medical and financial evidence you need to gather, then lodges the claim on your behalf and follows it through to payment. Where a claim is declined or only partly paid, she puts the case for review against the wording and the clinical notes and takes it up directly with the claims assessors. The client’s job is to concentrate on treatment and recovery. This continues for as long as the policy is held, at no additional cost.</p>
+      <p class="pg-p">She has been interviewed twice by RNZ on the cost of health insurance for the Parent Boost visa (links below).</p>
+      {% else %}
+      <p class="pg-p">Amy 会先结合客户的家庭结构，分析需求以及现有保障的缺口，据此判断哪些风险需要优先保障；再把五家保险公司同类产品的条款与保费逐项横向比对，组合出最贴合客户需求与预算的方案。</p>
+      <p class="pg-p">保单生效之后，理赔是顾问价值最直接的体现。出险时客户不必自己面对保险公司：Amy 会为您列明需要准备的医疗与财务材料，再代为递交并跟进至款项到账；若遇到拒赔或部分给付，她会依据条款原文与病历记录提出申诉，并与核赔部门直接交涉。客户只需专注于治疗与康复。这项服务在保单持有期间长期有效，不额外收费。</p>
+      <p class="pg-p">曾两次接受新西兰国家广播电台（RNZ）采访，谈父母签证（Parent Boost）的医疗保险成本，链接在下面。</p>
+      {% endif %}
 
-<div class="flex flex-col md:flex-row items-start gap-6 mb-8">
-  <img src="/assets/img/amytao.png" alt="Amy Tao - Principal Insurance Advisor" class="w-48 h-48 rounded-lg object-cover" loading="lazy" />
-  <div class="flex-1">
-    <p class="text-lg text-gray-700 mb-6">
-      {% include translate.html key='pages.team.amy_desc' %}
-    </p>
-  </div>
-</div>
-
-### {% include translate.html key='pages.team.qualifications' %}
-- **{% include translate.html key='pages.team.masters' %}** {% include translate.html key='pages.team.masters_from' %}
-- {% include translate.html key='pages.team.expertise' %}
-- {% include translate.html key='pages.team.languages' %}
-- {% include translate.html key='pages.team.commitment' %}
-
-### {% include translate.html key='pages.team.contact_amy' %}
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4 mb-8">
-  <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm text-center hover:shadow-md transition-shadow">
-    <div class="flex items-center justify-center gap-2 mb-3">
-      <i class="ph-phone text-primary-600 text-2xl"></i>
-      <strong class="text-gray-800">{% include translate.html key='pages.team.phone' %}</strong>
-    </div>
-    <a href="tel:+64211280727" class="text-primary-600 hover:text-primary-700 font-medium">+64 211 280 727</a>
-  </div>
-  <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm text-center hover:shadow-md transition-shadow">
-    <div class="flex items-center justify-center gap-2 mb-3">
-      <i class="ph-envelope text-primary-600 text-2xl"></i>
-      <strong class="text-gray-800">{% include translate.html key='pages.team.email' %}</strong>
-    </div>
-    <a href="mailto:amy.tao@cornerstonefs.co.nz" class="text-primary-600 hover:text-primary-700 font-medium break-words">amy.tao@cornerstonefs.co.nz</a>
-  </div>
-  <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm text-center hover:shadow-md transition-shadow">
-    <div class="flex items-center justify-center gap-2 mb-1">
-      <i class="fab fa-weixin text-green-600 text-2xl"></i>
-      <strong class="text-gray-800">{% include translate.html key='pages.team.wechat' %}</strong>
-    </div>
-    <div class="flex items-center justify-center gap-2">
-      <span class="text-gray-700 font-medium">Amytaoingrace</span>
-      <a href="/assets/img/wechat_qr.jpg" class="wechat-qr-trigger inline-block hover:opacity-80 transition-opacity" title="Amy的WeChat二维码">
-        <img src="/assets/img/wechat_qr_small.jpg" alt="WeChat QR Code" class="w-6 h-6 rounded border border-gray-300" loading="lazy" />
-      </a>
+      <dl class="pg-channels" style="margin-top: 1.25rem;">
+        <div class="pg-channels__row"><dt>{% if current_lang == "en" %}Phone{% else %}电话{% endif %}</dt><dd><a href="tel:+64211280727">+64 211 280 727</a></dd></div>
+        <div class="pg-channels__row"><dt>{% if current_lang == "en" %}Email{% else %}邮箱{% endif %}</dt><dd><a href="mailto:amy.tao@cornerstonefs.co.nz">amy.tao@cornerstonefs.co.nz</a></dd></div>
+        <div class="pg-channels__row"><dt>{% if current_lang == "en" %}WeChat{% else %}微信{% endif %}</dt><dd><button type="button" class="wechat-qr-trigger" data-wechat-qr="{{ '/assets/img/wechat_qr.jpg' | relative_url }}">Amytaoingrace</button><small>{% if current_lang == "en" %}Tap for the QR code{% else %}点开看二维码{% endif %}</small></dd></div>
+        <div class="pg-channels__row"><dt>WhatsApp</dt><dd><button type="button" class="qr-trigger" data-qr-image="{{ '/assets/img/whatsapp_qr.png' | relative_url }}" data-qr-title="WhatsApp" data-qr-description="{% if current_lang == 'en' %}Scan with WhatsApp to add Amy{% else %}用 WhatsApp 扫码添加 Amy{% endif %}">+64 21 128 0727</button><small>{% if current_lang == "en" %}Tap for the QR code{% else %}点开看二维码{% endif %}</small></dd></div>
+        <div class="pg-channels__row"><dt>小红书</dt><dd><a href="https://www.xiaohongshu.com/user/profile/5b174220e8ac2b64b56665b7?xsec_token=ABUIxCKlzaQbv-IauUE1AcTvDSEvcn-cn2gRHxATX3vgg%3D&xsec_source=pc_search" target="_blank" rel="noopener noreferrer">新西兰Amy Tao 咨询</a></dd></div>
+        <div class="pg-channels__row"><dt>YouTube</dt><dd><a href="https://www.youtube.com/@%E6%96%B0%E8%A5%BF%E5%85%B0AmyTao" target="_blank" rel="noopener noreferrer">新西兰AmyTao</a></dd></div>
+      </dl>
     </div>
   </div>
-</div>
+</section>
 
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4 mb-8">
-  <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm text-center hover:shadow-md transition-shadow">
-    <div class="flex items-center justify-center gap-2 mb-1">
-      <i class="fab fa-whatsapp text-green-600 text-2xl"></i>
-      <strong class="text-gray-800">WhatsApp</strong>
-    </div>
-    <div class="flex items-center justify-center gap-2">
-      <span class="text-gray-700 font-medium">+64211280727</span>
-      <button class="qr-trigger inline-block hover:opacity-80 transition-opacity border-0 bg-transparent p-0 cursor-pointer" 
-              data-qr-image="/assets/img/whatsapp_qr.png" 
-              data-qr-title="Amy的WhatsApp二维码" 
-              data-qr-description="使用WhatsApp扫描此二维码添加Amy为联系人"
-              title="点击查看WhatsApp二维码">
-        <img src="/assets/img/whatsapp_qr_small.png" alt="WhatsApp QR Code" class="w-6 h-6 rounded border border-gray-300" loading="lazy" />
-      </button>
+<section class="pg-section">
+  <div class="pg-person">
+    <div style="aspect-ratio: 4 / 5; border-radius: 10px; background: var(--hp-tint); border: 1px solid var(--hp-line);"></div>
+    <div>
+      <h2>Ella Zhang</h2>
+      <p class="pg-person__role">{% if current_lang == "en" %}Administration{% else %}行政{% endif %}</p>
+      {% if current_lang == "en" %}
+      <p class="pg-p">Ella runs the day-to-day admin: application paperwork, documents to and from the insurers, and follow-ups on anything that's waiting on someone else. If you've sent something in and haven't heard back, she's the person chasing it.</p>
+      {% else %}
+      <p class="pg-p">Ella 负责日常行政：投保的文件往来、和保险公司之间的资料收发、以及所有卡在别人那里的事项的跟进。你发了材料还没收到回音，追进度的就是她。</p>
+      {% endif %}
+      <dl class="pg-channels" style="margin-top: 1.25rem;">
+        <div class="pg-channels__row"><dt>{% if current_lang == "en" %}Email{% else %}邮箱{% endif %}</dt><dd><a href="mailto:admin@cornerstonefs.co.nz">admin@cornerstonefs.co.nz</a></dd></div>
+      </dl>
     </div>
   </div>
-  <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm text-center hover:shadow-md transition-shadow">
-    <div class="flex items-center justify-center gap-2 mb-3">
-      <i class="fas fa-book text-red-600 text-2xl"></i>
-      <strong class="text-gray-800">小红书</strong>
-    </div>
-    <a href="https://www.xiaohongshu.com/user/profile/5b174220e8ac2b64b56665b7?xsec_token=ABUIxCKlzaQbv-IauUE1AcTvDSEvcn-cn2gRHxATX3vgg%3D&xsec_source=pc_search" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 font-medium">新西兰Amy Tao 咨询</a>
+</section>
+
+<section class="pg-section">
+  <h2 class="pg-h2">{% if current_lang == "en" %}In the media{% else %}媒体报道{% endif %}</h2>
+  <div class="hp-posts">
+    <a class="hp-post" href="https://www.rnz.co.nz/news/chinese/563697/potential-insurance-costs-cast-shadow-over-parent-visa" target="_blank" rel="noopener noreferrer">
+      <time datetime="2025-06-12">{% if current_lang == "en" %}12 June 2025{% else %}2025年6月12日{% endif %} · RNZ</time>
+      <h3>Potential insurance costs cast shadow over parent visa</h3>
+    </a>
+    <a class="hp-post" href="https://www.rnz.co.nz/news/chinese/574245/alarm-over-health-insurance-costs-for-parent-boost-visa" target="_blank" rel="noopener noreferrer">
+      <time datetime="2025-09-26">{% if current_lang == "en" %}26 September 2025{% else %}2025年9月26日{% endif %} · RNZ</time>
+      <h3>Alarm over health insurance costs for Parent Boost Visa</h3>
+    </a>
   </div>
-  <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm text-center hover:shadow-md transition-shadow">
-    <div class="flex items-center justify-center gap-2 mb-3">
-      <i class="fab fa-youtube text-red-600 text-2xl"></i>
-      <strong class="text-gray-800">YouTube</strong>
-    </div>
-    <a href="https://www.youtube.com/@%E6%96%B0%E8%A5%BF%E5%85%B0AmyTao" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 font-medium">新西兰AmyTao</a>
-  </div>
-</div>
-
-## Ella Zhang
-**行政助理**
-
-<div class="flex flex-col md:flex-row items-start gap-6 mb-8">
-  <div class="flex-1">
-    <p class="text-lg text-gray-700 mb-6">
-      Ella负责我们团队的日常行政工作，确保客户服务的顺畅运行。她致力于为客户提供高效、专业的支持服务。
-    </p>
-    <a href="mailto:admin@cornerstonefs.co.nz" class="text-primary-600 hover:text-primary-700 font-medium break-words">admin@cornerstonefs.co.nz</a>
-  </div>
-</div>
-
-## {% include translate.html key='pages.team.our_commitment' %}
-
-{% include translate.html key='pages.team.commitment_intro' %}
-- **{% include translate.html key='pages.team.personalized_service' %}** {% include translate.html key='pages.team.personalized_desc' %}
-- **{% include translate.html key='pages.team.expert_guidance' %}** {% include translate.html key='pages.team.expert_desc' %}
-- **{% include translate.html key='pages.team.ongoing_support' %}** {% include translate.html key='pages.team.ongoing_desc' %}
-- **{% include translate.html key='pages.team.cultural_understanding' %}** {% include translate.html key='pages.team.cultural_desc' %}
-
----
-
-
-## 媒体报道
-
-Amy 曾接受新西兰国家广播电台（RNZ）采访，就 Parent Boost 父母签证的保险成本发表专业意见：
-
-- [Potential insurance costs cast shadow over parent visa](https://www.rnz.co.nz/news/chinese/563697/potential-insurance-costs-cast-shadow-over-parent-visa) — RNZ，2025 年 6 月 12 日
-- [Alarm over health insurance costs for Parent Boost Visa](https://www.rnz.co.nz/news/chinese/574245/alarm-over-health-insurance-costs-for-parent-boost-visa) — RNZ，2025 年 9 月 26 日
-
-*{% include translate.html key='pages.team.ready_to_discuss' %} [{% include translate.html key='pages.team.contact_today' %}](/contact-us/) {% include translate.html key='pages.team.schedule_consultation' %}*
+</section>

@@ -1,133 +1,71 @@
-<footer class="bg-gray-900 text-gray-300 relative overflow-hidden">
-  <!-- Background Pattern -->
-  <div class="absolute inset-0 opacity-5">
-    <div class="absolute top-0 left-0 w-full h-full" style="background-image: radial-gradient(circle at 25% 25%, white 1px, transparent 1px); background-size: 40px 40px;"></div>
-  </div>
-  
-  <div class="container-custom section-padding relative">
-    <div class="grid grid-cols-1 lg:grid-cols-5 gap-6 mb-12">
-      <!-- Enhanced Company Info -->
-      <div class="lg:col-span-2">
-        <a class="flex items-center mb-6 group">
-          <img class="w-14 h-14 mr-4 transition-transform duration-200 group-hover:scale-105" src="{{ '/assets/img/logo.svg' | relative_url }}" alt="{% include translate.html key='site.company_name' %}" />
-          <span class="text-2xl font-bold text-white font-heading">{% include translate.html key='site.company_name' %}</span>
+{%- assign current_lang = page.lang | default: site.default_lang | default: "zh" -%}
+{%- if current_lang == "en" -%}{%- assign lang_prefix = "/en" -%}{%- else -%}{%- assign lang_prefix = "" -%}{%- endif -%}
+<footer class="ft">
+  <div class="hp-wrap">
+    <div class="ft-grid">
+      <div>
+        <a class="ft-brand" href="{{ lang_prefix }}/">
+          <img src="{{ '/assets/img/logo.svg' | relative_url }}" alt="" width="32" height="32">
+          <span>{% include translate.html key='site.company_name' %}</span>
         </a>
-        <p class="text-gray-400 mb-6 leading-relaxed max-w-md">{% include translate.html key='footer.tagline' %}</p>
-        
-        <!-- Social Links -->
-        <div class="flex space-x-4">
-          <a href="https://www.xiaohongshu.com/user/profile/5b174220e8ac2b64b56665b7?xsec_token=ABUIxCKlzaQbv-IauUE1AcTvDSEvcn-cn2gRHxATX3vgg%3D&xsec_source=pc_search" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary-600 transition-colors duration-200 group">
-            <i class="fas fa-book text-gray-400 group-hover:text-white"></i>
-          </a>
-          <a href="https://www.youtube.com/@%E6%96%B0%E8%A5%BF%E5%85%B0AmyTao" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary-600 transition-colors duration-200 group">
-            <i class="fab fa-youtube text-gray-400 group-hover:text-white"></i>
-          </a>
-        </div>
-      </div>
-      <!-- Enhanced Footer Navigation -->
-      {% assign current_lang = page.lang | default: site.default_lang | default: "zh" %}
-      {% if current_lang == "en" %}
-        {% assign lang_prefix = "/en" %}
-      {% else %}
-        {% assign lang_prefix = "" %}
-      {% endif %}
-      
-      <!-- Services Column -->
-      <div>
-        <h3 class="text-white font-semibold mb-6 font-heading">{% include translate.html key='footer.insurance_services' %}</h3>
-        <ul class="space-y-3">
-          <li><a class="text-gray-400 hover:text-primary-300 transition-colors duration-200 flex items-center group" href="{{ lang_prefix }}/services/">
-            <i class="fas fa-heart mr-2 text-xs group-hover:scale-110 transition-transform duration-200"></i>
-            {% include translate.html key='footer.life_insurance' %}
-          </a></li>
-          <li><a class="text-gray-400 hover:text-primary-300 transition-colors duration-200 flex items-center group" href="{{ lang_prefix }}/services/">
-            <i class="fas fa-user-md mr-2 text-xs group-hover:scale-110 transition-transform duration-200"></i>
-            {% include translate.html key='footer.health_insurance' %}
-          </a></li>
-          <li><a class="text-gray-400 hover:text-primary-300 transition-colors duration-200 flex items-center group" href="{{ lang_prefix }}/services/">
-            <i class="fas fa-shield-alt mr-2 text-xs group-hover:scale-110 transition-transform duration-200"></i>
-            {% include translate.html key='footer.trauma_insurance' %}
-          </a></li>
-          <li><a class="text-gray-400 hover:text-primary-300 transition-colors duration-200 flex items-center group" href="{{ lang_prefix }}/services/">
-            <i class="fas fa-dollar-sign mr-2 text-xs group-hover:scale-110 transition-transform duration-200"></i>
-            {% include translate.html key='footer.income_protection' %}
-          </a></li>
-          <li><a class="text-gray-400 hover:text-primary-300 transition-colors duration-200 flex items-center group" href="{{ lang_prefix }}/contact-us/">
-            <i class="fas fa-file-alt mr-2 text-xs group-hover:scale-110 transition-transform duration-200"></i>
-            {% include translate.html key='footer.file_claim' %}
-          </a></li>
+        <p>
+          {%- if current_lang == "en" -%}
+            Licensed insurance advisers in Auckland. Life, health, trauma, income protection and mortgage protection cover for families across New Zealand, in English and Mandarin.
+          {%- else -%}
+            奥克兰的持牌保险经纪。为全新西兰的家庭配置人寿、医疗、重疾、收入保障和房贷保护保险，中英文双语服务。
+          {%- endif -%}
+        </p>
+        <ul style="margin-top: 1rem;">
+          <li><a href="https://www.xiaohongshu.com/user/profile/5b174220e8ac2b64b56665b7?xsec_token=ABUIxCKlzaQbv-IauUE1AcTvDSEvcn-cn2gRHxATX3vgg%3D&xsec_source=pc_search" target="_blank" rel="noopener noreferrer">小红书 · 新西兰Amy Tao 咨询</a></li>
+          <li><a href="https://www.youtube.com/@%E6%96%B0%E8%A5%BF%E5%85%B0AmyTao" target="_blank" rel="noopener noreferrer">YouTube · 新西兰AmyTao</a></li>
         </ul>
       </div>
-      
-      <!-- Company Column -->
+
       <div>
-        <h3 class="text-white font-semibold mb-6 font-heading">{% include translate.html key='footer.company' %}</h3>
-        <ul class="space-y-3">
-          <li><a class="text-gray-400 hover:text-primary-300 transition-colors duration-200 flex items-center group" href="{{ lang_prefix }}/about/">
-            <i class="fas fa-info-circle mr-2 text-xs group-hover:scale-110 transition-transform duration-200"></i>
-            {% include translate.html key='footer.about_us' %}
-          </a></li>
-          <li><a class="text-gray-400 hover:text-primary-300 transition-colors duration-200 flex items-center group" href="{{ lang_prefix }}/team/">
-            <i class="fas fa-users mr-2 text-xs group-hover:scale-110 transition-transform duration-200"></i>
-            {% include translate.html key='footer.our_team' %}
-          </a></li>
-          <li><a class="text-gray-400 hover:text-primary-300 transition-colors duration-200 flex items-center group" href="{{ lang_prefix }}/contact-us/">
-            <i class="fas fa-envelope mr-2 text-xs group-hover:scale-110 transition-transform duration-200"></i>
-            {% include translate.html key='footer.contact_us' %}
-          </a></li>
+        <h3>{% if current_lang == "en" %}Cover{% else %}保障类型{% endif %}</h3>
+        <ul>
+          <li><a href="{{ lang_prefix }}/services/#life">{% if current_lang == "en" %}Life cover{% else %}人寿保险{% endif %}</a></li>
+          <li><a href="{{ lang_prefix }}/services/#health">{% if current_lang == "en" %}Health cover{% else %}医疗保险{% endif %}</a></li>
+          <li><a href="{{ lang_prefix }}/services/#trauma">{% if current_lang == "en" %}Trauma cover{% else %}重大疾病保险{% endif %}</a></li>
+          <li><a href="{{ lang_prefix }}/services/#income">{% if current_lang == "en" %}Income protection{% else %}收入保障{% endif %}</a></li>
+          <li><a href="{{ lang_prefix }}/services/#tpd">{% if current_lang == "en" %}Total and permanent disablement{% else %}全残保障{% endif %}</a></li>
+          <li><a href="{{ lang_prefix }}/services/#mortgage">{% if current_lang == "en" %}Mortgage protection{% else %}房贷保护{% endif %}</a></li>
         </ul>
       </div>
-      
-      <!-- Contact Column -->
+
       <div>
-        <h3 class="text-white font-semibold mb-6 font-heading">{% include translate.html key='footer.contact_info' %}</h3>
-        <ul class="space-y-3">
-          <li><a class="text-gray-400 hover:text-primary-300 transition-colors duration-200 flex items-center group" href="tel:+64211280727">
-            <i class="fas fa-phone mr-2 text-xs group-hover:scale-110 transition-transform duration-200"></i>
-            {% include translate.html key='site.phone' %}
-          </a></li>
-          <li><a class="text-gray-400 hover:text-primary-300 transition-colors duration-200 flex items-center group" href="mailto:amy.tao@cornerstonefs.co.nz">
-            <i class="fas fa-envelope mr-2 text-xs group-hover:scale-110 transition-transform duration-200"></i>
-            {% include translate.html key='site.email' %}
-          </a></li>
-          <li><button class="wechat-qr-trigger text-gray-400 hover:text-primary-300 transition-colors duration-200 flex items-center group w-full text-left" data-wechat-qr="{{ '/assets/img/wechat_qr.jpg' | relative_url }}">
-            <i class="fab fa-weixin mr-2 text-xs group-hover:scale-110 transition-transform duration-200"></i>
-            {% include translate.html key='site.wechat' %}
-            <i class="fas fa-qrcode ml-2 text-xs opacity-60 group-hover:opacity-100 transition-opacity duration-200"></i>
-          </button></li>
+        <h3>{% if current_lang == "en" %}Company{% else %}公司{% endif %}</h3>
+        <ul>
+          <li><a href="{{ lang_prefix }}/about/">{% include translate.html key='footer.about_us' %}</a></li>
+          <li><a href="{{ lang_prefix }}/team/">{% include translate.html key='footer.our_team' %}</a></li>
+          <li><a href="{{ lang_prefix }}/blog/">{% include translate.html key='nav.blog' %}</a></li>
+          <li><a href="{{ lang_prefix }}/faq/">FAQ</a></li>
+          <li><a href="{{ lang_prefix }}/glossary/">{% if current_lang == "en" %}Glossary{% else %}术语表{% endif %}</a></li>
+          <li><a href="{{ lang_prefix }}/disclosure/">{% include translate.html key='footer.disclosure' %}</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>{% include translate.html key='footer.contact_info' %}</h3>
+        <ul>
+          <li><a href="tel:+64211280727">{% include translate.html key='site.phone' %}</a></li>
+          <li><a href="mailto:amy.tao@cornerstonefs.co.nz">{% include translate.html key='site.email' %}</a></li>
+          <li><button type="button" class="wechat-qr-trigger" data-wechat-qr="{{ '/assets/img/wechat_qr.jpg' | relative_url }}">{% if current_lang == "en" %}WeChat{% else %}微信{% endif %} {% include translate.html key='site.wechat' %}</button></li>
+          <li>{% if current_lang == "en" %}Mon–Fri 9:00–17:00{% else %}周一至周五 9:00–17:00{% endif %}</li>
         </ul>
       </div>
     </div>
-    
-    <!-- Enhanced Footer Bottom -->
-    <div class="border-t border-gray-700 pt-8">
-      <div class="flex flex-col md:flex-row justify-between items-center">
-        <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 mb-4 md:mb-0">
-          <p class="text-gray-400 text-sm">
-            © {{ 'now' | date: "%Y" }} {% include translate.html key='site.company_name' %}. 
-            {% if current_lang == "en" %}All rights reserved.{% else %}版权所有。{% endif %}
-          </p>
-          <div class="flex space-x-4 text-sm">
-            <a href="{{ lang_prefix }}/terms/" class="text-gray-400 hover:text-primary-300 transition-colors duration-200">
-              {% include translate.html key='footer.terms_conditions' %}
-            </a>
-            <a href="{{ lang_prefix }}/privacy-policy/" class="text-gray-400 hover:text-primary-300 transition-colors duration-200">
-              {% include translate.html key='footer.privacy_policy' %}
-            </a>
-            <a href="{{ lang_prefix }}/disclosure/" class="text-gray-400 hover:text-primary-300 transition-colors duration-200">
-              {% include translate.html key='footer.disclosure' %}
-            </a>
-          </div>
-        </div>
-        
-        <!-- License Badge -->
-        <div class="flex items-center bg-gray-800 rounded-full px-4 py-2 border border-gray-700">
-          <i class="fas fa-shield-check text-green-400 mr-2"></i>
-          <span class="text-sm text-gray-300">
-            {% if current_lang == "en" %}Licensed & Regulated{% else %}持牌监管{% endif %}
-          </span>
-        </div>
-      </div>
+
+    <div class="ft-legal">
+      <span>
+        © {{ 'now' | date: "%Y" }} Cornerstone Insurance Limited · NZBN 9429049123425 · FSP1004360 ·
+        {% if current_lang == "en" %}Financial advice provided under the licence held by NZ Financial Services Group (FSP286965){% else %}在 NZ Financial Services Group（FSP286965）的持牌下提供金融建议{% endif %}
+      </span>
+      <span>
+        <a href="{{ lang_prefix }}/terms/">{% include translate.html key='footer.terms_conditions' %}</a> ·
+        <a href="{{ lang_prefix }}/privacy-policy/">{% include translate.html key='footer.privacy_policy' %}</a> ·
+        <a href="{{ lang_prefix }}/disclosure/">{% include translate.html key='footer.disclosure' %}</a>
+      </span>
     </div>
   </div>
 </footer>

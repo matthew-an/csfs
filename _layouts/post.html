@@ -1,48 +1,25 @@
 ---
 layout: default
 ---
-
-
-{%- include breadcrumbs.html -%}
 {%- include blogposting-schema.html -%}
-
-<article class="font-sans relative pt-32 pb-24 md:pt-36 md:pb-28 bg-white overflow-hidden">
-
-  <header class="relative px-4 sm:px-6 lg:px-8">
-    <div class="text-lg max-w-prose mx-auto mb-4">
-      <h1
-        class="mt-2 mb-2 text-3xl text-center-DIS leading-8 font-extrabold tracking-tight-DIS text-gray-800 sm:text-4xl sm:leading-10">
-        {{ page.title | escape }}</h1>
-    </div>
-    <p class="max-w-prose mx-auto mb-2 text-lg uppercase text-gray-500"><span class="font-bold tracking-wide">
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      <time class="dt-published text-xs" datetime="{{ page.date | date_to_xmlschema }}">
-        {{ page.date | date: date_format }}
-      </time>
-      {%- if page.modified_date -%}
-      ~
-      {%- assign mdate = page.modified_date | date_to_xmlschema -%}
-      <time class="dt-modified text-sm" datetime="{{ mdate }}">
-        {{ mdate | date: date_format }}
-      </time>
-      {%- endif -%}
-      {%- if page.author -%}
-      • {% for author in page.author %}
-      <span class="text-sm">
-        <span class="p-author h-card">{{ author }}</span></span>
-      {%- if forloop.last == false %}, {% endif -%}
-      {% endfor %}
-      {%- endif -%}
-    </span></p>
-  </header>
-
-  <div class="prose prose-lg px-4 md:px-0 text-gray-700 mx-auto">
-    {{ content }}
+{%- assign current_lang = page.lang | default: site.default_lang | default: "zh" -%}
+{%- if current_lang == "en" -%}{%- assign date_format = "%-d %B %Y" -%}{%- else -%}{%- assign date_format = "%Y年%-m月%-d日" -%}{%- endif -%}
+<main id="main-content" class="pg">
+  <div class="hp-wrap">
+    {%- include breadcrumbs.html -%}
+    <article class="h-entry">
+      <header class="pg-head pg-narrow">
+        <h1 class="p-name">{{ page.title | escape }}</h1>
+        <p class="pg-meta">
+          <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: date_format }}</time>
+          {%- if page.modified_date and page.modified_date != page.date %} · {% if current_lang == "en" %}updated{% else %}更新于{% endif %} <time class="dt-modified" datetime="{{ page.modified_date | date_to_xmlschema }}">{{ page.modified_date | date: date_format }}</time>{% endif -%}
+          {%- if page.author %} · <span class="p-author h-card">{{ page.author }}</span>{% endif -%}
+        </p>
+      </header>
+      <div class="pg-body">
+        <div class="prose prose-lg pg-narrow e-content">{{ content }}</div>
+      </div>
+      <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+    </article>
   </div>
-
-  {%- if site.disqus.shortname -%}
-  {%- include disqus_comments.html -%}
-  {%- endif -%}
-
-  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
-</article>
+</main>

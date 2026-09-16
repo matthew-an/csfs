@@ -1,41 +1,37 @@
-{% assign current_lang = page.lang | default: site.default_lang | default: "zh" %}
-{% if current_lang == "en" %}
-  {% assign home_url = "/en/" %}
-  {% assign home_text = "Home" %}
-{% else %}
-  {% assign home_url = "/" %}
-  {% assign home_text = "首页" %}
-{% endif %}
-
-{% unless page.url == "/" or page.url == "/en/" %}
-<nav aria-label="Breadcrumb" class="bg-gray-50 py-3">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <ol class="flex items-center space-x-2 text-sm text-gray-600">
-      <li>
-        <a href="{{ home_url }}" class="text-primary-600 hover:text-primary-700">
-          <i class="ph-house text-base mr-1"></i>{{ home_text }}
-        </a>
-      </li>
-      {% assign url_parts = page.url | split: '/' %}
-      {% assign breadcrumb_url = '' %}
-      {% for part in url_parts %}
-        {% unless part == '' or part == 'en' %}
-          {% assign breadcrumb_url = breadcrumb_url | append: '/' | append: part %}
-          <li class="flex items-center">
-            <i class="ph-caret-right text-gray-400 mx-2"></i>
-            {% if forloop.last %}
-              <span class="text-gray-900 font-medium" aria-current="page">
-                {% if page.title %}{{ page.title }}{% else %}{% case part %}{% when 'services' %}{% if current_lang == "en" %}Services{% else %}服务{% endif %}{% when 'team' %}{% if current_lang == "en" %}Team{% else %}团队{% endif %}{% when 'contact-us' %}{% if current_lang == "en" %}Contact Us{% else %}联系我们{% endif %}{% when 'about' %}{% if current_lang == "en" %}About{% else %}关于我们{% endif %}{% when 'blog' %}{% if current_lang == "en" %}Blog{% else %}博客{% endif %}{% when 'privacy-policy' %}{% if current_lang == "en" %}Privacy Policy{% else %}隐私政策{% endif %}{% when 'terms' %}{% if current_lang == "en" %}Terms{% else %}条款{% endif %}{% else %}{{ part | replace: '-', ' ' | capitalize }}{% endcase %}{% endif %}
-              </span>
-            {% else %}
-              <a href="{% if current_lang == "en" %}/en{% endif %}{{ breadcrumb_url }}/" class="text-primary-600 hover:text-primary-700">
-                {% case part %}{% when 'services' %}{% if current_lang == "en" %}Services{% else %}服务{% endif %}{% when 'team' %}{% if current_lang == "en" %}Team{% else %}团队{% endif %}{% when 'contact-us' %}{% if current_lang == "en" %}Contact Us{% else %}联系我们{% endif %}{% when 'about' %}{% if current_lang == "en" %}About{% else %}关于我们{% endif %}{% when 'blog' %}{% if current_lang == "en" %}Blog{% else %}博客{% endif %}{% else %}{{ part | replace: '-', ' ' | capitalize }}{% endcase %}
-              </a>
-            {% endif %}
-          </li>
-        {% endunless %}
-      {% endfor %}
-    </ol>
-  </div>
+{%- assign current_lang = page.lang | default: site.default_lang | default: "zh" -%}
+{%- if current_lang == "en" -%}{%- assign home_url = "/en/" -%}{%- assign home_text = "Home" -%}{%- else -%}{%- assign home_url = "/" -%}{%- assign home_text = "首页" -%}{%- endif -%}
+{%- unless page.url == "/" or page.url == "/en/" -%}
+<nav class="crumbs" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="{{ home_url }}">{{ home_text }}</a></li>
+    {%- assign url_parts = page.url | split: '/' -%}
+    {%- assign breadcrumb_url = '' -%}
+    {%- for part in url_parts -%}
+      {%- unless part == '' or part == 'en' -%}
+        {%- assign breadcrumb_url = breadcrumb_url | append: '/' | append: part -%}
+        {%- capture label -%}
+          {%- case part -%}
+            {%- when 'services' -%}{% if current_lang == "en" %}Services{% else %}服务{% endif %}
+            {%- when 'team' -%}{% if current_lang == "en" %}Team{% else %}团队{% endif %}
+            {%- when 'contact-us' -%}{% if current_lang == "en" %}Contact{% else %}联系我们{% endif %}
+            {%- when 'about' -%}{% if current_lang == "en" %}About{% else %}关于我们{% endif %}
+            {%- when 'blog' -%}{% if current_lang == "en" %}Blog{% else %}博客{% endif %}
+            {%- when 'faq' -%}FAQ
+            {%- when 'glossary' -%}{% if current_lang == "en" %}Glossary{% else %}术语表{% endif %}
+            {%- when 'disclosure' -%}{% if current_lang == "en" %}Disclosure{% else %}披露声明{% endif %}
+            {%- when 'privacy-policy' -%}{% if current_lang == "en" %}Privacy Policy{% else %}隐私政策{% endif %}
+            {%- when 'terms' -%}{% if current_lang == "en" %}Terms{% else %}条款{% endif %}
+            {%- when 'calculators' -%}{% if current_lang == "en" %}Calculators{% else %}计算器{% endif %}
+            {%- else -%}{{ part | replace: '-', ' ' | capitalize }}
+          {%- endcase -%}
+        {%- endcapture -%}
+        {%- if forloop.last -%}
+          <li aria-current="page">{% if page.layout == 'post' %}{{ page.title | escape | truncate: 40 }}{% elsif page.heading %}{{ page.heading }}{% else %}{{ label | strip }}{% endif %}</li>
+        {%- else -%}
+          <li><a href="{% if current_lang == "en" %}/en{% endif %}{{ breadcrumb_url }}/">{{ label | strip }}</a></li>
+        {%- endif -%}
+      {%- endunless -%}
+    {%- endfor -%}
+  </ol>
 </nav>
-{% endunless %}
+{%- endunless -%}
