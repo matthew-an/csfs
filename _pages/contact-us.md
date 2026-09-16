@@ -3,7 +3,7 @@ layout: page
 plain: true
 title_key: pages.contact.title
 heading: 联系我们
-intro: 电话、微信、邮件都可以，中英文都行。把你家的情况说给我们听——几口人、有没有房贷、现在有哪些保单——第一次咨询不收费，聊完你再决定做不做。
+intro: 电话、微信、邮件都可以，中英文都行。把你的情况说给我们听，我们先做一次需求分析，再谈要不要配置、怎么配置。咨询不收费，聊完你再决定。
 description_key: pages.contact.description
 lang: zh
 permalink: /contact-us/

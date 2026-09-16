@@ -3,7 +3,7 @@ layout: page
 plain: true
 title_key: pages.contact.title
 heading: Contact
-intro: Phone, WeChat or email, in English or Mandarin. Tell us the situation — who is in the household, whether there is a mortgage, what cover you already hold. The first conversation is free; you decide afterwards.
+intro: Phone, WeChat or email, in English or Mandarin. Tell us where things stand and we will start with a needs analysis, before any discussion of what to put in place. Advice costs you nothing; you decide afterwards.
 description_key: pages.contact.description
 lang: en
 permalink: /en/contact-us/
