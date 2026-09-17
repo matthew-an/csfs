@@ -2,7 +2,10 @@ const colors = require('tailwindcss/colors')
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  content: ['*.html', '_site/*.html','_site/**/*.html', '_pages/**/*.md', '_posts/**/*.md', '_layouts/**/*.html', '_includes/**/*.html'],
+  // `assets/js` is scanned too: search.js / wechat-modal.js / image-gallery.js
+  // build their markup at runtime, so the classes they use appear nowhere in
+  // the HTML and would otherwise be purged.
+  content: ['*.html', '_site/*.html','_site/**/*.html', '_pages/**/*.md', '_posts/**/*.md', '_layouts/**/*.html', '_includes/**/*.html', 'assets/js/*.js'],
   theme: {
     extend: {
       colors: {

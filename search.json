@@ -6,7 +6,7 @@ layout: null
     {% for page in site.pages %}
       {% unless page.url contains '/assets/' or page.url contains '/404' %}
         {
-          "title": "{% if page.title_key %}{% include translate.html key=page.title_key %}{% else %}{{ page.title | escape }}{% endif %}",
+          "title": "{% if page.heading %}{{ page.heading | escape }}{% elsif page.title_key %}{% include translate.html key=page.title_key %}{% else %}{{ page.title | escape }}{% endif %}",
           "url": "{{ page.url | relative_url }}",
           "content": "{{ page.content | strip_html | strip_newlines | escape }}",
           "type": "page",

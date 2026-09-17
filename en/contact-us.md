@@ -1,139 +1,38 @@
 ---
 layout: page
+plain: true
 title_key: pages.contact.title
+heading: Contact
+intro: Phone, WeChat or email, in English or Mandarin. Tell us where things stand and we will start with a needs analysis, before any discussion of what to put in place. Advice costs you nothing; you decide afterwards.
 description_key: pages.contact.description
 lang: en
 permalink: /en/contact-us/
 ---
 
-{% include translate.html key='pages.contact.intro' %}
+{% assign current_lang = page.lang | default: site.default_lang | default: "zh" %}
 
-## {% include translate.html key='pages.contact.contact_info' %}
+<dl class="pg-channels">
+  <div class="pg-channels__row"><dt>{% if current_lang == "en" %}Phone{% else %}电话{% endif %}</dt><dd><a href="tel:+64211280727">+64 211 280 727</a><small>{% if current_lang == "en" %}Monday to Friday, 9:00–17:00{% else %}周一至周五 9:00–17:00{% endif %}</small></dd></div>
+  <div class="pg-channels__row"><dt>{% if current_lang == "en" %}WeChat{% else %}微信{% endif %}</dt><dd><button type="button" class="wechat-qr-trigger" data-wechat-qr="{{ '/assets/img/wechat_qr.jpg' | relative_url }}">Amytaoingrace</button><small>{% if current_lang == "en" %}Tap for the QR code. Messages in Chinese or English.{% else %}点开看二维码。中英文都可以。{% endif %}</small></dd></div>
+  <div class="pg-channels__row"><dt>{% if current_lang == "en" %}Email{% else %}邮箱{% endif %}</dt><dd><a href="mailto:amy.tao@cornerstonefs.co.nz">amy.tao@cornerstonefs.co.nz</a><small>{% if current_lang == "en" %}Replies within one working day{% else %}一个工作日内回复{% endif %}</small></dd></div>
+  <div class="pg-channels__row"><dt>WhatsApp</dt><dd><button type="button" class="qr-trigger" data-qr-image="{{ '/assets/img/whatsapp_qr.png' | relative_url }}" data-qr-title="WhatsApp" data-qr-description="{% if current_lang == 'en' %}Scan with WhatsApp to add us{% else %}用 WhatsApp 扫码添加{% endif %}">+64 21 128 0727</button><small>{% if current_lang == "en" %}Tap for the QR code{% else %}点开看二维码{% endif %}</small></dd></div>
+  <div class="pg-channels__row"><dt>{% if current_lang == "en" %}Office{% else %}办公室{% endif %}</dt><dd>{% if current_lang == "en" %}Auckland, New Zealand{% else %}新西兰奥克兰{% endif %}<small>{% if current_lang == "en" %}Meetings by appointment. Wherever you are in New Zealand, everything can be done by phone, video and e-signature.{% else %}见面请先约时间。无论你在新西兰哪个城市，电话、视频和电子签名就能把整个流程走完。{% endif %}</small></dd></div>
+</dl>
 
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-8">
-  <div class="bg-gray-50 p-6 rounded-lg">
-    <h3 class="text-xl font-semibold mb-4 flex items-center">
-      <i class="ph-phone text-primary-600 mr-2"></i>
-      {% include translate.html key='pages.contact.phone_title' %}
-    </h3>
-    <p class="text-lg">
-      <a href="tel:+64211280727" class="text-primary-600 hover:text-primary-700 font-medium">
-        +64 211 280 727
-      </a>
-    </p>
-    <p class="text-gray-600 text-sm mt-2">{% include translate.html key='pages.contact.phone_available' %}</p>
-  </div>
+<section class="pg-section">
+  <h2 class="pg-h2">{% if current_lang == "en" %}Why not to leave it{% else %}为什么不建议再等等{% endif %}</h2>
+  {% if current_lang == "en" %}
+  <p class="pg-p">Cover can only be bought while you are well. Once a symptom has appeared or a scan has found something, that condition is usually excluded — and sometimes the policy cannot be issued at all. Nobody knows in advance when they will need to claim; some clients use their cover within months of it starting. What you can control is buying the umbrella before it rains.</p>
+  {% else %}
+  <p class="pg-p">保险只能在身体健康的时候买。等到症状出现、或者体检查出了问题，那一项通常就会被除外，有时整份保单都核保不过。没有人能预先知道自己什么时候会用上保单——有的客户买完没几个月就理赔了。我们能控制的，只是趁还买得到的时候先把伞备好，这样无论什么时候下雨，手里都有一把。</p>
+  {% endif %}
+</section>
 
-  <div class="bg-gray-50 p-6 rounded-lg">
-    <h3 class="text-xl font-semibold mb-4 flex items-center">
-      <i class="ph-envelope text-primary-600 mr-2"></i>
-      {% include translate.html key='pages.contact.email_title' %}
-    </h3>
-    <p class="text-lg">
-      <a href="mailto:amy.tao@cornerstonefs.co.nz" class="text-primary-600 hover:text-primary-700 font-medium break-words">
-        amy.tao@cornerstonefs.co.nz
-      </a>
-    </p>
-    <p class="text-gray-600 text-sm mt-2">{% include translate.html key='pages.contact.email_response' %}</p>
-  </div>
-
-  <div class="bg-gray-50 p-6 rounded-lg">
-    <h3 class="text-xl font-semibold mb-4 flex items-center">
-      <i class="fab fa-weixin text-green-600 mr-2"></i>
-      {% include translate.html key='pages.contact.wechat_title' %}
-    </h3>
-    <div class="flex items-center gap-2 mb-2">
-      <p class="text-lg font-medium">Amytaoingrace</p>
-      <a href="/en/wechat_qr.jpg" class="wechat-qr-trigger inline-block hover:opacity-80 transition-opacity" title="Amy's WeChat QR Code">
-        <img src="/en/wechat_qr_small.jpg" alt="WeChat QR Code" class="w-6 h-6 rounded border border-gray-300" loading="lazy" />
-      </a>
-    </div>
-    <p class="text-gray-600 text-sm">{% include translate.html key='pages.contact.wechat_support' %}</p>
-  </div>
-
-  <div class="bg-gray-50 p-6 rounded-lg">
-    <h3 class="text-xl font-semibold mb-4 flex items-center">
-      <i class="fab fa-whatsapp text-green-600 mr-2"></i>
-      WhatsApp
-    </h3>
-    <div class="flex items-center gap-2 mb-2">
-      <p class="text-lg font-medium">+64211280727</p>
-      <button class="qr-trigger inline-block hover:opacity-80 transition-opacity border-0 bg-transparent p-0 cursor-pointer" 
-              data-qr-image="/assets/img/whatsapp_qr.png" 
-              data-qr-title="Amy's WhatsApp QR Code" 
-              data-qr-description="Scan this QR code with WhatsApp to add Amy as a contact"
-              title="Click to view WhatsApp QR Code">
-        <img src="/assets/img/whatsapp_qr_small.png" alt="WhatsApp QR Code" class="w-6 h-6 rounded border border-gray-300" loading="lazy" />
-      </button>
-    </div>
-    <p class="text-gray-600 text-sm">Connect via WhatsApp for instant consultation</p>
-  </div>
-
-  <div class="bg-gray-50 p-6 rounded-lg">
-    <h3 class="text-xl font-semibold mb-4 flex items-center">
-      <i class="fas fa-book text-red-600 mr-2"></i>
-      Xiaohongshu
-    </h3>
-    <p class="text-lg">
-      <a href="https://www.xiaohongshu.com/user/profile/5b174220e8ac2b64b56665b7?xsec_token=ABUIxCKlzaQbv-IauUE1AcTvDSEvcn-cn2gRHxATX3vgg%3D&xsec_source=pc_search" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 font-medium">
-        Amy Tao Consulting
-      </a>
-    </p>
-    <p class="text-gray-600 text-sm mt-2">Follow my Xiaohongshu for more insurance insights</p>
-  </div>
-
-  <div class="bg-gray-50 p-6 rounded-lg">
-    <h3 class="text-xl font-semibold mb-4 flex items-center">
-      <i class="fab fa-youtube text-red-600 mr-2"></i>
-      YouTube
-    </h3>
-    <p class="text-lg">
-      <a href="https://www.youtube.com/@%E6%96%B0%E8%A5%BF%E5%85%B0AmyTao" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 font-medium">
-        AmyTao New Zealand
-      </a>
-    </p>
-    <p class="text-gray-600 text-sm mt-2">Subscribe to my YouTube channel for more insurance knowledge</p>
-  </div>
-
-</div>
-
-## {% include translate.html key='pages.contact.why_choose_title' %}
-
-<div class="bg-primary-50 p-6 rounded-lg my-8">
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-    <div>
-      <h4 class="font-semibold text-primary-800 mb-2">{% include translate.html key='pages.contact.free_consultation' %}</h4>
-      <p class="text-gray-700">{% include translate.html key='pages.contact.free_consultation_desc' %}</p>
-    </div>
-    <div>
-      <h4 class="font-semibold text-primary-800 mb-2">{% include translate.html key='pages.contact.personalized_solutions' %}</h4>
-      <p class="text-gray-700">{% include translate.html key='pages.contact.personalized_solutions_desc' %}</p>
-    </div>
-    <div>
-      <h4 class="font-semibold text-primary-800 mb-2">{% include translate.html key='pages.contact.expert_guidance' %}</h4>
-      <p class="text-gray-700">{% include translate.html key='pages.contact.expert_guidance_desc' %}</p>
-    </div>
-    <div>
-      <h4 class="font-semibold text-primary-800 mb-2">{% include translate.html key='pages.contact.ongoing_support' %}</h4>
-      <p class="text-gray-700">{% include translate.html key='pages.contact.ongoing_support_desc' %}</p>
-    </div>
-  </div>
-</div>
-
-## {% include translate.html key='pages.contact.ready_to_start' %}
-
-<div class="text-center my-8">
-  <p class="text-lg text-gray-700 mb-6">
-    {% include translate.html key='pages.contact.ready_intro' %}
-  </p>
-  <div class="flex flex-col sm:flex-row gap-4 justify-center">
-    <a href="tel:+64211280727" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 transition duration-300">
-      <i class="ph-phone mr-2"></i>
-      {% include translate.html key='pages.contact.call_now' %}
-    </a>
-    <a href="mailto:amy.tao@cornerstonefs.co.nz" class="inline-flex items-center justify-center px-6 py-3 border-2 border-primary-600 text-base font-medium rounded-md text-primary-600 hover:bg-primary-50 transition duration-300">
-      <i class="ph-envelope mr-2"></i>
-      {% include translate.html key='pages.contact.send_email' %}
-    </a>
-  </div>
-</div>
+<section class="pg-section">
+  <h2 class="pg-h2">{% if current_lang == "en" %}Already a client and need to claim?{% else %}已经是客户，要理赔？{% endif %}</h2>
+  {% if current_lang == "en" %}
+  <p class="pg-p">Contact Amy first, before you contact the insurer. We will tell you what the insurer is going to ask for, put the documents together with you, and lodge and follow the claim on your behalf. If a claim is declined, we argue it against the wording. And if dealing with the clinic or the insurer in English is hard work, we make those calls for you. All of it is part of the service, at no charge.</p>
+  {% else %}
+  <p class="pg-p">先联系 Amy，不用自己去找保险公司。我们会告诉你保险公司会要哪些材料、陪你把材料准备好，再代为递交并跟进进度；被拒赔的话，依据条款帮你申诉。如果用英文跟诊所或保险公司沟通有困难，这些电话我们替你打。以上都是服务的一部分，不额外收费。</p>
+  {% endif %}
+</section>

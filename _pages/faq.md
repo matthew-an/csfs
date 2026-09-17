@@ -1,6 +1,8 @@
 ---
 layout: faq
 title_key: pages.faq.title
+heading: 常见问题
+intro: 客户最常问的问题，按主题分组。点开每一条看回答。
 description_key: pages.faq.description
 lang: zh
 permalink: /faq/
