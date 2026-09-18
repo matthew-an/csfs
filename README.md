@@ -11,7 +11,7 @@ The site supports `zh` (default) and `en` locales, provides a rich landing page 
 - Integrated blog (`_posts`) with Tailwind Typography for polished articles
 - Accessibility minded components and translation-aware navigation
 - SEO and analytics ready via `_config.yml` defaults and plugin configuration
-- Deploy ready for Netlify, Vercel, or static hosting providers
+- Deployed on Vercel from the `main` branch
 
 ## Prerequisites
 - Ruby 3.x with Bundler installed
@@ -19,7 +19,7 @@ The site supports `zh` (default) and `en` locales, provides a rich landing page 
 
 Optional but recommended:
 - An FSPD-compliant hosting environment for financial services content
-- Netlify or Vercel account for streamlined deployments
+- A Vercel account with access to the project
 
 ## Getting Started
 1. Clone the repository:
@@ -60,19 +60,15 @@ When adding new content, ensure both language files are updated and navigation l
 - Default language is Chinese (`zh`); English pages live under `/en/...`
 
 ## Deployment
-### Netlify
-1. Connect the repository in Netlify
-2. Set build command to `bundle exec jekyll build`
-3. Set publish directory to `_site`
-4. Configure `_config.yml` `url` to the production domain (`https://www.cornerstonefs.co.nz`)
+The site is hosted on **Vercel**, which is the only deployment path. `vercel.json` is the
+single source of truth for the build command, the output directory and every redirect.
+Netlify, GitLab Pages and GitHub Pages configs used to sit alongside it and were removed
+in September 2026 because none of them deployed anything.
 
-### Vercel or Other Static Hosts
-- Use `npm run build` (or `bundle exec jekyll build`) during the build step
-- Serve the `_site` directory as static output
-
-### Continuous Deployment
-- Ensure the hosting platform installs Ruby and Node dependencies (Bundler, npm) prior to the build command
-- Environment variables (e.g., analytics tokens) can be added to `_config.yml` or injected via `_config_dev.yml` overrides
+- Build: `npm run build:prod` (install step runs `npm install && bundle install`)
+- Output: `_site`
+- Redirects: add them to `vercel.json` only
+- Pushing to `main` triggers the production deploy
 
 ## Compliance & Content Updates
 Cornerstone Insurance operates under New Zealand financial services regulations. When updating disclosures, team bios, or services:

@@ -180,9 +180,6 @@
   <!-- Preconnect to external domains for better performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://rsms.me">
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
-  <link rel="preconnect" href="https://unpkg.com">
   
   <!-- Optimized font loading with font-display: swap and preload -->
   <!-- Primary fonts with optimized loading -->
@@ -202,7 +199,6 @@
   {% endif %}
   
   <!-- Deferred JavaScript loading -->
-  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
   {% if jekyll.environment == "production" %}
   <script src="{{ '/assets/js/wechat-modal.min.js' | relative_url }}" defer></script>
   {% else %}
@@ -217,7 +213,6 @@
     rel="stylesheet"
     href="{{ '/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css' | relative_url }}"
   />
-  <script src="https://unpkg.com/phosphor-icons" defer></script>
   
   <!-- Note: Accessibility and Hero section styles moved to assets/css/style.css for better caching -->
   

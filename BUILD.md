@@ -93,13 +93,12 @@ Current savings from minification:
 
 ## Deployment
 
-### Netlify
+### Vercel
 
 The site is configured to automatically run the production build on deployment:
 
-```toml
-[build]
-  command = "npm run build:prod"
+```json
+{ "buildCommand": "npm run build:prod", "outputDirectory": "_site" }
 ```
 
 Minified files are generated during the build process and don't need to be committed to git.
@@ -114,7 +113,7 @@ Source maps are not committed to git but are generated during build.
 
 - **postcss.config.js**: PostCSS configuration with cssnano for CSS minification
 - **package.json**: Build scripts and dependencies
-- **netlify.toml**: Deployment configuration
+- **vercel.json**: Deployment configuration (build command, output dir, redirects)
 
 ## Notes
 
