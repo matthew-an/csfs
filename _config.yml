@@ -84,6 +84,14 @@ t:
       title: "Cornerstone Insurance"
       description: "Cornerstone Insurance provides comprehensive insurance solutions including life, health, trauma, income protection, and mortgage protection. Secure your future with our trusted insurance expertise and personalized coverage options."
 
+# 访问统计
+# Vercel Web Analytics：无 cookie、不采集个人数据、同源加载（不引入第三方主机）。
+# 脚本由 Vercel 边缘在 /_vercel/insights/script.js 提供，只有部署在 Vercel 上才存在，
+# 所以仅在 production 构建里输出；本地 jekyll serve 不会加载，也不会往线上打数据。
+# 需要同时在 Vercel 项目的 Analytics 标签页里开启，否则脚本 404、不收数。
+analytics:
+  vercel: true
+
 exclude:
   - Gemfile
   - Gemfile.lock

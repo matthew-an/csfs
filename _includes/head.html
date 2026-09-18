@@ -214,6 +214,11 @@
     href="{{ '/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css' | relative_url }}"
   />
   
+  {% if jekyll.environment == "production" and site.analytics.vercel %}
+  <!-- Vercel Web Analytics：同源脚本，无 cookie，无第三方请求 -->
+  <script defer src="/_vercel/insights/script.js"></script>
+  {% endif %}
+  
   <!-- Note: Accessibility and Hero section styles moved to assets/css/style.css for better caching -->
   
   {%- feed_meta -%}
