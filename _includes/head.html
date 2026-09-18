@@ -215,7 +215,11 @@
   />
   
   {% if jekyll.environment == "production" and site.analytics.vercel %}
-  <!-- Vercel Web Analytics：同源脚本，无 cookie，无第三方请求 -->
+  <!-- Vercel Web Analytics：同源脚本，无 cookie，无第三方请求。
+       第一段是官方文档要求的队列垫片，缓存 script.js 加载完成之前发生的调用。 -->
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
   <script defer src="/_vercel/insights/script.js"></script>
   {% endif %}
   
